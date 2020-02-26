@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Levels>
   <Level1>
     <Description />
@@ -40,6 +40,9 @@
       <Medal star="*" desc="Not Bad, but neither good" minvalue="140" maxvalue="400" />
       <Medal star="" desc="Weak! pfuh..." minvalue="400" />
     </Medals>
+    <HighScores>
+      <HighScore name="No Name" value="14" />
+    </HighScores>
   </Level1>
   <Level2>
     <Description />
@@ -104,6 +107,9 @@
       <Medal star="*" desc="Not Bad, but neither good" minvalue="140" maxvalue="400" />
       <Medal star="" desc="Weak! pfuh..." minvalue="400" />
     </Medals>
+    <HighScores>
+      <HighScore name="No Name" value="26" />
+    </HighScores>
   </Level2>
   <Level3>
     <Description>
@@ -139,5 +145,8 @@
       <Medal star="*" desc="Not Bad, but neither good" minvalue="140" maxvalue="400" />
       <Medal star="" desc="Weak! pfuh..." minvalue="400" />
     </Medals>
+    <HighScores>
+      <HighScore name="No Name" value="6" />
+    </HighScores>
   </Level3>
 </Levels>

@@ -12,6 +12,9 @@
       <Medal star="*" desc="Not Bad, but neither good" minvalue="140" maxvalue="400" />
       <Medal star="" desc="Weak! pfuh..." minvalue="400" />
     </Medals>
+    <HighScores>
+      <HighScore name="No Name" value="2" />
+    </HighScores>
   </Level1>
   <Level2>
     <BallStartingPosition X="120" Y="330" />
@@ -39,6 +42,9 @@
       <Medal star="*" desc="Not Bad, but neither good" minvalue="140" maxvalue="400" />
       <Medal star="" desc="Weak! pfuh..." minvalue="400" />
     </Medals>
+    <HighScores>
+      <HighScore name="No Name" value="14" />
+    </HighScores>
   </Level2>
   <Level3>
     <Description />
@@ -75,6 +81,9 @@
       <Medal star="*" desc="Not Bad, but neither good" minvalue="140" maxvalue="400" />
       <Medal star="" desc="Weak! pfuh..." minvalue="400" />
     </Medals>
+    <HighScores>
+      <HighScore name="No Name" value="16" />
+    </HighScores>
   </Level3>
   <Level4>
     <BallStartingPosition X="120" Y="678" />
@@ -100,6 +109,9 @@
       <Medal star="*" desc="Not Bad, but neither good" minvalue="140" maxvalue="400" />
       <Medal star="" desc="Weak! pfuh..." minvalue="400" />
     </Medals>
+    <HighScores>
+      <HighScore name="No Name" value="11" />
+    </HighScores>
   </Level4>
   <Level5>
     <BallStartingPosition X="120" Y="330" />
@@ -129,6 +141,9 @@
       <Medal star="*" desc="Not Bad, but neither good" minvalue="140" maxvalue="400" />
       <Medal star="" desc="Weak! pfuh..." minvalue="400" />
     </Medals>
+    <HighScores>
+      <HighScore name="No Name" value="29" />
+    </HighScores>
   </Level5>
   <Level6>
     <BallStartingPosition X="320" Y="730" />
@@ -156,6 +171,9 @@
       <Medal star="*" desc="Not Bad, but neither good" minvalue="140" maxvalue="400" />
       <Medal star="" desc="Weak! pfuh..." minvalue="400" />
     </Medals>
+    <HighScores>
+      <HighScore name="No Name" value="5" />
+    </HighScores>
   </Level6>
   <!--	<Level7>
 		<BallStartingPosition X="320" Y="730" />

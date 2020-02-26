@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1.1}{Motivation}{section.1.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.2}{Goal}{section.1.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Related Work}{}% 4
+\BOOKMARK [2][-]{subsection.1.2.1}{Procedural Content Generation in Games}{section.1.2}% 5
+\BOOKMARK [3][-]{subsubsection.1.2.1.1}{Content for Procedural Generation}{subsection.1.2.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.2.1.2}{Procedural Content Generation Algorithms}{subsection.1.2.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.2}{Cooperation in Video Games}{section.1.2}% 8
+\BOOKMARK [3][-]{subsubsection.1.2.2.1}{Game Mechanics for Cooperative Games}{subsection.1.2.2}% 9
+\BOOKMARK [3][-]{subsubsection.1.2.2.2}{Improving Cooperation in Games}{subsection.1.2.2}% 10
+\BOOKMARK [3][-]{subsubsection.1.2.2.3}{Evaluating Cooperative Games}{subsection.1.2.2}% 11
+\BOOKMARK [2][-]{subsection.1.2.3}{Procedural Content Generator for Cooperative Games}{section.1.2}% 12
+\BOOKMARK [1][-]{section.1.3}{Geometry Friends}{}% 13
+\BOOKMARK [2][-]{subsection.1.3.1}{What is a Level in Geometry Friends?}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.2}{A generator for Geometry Friends}{section.1.3}% 15
+\BOOKMARK [3][-]{subsubsection.1.3.2.1}{Generating Levels for Geometry Friends}{subsection.1.3.2}% 16
+\BOOKMARK [1][-]{section.1.4}{Proposed Solution}{}% 17
+\BOOKMARK [1][-]{section.1.5}{How to evaluate it}{}% 18
+\BOOKMARK [1][-]{section.1.6}{Work Schedule}{}% 19
+\BOOKMARK [1][-]{section.1.7}{Conclusion}{}% 20

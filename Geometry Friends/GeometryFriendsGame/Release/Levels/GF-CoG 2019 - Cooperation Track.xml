@@ -101,6 +101,7 @@
     <OrangeElevators />
     <TimeLimit value="120" />
     <HighScores>
+      <HighScore name="No Name" value="15" />
       <HighScore name="No Name" value="19" />
     </HighScores>
   </Level5>

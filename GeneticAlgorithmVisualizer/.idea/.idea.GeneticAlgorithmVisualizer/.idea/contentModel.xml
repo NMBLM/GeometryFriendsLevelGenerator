@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\nunom\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\nunom\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_GeneticAlgorithmVisualizer.1847991723.00" t="ExcludeRecursive" />
+    <e p="F:\Files\School\GeometryFriendsLevelGenerator\GeneticAlgorithmVisualizer" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="GeometryFriends" t="Include">
+            <e p="Coordinate.cs" t="Include" />
+            <e p="Generator.cs" t="Include" />
+            <e p="Level.cs" t="Include" />
+            <e p="LevelGenerator" t="Include">
+              <e p="CollectibleGene.cs" t="Include" />
+              <e p="Gene.cs" t="Include" />
+              <e p="GeneticAlgorithm.cs" t="Include" />
+              <e p="LevelDNA.cs" t="Include" />
+              <e p="PlatformGene.cs" t="Include" />
+              <e p="SpawnGene.cs" t="Include" />
+            </e>
+            <e p="Platform.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="GeneticAlgorithmVisualizer.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

@@ -42,7 +42,18 @@ namespace GeometryFriends.LevelGenerator
             this.position = position;
             this.platformType = platformType;
         }
-        
-        
+
+
+        public override string Description()
+        {
+            return "<obstacle x=" + position.X + " y=" + position.Y + " width=" + width + " height=" + height+ ">\n";
+        }
+
+        public override void Mutate(Random random)
+        {
+            height = random.Next(1, 1000);
+            width = random.Next(1, 1000);
+            position = new Point(random.Next(40, 1240),random.Next(40, 1240));
+        }
     }
 }

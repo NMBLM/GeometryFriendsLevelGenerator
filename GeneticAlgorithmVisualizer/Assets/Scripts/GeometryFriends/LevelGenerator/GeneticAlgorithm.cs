@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using Random = System.Random;
 
 namespace GeometryFriends.LevelGenerator
 {
@@ -17,25 +20,26 @@ namespace GeometryFriends.LevelGenerator
 		private List<LevelDNA> newPopulation;
 		private Random random;
 		private float fitnessSum;
-		private Func<Gene> getRandomGene;
 		private Func<int, float> fitnessFunction;
 		
 		
-		public GeneticAlgorithm(int populationSize, Random random, Func<Gene> getRandomGene, Func<int, float> fitnessFunction, float mutationRate = 0.01f)
+		public GeneticAlgorithm(int populationSize, Random random, Func<int, float> fitnessFunction, float mutationRate = 0.01f)
 		{
 			generationNumber = 1;
 			this.mutationRate = mutationRate;
-			population = new List<LevelDNA>(populationSize);
-			newPopulation = new List<LevelDNA>(populationSize);
+			population = new List<LevelDNA>();
+			newPopulation = new List<LevelDNA>();
 			this.random = random;
-			this.getRandomGene = getRandomGene;
 			this.fitnessFunction = fitnessFunction;
 		
 		
 			for (int i = 0; i < populationSize; i++)
 			{
-				population.Add(new LevelDNA(random, getRandomGene, fitnessFunction, init: true));
+				population.Add(new LevelDNA(random, fitnessFunction, init: true));
 			}
+
+			this.bestLevel = new LevelDNA(population[0]);
+			this.bestFitness = 0;
 		}
 		
 		public void NewGeneration(int numNewDNA = 0)
@@ -88,7 +92,7 @@ namespace GeometryFriends.LevelGenerator
 		{
 			fitnessSum = 0;
 			LevelDNA best = population[0];
-		
+
 			for (int i = 0; i < population.Count; i++)
 			{
 				fitnessSum += population[i].CalculateFitness(i);
@@ -98,9 +102,9 @@ namespace GeometryFriends.LevelGenerator
 					best = population[i];
 				}
 			}
-		
-			bestFitness = best.fitness;
-			bestLevel = new LevelDNA(best);
+
+			this.bestFitness = best.fitness;
+			this.bestLevel = best;
 		}
 		
 		private LevelDNA ChooseParent()

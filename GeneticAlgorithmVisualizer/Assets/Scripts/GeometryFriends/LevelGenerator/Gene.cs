@@ -11,5 +11,14 @@ namespace GeometryFriends.LevelGenerator
     public abstract class Gene
     {
         protected GeneType type;
+
+
+        public abstract string Description();
+        
+        public abstract void Mutate(Random random);
+
     }
+    
+    
+    
 }

@@ -1,5 +1,6 @@
-using System;
 using System.Drawing;
+using UnityEngine;
+using Random = System.Random;
 
 namespace GeometryFriends.LevelGenerator
 {
@@ -13,23 +14,33 @@ namespace GeometryFriends.LevelGenerator
         public SpawnGene(Random random)
         {
             type = GeneType.Spawn;
-            position = new Point(random.Next(40, 1240),random.Next(40, 1240));
+            this.position = new Point(random.Next(40, 1240),random.Next(40, 1240));
         }
 
         //Copy Constructor
         public SpawnGene(SpawnGene other)
         {
             type = GeneType.Spawn;
-            position = other.position;
+            this.position = other.position;
 
         }
         
         //Specific Constructor
-        public SpawnGene( Point position)
+        public SpawnGene(Point position)
         {
             type = GeneType.Spawn;
             this.position = position;
             
+        }
+
+        public override string Description()
+        {
+            return "x= " + position.X + " y=" + position.Y+"\n";
+        }
+
+        public override void Mutate(Random random)
+        {
+            this.position = new Point(random.Next(40, 1240),random.Next(40, 1240));
         }
     }
 }

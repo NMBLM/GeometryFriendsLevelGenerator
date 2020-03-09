@@ -34,5 +34,15 @@ namespace GeometryFriends.LevelGenerator
             this.position = position;
             
         }
+        
+        public override string Description()
+        {
+            return "<collectible x= " + position.X + " y=" + position.Y+">\n";
+        }
+
+        public override void Mutate(Random random )
+        {
+            position = new Point(random.Next(40, 1240),random.Next(40, 1240));
+        }
     }
 }

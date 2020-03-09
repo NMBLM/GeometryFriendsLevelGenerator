@@ -2,873 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1421462f-8ec2-4e56-9176-296b882ee5d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Coordinate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Coordinate.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Level.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Level.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Platform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Platform.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/AnnotationManager" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/ArtifactDB-lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/00/00264427f8974d207cc7090e5fdf44e9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/00/004520e7366fc4ed74d477e79cd49659" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/00/006cac85854c996ebb506d1d344f79a3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/00/00a37856e9a93b4cc9b4f122276fdda4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/00/00dfc4d139156d6b50a8bb2bd8cea544" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/00/00e2c3267b6f495c73acd70224735d7c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/012c4e7ed80308b09d389444902dff1f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/013570429ef2e1a254b95fffc50d48c4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/0136ce2061519fd195a8119afe46a32c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/013eb8b9a40e903833d0bda90d68ad46" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/01647ea05eb439b1a6e25b00c342a13c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/016ec0867b5c04b27ad5e7adfaa1e856" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/017d42cd2e23a9d5f9e8961e3df5f3eb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/018abb90cf55a558b1439a06931f18a4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/0191483959354e1afa6db4cb89a18516" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/01e2eb91c71666435e9242115844f31c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/01e85c58f3bb63e1d06ccaf4f92d04f1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/01/01eb99644c33c106c090606cb1777963" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/02/0223cbb3055df0014a9317a2ec3bf64a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/02/02623c41c3a6eb7d8401f48f1520c09c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/02/026479907b45feff44e0145d3dc97890" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/02/0285bb9edb888bfb60d25b9366085089" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/03/0386202cc1d6a7bc93c03615d32e6426" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/03/03b3a83e830498227828e8652965c3b3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/04/041a20408863fef02c1270a61d1178c6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/04/042c4f0883b0a7371ba167b1abc311b7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/04/046c6433f26a28bdcd8e4931f31359ca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/04/04883c8357b056734fe7f2b1e079b22c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/04/04b6d53ef23da6baa5882985501ff35c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/04/04da26c5b20a9382c117dc62647b82aa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/04/04fff6a21cbc52186aaabc83a3351e2c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/05/051846ea8beea274571e368ea95ff18d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/05/0523220b9b0500cc0f33560f62d53a59" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/05/05258368950a37238df1c7cb0882e725" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/05/05407199ba3560d3f1abe9980447d3ea" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/05/055e70c6f791a12e38bfbd078f426a32" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/05/056dad6560df6e8f25b3c379955c4659" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/05/058d0b629fca70998aa0d0e4e204214e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/05/05d55937594d1226840abafa9659882b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/05/05d7d557a7f0f23df3e70fcfbc9519ac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/05/05df1b2d281856fd0095841dc58d3d26" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/060c6e785d6634e76375ee6e96114c97" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/060f27e5ea68302a37ec5967f92dc803" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/0628221839258435b3029cbb2e3a9ec6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/06294c64213764a4245eeea21124b636" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/064ddf993af0102b58948ff20498a210" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/0651badd32c4a467846ee5c46b8d9771" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/068e69916ba51731c710b55cc1edd111" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/069b24307baeb1e2ee902138621cc285" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/06a8a974ff1e2ef1426f4229c9d6de91" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/06d4ef12b09aee6d2fec6ac0a0fb0996" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/06/06df919a146509fa95a8f96b9da233dd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/07/07054c1ed2ff46db5f383fce0ed3e616" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/07/0761b1ac1297a6845671b1e66038e53f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/07/076a937113a5efc44c25b5f65f98ea13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/07/0779795e55db62ffcccb0e8045352312" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/07/07eee7427ee5dcd029b87bc41714cf42" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/08/082c628a77e679d0b8a90df0750e01d9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/08/082f2b13869062eac4366c674270ec04" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/08/089d7ce3ea0a664cbdc57f0acfb600d1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/08/08bb7bffcf99e246787dd0c7d124a9e5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/09/09bd3ef590b310b60e49386e90ad9a2b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/09/09e22d2709bd00e021ada9f9a8de6143" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/09/09ef0e496bbe83710ff5880c6bab44c8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0a/0a25d5ecacb428dbc51a2c933e17b4a1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0a/0a8a0f2d8db470e18036efbe6901b7af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0a/0ac51cdc610ba93c1d513aa8490f2dd5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0b/0b6358f8f53fe6d4fa8a9a693a6c00fb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0b/0b6e179461008ede08404804cb408de1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0b/0b7c26a8cd7cfab7ceedb54293e91d08" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0b/0b97ea0c41948a117abb7385c1b7ad71" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0b/0ba30da8632b1726fe8532519b6124a3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0b/0bb5352748f3d99ac921d6816370fabb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0b/0bb6f28b8ca0202dcaa29ce9f822b903" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0b/0befe5f23961831c58238fb4bccdb922" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0b/0bfe95b3de99499f9122281205e82b5f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0c/0c047ec11eef4c41c9ebf2b009d5021a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0c/0c50ccce815a1f110d0eb38d68e598f6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0c/0c5985f99ac19117d20de67f9b7ee0b1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0c/0c93f18b8e5f9005f21ceae19588d158" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0c/0c9eaced05f9be566a59a0923594bfd8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0c/0caea7a055f13f7987b383eea318c818" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0d3eec8e5c61f3c659c172dcf0a593d1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0d6a41720d0271829f70f1a940b90533" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0d7b7d099d82456f43844ae9eaa78e62" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0d9654ff84c25959c9a40afe6d08c4be" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0dc5fb9bf1b1211ee8f2ed8d428cb48d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0dcb5088c7a14d54c823a5c5760c1ed7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0dd9b21c20af7003b02c60832ec130a1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0de61355159f594a8f3ab14ad65c4146" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0dec43248798ca230f740ef55b37f91b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0df4767fb80c4ee6cc4512331157239b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0d/0df4bf721adf821d37dc6a31ef2e23e1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0e/0e5d0b0ff14c7d8edaf34a852ce07837" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0f/0f39339b30d7d8d041bcfb782df240b6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0f/0f91783f6a0131c0527a892bf77f672e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0f/0fbd04bf0bf69f8cd9a18ca7e9776759" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/0f/0fca0dcfc65cc9879a311e2f31b7dc4c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/10/1030aebbf4f721774d78a3abb5e35bca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/10/104a5571d1116aff0a754c984596d313" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/10/10681096c370e3258e1f0be0c295438f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/10/10d7508feb44f6b2fb34b77d64868d54" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/11/1105d616a277f6d3f09c796d666107d4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/11/1113d46e8cc068aa2e8ca09b01ffcacc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/11/1151881721054eaa5f68708bffa16f42" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/11/11893022c46645582cd6743e65cbae72" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/11/11b1b496422e1d858406076de276cd08" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/11/11d3b99cb425bfc897beb6294087d7e7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/11/11d72976b521eac1023285c7b3747af5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/12/12246cc9ec53d6b60f9a0ea09a13c17c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/12/1246ddaad30a1fbfedd330000e771f96" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/13/135740b7db18ffd0f0641c1f42fa0eb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/13/13e3f33ed6dec3dd28b19fdd621d4621" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/14/14029223d8f6828e1a68ecde081b8713" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/14/14140cbb55708b95180775ca83217908" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/14/1451c40b3d4f612c9fdda999dd9ba9aa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/14/146a9bed8967fa3cfdf2762fe2c52e37" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/14/14be7faa4e8948ba70ab4481da627b32" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/14/14c370d6f65902b13d28c2e4cf51f503" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/14/14c3ab8c980a1673ae5a73984f7ff7c0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/14/14f491d9aeab7127e47a7b3b44f0ec88" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/14/14f7c9662b9d60777e0ba985059f80da" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/15/15483051dabbe7c0f3d64d8fe0c8d7ad" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/15/154fe05e7b4d0839d6a46a5d3afff4aa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/15/155dcad0460af523807e94ee680a91b6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/15/156201ac0e3dca3a3ec8541631dae22a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/15/1594cae4ff1c83e8f0406fbeebd17586" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/16/16611fe9821919b5bd9034b20eb46c09" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/16/1684ce8b2d02d972f711814e839cd60e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/16/1694fe7fb9bca34266dd6d79d458492c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/16/16dc729beea21a49cf7f552e67c7dc1c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/170f06bf576de3debce1d90d21e4e406" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/1717fa2d1175ae33e7fcda26450b2ab2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/171db70ffd1109a139bfcc098f02e1ca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/1735465c1542a9d498be60293c5774ed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/1735759485e4f1ee2aa56269ffcba793" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/173cc98a11f5777a869fc82646b09364" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/1746cd3b8bc42ecdbf91c1c0f2f7f5d3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/178ae68ca5d63b5cf1f9bb51d2bb43d6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/17a33142456d569580c97d8e89938996" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/17a8abd2842d1ab938e8c008a45f06d5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/17defec04aa41308e5640e9f6b4662fb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/17/17f8068147a9b1f8b24522e4614dbbb7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/18/18232b35aaa679be44b0c855077ab012" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/18/183a6e99acaec4f07f6fad965be9d8d2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/18/185fd5d6707f7130ecb1b3a63c61ba8a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/18/186265e9779e30d640ee7a43f2fdf90b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/18/1882bf35bbcfd701c9770ef25bf9f355" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/18/18960b87d2f87f6d877bddf9424682f0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/18/18a82483d7b7ac4add09cb9a4dd2829a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/18/18c32fdb385804fe244a039e947dde53" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/18/18d31501dfc8bf82b0d1169d1de52b13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/18/18e46350efbc19727ad77b75477e6b75" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/190b73319c044d4953d826271735c5dc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/190d5bf2bc304609dedf0b0fd6dc1eef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/192db63b8979ff32619922ba984fac02" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/1957e685d14cafff9c0bd9fa6e9f49c4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/195c323f04b2b585839563474fc0dccd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/1963cbf7ab5e90bbcae823a0eb545007" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/19a83a896ca4e31324132dee4143cce1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/19b53966cd156b2c4c26d360f7bf761e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/19d1970eb0f3c9630a2c7dd58ec2e947" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/19e3a686c60b8ccbb5c64e28215e5918" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/19e78b3fae1efe255da511887190b187" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/19ea225857595bc2f71f9234d25de197" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/19/19f8bd21e96bc7a4bd341e707787a2df" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1a/1a0f4d10c653e6a4e339562591fa1538" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1a/1a25d3bb8afe0629e6d765dc11ac6f23" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1a/1a43deb11d353e997b65464de5a6ba7e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1a/1a5563f2f6046e8e835e6aa54f4426f5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1a/1a75f5049922726667f2b8f34eeef884" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1a/1a8d73d9833a8dfe560067c58ea600be" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1a/1abc89bff445aaeba1dc33edbbeb3ed9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1a/1acdc993179c8b39b8eefdd5d7cf999a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1a/1adaae038c0e9b7a7f7dc4ed20bc011b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1a/1adf2badf806117dc1ebc7c8c300b11f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1b/1b00e2706a0530f082d1590fc5268106" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1b/1b40e16fb9e56a789861ee9726df6b21" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1b/1b4b789a0bfdd6d6c2d2190b01834831" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1b/1b4f308253afb5157fa49e1439d89a52" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1b/1b9f6f4abc93150f7ff07755262f4366" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1b/1bf44c90863f14428f43737a3722da16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1c/1cff42dbc511498912f82f0dd01a9202" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1d/1d10e612a0d3272f55e59bc5f5e8be79" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1d/1d1f03fc7807cd4bc8d0c0c4281d7357" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1d/1d3f68f699ef4fbf33719d1c4f66eef1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1d/1d74ecfacac26056b0145e2e0b9445d0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1d/1d81070aca3cfb0591d876e7b905d07a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1d/1dbfa05a87ee428656fafc092451d0a9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1d/1dc8fb690d4df07aec16482f8affed64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1d/1de643b3cff993daae626fea8bf21812" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1d/1df4e84573aa67745d1c22e6114a957e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1e/1e077cc38f6354955e7e14e62ec31274" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1e/1e1a954616e44f130133512d46433471" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1e/1e1c9d405b81f1fe8aba174f760f6764" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1e/1e314a8e14b09644c88fa2d5bfcc19a6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1e/1e5f0ccee800984b1aec3d07589ccb4e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1e/1e907589980b8616c3b7abfeca9c6917" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1e/1eb9975272a46b548817ae03a7c04840" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1f/1f0f48dc7029cfefcb0c7e0a67ba4c42" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1f/1f109cf0f1f4c1161c5cfbdb5f3d252b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1f/1f73b5021bdfc70cd6b1c73f482c9822" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1f/1fbc796acca1a85fb9059c3a6ccbc955" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1f/1fe91cfb13bfc70d83a738ace03f78fd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1f/1fec442c704ddf090ea5398d42d9df79" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/1f/1ffd0c77406cb86f3aa705e12e962586" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/20/2011a1425c73a9d45a73c80a16f5c22a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/20/206378c5a52fe9c0d917d7abccf10afa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/20/207d4b390c9958a79d47267afbb7df22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/20/208a1198e12559beb3cff0af110ed936" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/20/20a56dcd9fd660d24aed95c8ab645367" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/20/20b2a6e11c674bfc548556d04fbf9a1e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/20/20b315fd08f3366c97f8d43e4b07a61a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/20/20d0d8b629f444559e60c75356519c58" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/20/20d15e9fb4eda8c8effa1edc3f520786" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/21/217170421de6fc6d583e359904c3a52e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/21/218b4ab5ad84f6287d370def3e2ded8e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/21/21fd87bc3fb43f2606e041b7242fad62" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/22/22341d43b42e8def764932c1dc32976e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/23/23118dd542265d48d475d3b05cf4a19e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/23/2332bcdcdc9bc9c6b8ea48239155e879" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/23/234f4ef725d51c2fd3d0ad36b4f09101" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/23/2358e92858a337ae0697c297606eeb7c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/23/23c093bf7e90b1343d3c28f43f4177bf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/23/23d30ccfea84ed8b721fe7e5330b3867" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/23/23e84a32daa8d61a82bef27a7bf7af00" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/24/244be799ff18f2aff319b4712bdf19cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/24/2462190a0cf2f0346136cb47b6f94f42" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/24/2471845543e9ea575e69469d401106bb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/24/247eb5bca2195e50210e1e0a972e4bc9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/25/256f465ec903ecbaf1c61f9582e6527c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/25/25a42876e61468f71c1378d006a4d088" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/25/25af834cee0d433678bab6961b98a44f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/26/2628688eb85ef2058da67257a75b4981" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/26/268a9c1743ee63209cb7bfd3f94de34e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/26/269d8b8573cbf89a33606266975ee349" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/26/26b7e003604497bf92fccb8b6a15d8bd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/27/2748c9c2cee9bd9643a9874bbbe76565" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/27/279bbfb3337979f83941360462783538" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/27/27c0a948e4ff3c0ab63a1a2a59aa6858" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/27/27d304319d1b162a872cbc8588e69124" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/27/27f06c048337309329dae23c4de7b7ce" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/28/284783dc7de428b49ec67aa16c828363" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/28/288473f4b0c8e719c89822e31fcdf110" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/28/28e930fcd2bc3bb7fc9456d66436a0c3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/28/28f0ea8784fe9dd480833393b3585b26" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/29/2906422d095fdc70522fa470529eeb94" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/29/29276a02ba315e061e1120646d9854f4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/29/2932023f209467756d92219b35442606" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/29/298781b3a69b98bc0c5c83bd024f5fd1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/29/29b5f58b678b5e364ff1a6436715e0fc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/29/29d1a81570b12fb1f2afd4137eacc886" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2a/2a27056b5ccb6e586ffc3ac343a7df7a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2a/2a29f1d10510d3b3a257476a885e9e18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2a/2a2a60b1cc501814889f34edfd71eaa5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2a/2a4fc6e71962a80af60e19ab02c21e05" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2a/2a8c6b2c01d499804db7d2c190428dc6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2a/2a971db3bd42d528317617c9676a0356" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2a/2abc48528370f0072331b33d780d1063" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2b/2bf0964a78a91f74a195913979c1156c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2b/2bf963707eee4e664deb569224d29f81" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2c/2c48764087f3ea18060c665f545abd96" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2c/2cc23409a46bd2fe3f918ccd0b6298bf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2c/2ccac01ee7eb8fe6be84d7de87ab0f54" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2c/2cd22556b1d7534cb56457aa7f840fd6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2c/2ce2f9d7d5799c1c65b1fcb073f97fa4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2c/2cfe1d53d5f22b33277529a238c0bbbd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2d/2d2e17242c9a03078c559dccf691609a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2d/2d95b40372a935516663d747c5fce77a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2d/2daf599cd9773fc052b80c6882d63ca9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2e/2e3eacf7720b8396da88d33f1bec57f7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2e/2e4f848efe1bcadbecde1ca255f890f4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2e/2e679b17b0b8efc7d0d4c1fc1cdae31f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2e/2ede6af250f365011b922fd5686ac12f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2f/2f00a9c17d17a45a5d20c45422d27d69" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2f/2f0e07adf97d2ebb4b04c37f95b0c44d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2f/2f25a7d4dd1037ec7131493d344231b5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2f/2fc596b2fa3f4f23b4268bf148b9d4b9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2f/2fdd8977f14144bc20dd191ca74b0a97" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/2f/2fe0e0e148a7e50204a4b1133ed6b3a1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/301d2a805b957408c729ce1b6d9d3f47" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/30202648b9c3d5ec6d1ccd9d8f232141" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/306d7ea8930fae4f46862ab914b14120" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/30756220ddd5cf34e6b8d63d0704ab65" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/308295cd8d14ebcde25a9bfd430b3ae8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/30835451cda4ced7381a6cec587ce18b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/30848476fbf105127f287f973907e730" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/3086727ce4d995e2393a6419bcd35c75" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/309174c07c8f44d2f4298b3901f2c24e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/30ad3bd6827af2025f184ebdb4daf4db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/30c3049698f0bee43d4f8a8923c8f26b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/30/30ca8b5d331de3775df1187114875ee7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/31/31000cbfc191b7a8d229be57d88a50f7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/31/3129ca5910752e1202d4acdd21042ba4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/31/31532bac2370324815f59c58e72df570" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/31/318127b453ae0e4168fe62a57da464f4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/31/31db2025ad48812a50d071257d72e558" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/31/31fd5242f38782ec4c8cebe18199e3fa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/32/321bdb0fcd5492bfed628b3efbd65363" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/32/3226c616b3abd14345462f88bba25999" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/33/3325e6e6c21534daeb33d791e6621e7a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/33/3339b11be47bc02a1f35f1805ff8dc7d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/33/33649ece4c1360d3132568c93fe3ab93" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/33/33a4842da7c0a9ef4ec20dc8751e9343" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/33/33a8fa710a9de43527170ca2a602b274" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/33/33fbcbc8482ea5de1041b72611ab4052" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/34/34612e9e17c7b9c2e9fa9191f7d7a6ee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/34/34803073643267ee7c23c42024df8517" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/35/3513eb0d0d5faeaea07c0298bc649043" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/35/3528f9ac6ed38e5034a9814147c94a34" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/35/356814b9236a5f4a0c6ccce12fac4d77" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/35/35b14907f745f06546961789a662e8cf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/35/35b17943d7a6f6dff83575656124369a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/35/35c83a3261e0fef388c3625fccad0aba" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/36/3608652df50dfa96c8005271da3b6b3c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/36/363bc44dd5265c8b7d1ceb671241fdbc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/36/3667b710432bed188142b93e3513c48e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/36/36854160a416ff75f7c66f388f3f4e6e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/36/36a83fe0686ffac528d5ceba8ab74263" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/36/36d12f6d2841238a158211e7b26bfcd5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/36/36f07c4e3e67e152c6636727c3bc1dcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/37/373cc58e04539a825acb9601ad5932eb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/37/374bdeab34e64030b2fe4415404c3e0c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/37/37bee9b8072e9e71f4af6ef5152ac205" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/38/38857cd61dc30f1d268a69f8410be355" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/38/389f3547e3598ef12901e92c2025e4c3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/38/389f59a6a8e9a22b03739835badb0815" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/38/38ad66862f8fd5240fedebaa62608635" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/38/38d4a734d2e973e9f469720cefe533e1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/39/397476972df8abb72b9ca5ee6f64abf1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/39/39781d2524cf795e9f7d37b7ebfc8b08" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/39/3998e948d1710a19d037f4a1963aef1f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/39/39d15b1e409260b2205ede5f464ff657" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/39/39d73d53f025278baefc91b3b4193bab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/39/39f57204ef83b46fc8ff54493f2d2bef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3a/3a2a8d3ec49a1f0f2c3cd5c563afa596" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3a/3a5130e92140ebbe6f6cf03aef5ec919" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3a/3a8ef608a90684ed8a3539efc3566d6f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3a/3aa95a52dd17075bae05db7b1a0df44d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3b/3b08d3c0866c6f51ba5d6bfea567a328" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3b/3b1631953deda556a5e3c3cd53a199e5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3b/3b17236080ad03659d1bfccd0706ba79" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3b/3b76e03cc6134422d4670a14dab598d2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3b/3b7b41acab79b15ac5538c3213f83e77" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3b/3ba68e9a55258605f0203deeafd88532" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3b/3bb28c4b4bd2ef62b5732be1e09551bb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3c/3c08ae65851c105203d79dc75f6dfb58" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3c/3c234381082020c3c144970ae6361d77" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3c/3ca8d4ab1d18ea994978661c0c0c0874" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3c/3cb8841eee557dec746a3f8389c6e299" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3c/3ccf9007523111492c8d627d665fbe27" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3c/3cd30fb47965a4a78c74ff0828de4e4c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3c/3cdda6a8611535731796f46703368825" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3d/3d1ba1d5f237f99ab4a4c832c2a276c3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3d/3d3d82af9f97263ac83eec52ab7b4cf9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3d/3d5de8eb517ed00ed2f3fd9596bd3fb1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3d/3d8fdb2ef36ffee9317c0487cb964753" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3d/3d950afb7620e5479762212cb1b559b0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3d/3da598fa08cfb9879b37424b8d3ca990" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3d/3dab3d743ac4032589691c6b5598f6f1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3e/3e90f8c54ecd13ec74fd2dbc31aca47b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3e/3e94a1e9c63b305dc33e643df5ada84b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3e/3ec371eddcc0fdc296b7cd93d954fab1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3e/3ee36177db065176e841aeaaca06f668" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3e/3ef4c21d46f2ac63276a6e6b337f27e7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3f0a571b14592f5467a3635fda465570" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3f0d1ea97b100defbeb83595c64db6a9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3f13517aaf44c7bbb38f7b60d74ca60d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3f147c3106228070ce713ac366ec9f8d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3f1db3786076970191e9476abebd5370" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3f1e21a07321689f6d00c934aee8c345" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3f2b32481612ed393093a04f7644445f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3f878ef34779674a3880a4f567a87ff5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3f8ce21f8c27fc3639d50075a20394a7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3f91f4ef55dd2ceb8d6dafa14f2eccb4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3fa3c81603be1625314b69b672dc6125" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3fb028e03c4a2151379dfdd88a589ee5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3fcd16e469eed8197aae91e199ebf1ca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/3f/3ff6431be5601b4fa9680123513d434b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/40/4038ca1fde43a23854d904ff0bc68161" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/40/4044608cc80c02a65b59c78052851c8d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/40/40559e10191e79787309c1701f381196" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/40/40566722eb2c9f8739ebd7bade9a3bcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/40/4062bb2eb59d2fe108f3172583bd888c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/40/40b1591d3e9041b696039a5e1e675948" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/40/40f1d30393577ece7edd63fb726f73ee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/41/41192adb5528d21a3b46438cb6c393ef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/41/411a14de3f1b19ad2f222e92ac3ae475" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/41/4153c710381ed17a4952b02c33a2e7aa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/41/415a3ca0996d00f072409b5dcacf5d2b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/41/416e407fa284df0f981c603d83cf52cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/41/417724b8799d3976df91d0b03dd6c055" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/41/418b17f06d5eb0214723c9a0928dc4f6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/41/41c6c5869236961c25aec4229d604fdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/41/41d8922a541ca3f09e136f05821c390e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/42/42003f7795cbc543a428ae641bb1fdd9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/42/420fbf3366122f6d379961b45c465465" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/42/42847b81485ae619a2db8fd27bc420ac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/43/43a2c591addd1b5da9c33f99c9e16d81" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/43/43a6c9b484d654d936acda96573e9c2c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/43/43c35543fdb7a34557a56ed0b3774c00" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/43/43c6d023b1a5ff796665aa6c8645e02c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/43/43d850197942e2248ba5dd591fd18cf0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/43/43f512b32aa12f7991fa8768e0254b25" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/44/445f7ed0ed3d4379a32eb91afe9e0434" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/44/446ef69968464196f9aafbbca2d5d181" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/44/4476999e539a69c6ece2503d65fdf2ed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/44/447bbcc0febf9eb09c42bb55089510a8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/44/44a3f409ef793f64640493398582e20d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/45/4509240b660a4efdf07966eee5d181d8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/45/451ff88d0441d72891f1bd591f3b78b3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/45/453451891cdcfd2ceb8a150cf5e48a14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/45/45349d5cdc306908dc0da6f516dbd388" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/45/4587cb471e8333be523a9ff8dff4aa95" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/45/45cf88b5a706e9c73cbd26c7ec616177" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/45/45fe69c74031a469464950b1fdce003d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/46/460d88c7573e8359abd7aece8dc8c99c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/46/46b3d612f3e638d99db6194942385517" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/46/46c0e61d85037d8bc41af87d5b46e9ce" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/46/46d16496aa126c027a56449aaa198d97" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/46/46f61598819eeccf16c0f5cb67af4478" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/47/471db54459d9ef1223686165cc844a57" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/47/4775e4a018932639704c718b097c2432" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/47/47bf43cd88180293dff43a0db121cdb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/47/47fc12a0dbf067a7a0e5c3e6014dab90" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/48/48056f8b3573b1fb746b55202c894789" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/48/48242b38665ce07a2d2f7d3b0171a972" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/48/482c9c8ff9f2cc9384ea736d2315f69b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/48/482ffdc1593358f09dcb505fe9c0f4a4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/48/483d9db9ba691318e569646fff2f78c5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/48/4854ceb32c9356dc775decd2254cbe18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/48/4879354bd23c5ed399a4218ff5962386" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/48/4879f909fbe37760e8419a9078059219" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/48/48bf2d519671a976750c48f389c2e2ce" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/48/48ccfc03b36d5e8a3396ddd073422072" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/49/493480ad80f57fb4d45979c48ee18ecd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/49/4942a9c934a539d34690a6bb0b2b6b82" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/49/4947dadeae6f0aff1c11a93685c32845" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/49/49c655682e37c8e019b9c26e4c865b5f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4a/4a21b87418963817afb6dcf36eb2d3a2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4a/4a254a0b579ca3abbe079d8a8e70bd50" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4a/4a3da78a187066cc523e4ec90976dfda" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4a/4a74f9efc135ebe4bd893eb7757c0d92" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4a/4af91f375b6e20369985e5c4a9aa8c5a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4b/4b42e2ab81078bba932618c01f448d0c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4b/4b47f56cc072fcc7de5651b0fc45f31b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4b/4b7318d38e856492cdce81b247da9432" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4b/4b85860875a8f331562ef40280779992" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4b/4b85fb20b2116f9ecb40edf98fdf9fd3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4b/4ba369e71750db1ad0107c0334184189" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4b/4bb658e2d5df0dfb0f85c9ac8a79bbb6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4c/4c179c5e74775b1a9353722f0e7be36d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4c/4c2571e185d659e48fb0fbb3581ada42" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4c/4c79d990948fcc762bbd9d3b310092fd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4c/4ccce1ecb637867c69eeca5f0641cf0c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4c/4cdb46393b7ac8f5937450f49d111a8d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4c/4cfa9c833726be118aaae49cbb13906f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4d/4d028df350e969f2cf41cf63e0da9b94" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4d/4d3e604aeb5b2c9d4aaad8c22cb20aa3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4d/4d59d2706453a18271a42105c5b9707b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4d/4d657fb0004d4edfbc6b57280c36e524" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4d/4d9cbd56b4f6f141d52ffe04fc33e8f6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4d/4da6ec0ca241cd9c52de934759a891db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4e/4e465c021da503debf8e7c160c6ae5fd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4e/4e66e35bdbed27e32409d9fcde36daa1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4e/4e6708e7a550df35198e9cefd27f9be1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4e/4eb347b04c492812249947e5b4eb5cb5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4f/4f6648ed7daa5e36e5c7b8e9deea76b3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4f/4f67ac9a60109e79b203b9d933186236" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4f/4f725ead6070b4896a997477e279ed0f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4f/4f768e4acbad4477b4413839e93ce341" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/4f/4fcb08111118307e9156806ff51de2a6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/50/5009afd9bfa09df08cb12601409ea8d0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/50/50132d63671f29aa94cc4dfbacee340a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/50/50953b2f4568b2766b5b327f6ebafe0b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/50/5098f295dc5f18374829b32a67cb6bf3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/50/50a3475643402f9190a98025932d7276" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/50/50bbf03e5783cc2bf1148b7d338904df" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/50/50e256e848d09823e63ff59847fd4a3b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/51/5102dc558f11168b986d283abf0ec7fb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/51/511aa61dbb1785287048fb49aa61e2f9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/51/514f95e9f019319f2b76236128c84cba" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/51/517e70dc5b10bea628c3e68ca8109631" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/51/517f27490b7edb8a46c54e300d004b38" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/51/51903411cd6e9711712e02ba51ad17b9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/51/51a240538d96fd87014283c5d7e8519d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/51/51b1f9283dbc0cdd2f896052c172cf21" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/52/5232755457147fe58a96738f88cb5901" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/52/5244cab180326d240e1b465405ceb4c2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/52/52cc68be015f2e45e1d659a20d041605" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/53/5316f14185143ce97fe477c1ee50296a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/53/533f5096ba3c308a89a2f94e8865dd3e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/53/53561a1587dd3ffaa2ac64aaa589eca9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/53/5379ed7011da3f30e8a5f9bfd8f5cbee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/53/53a9a45d45f6c3e0a118cee4c8033fc5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/53/53c85e67f72f414d8ccbc610f67e588b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/53/53eb767b9d79ac8ce6ef7c85d298eeb7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/53/53fbb69c2235056a7173a95c258677fc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/54/5406283dbb03abe9332f8ef74eb5306a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/54/5406ce844fc8f12156b386d655a47369" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/54/543ab948c1c379396d01b8e3b465c4ad" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/54/548d5f2460809797a94733b0f4771409" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/55/55127a098ea93038eec7d0993cf950fb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/55/551365750f643500c1221175210bcb57" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/55/55304cf585b6e06559dadc0c59021228" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/55/556ad04ec8825d15d7acb88bf3074ab0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/55/558aab89493a9e4422e2c3421a9d46e3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/55/559d9530989af4ce517b2a82e7d68fd1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/55/55ae17ffadb2af03d39c023b258a2bb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/55/55b0503c6eeb8d2a7d2cfbe3c8c0feb1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/56/5629cd7a2a68939538ce0e942a9b599d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/57/57014120c3ca1649be2345c8c5289ad1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/57/57de052e33c3f3b7caa1403a5bbb9e29" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/57/57e01d93d09a42ff0d5f6ed75a804fde" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/57/57f0bf821ffca310a04ee15c370c5ff8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/58/58165ba05e157bd953a6fd8ecdf3f066" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/58/58ae4b16c2ee4bc9c8b452a9689aac41" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/58/58b10270e082d0644c50915151681ac8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/58/58c405ca6cacd5c43ca5fb4cf588147a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/58/58ca184cf1be70a178c03977f34c80df" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/58/58d0975e7fd8c96be0e230667adfbca0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/59/590344227d1e249fe856f7ab6ab5e67f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/59/594e236b4a26de9e3c1dee7499e099bb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/59/59696bb1038ea630c759076527d8acd8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/59/59931ce8b00a49aa8f36632e8a183b58" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/59/59dd410a5b0963ab94745584f0bf7fb1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/59/59e2d567248a2f0aff4972453d667dff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/59/59f67084b6085849cb8b7d0532f867e9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/59/59f7707f53c2d5c3f9fd94324686687c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/59/59fef901c34adbf902b2af223ecd6163" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5a/5a037e80aaafb116a21fd5324b5ebb99" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5a/5a4b043e1b7dfe9cc1b13c4af42a5cb3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5a/5a4ca56d74936d8cbe7e0cb09044157c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5a/5a5b075fbcb974f1884e327b68bb8b57" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5a/5a640d84d7ebe26efd5c9ebc6c905f20" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5a/5a739171a5e823539e966cf362181da2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5a/5a7dd3c719f7e22317bccc5a8bfff602" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5a/5a8276191ca2d3e597d2f1f26c0135f5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5a/5a8fb2c1b89297de735fd95e9c18f4e5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5a/5ab737ead8763e1268cab58695b08fbb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5b/5b00d422ce141fd819d3c2cf29c13b3f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5b/5b1958d9816e862ffc5bd0a25a032b17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5b/5b34ca94e6c3c1fb93d47729a17c69a7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5b/5ba9124b02ba3350e4700c31bc7521ef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5c079235fa67881bff2fb9eaedfa4ce0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5c2227cc63e344de1b80d06f8c023859" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5c2dcc81d9e8abe8b3ced04a8632627e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5c702b877f8a42e78980dd87b52bb6dc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5c7f2daa424ffdd8f75144682481aa6e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5c9bf246bfd3f3a2f9477f54bb785a85" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5ca2e7f08902281bb1b803debe79795c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5ca58e3ea263a9bf7c8f4a67600180e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5cdd515bdae983c72530dd7ea0de412d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5ce8a7ba8587ad646e49e7133b5551f6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5c/5cfa3da79aa4dab36f602655801edf3d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5d/5d06e3c010f5ced81f33b48d3e81f663" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5d/5d15a178c3241bccb723fe8baabe7b81" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5d/5d7f0ed0b98a71aacd54c693d2d19e7a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5d/5db0f86afcc8d0e06cef79ca6be09955" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5d/5dd6a3615dbda203c431a76738fc634a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5d/5de3bcb8a2bebe46e81a3f55c6ee55a6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5d/5dfa02cf3eca8c2cae127d2a5892f98d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5e/5e1a07795714de7c2eb0521891faa2cd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5e/5e287066ad196e2794af461264d1b993" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5e/5e2c6b83330365cab3b84a5d46c5d0af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5e/5e3894deb580d9ef1cab73ff7380facc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5e/5e509e5049ca90f292bf6a33b89a61c7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5e/5e6b1a3c9c05efffce993e6362ed6551" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5e/5ec8bca043b1a445e44e570e540e4c0b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5e/5eca6d5a2bd0a6c7c1ab854c4dda8a0c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5e/5ecd5d763b2001a7d803036aa87dc863" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5f/5f580a1a397e6f7a2b08858f5c036cd6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5f/5f994abe2185c55f0e04fbd0edad2af7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5f/5fbfa74ce9f1c75c72edc5f4feabeaa8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/5f/5fd57b0f7d2025d613940df014774b2b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/60/606a29009fc92a88c34c33297f7ab0c5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/60/60a0aeef8939e9b64d310da032e268fa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/60/60a6077cb284d30827bf713a4659b0da" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/60/60acb1d6aff1c4a3f5881116ca55852f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/60/60e9daddef92ca78e1c1a79955dfc6ed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/61/61622382b980832ea3e896fa1106dcb4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/61/618f666d94e15fb0c15e16d07c4c1251" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/61/6195a0e744efa73a223f660354492754" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/61/61ac384442b3d1b8cc3865174b1f2a0b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/61/61b19efd925c2d985665f7861069e013" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/61/61b4b1cc9ffbd122dd4c6b6f24824eee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/61/61fbbe2c152bff4ad54d3f8cc3e3b575" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/62/628d73755bb7fd16316bc120867d0f08" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/62/62908ab57e022c3ff6c5ad364d1da9ba" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/62/62f533d31d8c5a77864dde563c118252" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/63/63c6c2b366973e46da22c77b88a628d1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/63/63d320fcd737e81d03f5881f0d000206" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/63/63dd3405da2d88cc8fc369102e305e8d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/63/63e46d1df0ac8a298d8acf6cf3e452d2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/64/648a13834826c5fcb138d72a03cb0292" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/64/648c30e32ec07685f35bcc9db13e5eaa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/64/64baa9241d27288f279418ac1a7d8646" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/65/65305df17ab4cb21cf3393f1baae9861" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/65/6541efb0dbad520dfcaaf3edb26a9f4a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/65/6550256c376cb5d3a15d127daa40f469" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/65/65715064df6dd30f4e041eb9e6ce5637" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/65/65727f6397a4a934e0ac58bcd03a4420" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/66/66089f9df6187151c7cde2d0a8306472" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/66/6608ebba99bf93e93301c76f9e53cc0a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/66/6618a33ea480ac61c334cefe955e7bd9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/66/6621b1ac1bcffc20a1e0e066b87b0d65" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/66/6645602f6c7963edc62ddc408ca24af1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/66/66771ca6e8d522d306587c937423c799" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/66/66a4a73ad6c7be0d0186f5057b0af0a4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/66/66b4575ea119c7cc878d2ed86eafb153" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/66/66e36657b1b58b6e198994391bca8263" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/66/66f5928ad36627139e1c423123a049b1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/67/67d49995271537909c44f250891f3ebd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/68/6818fa2d02c58d4f9eb16f05801ba074" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/68/682d67ea6df082490d895ddb5dd96440" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/68/6884c2fa0f4f4dac8147beaaf38323d7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/68/68b9c59c2c9eb0dfd7441f58efef3fd8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/69/696bf8c9cbc4105528977931ab2ee000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/69/69967ef7378f415483bb2b09d8f3ca91" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6a/6a1e125a11ad4deedcce1ac3890e860e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6a/6a372c0f3c19263698b66c560dbe1e01" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6a/6a71275dba551898527564419f88d602" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6a/6a72e35ed74c1027fdf2d20e8de48540" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6a/6aafedab9c5208f08cd70a31b265ad10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6a/6ad91c5fa4e13eb3f0e1cf37de567b5d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6b/6b1da55d0c43f44654a9a9e476e4561e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6b/6b35b3c127247f94a563b8308004b2f6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6b/6b38c817662e25da719cd36bb93a364a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6b/6b45cb6ebd1942c8a97eef3f97a174fd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6b/6b4c49f766c1121eb01add5c7189acdd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6b/6b729852144a83424326fe426016d85f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6b/6b89aa8ba1ec3398f91653bc0a9935fa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6b/6bd3d1545889bff79f629e7791248891" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6b/6bef3034aeba39786f6b9e3ef118bace" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6b/6bf9f789e75a280468b052998192e1f9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6c02600c26d6fd3f842ecf5379c5f0a9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6c1f9b0b92bd6f7ae64983577bac071c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6c3b56032e075aad906dbbb3759b588d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6c5bbab644a3eb4bbdc6f6c832dd2c63" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6c5ca4707f3b6d2119a0d2ccf8936d72" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6c68999f70f27ff7c436d7d5ebec0443" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6c8392aafa610bfe1cde6fd29a53687a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6c924df507920c74f1f6b75280298ea9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6cb36af5cf1658a685014ba8723b67a5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6cb6cf47cb72b7dc16ce39a325f80f66" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6ccce538284526e5c930916f6e6448f0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6c/6cf9b68aa8ad3324ff114591df23787e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6d/6d8dcd3e98940eb973dc8a61bed882cb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6d/6d9648b2f0333c63c65ec611a39487b9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6d/6da7e25538712ace9499197a28255e61" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6d/6dd06021be27d7777dcb8457462579d6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6e/6e1d9ac6eed6743e44d537ab9f3e565c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6e/6e38c263808397e41860e82b400f398c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6e/6e4006a0bb09ba6284031ced5b44c033" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6e/6e438694c1f4772792ee40e31cac14e6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6e/6e50e0f6d99cfa0e0d5aee93cbc3c0a8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6e/6e61258451bf88bcfcb2ad48d06278a2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6e/6ece5606c0d91afb9cc6971d7156353c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6f/6f0cf571d71017094ecbf92823dc71f4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6f/6f1b356a7ab696e1c840bea85d31164f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6f/6f82c2f87a18d8b95327507a988b8d56" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6f/6fa2980567b6d60659a51f6deeeac910" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6f/6faaf401de9d925a06deb01031203d44" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/6f/6fd65c7e479289f7b7e71d8eba1d4e39" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/70/700d662aa28311115fe2280126376e12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/70/706ed02e85939d20287a136a5cec6b3e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/70/70d59fc683700755301d841bb44511a9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/70/70e12beb092145ba62e5e5d759282f16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/71/7116adfa5d89f29da59ef8efb1aafeed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/71/711b2ce522c70069206005e601cbedf2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/71/711c2de9d68bccf955729d9c731bddea" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/71/717b1a21fa3bbd59a1501de041bc5b78" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/71/71b1cf657d94ff8b63b342602256db33" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/71/71d5642abe426578cbb103ef1ab54fd6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/72/725880b5e0a623740eade8d54413df3b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/72/729268a26528ffceb650aa3e3fa62c16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/72/72d30675b0f6bb023c30baf425979e6d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/72/72ee2fbe910305c896fe64914c08636c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/73/7302af5913ecb2fd8317eb74114b313c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/73/7340fb2ce54a7561c01f2f03aafc8495" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/73/735009a19f123178e884a78114c7523d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/73/7394093745fef28ece52c344c31a24bc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/73/73d6a34541bf0be7d477ec68db129ef2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/73/73df3c432859cbb322f3f80f697066ea" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/73/73efe72bb87d9fef2b060341960cef0e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/74/74639a846df8c4f7ac56694a01f6cb7b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/74/74b84aeb0abb92f8128e2858db348eb5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/74/74e8ae365aed8b147044d072c55b2099" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/75/7514f70a55a619fc480ccdc7c9e540eb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/75/7522d02dc5032a54dcb63c48ae2a4ff0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/75/7528836dfd9c37f48fcbd00e5cfefe1f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/75/7589e4d6e47830ebb1027aeb27235f62" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/75/759fa782a1a19355fc7154f167b8e057" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/76/760d7921100524a377063b59542e92eb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/76/76430bbe2e87dea9fe177a06461efb57" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/76/7671e1847196561fc97314b5b3ae2006" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/76/76adb2a13c902bf90a2c6b94fc7a934d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/76/76c128a96f91803ec8cfbbdf7da11fa7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/76/76ccc64ba749e9fafc6c805c351a99ae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/76/76d5a7d0f2f8f65e96d14090ac1fd3cd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/77/771a4b8208470598b7fc0d702d25ff87" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/77/77e6ed78f68fa99d0fee7661692081a6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/78/7808c154cf09768b6b1b29474f47efc7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/78/7819e864eefcef54755af1b6a3011859" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/78/784dc1637241636538f94067942e7d0a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/78/7886d9e1c8bc61ad067ca6ea9558c4cb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/78/78abbe613216b7784400dfa3652166fd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/78/78ad7f27c5315a9447cbb3f658200742" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/78/78dbabcaafc68535db5c95db5d25a9f7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/79/79e536fda3eeed3b0a8a886bc111e974" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/79/79ec9924523cab891e1402fd42acd369" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7a/7a16c0ef42875274926049f03845efc2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7a/7a1ddd4bb62494c94d9a519402133b72" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7a/7a2a717f45aab69eed86f51a70c8a0e4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7a/7a77c0d36ea43b427b21857b3f7791c4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7a/7aa4aa321cf9bb5e4cd593c8f09e9d76" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7b/7b1cbb6606458f96d398729afcf52bd7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7b/7b768a7a5f9f95bc4288a55c844637e7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7b/7b7b0a7ebc99a59070d4c2468c20d748" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7b/7bcf1c1dac433557299f90223a6b1796" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7b/7beaff2798185ab79a81c7bb3741bc57" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7c/7c1771a5ea8588f056b2cdc6bd6ada2c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7c/7c78ff1fb0ccd7f168f7fed69c105030" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7c/7c97c493dafce68bb2b711f1e7c82cc6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7c/7cba1b5dbfdc5abce1e6b5af3a40d5d1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7c/7cbc9c5ed05bf88ae8df1ca819b9fb44" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7c/7cc341605b7dfa83e14ffc1cfae22beb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7c/7cc6546d771085f1547d02cba1767b2b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7c/7ccb46078c21bce64176261f5a62b047" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7c/7cd3046f4486b22590203fbd9964b72d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7c/7cf3345900ec6e30e6fc4f1b5661793c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7d/7d105faa2574e1aee33867137b1b7092" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7d/7d2b1b311591fc74b13b637f7eb260d9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7d/7d3840193f74bf217e292b6629166dec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7d/7d73806c1234943afbc64b2ea26f4bf3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7d/7d89fbc2d8fa0218cf5eaaa338c03437" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7d/7db0d5c45c814b978942681e4b278b86" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7d/7dbf0a5fb92ee55c482eb7bb581f6c45" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7d/7df8b0f45fef5eca7ced3116e8f1b023" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7e/7e01561233644e028ea51dfa90cdfa74" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7e/7e118335cf41d587a2225246ab20403f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7e/7e648baaffcfad2aa5d1aab5cd9d0463" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7e/7eab7e6308bce3c2f9a00f91905c91c8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7e/7ee5df34a566a0f71fbffe8c9264178d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7e/7eed2f23b6bba6a4969914a898199f85" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7f/7f045f6a6681a35a6d0a176071e2a4f5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7f/7f0c759a6496bab073df88755c071a7a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7f/7f26aa7fe95961a53ba4b8938c7e85ca" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7f/7f81b765395ef3bf89c3975450c0b360" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7f/7f87795eccaf29683c30ef382df8b8bb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7f/7fe1d7504768bfdb92239d6bcaab74fe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/7f/7ff1c5c9dea4cd9cef9fe15b4c1e6802" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/80/800f6b19d9ea05f2a5681694a4025fd6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/80/804fd6dddfd947d74c6919a972afc7c4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/80/80bc1a82e840a7f7301ab88547ea762e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/80/80cfc7905140858e93dc22d9e1ea8088" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/80/80e6fbdfa1f3b67483bc0827815b3500" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/80/80f925f4fbb444e9ddfd3b0427faa4a7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/81/8102efea1d28e3e8d401d16a6e8179a1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/81/815cecd66e094b095f99b525d8a4d1c3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/81/816dd9ae6f30ae15c1085e70a30f4d7d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/81/8176b376f716ef4bec50b7f29dc2f4f4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/81/81f826952150adc14b6e2510492d3508" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/81/81fa54bb9ab5deca290cdbf82ccc4cbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/81/81fb624e84c65ff701871ba366bb4894" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/82/8238cd08566d7b0e0ef2c84957f3c721" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/82/823e69891a492854e5122021e6123329" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/82/826f933060fc58333bd19621634d9298" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/82/82b1d3e5c1e57d467f2da8f6fd8c4b25" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/82/82b94c081e32d55517cf3d2829ed6817" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/82/82ec05d5f55711b00d91894674d2d917" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/82/82ed7c27cf051a74f0c4e3488d17f51f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/82/82fb9677ea05868a68465fb2d6d005f6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/83/83069cfbc52ee9cc26bba9a5c795ca83" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/83/831334b32bfa3abb91798d674ef4214b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/83/83230505ddd878b5ea9af3b4ea46a9f8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/83/834504b20b513672c62c7711bf95d8bb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/83/83596240047dbce0548561ff439f242b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/83/836ffec0e7ff78c606760528cd3f5c8c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/83/8373fef3996bb6807989e4eb444012b4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/83/83a43593ec482460c58dc2754ac908aa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/84/842c6f70999fda4f426c28fb9c8cf1ad" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/84/843efffc1c89e14152fd3a6763d516eb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/84/8444f39d06cc6f3a39086959b40a9964" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/84/845b39de296afd9aa6975c41782a38c9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/84/8469c53f07d3fbd2b045ae67ff0de353" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/84/84bb7ff4b32048c544bfdc24e6c1d16f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/84/84cec3c2e07520e19dda441e33563deb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/84/84ebe016eec2315b14f090dbcf6e43e9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/85/856b3609321737b71158b25f22646883" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/85/85b4f90d0b26000268fa908d3714b54f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/85/85c9b223384f2d321bad364b289bee33" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/85/85d8672b714ea9a07cd7f86089d15dc1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/85/85f680b37a8c5f620e3fa8ad8baf7795" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/86/8616979053ad12b1404d27ef9ecc32cf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/86/8621edcaeafb32f74dc25649f39cad05" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/86/8627a14118f560bc1e2806ec3813d3d3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/86/864a2dfb0b4d550c0b340e631da68df6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/86/86682b398d0afbae74fd3ac7b6afad5c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/86/867c691706ce812b65d8d09b85ab4357" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/86/86868752fe06ff5e77f2c3c770212a67" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/86/86c6a80d7a8049fa0f288d47d01ac5b1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/87/873ca98a13ef8f93353c326e0546ff8e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/87/87455d228fca908a525ad6beecae4c86" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/87/8748c4221e205bbd0c803e92dbea79bd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/87/87ccb91f0839ffccc04ccb713ff8cc38" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/88/881176a6056a4cfce3b68f0296dae205" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/88/885a9c2d63f2636f649aad722694a1ff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/88/8869d55c878ac0f82430d4eacab9ae3e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/88/88d9139ed7b2a4f87350a01c4d7e5211" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/88/88e0030d992d8d7e086b2e6462c7e0bd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/89/89489d6194b9a4e829bcc6169f64f9c1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/89/896a7c1b9ca24b3e8fafb9d07e127ae0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/89/8979174327409f408c9024b7145e7cbd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/89/89a5423c8d536119d59684b769f019e5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/89/89b2b2321a80646205b2733cfe32d346" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/89/89b3e7dade04b1abce2583fbb4d50f94" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/89/89e87464d9bfb1d39e531ee233514044" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/89/89f5c0e85cd4429542aa340dbacc0c98" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/8a/8a0b89f58b2b8a97f3ef756eeb823706" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/8a/8a7974f155d1bba561393fbeafd05206" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/8a/8a9907ca198749bf8f6c6f8102a71cb1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/8a/8aea464211d03d2c5b19ad49b9ca1d5e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/Artifacts/8b/8b42ca2223da29f5859343318068377e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/01/01d80e3a9596baffedf18fac2e511315" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/08/08c6b3bdb93b55d359481b1e5beecff7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/09/094ac22513cd89059d3089c6e4b70f07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0b/0b82c71ebdc9c9efdec3859e9a5b4206" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0f/0fe988dc7d00d3290213261884f97000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/17/178ae68ca5d63b5cf1f9bb51d2bb43d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1a/1aed0025fed7e3f473c7c433ce85edf4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/20/202a8ffce5d7018c43f5ce65e2986785" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2d/2d95b40372a935516663d747c5fce77a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/31/3109a25c78fe6d9499debde458c8d908" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/33/33bb1694d943dc995ded82554e63c9cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/36/36f647651cab7eddb4b7e3b53a0babe9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3a/3a35a4a4a03d079f7313d043c341ac01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3f/3f20b58067dafeb814164288e2e745d1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/47/479d80cb0e4d4171f7aa1446ec4ac578" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4c/4c56afd4878353df1d7df96d0f332889" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/52/5204d2669241d2d06ae5584aad1f282d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/54/5407e269b443de6832c5216dcdd21446" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/64/64ed03e8fffe304d7a2087888789ea86" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/65/65020ddf2423f0a031c71954167e0329" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6a/6afedf6f7b573382a54d63f6045647d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6c/6c4e255c39bc316149319ffc4dd8ad27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/72/72e7c6b5d335315c58ff8e3fb6b26bb7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/75/750b1e70b7f55f2a2b5e2e900705dc10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7a/7afdb037cb456c9c00ae71ebe3074f61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7c/7cee79e3c3cdec19e68a59e1e55eb625" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7e/7edd2af83397e96510b253328634919d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7f6d6f39f437308364af1dcb449b0ad7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/83/83c9b0c6f96a2d7df4d7027d8bfe33a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/86/8669e7106ed9849861695db9d3b4221b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/94e4b31c024315480c5f1ed7c1e42115" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9d/9da855927ab313f526de9eaca3cd7c59" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a5/a5be7d485804609ed85731f8458f2587" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a6/a6f76d4992dca968ddb209cdfc6652e2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/aa/aaf253ccc9c5d143d6884d16c3ec4b2f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ab/ab165d98b728fba33e1e1064ccf2dc9f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ab/abcbb4e346ddd8dc276595a77d7d5001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b3/b3cd3563a3dc07ff5e80f2b59415bf8d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b9/b9d3d3eefa92480dbfd3f9c760853e78" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ba/ba985a1e8d5f4297a944b81b228480d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c8b47f22c6ccaa7ddefc4bac4db1bc37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c8bddd4c996cb18328aa929be68adfc4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c8e148e21bac3623f14f5370932dedfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cb/cb81cb6fd410306625e956c7d0de8dd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/cc7aef22f5cf8a827d5808ae17563d5f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/cca1fded8e5b7d357f2456636823c954" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/ccf241e0567267e65659b369186bc564" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cf/cf0ae5db10be80c6090235e3a39136d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cf/cf1ad5035837b925842eb9405ec95787" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d2/d2971fd76bf2085f6c80f68a1e344fbc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d3/d30463d4f9e4bb36bfb3d1413af9e08b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d3/d353a4deebe206562d5b52ddd847f0eb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d5/d51c8fb0ead33de982b4ee53ae63fc0e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d6/d6bd2eb8e6264d3728a76547b23a8132" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d7/d7e395b040be57c4a459e42354879d4c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d8/d859864a30712326511130c6201e46a1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d9/d9026df03aa0d0de8356d47adafa44d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/df/df45d2c9ce047f477b142621ebfc0660" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e3/e3c34407acebec2142233911c0db208d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e3/e3e03580ec0d5022d6ac6ba148fd9dae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f9/f9593c3022137593fe2ffbaaaf40fb45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fa/fa7c30323a2cd69b1c764126bf8244de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/255b83-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/255b83-mainStage.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -881,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Level.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state>
+              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding>
                 <marker date="1583587968972" expanded="false" signature="6:81" ph="..." />
                 <marker date="1583587968972" expanded="true" signature="107:474" ph="{...}" />
@@ -896,58 +106,65 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+            <state relative-caret-position="480">
+              <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
               <folding>
-                <marker date="1583603932741" expanded="false" signature="6:47" ph="..." />
-                <marker date="1583603932741" expanded="true" signature="108:3630" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="136:3628" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="573:789" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="830:1091" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="1133:2369" ph="{...}" />
-                <marker date="1583603932741" expanded="false" signature="1268:1551" ph="/* for (int i = 0; i &lt; num_plat; i++) ... */" />
-                <marker date="1583603932741" expanded="true" signature="1692:2232" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="1753:2005" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="1809:1987" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="2063:2201" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="2419:2513" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="2571:3311" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="2919:3041" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="3085:3262" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="3160:3248" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="3362:3622" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="3431:3599" ph="{...}" />
-                <marker date="1583603932741" expanded="true" signature="3501:3585" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="6:115" ph="..." />
+                <marker date="1583776955745" expanded="true" signature="157:5108" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="185:5106" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="622:922" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="963:1433" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="1475:1999" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="1657:1742" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="1796:1887" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="2049:2143" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="2201:4110" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="2905:3039" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="3089:3232" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="3276:3472" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="3362:3458" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="3515:3714" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="3601:3700" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="3758:3900" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="3917:4073" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="4161:4613" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="4213:4388" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="4283:4357" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="4432:4590" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="4502:4576" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="4651:5100" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="4746:4815" ph="{...}" />
+                <marker date="1583776955745" expanded="true" signature="4859:4928" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+            <state relative-caret-position="-743">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
-                <marker date="1583604314075" expanded="true" signature="6:47" ph="..." />
-                <marker date="1583604314075" expanded="true" signature="89:2684" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="125:2682" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="705:1135" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="1035:1131" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="1185:1804" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="1222:1240" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="1273:1336" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="1415:1672" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="1450:1667" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="1856:1995" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="1891:1912" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="1945:1965" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="2032:2362" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="2138:2289" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="2245:2284" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="2399:2675" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="2511:2652" ph="{...}" />
-                <marker date="1583604314075" expanded="true" signature="2562:2601" ph="{...}" />
+                <marker date="1583776899336" expanded="false" signature="6:47" ph="..." />
+                <marker date="1583776899336" expanded="true" signature="157:2675" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="193:2673" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="711:1134" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="974:1055" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="1184:1803" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="1221:1239" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="1272:1335" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="1414:1671" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="1449:1666" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="1855:1994" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="1890:1911" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="1944:1964" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="2031:2353" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="2135:2286" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="2242:2281" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="2390:2666" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="2502:2643" ph="{...}" />
+                <marker date="1583776899336" expanded="true" signature="2553:2592" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -956,12 +173,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="240">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
-                <marker date="1583591632724" expanded="true" signature="55:232" ph="{...}" />
-                <marker date="1583591632724" expanded="true" signature="89:154" ph="{...}" />
-                <marker date="1583591632724" expanded="true" signature="185:230" ph="{...}" />
+                <marker date="1583776935369" expanded="true" signature="55:357" ph="{...}" />
+                <marker date="1583776935369" expanded="true" signature="89:154" ph="{...}" />
+                <marker date="1583776935369" expanded="true" signature="185:340" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -970,13 +187,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="150">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
-                <marker date="1583590904551" expanded="false" signature="6:78" ph="..." />
-                <marker date="1583590904551" expanded="true" signature="118:302" ph="{...}" />
-                <marker date="1583590904551" expanded="true" signature="190:211" ph="{...}" />
-                <marker date="1583590904551" expanded="true" signature="269:290" ph="{...}" />
+                <marker date="1583777200742" expanded="false" signature="6:146" ph="..." />
+                <marker date="1583777200742" expanded="true" signature="186:1192" ph="{...}" />
+                <marker date="1583777200742" expanded="true" signature="368:505" ph="{...}" />
+                <marker date="1583777200742" expanded="true" signature="563:1018" ph="{...}" />
+                <marker date="1583777200742" expanded="true" signature="631:801" ph="{...}" />
+                <marker date="1583777200742" expanded="true" signature="835:1003" ph="{...}" />
+                <marker date="1583777200742" expanded="true" signature="1065:1190" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/FitnessCalculator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding>
+                <marker date="1583777138648" expanded="true" signature="40:164" ph="{...}" />
+                <marker date="1583777138648" expanded="true" signature="86:162" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <folding>
+                <marker date="1583777272520" expanded="true" signature="40:227" ph="{...}" />
+                <marker date="1583777272520" expanded="true" signature="99:225" ph="{...}" />
+                <marker date="1583777272520" expanded="true" signature="177:219" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -985,16 +232,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+            <state relative-caret-position="765">
+              <caret line="55" column="78" selection-start-line="55" selection-start-column="78" selection-end-line="55" selection-end-column="78" />
               <folding>
-                <marker date="1583591647803" expanded="false" signature="6:35" ph="..." />
-                <marker date="1583591647803" expanded="true" signature="77:1435" ph="{...}" />
-                <marker date="1583591647803" expanded="true" signature="84:252" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-                <marker date="1583591647803" expanded="true" signature="298:1433" ph="{...}" />
-                <marker date="1583591647803" expanded="true" signature="487:757" ph="{...}" />
-                <marker date="1583591647803" expanded="true" signature="833:1045" ph="{...}" />
-                <marker date="1583591647803" expanded="true" signature="1201:1409" ph="{...}" />
+                <marker date="1583776969091" expanded="false" signature="6:35" ph="..." />
+                <marker date="1583776969091" expanded="true" signature="77:1838" ph="{...}" />
+                <marker date="1583776969091" expanded="true" signature="84:252" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+                <marker date="1583776969091" expanded="true" signature="298:1836" ph="{...}" />
+                <marker date="1583776969091" expanded="true" signature="487:757" ph="{...}" />
+                <marker date="1583776969091" expanded="true" signature="833:1045" ph="{...}" />
+                <marker date="1583776969091" expanded="true" signature="1201:1409" ph="{...}" />
+                <marker date="1583776969091" expanded="true" signature="1456:1594" ph="{...}" />
+                <marker date="1583776969091" expanded="true" signature="1646:1830" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -1003,16 +252,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            <state relative-caret-position="540">
+              <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
               <folding>
-                <marker date="1583591667044" expanded="false" signature="6:35" ph="..." />
-                <marker date="1583591667044" expanded="true" signature="77:960" ph="{...}" />
-                <marker date="1583591667044" expanded="true" signature="89:257" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-                <marker date="1583591667044" expanded="true" signature="307:958" ph="{...}" />
-                <marker date="1583591667044" expanded="true" signature="429:569" ph="{...}" />
-                <marker date="1583591667044" expanded="true" signature="651:752" ph="{...}" />
-                <marker date="1583591667044" expanded="true" signature="840:952" ph="{...}" />
+                <marker date="1583776943922" expanded="false" signature="6:35" ph="..." />
+                <marker date="1583776943922" expanded="true" signature="77:1265" ph="{...}" />
+                <marker date="1583776943922" expanded="true" signature="89:257" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+                <marker date="1583776943922" expanded="true" signature="307:1263" ph="{...}" />
+                <marker date="1583776943922" expanded="true" signature="429:569" ph="{...}" />
+                <marker date="1583776943922" expanded="true" signature="651:752" ph="{...}" />
+                <marker date="1583776943922" expanded="true" signature="840:952" ph="{...}" />
+                <marker date="1583776943922" expanded="true" signature="1006:1105" ph="{...}" />
+                <marker date="1583776943922" expanded="true" signature="1158:1257" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -1021,16 +272,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="630">
+              <caret line="42" column="83" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="83" />
               <folding>
-                <marker date="1583591680850" expanded="false" signature="6:35" ph="..." />
-                <marker date="1583591680850" expanded="true" signature="77:897" ph="{...}" />
-                <marker date="1583591680850" expanded="true" signature="84:252" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-                <marker date="1583591680850" expanded="true" signature="286:895" ph="{...}" />
-                <marker date="1583591680850" expanded="true" signature="402:536" ph="{...}" />
-                <marker date="1583591680850" expanded="true" signature="606:701" ph="{...}" />
-                <marker date="1583591680850" expanded="true" signature="783:889" ph="{...}" />
+                <marker date="1583776983271" expanded="true" signature="6:70" ph="..." />
+                <marker date="1583776983271" expanded="true" signature="112:1228" ph="{...}" />
+                <marker date="1583776983271" expanded="true" signature="119:287" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+                <marker date="1583776983271" expanded="true" signature="321:1226" ph="{...}" />
+                <marker date="1583776983271" expanded="true" signature="437:576" ph="{...}" />
+                <marker date="1583776983271" expanded="true" signature="646:746" ph="{...}" />
+                <marker date="1583776983271" expanded="true" signature="827:933" ph="{...}" />
+                <marker date="1583776983271" expanded="true" signature="979:1064" ph="{...}" />
+                <marker date="1583776983271" expanded="true" signature="1116:1220" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -1043,6 +296,11 @@
       <find>fitness</find>
       <find>DNA&lt;T&gt;</find>
       <find>Elitism</find>
+      <find>rectangleSpawn</find>
+      <find>circleSpawn</find>
+      <find>cal</find>
+      <find>this.bestlevel</find>
+      <find>bestlevel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1054,6 +312,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Level.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/FitnessCalculator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Coordinate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Platform.cs" root0="FORCE_HIGHLIGHTING" />
@@ -1063,13 +323,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/FitnessCalculator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs" />
       </list>
     </option>
   </component>
@@ -1085,6 +347,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -1116,11 +383,6 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1168,11 +430,12 @@
       <updated>1583588595105</updated>
       <workItem from="1583588603108" duration="4166000" />
       <workItem from="1583602688094" duration="1715000" />
+      <workItem from="1583766669544" duration="6502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5881000" />
+    <option name="totallyTimeSpent" value="12383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1186,7 +449,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1255,83 +518,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <marker date="1583591632724" expanded="true" signature="55:232" ph="{...}" />
-            <marker date="1583591632724" expanded="true" signature="89:154" ph="{...}" />
-            <marker date="1583591632724" expanded="true" signature="185:230" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <marker date="1583590904551" expanded="false" signature="6:78" ph="..." />
-            <marker date="1583590904551" expanded="true" signature="118:302" ph="{...}" />
-            <marker date="1583590904551" expanded="true" signature="190:211" ph="{...}" />
-            <marker date="1583590904551" expanded="true" signature="269:290" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-          <folding>
-            <marker date="1583591647803" expanded="false" signature="6:35" ph="..." />
-            <marker date="1583591647803" expanded="true" signature="77:1435" ph="{...}" />
-            <marker date="1583591647803" expanded="true" signature="84:252" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-            <marker date="1583591647803" expanded="true" signature="298:1433" ph="{...}" />
-            <marker date="1583591647803" expanded="true" signature="487:757" ph="{...}" />
-            <marker date="1583591647803" expanded="true" signature="833:1045" ph="{...}" />
-            <marker date="1583591647803" expanded="true" signature="1201:1409" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding>
-            <marker date="1583591667044" expanded="false" signature="6:35" ph="..." />
-            <marker date="1583591667044" expanded="true" signature="77:960" ph="{...}" />
-            <marker date="1583591667044" expanded="true" signature="89:257" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-            <marker date="1583591667044" expanded="true" signature="307:958" ph="{...}" />
-            <marker date="1583591667044" expanded="true" signature="429:569" ph="{...}" />
-            <marker date="1583591667044" expanded="true" signature="651:752" ph="{...}" />
-            <marker date="1583591667044" expanded="true" signature="840:952" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <marker date="1583591680850" expanded="false" signature="6:35" ph="..." />
-            <marker date="1583591680850" expanded="true" signature="77:897" ph="{...}" />
-            <marker date="1583591680850" expanded="true" signature="84:252" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-            <marker date="1583591680850" expanded="true" signature="286:895" ph="{...}" />
-            <marker date="1583591680850" expanded="true" signature="402:536" ph="{...}" />
-            <marker date="1583591680850" expanded="true" signature="606:701" ph="{...}" />
-            <marker date="1583591680850" expanded="true" signature="783:889" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Level.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state>
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding>
             <marker date="1583587968972" expanded="false" signature="6:81" ph="..." />
             <marker date="1583587968972" expanded="true" signature="107:474" ph="{...}" />
@@ -1341,58 +531,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+        <state relative-caret-position="-743">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <marker date="1583603932741" expanded="false" signature="6:47" ph="..." />
-            <marker date="1583603932741" expanded="true" signature="108:3630" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="136:3628" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="573:789" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="830:1091" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="1133:2369" ph="{...}" />
-            <marker date="1583603932741" expanded="false" signature="1268:1551" ph="/* for (int i = 0; i &lt; num_plat; i++) ... */" />
-            <marker date="1583603932741" expanded="true" signature="1692:2232" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="1753:2005" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="1809:1987" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="2063:2201" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="2419:2513" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="2571:3311" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="2919:3041" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="3085:3262" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="3160:3248" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="3362:3622" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="3431:3599" ph="{...}" />
-            <marker date="1583603932741" expanded="true" signature="3501:3585" ph="{...}" />
+            <marker date="1583776899336" expanded="false" signature="6:47" ph="..." />
+            <marker date="1583776899336" expanded="true" signature="157:2675" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="193:2673" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="711:1134" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="974:1055" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="1184:1803" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="1221:1239" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="1272:1335" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="1414:1671" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="1449:1666" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="1855:1994" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="1890:1911" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="1944:1964" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="2031:2353" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="2135:2286" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="2242:2281" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="2390:2666" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="2502:2643" ph="{...}" />
+            <marker date="1583776899336" expanded="true" signature="2553:2592" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        <state relative-caret-position="240">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
-            <marker date="1583604314075" expanded="true" signature="6:47" ph="..." />
-            <marker date="1583604314075" expanded="true" signature="89:2684" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="125:2682" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="705:1135" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="1035:1131" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="1185:1804" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="1222:1240" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="1273:1336" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="1415:1672" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="1450:1667" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="1856:1995" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="1891:1912" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="1945:1965" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="2032:2362" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="2138:2289" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="2245:2284" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="2399:2675" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="2511:2652" ph="{...}" />
-            <marker date="1583604314075" expanded="true" signature="2562:2601" ph="{...}" />
+            <marker date="1583776935369" expanded="true" signature="55:357" ph="{...}" />
+            <marker date="1583776935369" expanded="true" signature="89:154" ph="{...}" />
+            <marker date="1583776935369" expanded="true" signature="185:340" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <marker date="1583776943922" expanded="false" signature="6:35" ph="..." />
+            <marker date="1583776943922" expanded="true" signature="77:1265" ph="{...}" />
+            <marker date="1583776943922" expanded="true" signature="89:257" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+            <marker date="1583776943922" expanded="true" signature="307:1263" ph="{...}" />
+            <marker date="1583776943922" expanded="true" signature="429:569" ph="{...}" />
+            <marker date="1583776943922" expanded="true" signature="651:752" ph="{...}" />
+            <marker date="1583776943922" expanded="true" signature="840:952" ph="{...}" />
+            <marker date="1583776943922" expanded="true" signature="1006:1105" ph="{...}" />
+            <marker date="1583776943922" expanded="true" signature="1158:1257" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+          <folding>
+            <marker date="1583776955745" expanded="true" signature="6:115" ph="..." />
+            <marker date="1583776955745" expanded="true" signature="157:5108" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="185:5106" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="622:922" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="963:1433" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="1475:1999" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="1657:1742" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="1796:1887" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="2049:2143" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="2201:4110" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="2905:3039" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="3089:3232" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="3276:3472" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="3362:3458" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="3515:3714" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="3601:3700" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="3758:3900" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="3917:4073" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="4161:4613" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="4213:4388" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="4283:4357" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="4432:4590" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="4502:4576" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="4651:5100" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="4746:4815" ph="{...}" />
+            <marker date="1583776955745" expanded="true" signature="4859:4928" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="55" column="78" selection-start-line="55" selection-start-column="78" selection-end-line="55" selection-end-column="78" />
+          <folding>
+            <marker date="1583776969091" expanded="false" signature="6:35" ph="..." />
+            <marker date="1583776969091" expanded="true" signature="77:1838" ph="{...}" />
+            <marker date="1583776969091" expanded="true" signature="84:252" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+            <marker date="1583776969091" expanded="true" signature="298:1836" ph="{...}" />
+            <marker date="1583776969091" expanded="true" signature="487:757" ph="{...}" />
+            <marker date="1583776969091" expanded="true" signature="833:1045" ph="{...}" />
+            <marker date="1583776969091" expanded="true" signature="1201:1409" ph="{...}" />
+            <marker date="1583776969091" expanded="true" signature="1456:1594" ph="{...}" />
+            <marker date="1583776969091" expanded="true" signature="1646:1830" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="83" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="83" />
+          <folding>
+            <marker date="1583776983271" expanded="true" signature="6:70" ph="..." />
+            <marker date="1583776983271" expanded="true" signature="112:1228" ph="{...}" />
+            <marker date="1583776983271" expanded="true" signature="119:287" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+            <marker date="1583776983271" expanded="true" signature="321:1226" ph="{...}" />
+            <marker date="1583776983271" expanded="true" signature="437:576" ph="{...}" />
+            <marker date="1583776983271" expanded="true" signature="646:746" ph="{...}" />
+            <marker date="1583776983271" expanded="true" signature="827:933" ph="{...}" />
+            <marker date="1583776983271" expanded="true" signature="979:1064" ph="{...}" />
+            <marker date="1583776983271" expanded="true" signature="1116:1220" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <marker date="1583777200742" expanded="false" signature="6:146" ph="..." />
+            <marker date="1583777200742" expanded="true" signature="186:1192" ph="{...}" />
+            <marker date="1583777200742" expanded="true" signature="368:505" ph="{...}" />
+            <marker date="1583777200742" expanded="true" signature="563:1018" ph="{...}" />
+            <marker date="1583777200742" expanded="true" signature="631:801" ph="{...}" />
+            <marker date="1583777200742" expanded="true" signature="835:1003" ph="{...}" />
+            <marker date="1583777200742" expanded="true" signature="1065:1190" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/FitnessCalculator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <marker date="1583777138648" expanded="true" signature="40:164" ph="{...}" />
+            <marker date="1583777138648" expanded="true" signature="86:162" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <marker date="1583777272520" expanded="true" signature="40:227" ph="{...}" />
+            <marker date="1583777272520" expanded="true" signature="99:225" ph="{...}" />
+            <marker date="1583777272520" expanded="true" signature="177:219" ph="{...}" />
           </folding>
         </state>
       </provider>

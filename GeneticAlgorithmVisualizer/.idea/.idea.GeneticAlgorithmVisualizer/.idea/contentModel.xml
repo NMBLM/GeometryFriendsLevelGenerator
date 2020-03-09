@@ -13,10 +13,12 @@
             <e p="Level.cs" t="Include" />
             <e p="LevelGenerator" t="Include">
               <e p="CollectibleGene.cs" t="Include" />
+              <e p="FitnessCalculator.cs" t="Include" />
               <e p="Gene.cs" t="Include" />
               <e p="GeneticAlgorithm.cs" t="Include" />
               <e p="LevelDNA.cs" t="Include" />
               <e p="PlatformGene.cs" t="Include" />
+              <e p="ReachabilityFitness.cs" t="Include" />
               <e p="SpawnGene.cs" t="Include" />
             </e>
             <e p="Platform.cs" t="Include" />

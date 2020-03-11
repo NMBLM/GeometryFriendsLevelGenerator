@@ -1,0 +1,129 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using GeometryFriends.LevelGenerator;
+using UnityEngine;
+using UnityEngine.UI;
+using Random = System.Random;
+
+public class ReachabilityViewer : MonoBehaviour
+{
+
+    [SerializeField] private Material unreachableMaterial;
+    [SerializeField] private Material platformMaterial;
+    [SerializeField] private Material rectangleReachMaterial;
+    [SerializeField] private Material circleReachMaterial;
+    [SerializeField] private Material cooperativeReachMaterial;
+    [SerializeField] private Material bothReachMaterial;
+    [SerializeField] private GameObject gridBlockPrefab;
+    [SerializeField] private float granularity = 20f;
+
+    
+    public LevelDNA level;
+    public ReachabilityFitness h;
+    public Random random;
+    // Start is called before the first frame update
+    void Start()
+    {
+        random = new Random();
+        
+        level = new LevelDNA(random, TmpFit, init: true);
+        h = new ReachabilityFitness(blockSize:granularity);
+        h.CalculateFitness(level);
+
+        CreateGrid();
+        
+        //Debug.Log(level.Description());
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            foreach (Transform child in transform)
+            {
+                if (child != this.transform)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+            level = new LevelDNA(random, TmpFit, init: true);
+            h = new ReachabilityFitness(blockSize:granularity);
+            h.CalculateFitness(level);
+
+            CreateGrid();
+        
+            //Debug.Log(level.Description());
+        }
+    }
+
+    public float TmpFit(int index)
+    {
+        return -1.0f;
+    }
+
+    public void CreateGrid()
+    {
+        for (int i = 0; i < h.xGridLen; i++)
+        {
+            for (int j = 0; j < h.yGridLen; j++)
+            {
+                var block = Instantiate(gridBlockPrefab, new Vector3(0.5f*i, -0.5f*j, 0), Quaternion.identity);
+                block.transform.parent = this.gameObject.transform;
+                var mat = block.GetComponent<Renderer>();
+                switch (h.grid[i,j])
+                {
+                    case BlockType.Unreachable:
+                        mat.material = unreachableMaterial;
+                        break;
+                    case BlockType.Platform:
+                        mat.material = platformMaterial;
+                        break;
+                    case BlockType.RectangleCanReach:
+                        mat.material = rectangleReachMaterial;
+                        break;
+                    case BlockType.CircleCanReach:
+                        mat.material = circleReachMaterial;
+                        break;
+                    case BlockType.CooperativeCanReach:
+                        mat.material = cooperativeReachMaterial;
+                        break;
+                    case BlockType.BothCanReach:
+                        mat.material = bothReachMaterial;
+                        break;
+                }
+            }
+        }
+        
+        int x = (int) ((level.rectangleSpawn.position.X - 40)/ h.blockSize);
+        int y = (int) ((level.rectangleSpawn.position.Y - 40)/ h.blockSize);
+        for (int i = 0; i < 100/h.blockSize; i++)
+        {
+            for (int j = 0; j < 100/h.blockSize; j++)
+            {
+                var recSpawnBlock = 
+                    Instantiate(gridBlockPrefab, new Vector3(0.5f*x + 0.5f *i, -0.5f*y - 0.5f *j, -0.5f), Quaternion.identity);
+                recSpawnBlock.transform.parent = this.gameObject.transform;
+                var recSpawnMat = recSpawnBlock.GetComponent<Renderer>();
+                recSpawnMat.material = rectangleReachMaterial;
+            }
+        }
+        
+        x = (int) ((level.circleSpawn.position.X - 40)/ h.blockSize);
+        y = (int) ((level.circleSpawn.position.Y - 40)/ h.blockSize);
+        
+        
+
+        for (int i = 0; i < 80/h.blockSize; i++)
+        {
+            for (int j = 0; j < 80/h.blockSize; j++)
+            {
+                var circleSpawnBlock =
+                    Instantiate(gridBlockPrefab, new Vector3(0.5f*x + 0.5f *i, -0.5f*y - 0.5f *j, -0.5f), Quaternion.identity);
+                circleSpawnBlock.transform.parent = this.gameObject.transform;
+                var circleSpawnMat = circleSpawnBlock.GetComponent<Renderer>();
+                circleSpawnMat.material = circleReachMaterial;
+            }
+        }
+    }
+}

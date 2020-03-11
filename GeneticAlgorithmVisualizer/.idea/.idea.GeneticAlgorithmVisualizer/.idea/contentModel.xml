@@ -23,6 +23,7 @@
             </e>
             <e p="Platform.cs" t="Include" />
           </e>
+          <e p="ReachabilityViewer.cs" t="Include" />
         </e>
       </e>
       <e p="GeneticAlgorithmVisualizer.sln" t="IncludeFlat" />

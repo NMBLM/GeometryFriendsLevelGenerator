@@ -3,8 +3,11 @@ namespace GeometryFriends
     public enum PlatformType : byte
     {
         Common,
-        RectangleOnly,
-        CircleOnly
+        CirclePlatform,     //Is a platform that only blocks the Circle
+        RectanglePlatform,  //Is a platform that only blocks the Rectangle
+        CooperativeArea,
+        CircleOnlyArea,
+        RectangleOnlyArea,
     }
     
     

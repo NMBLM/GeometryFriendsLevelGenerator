@@ -5,80 +5,114 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Platform.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/01/01d80e3a9596baffedf18fac2e511315" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/08/08c6b3bdb93b55d359481b1e5beecff7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/09/094ac22513cd89059d3089c6e4b70f07" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0b/0b82c71ebdc9c9efdec3859e9a5b4206" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0f/0fe988dc7d00d3290213261884f97000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/17/178ae68ca5d63b5cf1f9bb51d2bb43d6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1a/1aed0025fed7e3f473c7c433ce85edf4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/20/202a8ffce5d7018c43f5ce65e2986785" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2d/2d95b40372a935516663d747c5fce77a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/31/3109a25c78fe6d9499debde458c8d908" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/33/33bb1694d943dc995ded82554e63c9cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/36/36f647651cab7eddb4b7e3b53a0babe9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3a/3a35a4a4a03d079f7313d043c341ac01" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3f/3f20b58067dafeb814164288e2e745d1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/47/479d80cb0e4d4171f7aa1446ec4ac578" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4c/4c56afd4878353df1d7df96d0f332889" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/52/5204d2669241d2d06ae5584aad1f282d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/54/5407e269b443de6832c5216dcdd21446" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/64/64ed03e8fffe304d7a2087888789ea86" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/65/65020ddf2423f0a031c71954167e0329" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6a/6afedf6f7b573382a54d63f6045647d2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6c/6c4e255c39bc316149319ffc4dd8ad27" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/72/72e7c6b5d335315c58ff8e3fb6b26bb7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/75/750b1e70b7f55f2a2b5e2e900705dc10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7a/7afdb037cb456c9c00ae71ebe3074f61" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7c/7cee79e3c3cdec19e68a59e1e55eb625" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7e/7edd2af83397e96510b253328634919d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7f6d6f39f437308364af1dcb449b0ad7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/83/83c9b0c6f96a2d7df4d7027d8bfe33a0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/86/8669e7106ed9849861695db9d3b4221b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/94e4b31c024315480c5f1ed7c1e42115" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9d/9da855927ab313f526de9eaca3cd7c59" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a5/a5be7d485804609ed85731f8458f2587" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a6/a6f76d4992dca968ddb209cdfc6652e2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/aa/aaf253ccc9c5d143d6884d16c3ec4b2f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ab/ab165d98b728fba33e1e1064ccf2dc9f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ab/abcbb4e346ddd8dc276595a77d7d5001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b3/b3cd3563a3dc07ff5e80f2b59415bf8d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b9/b9d3d3eefa92480dbfd3f9c760853e78" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ba/ba985a1e8d5f4297a944b81b228480d2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c8b47f22c6ccaa7ddefc4bac4db1bc37" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c8bddd4c996cb18328aa929be68adfc4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c8e148e21bac3623f14f5370932dedfc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cb/cb81cb6fd410306625e956c7d0de8dd1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/cc7aef22f5cf8a827d5808ae17563d5f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/cca1fded8e5b7d357f2456636823c954" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/ccf241e0567267e65659b369186bc564" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cf/cf0ae5db10be80c6090235e3a39136d6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cf/cf1ad5035837b925842eb9405ec95787" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d2/d2971fd76bf2085f6c80f68a1e344fbc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d3/d30463d4f9e4bb36bfb3d1413af9e08b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d3/d353a4deebe206562d5b52ddd847f0eb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d5/d51c8fb0ead33de982b4ee53ae63fc0e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d6/d6bd2eb8e6264d3728a76547b23a8132" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d7/d7e395b040be57c4a459e42354879d4c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d8/d859864a30712326511130c6201e46a1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d9/d9026df03aa0d0de8356d47adafa44d7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/df/df45d2c9ce047f477b142621ebfc0660" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e3/e3c34407acebec2142233911c0db208d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e3/e3e03580ec0d5022d6ac6ba148fd9dae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f9/f9593c3022137593fe2ffbaaaf40fb45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fa/fa7c30323a2cd69b1c764126bf8244de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/09/091d314d0a60a1e6d57449057a0d7e88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0b/0b811399b85a349b72841d1862c122c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0d/0d54c092699a086882283f71aeb8b18c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0f/0f18dd2a92ef1eb1a8daf630fd9fab89" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/13/137e7b062f1a30e260ba545e98b335a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/16/163dd9b750c33ccd04e43fa7ba5f663c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/16/165bfe7292a06cc79ab57c44e23e9a0a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/18/1844cc2afae5fb826e660855f9a8ff82" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1c/1c3866de88c26a7f2465e775537f1606" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1f/1f28261d7d43527bb465a97bc3cdd006" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/23/23b901868d3021481bb091d7c25fcbe8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/32/3209f781736185cd64aa9c92126cd798" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/33/33e743bae5a49efe684930299ee0454d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/35/352408159b0abb4f9d9d3598f2237bcd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/35/357a4fe8e72a972e0728220aaf33da0a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/38/383b6ef34a95bbd260de2c815820f52e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3c/3c043c6a8d2049566ec566ca15020316" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3d/3d4a0cd9596fd31413968ef3c992dd30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3d/3db0d2742f38ff5aba6fb91bcd546564" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3e/3ebd9405cfffd8ffc9dac0972c1c74b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/40/40ae2743c9e64cf1c3b364a6e59e00f6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/41/4153c710381ed17a4952b02c33a2e7aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/41/41bc4539c4b9cda6093e53b9e7d01c11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/41/41fb1691df32c8e2d7cb5d7d82e6418e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/43/43a6c9b484d654d936acda96573e9c2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/45/458fe2c81cfaea3394bb8c8cc6fb191c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/46/465a86f0571075f23c1e84dbdd021521" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/47/47079736597176d173ebec66a89e896c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/48/4805386fa57b48d976a1779e8613f146" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/49/4905aa342457376c26fb99b62fec6500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4b/4bc5a508d910b4e7e92120580d1554b3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/50/5061fde42517c372f4e3c4fe30616c27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/50/50a33b14f444d0a084eb31241c65c424" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/51/51f99634cd0c714da993eb718849ce5e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/57/574807f9ac5103da195848c0a4a8228d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5a/5aa29b9c1cf674644b745fe878f89464" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5d/5d156955063b4b8efb464daffed16cb0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/60/609f60847d0a51945a5f559feaeb052c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/61/616d1a2740c1921fdaee63228c31aeb2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/65/6501ecc5349fe4428b8c3ec274fee929" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/68/6818fa2d02c58d4f9eb16f05801ba074" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6a/6a28d1f03217652d9177cc39e1b8d7d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6b/6b3e6370be32bda3837ca04cfb6e3d2f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/71/71438c9e70a6def0ff2b35b4bd629850" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/74/74f34dcd24a3c5494210ed487835dbc1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/77/774023c80a17908f0ea6edae0586e137" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7a/7a0a71778aa83b30f2894f970f462357" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7e/7e73d37601b0f23b6b4f658cf6acdc03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7f9da3cc781e441e9e1fe96ca819c1a6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/86/86bc40b3cc37d4ca8e5284290e13afb9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8f/8f0a15728a96886b299183887cf64e58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/90/90e75c9ffeda7e3a33531f3dd3f2af5a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/90/90ec37f28acdfe945a7095150d6a3c57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/94/947d592c699104c235146177e95f90a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/96/96c2001c01fa04f58fb690cc200a67a5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/97/971b86204bb206ab1f7ef992fb4de797" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/98/980ee7f0ac8b1c7ef1783379a49d02d3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9a/9ab9d446664e9485b59e3b769574e4fa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a7/a7d20b71594f11a2ab56f1ec75d87783" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a8/a885754371e76f23fb247b4a05e58d3d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ac/ac14d2538401f95b2f1c0eb8bb9b313f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ac/ac4f44e985b384c90323b1eb6efb2549" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b6/b629850c711c8ad5fc0194f10c74e787" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bb/bb62eb1f84705327f10cd44174a04ae3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bf/bf1682dd4dafc64988d55b372e274eb2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bf/bf482ab82e16b4529648c823ac840b50" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c2b7b6263e24cfc62de3be0dd8858048" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c2/c2d121e6fe6a6133d13d34f7b1c6835d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c3/c3459e2bb03c7008c465e124d4c986cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c5/c5544c5226e14d3f4f6aebe79b069b34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c7/c7c20000f220fb3b835965ae0ee0cc68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ca/cad708e93596744999f1b8014609ce13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/cc3a35061ede6c4f5e2c562adc52b999" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cc/ccf51c44a74044aefeb280cd09ad5e60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d1/d12a4b37e51eee740bbcbe39ccce9135" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d1/d170e4d35c69d68a5bcc370c0c68f185" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d1/d1f74a9788d2e5fdb8c71f221b3106cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d2/d23539252847a086cbd030ae853d506e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d8/d8e866df9c1686fa8bb3fd9bcdc3a22f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e2/e262b4e81f7bbfd3f35bdf025fac9022" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e4/e4c3b095f010b5ff5b1aa6875ec72799" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ea/ea9ebccfe8997472affedde12ac576fa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ea/eacc22d129dca3376d7cd13d9aab3da1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ed/eda536b754e97de9027d476b9d76e47b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ed/edb07ce5ffb9d2c1c1e2178ae85c31ee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f2/f2dcb0c9d2dcd0b3a328c3c975057104" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f4/f4ff9b2134b9f6ade0779e015caae69b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f5/f54cc0a196d63b669019d1826a74a7a8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fa/fae02839c41baa5372f69411d70ac069" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fb/fbee01d9266f8701910ff4f044f74527" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/255b83-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/255b83-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/07f4bb-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/07f4bb-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,142 +122,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Level.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-              <folding>
-                <marker date="1583587968972" expanded="false" signature="6:81" ph="..." />
-                <marker date="1583587968972" expanded="true" signature="107:474" ph="{...}" />
-                <marker date="1583587968972" expanded="true" signature="114:282" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-                <marker date="1583587968972" expanded="true" signature="306:471" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
-              <folding>
-                <marker date="1583776955745" expanded="true" signature="6:115" ph="..." />
-                <marker date="1583776955745" expanded="true" signature="157:5108" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="185:5106" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="622:922" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="963:1433" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="1475:1999" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="1657:1742" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="1796:1887" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="2049:2143" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="2201:4110" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="2905:3039" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="3089:3232" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="3276:3472" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="3362:3458" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="3515:3714" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="3601:3700" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="3758:3900" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="3917:4073" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="4161:4613" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="4213:4388" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="4283:4357" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="4432:4590" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="4502:4576" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="4651:5100" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="4746:4815" ph="{...}" />
-                <marker date="1583776955745" expanded="true" signature="4859:4928" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-743">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <marker date="1583776899336" expanded="false" signature="6:47" ph="..." />
-                <marker date="1583776899336" expanded="true" signature="157:2675" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="193:2673" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="711:1134" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="974:1055" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="1184:1803" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="1221:1239" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="1272:1335" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="1414:1671" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="1449:1666" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="1855:1994" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="1890:1911" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="1944:1964" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="2031:2353" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="2135:2286" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="2242:2281" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="2390:2666" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="2502:2643" ph="{...}" />
-                <marker date="1583776899336" expanded="true" signature="2553:2592" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-              <folding>
-                <marker date="1583776935369" expanded="true" signature="55:357" ph="{...}" />
-                <marker date="1583776935369" expanded="true" signature="89:154" ph="{...}" />
-                <marker date="1583776935369" expanded="true" signature="185:340" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding>
-                <marker date="1583777200742" expanded="false" signature="6:146" ph="..." />
-                <marker date="1583777200742" expanded="true" signature="186:1192" ph="{...}" />
-                <marker date="1583777200742" expanded="true" signature="368:505" ph="{...}" />
-                <marker date="1583777200742" expanded="true" signature="563:1018" ph="{...}" />
-                <marker date="1583777200742" expanded="true" signature="631:801" ph="{...}" />
-                <marker date="1583777200742" expanded="true" signature="835:1003" ph="{...}" />
-                <marker date="1583777200742" expanded="true" signature="1065:1190" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/FitnessCalculator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-              <folding>
-                <marker date="1583777138648" expanded="true" signature="40:164" ph="{...}" />
-                <marker date="1583777138648" expanded="true" signature="86:162" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="11">
+              <caret line="224" column="13" lean-forward="true" selection-start-line="224" selection-start-column="13" selection-end-line="224" selection-end-column="13" />
               <folding>
-                <marker date="1583777272520" expanded="true" signature="40:227" ph="{...}" />
-                <marker date="1583777272520" expanded="true" signature="99:225" ph="{...}" />
-                <marker date="1583777272520" expanded="true" signature="177:219" ph="{...}" />
+                <marker date="1583894258319" expanded="false" signature="6:88" ph="..." />
+                <marker date="1583894258319" expanded="true" signature="130:12059" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="261:837" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="894:12057" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="1118:1888" ph="/* Common Factors for 1200 and 720 are The common factors are: ... */" />
+                <marker date="1583894258319" expanded="true" signature="1956:2949" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="1979:2101" ph="/* For now fix in BlockSize in 20 so 60x, 36y ... */" />
+                <marker date="1583894258319" expanded="true" signature="2579:2873" ph="/* Debug.Log(&quot;xGridLen: &quot; + xGridLen + &quot; yGridLen: &quot; + yGridLen); ... */" />
+                <marker date="1583894258319" expanded="true" signature="3012:3164" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="3210:4756" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="3270:4732" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="3679:3825" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="3913:4718" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="4024:4679" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="4097:4657" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="4814:5992" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="5164:5969" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="5432:5670" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="5532:5624" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="5742:5954" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="5809:5936" ph="/* list.Add(new Tuple&lt;Point,int&gt;(new Point(x, y),-1)); ... */" />
+                <marker date="1583894258319" expanded="true" signature="6113:7550" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="6171:6229" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="6260:7539" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="7614:8757" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="7956:8747" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="8221:8448" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="8313:8402" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="8520:8732" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="8587:8714" ph="/* list.Add(new Tuple&lt;Point,int&gt;(new Point(x, y),-1)); ... */" />
+                <marker date="1583894258319" expanded="true" signature="8813:10323" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="8871:8929" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="8960:10313" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="10385:10584" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="10629:12031" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="10687:10745" ph="{...}" />
+                <marker date="1583894258319" expanded="true" signature="10776:12021" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ReachabilityViewer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+              <folding>
+                <marker date="1583894144855" expanded="false" signature="6:116" ph="..." />
+                <marker date="1583894144855" expanded="true" signature="217:4532" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="851:1130" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="1188:1713" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="1233:1707" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="1294:1450" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="1353:1436" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="1749:1783" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="1813:4530" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="1864:3124" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="1923:3114" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="2212:3100" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="3337:3817" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="3401:3807" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="4034:4524" ph="{...}" />
+                <marker date="1583894144855" expanded="true" signature="4097:4514" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -232,38 +200,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="55" column="78" selection-start-line="55" selection-start-column="78" selection-end-line="55" selection-end-column="78" />
+            <state relative-caret-position="233">
+              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding>
-                <marker date="1583776969091" expanded="false" signature="6:35" ph="..." />
-                <marker date="1583776969091" expanded="true" signature="77:1838" ph="{...}" />
-                <marker date="1583776969091" expanded="true" signature="84:252" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-                <marker date="1583776969091" expanded="true" signature="298:1836" ph="{...}" />
-                <marker date="1583776969091" expanded="true" signature="487:757" ph="{...}" />
-                <marker date="1583776969091" expanded="true" signature="833:1045" ph="{...}" />
-                <marker date="1583776969091" expanded="true" signature="1201:1409" ph="{...}" />
-                <marker date="1583776969091" expanded="true" signature="1456:1594" ph="{...}" />
-                <marker date="1583776969091" expanded="true" signature="1646:1830" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-              <folding>
-                <marker date="1583776943922" expanded="false" signature="6:35" ph="..." />
-                <marker date="1583776943922" expanded="true" signature="77:1265" ph="{...}" />
-                <marker date="1583776943922" expanded="true" signature="89:257" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-                <marker date="1583776943922" expanded="true" signature="307:1263" ph="{...}" />
-                <marker date="1583776943922" expanded="true" signature="429:569" ph="{...}" />
-                <marker date="1583776943922" expanded="true" signature="651:752" ph="{...}" />
-                <marker date="1583776943922" expanded="true" signature="840:952" ph="{...}" />
-                <marker date="1583776943922" expanded="true" signature="1006:1105" ph="{...}" />
-                <marker date="1583776943922" expanded="true" signature="1158:1257" ph="{...}" />
+                <marker date="1583887096146" expanded="false" signature="6:35" ph="..." />
+                <marker date="1583887096146" expanded="true" signature="77:1832" ph="{...}" />
+                <marker date="1583887096146" expanded="true" signature="84:252" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+                <marker date="1583887096146" expanded="true" signature="298:1830" ph="{...}" />
+                <marker date="1583887096146" expanded="true" signature="484:751" ph="{...}" />
+                <marker date="1583887096146" expanded="true" signature="827:1039" ph="{...}" />
+                <marker date="1583887096146" expanded="true" signature="1195:1403" ph="{...}" />
+                <marker date="1583887096146" expanded="true" signature="1450:1588" ph="{...}" />
+                <marker date="1583887096146" expanded="true" signature="1640:1824" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -272,18 +220,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="83" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="83" />
+            <state relative-caret-position="240">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
-                <marker date="1583776983271" expanded="true" signature="6:70" ph="..." />
-                <marker date="1583776983271" expanded="true" signature="112:1228" ph="{...}" />
-                <marker date="1583776983271" expanded="true" signature="119:287" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-                <marker date="1583776983271" expanded="true" signature="321:1226" ph="{...}" />
-                <marker date="1583776983271" expanded="true" signature="437:576" ph="{...}" />
-                <marker date="1583776983271" expanded="true" signature="646:746" ph="{...}" />
-                <marker date="1583776983271" expanded="true" signature="827:933" ph="{...}" />
-                <marker date="1583776983271" expanded="true" signature="979:1064" ph="{...}" />
-                <marker date="1583776983271" expanded="true" signature="1116:1220" ph="{...}" />
+                <marker date="1583893132057" expanded="false" signature="6:70" ph="..." />
+                <marker date="1583893132057" expanded="true" signature="112:1226" ph="{...}" />
+                <marker date="1583893132057" expanded="true" signature="119:287" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+                <marker date="1583893132057" expanded="true" signature="321:1224" ph="{...}" />
+                <marker date="1583893132057" expanded="true" signature="436:574" ph="{...}" />
+                <marker date="1583893132057" expanded="true" signature="644:744" ph="{...}" />
+                <marker date="1583893132057" expanded="true" signature="825:931" ph="{...}" />
+                <marker date="1583893132057" expanded="true" signature="977:1062" ph="{...}" />
+                <marker date="1583893132057" expanded="true" signature="1114:1218" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -309,14 +257,16 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Level.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/FitnessCalculator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Coordinate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Platform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03761.00/Source/ndp/fx/src/commonui/System/Drawing/Point.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Level.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReachabilityViewer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -325,12 +275,14 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/FitnessCalculator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Platform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ReachabilityViewer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs" />
       </list>
     </option>
@@ -347,7 +299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
@@ -383,6 +334,7 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,11 +383,12 @@
       <workItem from="1583588603108" duration="4166000" />
       <workItem from="1583602688094" duration="1715000" />
       <workItem from="1583766669544" duration="6502000" />
+      <workItem from="1583873712544" duration="17269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12383000" />
+    <option name="totallyTimeSpent" value="29652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,7 +402,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -506,24 +459,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Platform.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <marker date="1583591183225" expanded="true" signature="25:280" ph="{...}" />
-            <marker date="1583591183225" expanded="true" signature="63:133" ph="{...}" />
-            <marker date="1583591183225" expanded="true" signature="169:278" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Level.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding>
-            <marker date="1583587968972" expanded="false" signature="6:81" ph="..." />
+            <marker date="1583587968972" expanded="true" signature="6:81" ph="..." />
             <marker date="1583587968972" expanded="true" signature="107:474" ph="{...}" />
             <marker date="1583587968972" expanded="true" signature="114:282" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
             <marker date="1583587968972" expanded="true" signature="306:471" ph="{...}" />
@@ -533,10 +474,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneticAlgorithm.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-743">
+        <state relative-caret-position="345">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <marker date="1583776899336" expanded="false" signature="6:47" ph="..." />
+            <marker date="1583776899336" expanded="false" signature="6:115" ph="..." />
             <marker date="1583776899336" expanded="true" signature="157:2675" ph="{...}" />
             <marker date="1583776899336" expanded="true" signature="193:2673" ph="{...}" />
             <marker date="1583776899336" expanded="true" signature="711:1134" ph="{...}" />
@@ -562,7 +503,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/Gene.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
             <marker date="1583776935369" expanded="true" signature="55:357" ph="{...}" />
             <marker date="1583776935369" expanded="true" signature="89:154" ph="{...}" />
@@ -571,99 +512,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-          <folding>
-            <marker date="1583776943922" expanded="false" signature="6:35" ph="..." />
-            <marker date="1583776943922" expanded="true" signature="77:1265" ph="{...}" />
-            <marker date="1583776943922" expanded="true" signature="89:257" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-            <marker date="1583776943922" expanded="true" signature="307:1263" ph="{...}" />
-            <marker date="1583776943922" expanded="true" signature="429:569" ph="{...}" />
-            <marker date="1583776943922" expanded="true" signature="651:752" ph="{...}" />
-            <marker date="1583776943922" expanded="true" signature="840:952" ph="{...}" />
-            <marker date="1583776943922" expanded="true" signature="1006:1105" ph="{...}" />
-            <marker date="1583776943922" expanded="true" signature="1158:1257" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
-          <folding>
-            <marker date="1583776955745" expanded="true" signature="6:115" ph="..." />
-            <marker date="1583776955745" expanded="true" signature="157:5108" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="185:5106" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="622:922" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="963:1433" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="1475:1999" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="1657:1742" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="1796:1887" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="2049:2143" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="2201:4110" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="2905:3039" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="3089:3232" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="3276:3472" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="3362:3458" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="3515:3714" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="3601:3700" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="3758:3900" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="3917:4073" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="4161:4613" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="4213:4388" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="4283:4357" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="4432:4590" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="4502:4576" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="4651:5100" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="4746:4815" ph="{...}" />
-            <marker date="1583776955745" expanded="true" signature="4859:4928" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="55" column="78" selection-start-line="55" selection-start-column="78" selection-end-line="55" selection-end-column="78" />
-          <folding>
-            <marker date="1583776969091" expanded="false" signature="6:35" ph="..." />
-            <marker date="1583776969091" expanded="true" signature="77:1838" ph="{...}" />
-            <marker date="1583776969091" expanded="true" signature="84:252" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-            <marker date="1583776969091" expanded="true" signature="298:1836" ph="{...}" />
-            <marker date="1583776969091" expanded="true" signature="487:757" ph="{...}" />
-            <marker date="1583776969091" expanded="true" signature="833:1045" ph="{...}" />
-            <marker date="1583776969091" expanded="true" signature="1201:1409" ph="{...}" />
-            <marker date="1583776969091" expanded="true" signature="1456:1594" ph="{...}" />
-            <marker date="1583776969091" expanded="true" signature="1646:1830" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="83" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="83" />
-          <folding>
-            <marker date="1583776983271" expanded="true" signature="6:70" ph="..." />
-            <marker date="1583776983271" expanded="true" signature="112:1228" ph="{...}" />
-            <marker date="1583776983271" expanded="true" signature="119:287" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
-            <marker date="1583776983271" expanded="true" signature="321:1226" ph="{...}" />
-            <marker date="1583776983271" expanded="true" signature="437:576" ph="{...}" />
-            <marker date="1583776983271" expanded="true" signature="646:746" ph="{...}" />
-            <marker date="1583776983271" expanded="true" signature="827:933" ph="{...}" />
-            <marker date="1583776983271" expanded="true" signature="979:1064" ph="{...}" />
-            <marker date="1583776983271" expanded="true" signature="1116:1220" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Generator.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="495">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding>
             <marker date="1583777200742" expanded="false" signature="6:146" ph="..." />
             <marker date="1583777200742" expanded="true" signature="186:1192" ph="{...}" />
@@ -678,8 +530,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/FitnessCalculator.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
             <marker date="1583777138648" expanded="true" signature="40:164" ph="{...}" />
             <marker date="1583777138648" expanded="true" signature="86:162" ph="{...}" />
@@ -687,14 +539,181 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/Platform.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <marker date="1583877272595" expanded="true" signature="25:461" ph="{...}" />
+            <marker date="1583877272595" expanded="true" signature="63:314" ph="{...}" />
+            <marker date="1583877272595" expanded="true" signature="350:459" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGene.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <marker date="1583885991556" expanded="false" signature="6:35" ph="..." />
+            <marker date="1583885991556" expanded="true" signature="77:1263" ph="{...}" />
+            <marker date="1583885991556" expanded="true" signature="89:257" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+            <marker date="1583885991556" expanded="true" signature="307:1261" ph="{...}" />
+            <marker date="1583885991556" expanded="true" signature="428:567" ph="{...}" />
+            <marker date="1583885991556" expanded="true" signature="649:750" ph="{...}" />
+            <marker date="1583885991556" expanded="true" signature="838:950" ph="{...}" />
+            <marker date="1583885991556" expanded="true" signature="1004:1103" ph="{...}" />
+            <marker date="1583885991556" expanded="true" signature="1156:1255" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <marker date="1583887633427" expanded="false" signature="6:115" ph="..." />
+            <marker date="1583887633427" expanded="true" signature="157:5108" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="185:5106" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="622:922" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="963:1433" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="1475:1999" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="1657:1742" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="1796:1887" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="2049:2143" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="2201:4110" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="2905:3039" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="3089:3232" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="3276:3472" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="3362:3458" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="3515:3714" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="3601:3700" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="3758:3900" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="3917:4073" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="4161:4613" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="4213:4388" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="4283:4357" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="4432:4590" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="4502:4576" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="4651:5100" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="4746:4815" ph="{...}" />
+            <marker date="1583887633427" expanded="true" signature="4859:4928" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03761.00/Source/ndp/fx/src/commonui/System/Drawing/Point.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ReachabilityViewer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding>
+            <marker date="1583894144855" expanded="false" signature="6:116" ph="..." />
+            <marker date="1583894144855" expanded="true" signature="217:4532" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="851:1130" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="1188:1713" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="1233:1707" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="1294:1450" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="1353:1436" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="1749:1783" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="1813:4530" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="1864:3124" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="1923:3114" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="2212:3100" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="3337:3817" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="3401:3807" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="4034:4524" ph="{...}" />
+            <marker date="1583894144855" expanded="true" signature="4097:4514" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGene.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <marker date="1583887096146" expanded="false" signature="6:35" ph="..." />
+            <marker date="1583887096146" expanded="true" signature="77:1832" ph="{...}" />
+            <marker date="1583887096146" expanded="true" signature="84:252" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+            <marker date="1583887096146" expanded="true" signature="298:1830" ph="{...}" />
+            <marker date="1583887096146" expanded="true" signature="484:751" ph="{...}" />
+            <marker date="1583887096146" expanded="true" signature="827:1039" ph="{...}" />
+            <marker date="1583887096146" expanded="true" signature="1195:1403" ph="{...}" />
+            <marker date="1583887096146" expanded="true" signature="1450:1588" ph="{...}" />
+            <marker date="1583887096146" expanded="true" signature="1640:1824" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGene.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <marker date="1583893132057" expanded="false" signature="6:70" ph="..." />
+            <marker date="1583893132057" expanded="true" signature="112:1226" ph="{...}" />
+            <marker date="1583893132057" expanded="true" signature="119:287" ph="/* Playable Area: top left corner X=40 and Y=40  bottom right corner X=1240, Y=760 ... */" />
+            <marker date="1583893132057" expanded="true" signature="321:1224" ph="{...}" />
+            <marker date="1583893132057" expanded="true" signature="436:574" ph="{...}" />
+            <marker date="1583893132057" expanded="true" signature="644:744" ph="{...}" />
+            <marker date="1583893132057" expanded="true" signature="825:931" ph="{...}" />
+            <marker date="1583893132057" expanded="true" signature="977:1062" ph="{...}" />
+            <marker date="1583893132057" expanded="true" signature="1114:1218" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/ReachabilityFitness.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="11">
+          <caret line="224" column="13" lean-forward="true" selection-start-line="224" selection-start-column="13" selection-end-line="224" selection-end-column="13" />
           <folding>
-            <marker date="1583777272520" expanded="true" signature="40:227" ph="{...}" />
-            <marker date="1583777272520" expanded="true" signature="99:225" ph="{...}" />
-            <marker date="1583777272520" expanded="true" signature="177:219" ph="{...}" />
+            <marker date="1583894258319" expanded="false" signature="6:88" ph="..." />
+            <marker date="1583894258319" expanded="true" signature="130:12059" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="261:837" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="894:12057" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="1118:1888" ph="/* Common Factors for 1200 and 720 are The common factors are: ... */" />
+            <marker date="1583894258319" expanded="true" signature="1956:2949" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="1979:2101" ph="/* For now fix in BlockSize in 20 so 60x, 36y ... */" />
+            <marker date="1583894258319" expanded="true" signature="2579:2873" ph="/* Debug.Log(&quot;xGridLen: &quot; + xGridLen + &quot; yGridLen: &quot; + yGridLen); ... */" />
+            <marker date="1583894258319" expanded="true" signature="3012:3164" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="3210:4756" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="3270:4732" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="3679:3825" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="3913:4718" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="4024:4679" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="4097:4657" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="4814:5992" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="5164:5969" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="5432:5670" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="5532:5624" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="5742:5954" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="5809:5936" ph="/* list.Add(new Tuple&lt;Point,int&gt;(new Point(x, y),-1)); ... */" />
+            <marker date="1583894258319" expanded="true" signature="6113:7550" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="6171:6229" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="6260:7539" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="7614:8757" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="7956:8747" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="8221:8448" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="8313:8402" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="8520:8732" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="8587:8714" ph="/* list.Add(new Tuple&lt;Point,int&gt;(new Point(x, y),-1)); ... */" />
+            <marker date="1583894258319" expanded="true" signature="8813:10323" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="8871:8929" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="8960:10313" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="10385:10584" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="10629:12031" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="10687:10745" ph="{...}" />
+            <marker date="1583894258319" expanded="true" signature="10776:12021" ph="{...}" />
           </folding>
         </state>
       </provider>

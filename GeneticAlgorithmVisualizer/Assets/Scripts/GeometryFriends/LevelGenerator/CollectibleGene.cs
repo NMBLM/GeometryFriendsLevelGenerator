@@ -10,13 +10,13 @@ namespace GeometryFriends.LevelGenerator
     
     public class CollectibleGene : Gene
     {
-        private Point position;
+        public Point position;
         
         //Random Constructor
         public CollectibleGene(Random random)
         {
             type = GeneType.Collectible;
-            position = new Point(random.Next(40, 1240),random.Next(40, 1240));
+            position = new Point(random.Next(40, 1240),random.Next(40, 760));
         }
 
         //Copy Constructor

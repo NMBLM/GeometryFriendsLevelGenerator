@@ -8,13 +8,13 @@ namespace GeometryFriends.LevelGenerator
     //Max and Min Area: top left corner X=0 and Y=0  bottom right corner X=1280, Y=800
     public class SpawnGene : Gene
     {
-        private Point position;
+        public Point position;
         
         //Random Constructor
         public SpawnGene(Random random)
         {
             type = GeneType.Spawn;
-            this.position = new Point(random.Next(40, 1240),random.Next(40, 1240));
+            this.position = new Point(random.Next(40, 1140),random.Next(40, 660));
         }
 
         //Copy Constructor

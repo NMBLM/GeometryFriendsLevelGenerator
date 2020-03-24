@@ -8,6 +8,7 @@ namespace GeometryFriends
         CooperativeArea,
         CircleOnlyArea,
         RectangleOnlyArea,
+        NotPlatform,
     }
     
     

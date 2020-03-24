@@ -4,7 +4,6 @@ using GeometryFriends.LevelGenerator;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
-
 public class ReachabilityViewer : MonoBehaviour
 {
 
@@ -19,7 +18,7 @@ public class ReachabilityViewer : MonoBehaviour
 
     
     public LevelDNA level;
-    public ReachabilityFitness h;
+    public OldReachHeuristic h;
     public Random random;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +26,7 @@ public class ReachabilityViewer : MonoBehaviour
         random = new Random();
         
         level = new LevelDNA(random, TmpFit, init: true);
-        h = new ReachabilityFitness(blockSize:granularity);
+        h = new OldReachHeuristic(blockSize:granularity);
         h.CalculateFitness(level);
 
         CreateGrid();
@@ -48,7 +47,7 @@ public class ReachabilityViewer : MonoBehaviour
                 }
             }
             level = new LevelDNA(random, TmpFit, init: true);
-            h = new ReachabilityFitness(blockSize:granularity);
+            h = new OldReachHeuristic(blockSize:granularity);
             h.CalculateFitness(level);
 
             CreateGrid();
@@ -84,6 +83,7 @@ public class ReachabilityViewer : MonoBehaviour
                         break;
                     case BlockType.CircleCanReach:
                         mat.material = circleReachMaterial;
+                        mat.material.color = (float)(h.cellGrid[i,j].jumpStrength+16)/40 * Color.yellow;
                         break;
                     case BlockType.CooperativeCanReach:
                         mat.material = cooperativeReachMaterial;
@@ -95,11 +95,11 @@ public class ReachabilityViewer : MonoBehaviour
             }
         }
         
-        int x = (int) ((level.rectangleSpawn.position.X - 40)/ h.blockSize);
-        int y = (int) ((level.rectangleSpawn.position.Y - 40)/ h.blockSize);
-        for (int i = 0; i < 100/h.blockSize; i++)
+        int x = (int) ((level.rectangleSpawn.position.X - 40)/ h.blockSize)  + 2;
+        int y = (int) ((level.rectangleSpawn.position.Y - 40)/ h.blockSize)  + 2;
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < 100/h.blockSize; j++)
+            for (int j = 0; j < 3; j++)
             {
                 var recSpawnBlock = 
                     Instantiate(gridBlockPrefab, new Vector3(0.5f*x + 0.5f *i, -0.5f*y - 0.5f *j, -0.5f), Quaternion.identity);
@@ -109,11 +109,8 @@ public class ReachabilityViewer : MonoBehaviour
             }
         }
         
-        x = (int) ((level.circleSpawn.position.X - 40)/ h.blockSize);
-        y = (int) ((level.circleSpawn.position.Y - 40)/ h.blockSize);
-        
-        
-
+        x = (int) ((level.circleSpawn.position.X - 40)/ h.blockSize)  + 2;
+        y = (int) ((level.circleSpawn.position.Y - 40)/ h.blockSize)  + 2;
         for (int i = 0; i < 80/h.blockSize; i++)
         {
             for (int j = 0; j < 80/h.blockSize; j++)

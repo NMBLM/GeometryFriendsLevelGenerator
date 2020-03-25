@@ -16,9 +16,8 @@ namespace GeometryFriends.LevelGenerator
             public bool traversedRectangleLeft = false;
             public bool traversedRectangleRight = false;
             public bool reachesCircle = false;
-            public bool traversedCircleLeft = false;
-            public bool traversedCircleRight = false;
-            public int jumpStrength = 0;
+            public bool reachesCoop = false;
+            public int jumpStrength = -1;
             //public bool cooperativeExclusive;
         }
         public float blockSize;
@@ -74,8 +73,10 @@ namespace GeometryFriends.LevelGenerator
             InitFits();
             Debug.Log("CalcRecReach");
             RectangleReachability(level);
-            Debug.Log("CalcCircReach");
-            CircleReachability(level);
+            //Debug.Log("CalcCircReach");
+            //CircleReachability(level);
+            //Debug.Log("CalcCoopReach");
+            CoopReachability(level);
             CellGridToBlockGrid();
             return 0;
         }
@@ -289,7 +290,7 @@ namespace GeometryFriends.LevelGenerator
            
         }
 
-         public void CircleReachability(LevelDNA level)
+        public void CircleReachability(LevelDNA level)
         {
             //plus 3 because boundary and to center
             int x = (int) ((level.circleSpawn.position.X - 40) / this.blockSize) + 4;
@@ -362,7 +363,7 @@ namespace GeometryFriends.LevelGenerator
                                 }
                             }
 
-                            if (cellGrid[x, y].jumpStrength - 1 == 0)
+                            if (cellGrid[x, y].jumpStrength - 1 == 0 || !cellGrid[x, y-1].fitsCircle)
                             {
                                 list.Add(new Tuple<Point, int>(new Point(x + dir, y), dir));
                             }
@@ -375,11 +376,9 @@ namespace GeometryFriends.LevelGenerator
                             switch (dir)
                             {
                                 case -1:
-                                    cellGrid[x, y].traversedCircleLeft = true;
                                     list.Add(new Tuple<Point, int>(new Point(x + dir, y + 1), dir));
                                     break;
                                 case 1:
-                                    cellGrid[x, y].traversedCircleRight = true;
                                     list.Add(new Tuple<Point, int>(new Point(x + dir, y + 1), dir));
                                     break;
                             }
@@ -393,44 +392,141 @@ namespace GeometryFriends.LevelGenerator
             Debug.Log(list.Count +" ; "+ cellsChecked + " : "+ freefalling);
         }
 
-         public bool TmpFunc(int x, int y, int dir)
-         {
-             
-             /**/
-             if (cellGrid[x, y].reachesCircle)
-             {
-                 if (dir == -1)
-                 {
-                     if (!cellGrid[x, y].traversedCircleLeft)
-                     {
-                         cellGrid[x, y].traversedCircleLeft = true;
-                     }
-                     else
-                     {
-                         return false;
-                     }
-                 }
-                 else if (dir == 1)
-                 {
-                     if (!cellGrid[x, y].traversedCircleRight)
-                     {
-                         cellGrid[x, y].traversedCircleRight = true;
-                     }
-                     else
-                     {
-                         return false;
-                     }
-                 }
-                 else
-                 {
-                     return true;
-                 }
+        public void CoopReachability(LevelDNA level)
+        {
+            //plus 3 because boundary and to center
+            int x = (int) ((level.circleSpawn.position.X - 40) / this.blockSize) + 4;
+            int y = (int) ((level.circleSpawn.position.Y - 40) / this.blockSize) + 4;
+            int cellsChecked = 0;
+            int freefalling = 0;
+            List<Tuple<Point,int>> list = new List<Tuple<Point,int>>();
+            list.Add(new Tuple<Point,int>(new Point(x, y),0));
+            while (list.Count > 0 && cellsChecked < 10000)
+            {
+                cellsChecked += 1;
+                var startPos = list[0];
+                x = startPos.Item1.X;
+                y = startPos.Item1.Y;
+                var dir = startPos.Item2;
+                list.RemoveAt(0);
+                if (x >= xGridLen || y >= yGridLen || x < 0 || y <0)
+                {
+                    continue;
+                }
 
-                 return false;
-             }
-             /**/
-             return true;
-         }
+                if (cellGrid[x, y].jumpStrength == 30)
+                {
+                    continue;
+                }
+                /**/
+                if (cellGrid[x, y].fitsCircle)
+                {
+                    cellGrid[x, y].reachesCircle = true;
+                    cellGrid[x, y].reachesCoop = true;
+                    //Check On the Ground
+                    if (!cellGrid[x, y + 1].fitsCircle)
+                    {
+                        if (cellGrid[x, y].reachesRectangle)
+                        {
+                            cellGrid[x, y].jumpStrength = 30;
+
+                            if (cellGrid[x - 1, y].jumpStrength < 30)
+                            {
+                                list.Add(new Tuple<Point, int>(new Point(x - 1, y), -1));
+                            }
+
+                            if (cellGrid[x + 1, y].jumpStrength < 30)
+                            {
+                                list.Add(new Tuple<Point, int>(new Point(x + 1, y), 1));
+                            }
+
+                            for (int i = -1; i < 1; i++)
+                            {
+                                if (cellGrid[x + i, y - 1].jumpStrength < 29)
+                                {
+                                    cellGrid[x + i, y - 1].jumpStrength = 29;
+                                    list.Add(new Tuple<Point, int>(new Point(x + i, y - 1), i));
+                                }
+                            }  
+                        }
+                        else
+                        {
+                            //if(!(cellGrid[x, y].jumpStrength >= 24)) continue;
+                            cellGrid[x, y].jumpStrength = 24;
+
+                            if (cellGrid[x - 1, y].jumpStrength < 24)
+                            {
+                                list.Add(new Tuple<Point, int>(new Point(x - 1, y), -1));
+                            }
+
+                            if (cellGrid[x + 1, y].jumpStrength < 24)
+                            {
+                                list.Add(new Tuple<Point, int>(new Point(x + 1, y), 1));
+                            }
+
+                            for (int i = -1; i < 1; i++)
+                            {
+                                if (cellGrid[x + i, y - 1].jumpStrength < 23)
+                                {
+                                    cellGrid[x + i, y - 1].jumpStrength = 23;
+                                    list.Add(new Tuple<Point, int>(new Point(x + i, y - 1), i));
+                                }
+                            }
+                        }
+                    }
+                    /**/
+                    /**/
+                    else // Mid-air
+                    {
+                        /**/
+                        //if mid jump
+                        if (cellGrid[x, y].jumpStrength > 0 && cellGrid[x, y].jumpStrength < 30)
+                        {
+                            for (int j = -1; j <= 1; j++)
+                            {
+                                
+                                if (cellGrid[x + j, y - 1].jumpStrength < cellGrid[x, y].jumpStrength - 1)
+                                {
+                                    cellGrid[x + j, y - 1].jumpStrength = cellGrid[x, y].jumpStrength - 1;
+                                    list.Add(new Tuple<Point, int>(new Point(x + j, y - 1), j));
+                                }
+                            }
+
+                            if ((cellGrid[x, y].jumpStrength - 1 == 0 || !cellGrid[x, y-1].fitsCircle) 
+                                && (cellGrid[x + dir, y].jumpStrength < 1))
+                            {
+                                Debug.Log("To fall x= " + x + " y= " + y + " jS= " + cellGrid[x + dir, y].jumpStrength);
+                                list.Add(new Tuple<Point, int>(new Point(x + dir, y), dir));
+                            }
+                        }
+                        else // free fall
+                        /**/
+                        {
+                            Debug.Log("Freefall");
+                            freefalling += 1;
+                            list.Add(new Tuple<Point,int>(new Point(x, y+1),0));
+                            /**/
+                            if (dir != 0)
+                            {
+                                if (cellGrid[x + dir, y + 1].fitsCircle)
+                                {
+                                    list.Add(new Tuple<Point, int>(new Point(x + dir, y + 1), dir));
+                                }
+                                else
+                                {
+                                    list.Add(new Tuple<Point, int>(new Point(x - dir, y + 1), -dir));
+                                }
+                            }
+                        }
+                       
+                    }
+                    /**/
+                }
+
+            }
+            Debug.Log(list.Count +" ; "+ cellsChecked + " : "+ freefalling);
+        }
+
         public void CellGridToBlockGrid()
         {
             grid = new BlockType[xGridLen,yGridLen];

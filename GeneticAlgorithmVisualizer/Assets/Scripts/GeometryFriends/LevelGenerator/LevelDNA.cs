@@ -24,9 +24,18 @@ namespace GeometryFriends.LevelGenerator
             this.fitness = -1;
             this.random = random;
             this.fitnessFunction = fitnessFunction;
-            if(init) InitGenes();
+            if (init)
+            {
+                InitGenes();
+            }
+            else
+            {
+                rectangleSpawn = new SpawnGene(random);
+                circleSpawn = new SpawnGene(random);
+            }
             
         }
+        
 
         public LevelDNA(LevelDNA other)
         {

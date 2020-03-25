@@ -24,8 +24,10 @@ public class ReachabilityViewer : MonoBehaviour
     void Start()
     {
         random = new Random();
-        
+       
         level = new LevelDNA(random, TmpFit, init: true);
+        //level = new LevelDNA(random, TmpFit, init: false);
+        Debug.Log("Level: " + level.Description());
         h = new OldReachHeuristic(blockSize:granularity);
         h.CalculateFitness(level);
 
@@ -47,6 +49,7 @@ public class ReachabilityViewer : MonoBehaviour
                 }
             }
             level = new LevelDNA(random, TmpFit, init: true);
+            Debug.Log("Level: " + level.Description());
             h = new OldReachHeuristic(blockSize:granularity);
             h.CalculateFitness(level);
 

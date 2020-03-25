@@ -27,6 +27,8 @@
             <e p="Platform.cs" t="Include" />
             <e p="WithGS" t="Include">
               <e p="LevelChromosome.cs" t="Include" />
+              <e p="LevelPopulation.cs" t="Include" />
+              <e p="LevelSampleController.cs" t="Include" />
               <e p="ObjectPhenotypeEntity.cs" t="Include" />
             </e>
           </e>

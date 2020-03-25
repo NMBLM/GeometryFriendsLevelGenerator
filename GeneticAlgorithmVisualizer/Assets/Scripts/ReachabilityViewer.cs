@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using GeometryFriends.LevelGenerator;
+using GeometryFriends.WithGS;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = System.Random;
@@ -13,6 +14,7 @@ public class ReachabilityViewer : MonoBehaviour
     [SerializeField] private Material circleReachMaterial;
     [SerializeField] private Material cooperativeReachMaterial;
     [SerializeField] private Material bothReachMaterial;
+    [SerializeField] private Material collectibleMaterial;
     [SerializeField] private GameObject gridBlockPrefab;
     [SerializeField] private float granularity = 20f;
 
@@ -25,12 +27,16 @@ public class ReachabilityViewer : MonoBehaviour
     {
         random = new Random();
        
-        level = new LevelDNA(random, TmpFit, init: true);
+        var chromosome = new LevelChromosome();
+        Debug.Log(chromosome.ToString());
+        level = chromosome.GetLevelDNA();
+        //level = new LevelDNA(random, TmpFit, init: true);
         //level = new LevelDNA(random, TmpFit, init: false);
+        
         Debug.Log("Level: " + level.Description());
         h = new OldReachHeuristic(blockSize:granularity);
         h.CalculateFitness(level);
-
+        h.CellGridToBlockGrid();
         CreateGrid();
         
         //Debug.Log(level.Description());
@@ -48,10 +54,14 @@ public class ReachabilityViewer : MonoBehaviour
                     Destroy(child.gameObject);
                 }
             }
-            level = new LevelDNA(random, TmpFit, init: true);
+            var chromosome = new LevelChromosome();
+            Debug.Log(chromosome.ToString());
+            level = chromosome.GetLevelDNA();
+            //level = new LevelDNA(random, TmpFit, init: true);
             Debug.Log("Level: " + level.Description());
             h = new OldReachHeuristic(blockSize:granularity);
             h.CalculateFitness(level);
+            h.CellGridToBlockGrid();
 
             CreateGrid();
         
@@ -90,6 +100,7 @@ public class ReachabilityViewer : MonoBehaviour
                         break;
                     case BlockType.CooperativeCanReach:
                         mat.material = cooperativeReachMaterial;
+                        mat.material.color = (float)(h.cellGrid[i,j].jumpStrength+16)/40 * Color.cyan;
                         break;
                     case BlockType.BothCanReach:
                         mat.material = bothReachMaterial;
@@ -124,6 +135,17 @@ public class ReachabilityViewer : MonoBehaviour
                 var circleSpawnMat = circleSpawnBlock.GetComponent<Renderer>();
                 circleSpawnMat.material = circleReachMaterial;
             }
+        }
+
+        foreach (var col in level.collectibles)
+        {
+            x = (int) ((col.position.X - 40)/ h.blockSize)  + 2;
+            y = (int) ((col.position.Y - 40)/ h.blockSize)  + 2;
+            var collectibleBlock =
+                Instantiate(gridBlockPrefab, new Vector3(0.5f*x, -0.5f*y, -0.5f), Quaternion.identity);
+            collectibleBlock.transform.parent = this.gameObject.transform;
+            var circleSpawnMat = collectibleBlock.GetComponent<Renderer>();
+            circleSpawnMat.material = collectibleMaterial;
         }
     }
 }

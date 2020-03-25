@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using UnityEngine;
 using Random = System.Random;
@@ -32,11 +33,11 @@ namespace GeometryFriends.LevelGenerator
             {
                 rectangleSpawn = new SpawnGene(random);
                 circleSpawn = new SpawnGene(random);
+                this.collectibles.Add(new CollectibleGene(random));
             }
             
         }
         
-
         public LevelDNA(LevelDNA other)
         {
             this.fitness = other.fitness;
@@ -46,7 +47,16 @@ namespace GeometryFriends.LevelGenerator
             this.collectibles = other.collectibles.ToList();
             this.rectangleSpawn = new SpawnGene(other.rectangleSpawn);
             this.circleSpawn = new SpawnGene(other.circleSpawn);
-            Debug.Log(this.rectangleSpawn.Description());
+        }
+        public LevelDNA(List<PlatformGene> plats,List<CollectibleGene> coll, Point recSpawn, Point circSpawn)
+        {
+            this.fitness = 0;
+            this.random = null;
+            this.fitnessFunction = null;
+            this.platforms = plats;
+            this.collectibles = coll;
+            this.rectangleSpawn = new SpawnGene(recSpawn);
+            this.circleSpawn = new SpawnGene(circSpawn);
         }
         
         private void InitGenes()

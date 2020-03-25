@@ -1,11 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using GeneticSharp.Domain.Chromosomes;
+using GeneticSharp.Domain.Fitnesses;
+using GeometryFriends.WithGS;
 using UnityEngine;
 
 namespace GeometryFriends.LevelGenerator
 {
-    public class OldReachHeuristic
+    public class OldReachHeuristic : IFitness
     {
         public class Cell
         {
@@ -25,9 +28,8 @@ namespace GeometryFriends.LevelGenerator
         public BlockType[,] grid;
         public int xGridLen, yGridLen;
         
-        public int circleLen;
 
-        public int rectangleStartLen, rectangleMinLen, rectangleMaxLen;
+        public int rectangleMaxLen;
         //Common Factors for 1200 and 720 are The common factors are:
         //blockSize:   1,  2,  3,  4,  5,  6,  8, 10, 12, 15, 16, 20, 24, 30, 40, 48, 60, 80,120,240
         //xGridLen: 1200,600,400,300,240,200,150,120,100, 80, 75, 60, 50, 40, 30, 25, 20, 15, 10,  5
@@ -52,11 +54,7 @@ namespace GeometryFriends.LevelGenerator
             xGridLen = (int) ((1240 - 40) / this.blockSize + 0.5f) + 4; // +0.5f to round up;
             yGridLen = (int) ((760 - 40) / this.blockSize + 0.5f) + 4; // +0.5f to round up;
 
-            circleLen = (int) (80 / this.blockSize + 0.5f);
-            rectangleStartLen = (int) (100 / this.blockSize + 0.5f);
-            rectangleMinLen = (int) (50 / this.blockSize +0.5f); 
             rectangleMaxLen = (int) (200 / this.blockSize + 0.5f);
-            
             /** /
             Debug.Log("xGridLen: " + xGridLen + " yGridLen: " + yGridLen);
             Debug.Log("circleLen: " + circleLen);
@@ -68,19 +66,124 @@ namespace GeometryFriends.LevelGenerator
         
         public float CalculateFitness(LevelDNA level)
         {
+            if (!(level.collectibles.Count > 0))
+            {
+                InitGrid(level);
+                return 0;
+            }
             InitGrid(level);
-            Debug.Log("Calcfits");
             InitFits();
-            Debug.Log("CalcRecReach");
             RectangleReachability(level);
-            //Debug.Log("CalcCircReach");
-            //CircleReachability(level);
-            //Debug.Log("CalcCoopReach");
+            CircleReachability(level);
+            ResetJumpStrength();
             CoopReachability(level);
-            CellGridToBlockGrid();
-            return 0;
+            return fitness(level);
         }
 
+        private float fitness(LevelDNA level)
+        {
+            int coopOnlyReach = 0;
+            int circleOnlyReach = 0;
+            int rectangleOnlyReach = 0;
+            int bothCanReach = 0;
+            int unreachable = 0;
+            int total = level.collectibles.Count;
+            if (total < 1)
+            {
+                Debug.Log("coopOnlyReach: " + coopOnlyReach + " circleOnlyReach: " + circleOnlyReach +
+                          " rectangleOnlyReach: " + rectangleOnlyReach + " bothCanReach: " + bothCanReach +
+                          " unreachable: " + unreachable + " total: " + total);
+                return 0;
+            }
+            foreach (var coll in level.collectibles)
+            {
+                int x = (int) ((coll.position.X - 40) / this.blockSize) + 2;
+                int y = (int) ((coll.position.Y - 40) / this.blockSize) + 2;
+                if (x >= xGridLen || y >= yGridLen || x < 0 || y <0)
+                {
+                    continue;
+                }
+                if (cellGrid[x, y].reachesCoop)
+                {
+                    coopOnlyReach++;
+                    continue;
+                }    
+                if (cellGrid[x, y].reachesCircle && !cellGrid[x, y].reachesRectangle)
+                {
+                    circleOnlyReach++;
+                    continue;
+                }
+                if (cellGrid[x, y].reachesRectangle && !cellGrid[x, y].reachesCircle)
+                {
+                    rectangleOnlyReach++;
+                    continue;
+                }
+                if (cellGrid[x, y].reachesRectangle && cellGrid[x, y].reachesCircle)
+                {
+                    bothCanReach++;
+                    continue;
+                }
+                int coopCount = 0;
+                int circleCount = 0;
+                int rectangleCount = 0;
+                int bothCanReachCount = 0;
+                for (int i = -2; i <= 2; i++)
+                {
+                    for (int j = -2; j <= 2 ; j++)
+                    {
+                        if (cellGrid[x+i, y+j].reachesCoop)
+                        {
+                            coopCount++;
+                        }
+                        else if (cellGrid[x+i, y+j].reachesCircle && !cellGrid[x, y].reachesRectangle)
+                        {
+                            circleCount++;
+                        }
+                        else if (cellGrid[x+i, y+j].reachesRectangle && !cellGrid[x, y].reachesCircle)
+                        {
+                            rectangleCount++;
+                        }
+                        else if (cellGrid[x+i, y+j].reachesRectangle && cellGrid[x, y].reachesCircle)
+                        {
+                            bothCanReachCount++;
+                        }
+                    }
+                }
+
+                if (bothCanReachCount > 0 || (circleCount >0 && rectangleCount > 0))
+                {
+                    bothCanReach++;
+                    continue;
+                }
+                if (rectangleCount > 0 && coopCount == 0)
+                {
+                    rectangleOnlyReach++;
+                    continue;
+                }
+                if (circleCount > 0)
+                {
+                    circleOnlyReach++;
+                    continue;
+                }
+                if (coopCount > 0)
+                {
+                    coopOnlyReach++;
+                    continue;
+                }
+                unreachable++;
+            }
+            
+            Debug.Log("coopOnlyReach: " + coopOnlyReach + " circleOnlyReach: " + circleOnlyReach +
+                      " rectangleOnlyReach: " + rectangleOnlyReach + " bothCanReach: " + bothCanReach +
+                      " unreachable: " + unreachable + " total: " + total);
+            
+            var fitness = ((float)(coopOnlyReach + circleOnlyReach + rectangleOnlyReach + bothCanReach)) / (total);
+            fitness -= (float) unreachable / (3*total);
+            
+            Debug.Log("Fitness: " + fitness);
+            return fitness;
+        }
+        
         public void InitGrid(LevelDNA level)
         {
             for (int i = 0; i < xGridLen; i++)
@@ -150,6 +253,7 @@ namespace GeometryFriends.LevelGenerator
                             if (cellGrid[x+i, y+j].Platform != PlatformType.NotPlatform)
                             {
                                 stillFitRectangle = false;
+                                stillFitCircle = false;
                             }
                         }
                     }
@@ -175,6 +279,20 @@ namespace GeometryFriends.LevelGenerator
             }
         }
 
+        public void ResetJumpStrength()
+        {
+            for (int i = 0; i < xGridLen; i++)
+            {
+                for (int j = 0; j < yGridLen; j++)
+                {
+
+                    cellGrid[i, j].jumpStrength = -1;
+
+
+                }
+            }
+        }
+        
         public void RectangleReachability(LevelDNA level)
         {
             //plus 3 because boundary and to center
@@ -359,11 +477,12 @@ namespace GeometryFriends.LevelGenerator
                                 {
                                     
                                     cellGrid[x + j, y - 1].jumpStrength = cellGrid[x, y].jumpStrength - 1;
-                                    list.Add(new Tuple<Point, int>(new Point(x + j, y - 1), dir));
+                                    list.Add(new Tuple<Point, int>(new Point(x + j, y - 1), j));
                                 }
                             }
 
-                            if (cellGrid[x, y].jumpStrength - 1 == 0 || !cellGrid[x, y-1].fitsCircle)
+                            if ((cellGrid[x, y].jumpStrength - 1 == 0 || !cellGrid[x, y-1].fitsCircle) 
+                                && (cellGrid[x + dir, y].jumpStrength < 1))
                             {
                                 list.Add(new Tuple<Point, int>(new Point(x + dir, y), dir));
                             }
@@ -373,14 +492,17 @@ namespace GeometryFriends.LevelGenerator
                         {
                             freefalling += 1;
                             list.Add(new Tuple<Point,int>(new Point(x, y+1),0));
-                            switch (dir)
+                            /**/
+                            if (dir != 0)
                             {
-                                case -1:
+                                if (cellGrid[x + dir, y + 1].fitsCircle)
+                                {
                                     list.Add(new Tuple<Point, int>(new Point(x + dir, y + 1), dir));
-                                    break;
-                                case 1:
-                                    list.Add(new Tuple<Point, int>(new Point(x + dir, y + 1), dir));
-                                    break;
+                                }
+                                else
+                                {
+                                    list.Add(new Tuple<Point, int>(new Point(x - dir, y + 1), -dir));
+                                }
                             }
                         }
                        
@@ -389,9 +511,9 @@ namespace GeometryFriends.LevelGenerator
                 }
 
             }
-            Debug.Log(list.Count +" ; "+ cellsChecked + " : "+ freefalling);
+            //Debug.Log(list.Count +" ; "+ cellsChecked + " : "+ freefalling);
         }
-
+        
         public void CoopReachability(LevelDNA level)
         {
             //plus 3 because boundary and to center
@@ -421,8 +543,10 @@ namespace GeometryFriends.LevelGenerator
                 /**/
                 if (cellGrid[x, y].fitsCircle)
                 {
-                    cellGrid[x, y].reachesCircle = true;
-                    cellGrid[x, y].reachesCoop = true;
+                    if (!cellGrid[x, y].reachesCircle)
+                    {
+                        cellGrid[x, y].reachesCoop = true;
+                    }
                     //Check On the Ground
                     if (!cellGrid[x, y + 1].fitsCircle)
                     {
@@ -495,14 +619,12 @@ namespace GeometryFriends.LevelGenerator
                             if ((cellGrid[x, y].jumpStrength - 1 == 0 || !cellGrid[x, y-1].fitsCircle) 
                                 && (cellGrid[x + dir, y].jumpStrength < 1))
                             {
-                                Debug.Log("To fall x= " + x + " y= " + y + " jS= " + cellGrid[x + dir, y].jumpStrength);
                                 list.Add(new Tuple<Point, int>(new Point(x + dir, y), dir));
                             }
                         }
                         else // free fall
                         /**/
                         {
-                            Debug.Log("Freefall");
                             freefalling += 1;
                             list.Add(new Tuple<Point,int>(new Point(x, y+1),0));
                             /**/
@@ -524,7 +646,7 @@ namespace GeometryFriends.LevelGenerator
                 }
 
             }
-            Debug.Log(list.Count +" ; "+ cellsChecked + " : "+ freefalling);
+            //Debug.Log(list.Count +" ; "+ cellsChecked + " : "+ freefalling);
         }
 
         public void CellGridToBlockGrid()
@@ -537,6 +659,12 @@ namespace GeometryFriends.LevelGenerator
                     if (cellGrid[x, y].Platform != PlatformType.NotPlatform)
                     {
                         grid[x, y] = BlockType.Platform;
+                        continue;
+                    }
+
+                    if (cellGrid[x, y].reachesCoop)
+                    {
+                        grid[x, y] = BlockType.CooperativeCanReach;
                         continue;
                     }
                     if (cellGrid[x, y].reachesCircle)
@@ -568,6 +696,22 @@ namespace GeometryFriends.LevelGenerator
                     grid[x, y] = BlockType.Unreachable;
                 }
             }
+        }
+
+        public double Evaluate(IChromosome chromosome)
+        {
+            LevelChromosome c;
+            if (chromosome.GetType() == typeof(LevelChromosome))
+            {
+                c = (LevelChromosome) chromosome;
+            }
+            else
+            {
+                return 0;
+            }
+
+            var level = c.GetLevelDNA();
+            return CalculateFitness(level);
         }
     }
 }

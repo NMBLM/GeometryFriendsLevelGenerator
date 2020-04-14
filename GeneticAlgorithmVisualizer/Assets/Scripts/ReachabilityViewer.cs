@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GeometryFriends;
 using GeometryFriends.LevelGenerator;
 using GeometryFriends.WithGS;
 using UnityEngine;
@@ -16,17 +17,20 @@ public class ReachabilityViewer : MonoBehaviour
     [SerializeField] private Material bothReachMaterial;
     [SerializeField] private Material collectibleMaterial;
     [SerializeField] private GameObject gridBlockPrefab;
-    [SerializeField] private float granularity = 20f;
+    [SerializeField] private float granularity = 16f;
 
     
     public LevelDNA level;
-    public OldReachHeuristic h;
+    
+    //public OldReachHeuristic h;
+    public AreaHeuristic h;
+    
     public Random random;
     // Start is called before the first frame update
     void Start()
     {
+        /** /
         random = new Random();
-       
         var chromosome = new LevelChromosome();
         Debug.Log(chromosome.ToString());
         level = chromosome.GetLevelDNA();
@@ -40,12 +44,22 @@ public class ReachabilityViewer : MonoBehaviour
         CreateGrid();
         
         //Debug.Log(level.Description());
+        /** /
+        level = GATestWorld.LevelOne();
+        level = GATestWorld.LevelTwo();
+        level = GATestWorld.LevelTest();
+        //h = new OldReachHeuristic(blockSize:granularity);
+        h = new AreaHeuristic(TestSpecifications.LevelOne());
+        h.CalculateFitness(level);
+        h.CellGridToBlockGrid();
+        CreateGrid();
+        /**/
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.R))
+        if ( false && Input.GetKeyUp(KeyCode.R))
         {
             foreach (Transform child in transform)
             {
@@ -59,7 +73,9 @@ public class ReachabilityViewer : MonoBehaviour
             level = chromosome.GetLevelDNA();
             //level = new LevelDNA(random, TmpFit, init: true);
             Debug.Log("Level: " + level.Description());
-            h = new OldReachHeuristic(blockSize:granularity);
+            //h = new OldReachHeuristic(blockSize:granularity);
+            h = new AreaHeuristic(TestSpecifications.LevelOne());
+
             h.CalculateFitness(level);
             h.CellGridToBlockGrid();
 
@@ -67,8 +83,27 @@ public class ReachabilityViewer : MonoBehaviour
         
             //Debug.Log(level.Description());
         }
+        
     }
 
+    public void ViewBest(LevelChromosome best)
+    {
+        foreach (Transform child in transform)
+        {
+            if (child != this.transform)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+        Debug.Log(best.ToString());
+        level = best.GetLevelDNA();
+        Debug.Log("Level: " + level.Description());
+        h = new AreaHeuristic(TestSpecifications.LevelOne());
+        //h = new OldReachHeuristic(blockSize:granularity);
+        h.CalculateFitness(level);
+        h.CellGridToBlockGrid();
+        CreateGrid();
+    }
     public float TmpFit(int index)
     {
         return -1.0f;

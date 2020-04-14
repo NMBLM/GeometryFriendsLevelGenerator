@@ -44,7 +44,7 @@ namespace GeometryFriends.LevelGenerator
         // 50, 25,-, -,10,-, -, 5,-,-,-, -,-,-,-,-,-,-,-,-
         //200,100,-,50,40,-,25,20,-,-,-,10,-,-,5,-,-,-,-,-
         
-        public OldReachHeuristic( float blockSize = 20f)
+        public OldReachHeuristic( float blockSize = 16f)
         {
             //For now fix in BlockSize in 20 so 60x, 36y
             //Circe is 4x4
@@ -131,6 +131,10 @@ namespace GeometryFriends.LevelGenerator
                 {
                     for (int j = -2; j <= 2 ; j++)
                     {
+                        if (x+i >= xGridLen || y+j >= yGridLen || y+j < 0 || x+i <0)
+                        {
+                            continue;
+                        }
                         if (cellGrid[x+i, y+j].reachesCoop)
                         {
                             coopCount++;
@@ -172,15 +176,15 @@ namespace GeometryFriends.LevelGenerator
                 }
                 unreachable++;
             }
-            
-            Debug.Log("coopOnlyReach: " + coopOnlyReach + " circleOnlyReach: " + circleOnlyReach +
-                      " rectangleOnlyReach: " + rectangleOnlyReach + " bothCanReach: " + bothCanReach +
-                      " unreachable: " + unreachable + " total: " + total);
-            
             var fitness = ((float)(coopOnlyReach + circleOnlyReach + rectangleOnlyReach + bothCanReach)) / (total);
             fitness -= (float) unreachable / (3*total);
             
+            /*
+            Debug.Log("coopOnlyReach: " + coopOnlyReach + " circleOnlyReach: " + circleOnlyReach +
+                      " rectangleOnlyReach: " + rectangleOnlyReach + " bothCanReach: " + bothCanReach +
+                      " unreachable: " + unreachable + " total: " + total);
             Debug.Log("Fitness: " + fitness);
+            */
             return fitness;
         }
         

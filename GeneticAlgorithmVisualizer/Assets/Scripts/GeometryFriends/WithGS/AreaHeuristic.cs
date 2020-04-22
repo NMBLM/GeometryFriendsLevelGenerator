@@ -138,6 +138,8 @@ namespace GeometryFriends.WithGS
                     }
                 }
                 fullAreaPercent += (AreaPercent / (areaWidth * areaHeight));
+                //fullAreaPercent = Math.Min(AreaPercent / (areaWidth * areaHeight),fullAreaPercent);
+
             }
             
             return fullAreaPercent / spec.areas.Count;

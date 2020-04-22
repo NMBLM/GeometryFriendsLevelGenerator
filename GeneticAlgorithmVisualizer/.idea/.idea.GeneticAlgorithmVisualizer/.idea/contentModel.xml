@@ -30,6 +30,7 @@
             <e p="Platform.cs" t="Include" />
             <e p="WithGS" t="Include">
               <e p="AreaHeuristic.cs" t="Include" />
+              <e p="GAController.cs" t="Include" />
               <e p="LevelChromosome.cs" t="Include" />
               <e p="LevelPopulation.cs" t="Include" />
               <e p="LevelSampleController.cs" t="Include" />

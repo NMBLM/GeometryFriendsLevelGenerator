@@ -19,7 +19,7 @@ namespace GeometryFriends.WithGS
     {
 
         private IFitness m_fitness;
-        private const int MaxGenerations = 1000;
+        private const int MaxGenerations = 500;
         private const int MinPopulation = 100;
         private const int MaxPopulation = 100;
         
@@ -31,6 +31,7 @@ namespace GeometryFriends.WithGS
         protected bool ChromosomesCleanupEnabled { get; set; }
 
         private ReachabilityViewer _viewer;
+        private System.Nullable<Double> previousbestfitness = 0;
         protected GeneticAlgorithm CreateGA()
         {
             //m_fitness = new OldReachHeuristic();
@@ -67,8 +68,8 @@ namespace GeometryFriends.WithGS
             
             SelectionBase selection;
             //selection = new EliteSelection();
-            selection = new StochasticUniversalSamplingSelection();
-            //selection = new TournamentSelection(6);
+            //selection = new StochasticUniversalSamplingSelection();
+            selection = new TournamentSelection(6);
             //selection = new RouletteWheelSelection();
             
             
@@ -79,7 +80,7 @@ namespace GeometryFriends.WithGS
 
             var ga = new GeneticAlgorithm(population, m_fitness, selection, crossover, mutation);
             ga.Termination = new OrTermination(new GenerationNumberTermination(MaxGenerations), 
-                new FitnessStagnationTermination(150));
+                new FitnessStagnationTermination(50));
             
             ga.TaskExecutor = new ParallelTaskExecutor
             {
@@ -131,7 +132,6 @@ namespace GeometryFriends.WithGS
                 }
             };
             /**/
-            StartSample();
             /**/
             m_gaThread = new Thread(() =>
             {
@@ -170,8 +170,9 @@ namespace GeometryFriends.WithGS
                 Debug.Log("Best fitness: " + best.Fitness);
             }
             /** /
-            if (GA.IsRunning)
+            if (GA.IsRunning && (previousbestfitness < GA.BestChromosome.Fitness))
             {
+                previousbestfitness = GA.BestChromosome.Fitness;
                 if (_viewer != null)
                 {
                     _viewer.ViewBest(GA.BestChromosome as LevelChromosome);
@@ -186,16 +187,7 @@ namespace GeometryFriends.WithGS
             m_gaThread.Abort();
     
         }
-    
-        protected virtual void StartSample() 
-        {
-            
-        }
-    
-        protected virtual void UpdateSample()
-        {
 
-        }
         
     }
 }

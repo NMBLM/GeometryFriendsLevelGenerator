@@ -10,8 +10,8 @@ namespace GeometryFriends.WithGS
         {
             var levelOne = new LevelSpecifications();
             
-            levelOne.AddArea(500,360,new Point(700,360), AreaType.RectangleOnly);
-            levelOne.AddArea(500,360,new Point(40,360), AreaType.CircleOnly);
+            levelOne.AddArea(500,360,new Point(740,360), AreaType.CircleOnly);
+            levelOne.AddArea(500,360,new Point(80,360), AreaType.RectangleOnly);
             
             return levelOne;
         }

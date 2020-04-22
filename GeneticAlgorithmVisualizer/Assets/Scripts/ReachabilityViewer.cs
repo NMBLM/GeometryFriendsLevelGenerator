@@ -26,7 +26,10 @@ public class ReachabilityViewer : MonoBehaviour
     public AreaHeuristic h;
     
     public Random random;
+
+    public GAController GC;
     // Start is called before the first frame update
+    [SerializeField] private int currentN = 0;
     void Start()
     {
         /** /
@@ -46,19 +49,24 @@ public class ReachabilityViewer : MonoBehaviour
         //Debug.Log(level.Description());
         /** /
         level = GATestWorld.LevelOne();
-        level = GATestWorld.LevelTwo();
+        //level = GATestWorld.LevelTwo();
+        
         level = GATestWorld.LevelTest();
+        
         //h = new OldReachHeuristic(blockSize:granularity);
         h = new AreaHeuristic(TestSpecifications.LevelOne());
         h.CalculateFitness(level);
         h.CellGridToBlockGrid();
         CreateGrid();
         /**/
+        
+        GC = new GAController();
     }
 
     // Update is called once per frame
     void Update()
     {
+        /** /
         if ( false && Input.GetKeyUp(KeyCode.R))
         {
             foreach (Transform child in transform)
@@ -83,7 +91,28 @@ public class ReachabilityViewer : MonoBehaviour
         
             //Debug.Log(level.Description());
         }
-        
+        /**/
+
+        /**/
+        if (Input.GetKeyUp(KeyCode.O))
+        {
+            currentN -= 1;
+            if (currentN < 0) currentN = 0;
+            GC.ShowNPopulation(currentN);
+            Debug.Log("Viewing: " + currentN);
+        }
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            currentN += 1;
+            
+            if (!GC.ShowNPopulation(currentN)) currentN -= 1;
+            Debug.Log("Viewing: " + currentN);
+        }
+        if (Input.GetKeyUp(KeyCode.N))
+        {
+            GC.NextGen();
+        }
+        /**/
     }
 
     public void ViewBest(LevelChromosome best)
@@ -95,9 +124,9 @@ public class ReachabilityViewer : MonoBehaviour
                 Destroy(child.gameObject);
             }
         }
-        Debug.Log(best.ToString());
+        Debug.Log("Fitness : " + best.Fitness);
         level = best.GetLevelDNA();
-        Debug.Log("Level: " + level.Description());
+        Debug.Log("Level: " + level.Description() + "\n" + best.ToString());
         h = new AreaHeuristic(TestSpecifications.LevelOne());
         //h = new OldReachHeuristic(blockSize:granularity);
         h.CalculateFitness(level);

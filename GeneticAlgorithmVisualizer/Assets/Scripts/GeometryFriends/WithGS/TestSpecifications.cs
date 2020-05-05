@@ -15,5 +15,15 @@ namespace GeometryFriends.WithGS
             
             return levelOne;
         }
+        
+        public static LevelSpecifications LevelTwo()
+        {
+            var levelOne = new LevelSpecifications();
+            
+            levelOne.AddArea(240,1100,new Point(100,80), AreaType.Cooperative);
+            levelOne.AddArea(180,340,new Point(430,560), AreaType.RectangleOnly);
+            
+            return levelOne;
+        }
     }
 }

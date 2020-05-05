@@ -60,6 +60,23 @@ namespace GeometryFriends
             return new LevelDNA(plats,coll,recSpawn,circSpawn);
         }
         
+        public static LevelDNA LevelSpecificationTwoTest()
+        {
+            List<PlatformGeneT> plats = new List<PlatformGeneT>();
+            List<CollectibleGeneT> coll = new List<CollectibleGeneT>();
+            
+            Point recSpawn = new Point(1128,680);
+            Point circSpawn= new Point(120,664);
+            
+            plats.Add(new PlatformGeneT(240,1100,new Point(100,80)));
+            plats.Add(new PlatformGeneT(180,340,new Point(430,560)));
+            
+            coll.Add(new CollectibleGeneT(new Point(584,584)));
+            coll.Add(new CollectibleGeneT(new Point(456,152)));
+            coll.Add(new CollectibleGeneT(new Point(744,152)));
+            
+            return new LevelDNA(plats,coll,recSpawn,circSpawn);
+        }
         public static LevelDNA LevelTest()
         {
             List<PlatformGeneT> plats = new List<PlatformGeneT>();

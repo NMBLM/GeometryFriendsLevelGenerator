@@ -55,16 +55,17 @@ public class ReachabilityViewer : MonoBehaviour
         //Debug.Log(level.Description());
         
         /** /
-        level = GATestWorld.LevelOne();
-        //level = GATestWorld.LevelTwo();
+        //level = GATestWorld.LevelOne();
+        level = GATestWorld.LevelTwo();
         
         //level = GATestWorld.LevelSpecificationOneTest();
-        level = GATestWorld.LevelTest();
+        //level = GATestWorld.LevelSpecificationTwoTest();
+        //level = GATestWorld.LevelTest();
 
         //level = (new LevelChromosome(lvlString)).GetLevelDNA();
         Debug.Log(level.Description());
         //h = new OldReachHeuristic(blockSize:granularity);
-        h = new AreaHeuristic(TestSpecifications.LevelOne());
+        h = new AreaHeuristic(TestSpecifications.LevelTwo());
         Debug.Log(h.CalculateFitness(level));
         //h.CellGridToBlockGrid();
         CreateGrid();

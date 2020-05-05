@@ -35,7 +35,7 @@ namespace GeometryFriends.WithGS
         protected GeneticAlgorithm CreateGA()
         {
             //m_fitness = new OldReachHeuristic();
-            m_fitness = new AreaHeuristic(TestSpecifications.LevelOne());
+            m_fitness = new AreaHeuristic(TestSpecifications.LevelTwo());
             var chromosome = new LevelChromosome();
 
             CrossoverBase crossover;
@@ -109,27 +109,22 @@ namespace GeometryFriends.WithGS
                 m_previousBestFitness = GA.BestChromosome.Fitness.Value;
                 m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
                 Debug.Log($"Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving}");
-                if (ChromosomesCleanupEnabled)
+                if (true)
                 {
                     foreach (var c in GA.Population.CurrentGeneration.Chromosomes)
                     {
-                        c.Fitness = null;
+                        c.Fitness = m_fitness.Evaluate(c);
                     }
                 }
             };
-            /** /
+            /**/
             GA.TerminationReached += delegate
             {
                 var best = GA.BestChromosome as LevelChromosome;
-                //Debug.Log("Best Level: " + best.ToString() +"\n" + best.GetLevelDNA().Description());
+                m_previousBestFitness = GA.BestChromosome.Fitness.Value;
+                m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
+                Debug.Log($"Last Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving}");
 
-                var v = GameObject.Find("Visualizer");
-                if (v != null)
-                {
-                    var viewer = v.GetComponent<ReachabilityViewer>();
-                    
-                    viewer.ViewBest(best);
-                }
             };
             /**/
             /**/
@@ -154,6 +149,7 @@ namespace GeometryFriends.WithGS
     
         void Update()
         {
+            /**/
             if (GA.State == GeneticAlgorithmState.TerminationReached && !previewed)
             {
                 previewed = true;
@@ -169,6 +165,7 @@ namespace GeometryFriends.WithGS
                 }
                 Debug.Log("Best fitness: " + best.Fitness);
             }
+            /**/
             /** /
             if (GA.GenerationsNumber > 2 && GA.IsRunning && (previousbestfitness < GA.BestChromosome.Fitness))
             {

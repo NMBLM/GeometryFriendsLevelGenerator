@@ -41,8 +41,30 @@ namespace GeometryFriends.WithGS
         public LevelChromosome() : base(NUMBEROFBITS)
         {
             CreateGenes();
+            
         }
 
+        public LevelChromosome(String s) : base(NUMBEROFBITS)
+        {
+            CreateGenes();
+            Gene[] genesToReplace = new Gene[749];
+            for (int i = 0; i < 749; i++)
+            {
+                if (i >= s.Length)
+                {
+                    genesToReplace[i] = new Gene(0);
+                }
+                if (s[i] == '0')
+                {
+                    genesToReplace[i] = new Gene(0);
+                }
+
+                if (s[i] == '1')
+                {
+                    genesToReplace[i] = new Gene(1);
+                }
+            }
+        }
         public override IChromosome CreateNew()
         {
             return new LevelChromosome();
@@ -54,8 +76,8 @@ namespace GeometryFriends.WithGS
         }
         public LevelDNA GetLevelDNA()
         {
-            var plats = new List<PlatformGene>();
-            var coll = new List<CollectibleGene>();
+            var plats = new List<PlatformGeneT>();
+            var coll = new List<CollectibleGeneT>();
             Point recSpawn;
             Point circSpawn;
             var genes = GetGenes().Select(g => isTrue(g.ToString())).ToArray();
@@ -75,10 +97,10 @@ namespace GeometryFriends.WithGS
                 {
                     int collX = ToShort(currentCollectibleStart + 1,bitArray,XMax,XYMin);
                     int collY = ToShort(currentCollectibleStart + 1 + SIZEOFSHORT ,bitArray,YMax,XYMin);
-                    coll.Add(new CollectibleGene( new Point(collX,collY)));
+                    coll.Add(new CollectibleGeneT( new Point(collX,collY)));
                 }
             }
-            int platformsStart = SIZEOFSHORT * 4;
+            int platformsStart = SIZEOFSHORT * 4 + sizeOfCollectible * 5;
             int sizeOfPlatform = 1 + 4 * SIZEOFSHORT;
             for (int i = 0; i < MAXPLATFORMS; i++)
             {
@@ -89,7 +111,7 @@ namespace GeometryFriends.WithGS
                     int platY = ToShort(currentPlatformStart + 1 + SIZEOFSHORT ,bitArray,YMax,XYMin);
                     int platW = ToShort(currentPlatformStart + 1 + SIZEOFSHORT * 2,bitArray,XMax);
                     int platH = ToShort(currentPlatformStart + 1 + SIZEOFSHORT * 3,bitArray,YMax);
-                    plats.Add(new PlatformGene(platW, platH, new Point(platX,platY)));
+                    plats.Add(new PlatformGeneT(platW, platH, new Point(platX,platY)));
                 }
             }
             return new LevelDNA(plats, coll, recSpawn, circSpawn);

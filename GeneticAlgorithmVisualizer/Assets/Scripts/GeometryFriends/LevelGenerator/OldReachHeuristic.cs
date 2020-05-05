@@ -8,6 +8,20 @@ using UnityEngine;
 
 namespace GeometryFriends.LevelGenerator
 {
+    public enum BlockType : byte
+    {
+        Unreachable = 0,
+        Platform = 1,
+        CirclePlatform = 2,    //Is a platform that only blocks the Circle
+        RectanglePlatform = 3, //Is a platform that only blocks the Rectangle
+        RectangleCanReach = 4,
+        CircleCanReach = 5,
+        BothCanReach = 6,
+        CooperativeCanReach = 7,
+        RectangleCanReachCirclePlatform = 8,
+        CircleCanReachRectanglePlatform = 9,         //Is a Rectangle Platform that the Circle can Reach
+        CooperativeCanReachRectanglePlatform = 10,    //Is a Rectangle Platform that the Circle can Reach when using cooperation to jump
+    }
     public class OldReachHeuristic : IFitness
     {
         public class Cell

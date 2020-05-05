@@ -75,6 +75,7 @@ namespace GeometryFriends.WithGS
             }
             
             double fullAreaPercent = 0;
+            double minArea = 2;
             foreach (var area in spec.areas)
             {
                 double AreaPercent = 0;
@@ -82,7 +83,9 @@ namespace GeometryFriends.WithGS
                 int areaPosY = (int) ((area.position.Y - 40) / this.blockSize) + 2;
                 int areaWidth = (int) (area.width / this.blockSize + 0.5f);
                 int areaHeight = (int) (area.height / this.blockSize + 0.5f);
+                
                 AreaType type = area.type;
+
                 for (int i = areaPosX; i < (areaPosX + areaWidth) && i < xGridLen; i++)
                 {
                     for (int j = areaPosY; j < (areaPosY + areaHeight) && j < yGridLen; j++)
@@ -137,12 +140,15 @@ namespace GeometryFriends.WithGS
                         }
                     }
                 }
-                fullAreaPercent += (AreaPercent / (areaWidth * areaHeight));
-                //fullAreaPercent = Math.Min(AreaPercent / (areaWidth * areaHeight),fullAreaPercent);
 
+                AreaPercent = AreaPercent / (areaWidth * areaHeight);
+                fullAreaPercent += AreaPercent;
+                minArea = Math.Min(AreaPercent, minArea);
             }
-            
-            return fullAreaPercent / spec.areas.Count;
+
+            return minArea;
+            //return fullAreaPercent / spec.areas.Count;
+            //return minArea * 0.8 + fullAreaPercent * 0.2;
         }
         
         public void InitGrid(LevelDNA level)
@@ -180,18 +186,7 @@ namespace GeometryFriends.WithGS
                 {
                     for (int j = platPosY; j < (platPosY + platHeight) && j < yGridLen; j++)
                     {
-                        switch (plat.platformType)
-                        {
-                            case PlatformType.Common:
-                                cellGrid[i, j].Platform = PlatformType.Common;
-                                break;
-                            case PlatformType.CirclePlatform:
-                                cellGrid[i, j].Platform = PlatformType.CirclePlatform;
-                                break;
-                            case PlatformType.RectanglePlatform:
-                                cellGrid[i, j].Platform = PlatformType.RectanglePlatform;
-                                break;
-                        }
+                        cellGrid[i, j].Platform = plat.platformType;
                     }
                 }
             }
@@ -617,6 +612,12 @@ namespace GeometryFriends.WithGS
             {
                 for (int y = 0; y < yGridLen; y++)
                 {
+                    if (cellGrid[x, y].Platform == PlatformType.Common)
+                    {
+                        grid[x, y] = BlockType.Platform;
+                        continue;
+                    }
+                    
                     if (cellGrid[x, y].Platform != PlatformType.NotPlatform)
                     {
                         grid[x, y] = BlockType.Platform;
@@ -628,8 +629,10 @@ namespace GeometryFriends.WithGS
                         grid[x, y] = BlockType.CooperativeCanReach;
                         continue;
                     }
+                    
                     if (cellGrid[x, y].reachesCircle)
                     {
+
                         grid[x, y] = BlockType.CircleCanReach;
                         if (cellGrid[x, y].reachesRectangle)
                         {
@@ -639,8 +642,14 @@ namespace GeometryFriends.WithGS
                     }
                     if (cellGrid[x, y].reachesRectangle)
                     {
+
                         grid[x, y] = BlockType.RectangleCanReach;
+                        if (cellGrid[x, y].reachesCircle)
+                        {
+                            grid[x, y] = BlockType.BothCanReach;
+                        }
                         continue;
+                        
                     }
                     /** /
                     if (cellGrid[x, y].fitsCircle)

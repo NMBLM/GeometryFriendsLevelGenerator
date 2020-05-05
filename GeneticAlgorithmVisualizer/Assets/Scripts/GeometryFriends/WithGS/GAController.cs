@@ -19,8 +19,8 @@ namespace GeometryFriends.WithGS
     {
         private IFitness m_fitness;
         private const int MaxGenerations = 500;
-        private const int MinPopulation = 100;
-        private const int MaxPopulation = 100;
+        private const int MinPopulation = 20;
+        private const int MaxPopulation = 20;
         
         private Thread m_gaThread;
         private double m_previousBestFitness;
@@ -32,6 +32,9 @@ namespace GeometryFriends.WithGS
         private ReachabilityViewer _viewer;
         private System.Nullable<Double> previousbestfitness = 0;
         private FitnessStagnationTermination fs = new FitnessStagnationTermination(50);
+
+        private int numberGenerations = 1;
+        private int currentGenerations = 0;
         protected GeneticAlgorithm CreateGA()
         {
             //m_fitness = new OldReachHeuristic();
@@ -41,8 +44,8 @@ namespace GeometryFriends.WithGS
             CrossoverBase crossover;
             //crossover = new OnePointCrossover();
             //crossover = new TwoPointCrossover();
-            crossover = new UniformCrossover();
-            //crossover = new ThreeParentCrossover();
+            //crossover = new UniformCrossover();
+            crossover = new ThreeParentCrossover();
 
             /** / // Crossover for ordered lists
             crossover = new AlternatingPositionCrossover();
@@ -67,9 +70,9 @@ namespace GeometryFriends.WithGS
 
             
             SelectionBase selection;
-            //selection = new EliteSelection();
+            selection = new EliteSelection();
             //selection = new StochasticUniversalSamplingSelection();
-            selection = new TournamentSelection(4);
+            //selection = new TournamentSelection(4);
             //selection = new RouletteWheelSelection();
             
             
@@ -79,7 +82,7 @@ namespace GeometryFriends.WithGS
             };
 
             var ga = new GeneticAlgorithm(population, m_fitness, selection, crossover, mutation);
-            ga.Termination = new OrTermination(new GenerationNumberTermination(2), 
+            ga.Termination = new OrTermination(new GenerationNumberTermination(MaxGenerations), 
                 fs);
             
             ga.TaskExecutor = new ParallelTaskExecutor
@@ -121,8 +124,14 @@ namespace GeometryFriends.WithGS
                     }
                 }
 
+                currentGenerations += 1;
+                if (numberGenerations <= currentGenerations)
+                {
+                    GA.Stop();
+                }
+
             };
-            /** /
+            /**/
             m_gaThread = new Thread(() =>
             {
                 try
@@ -137,7 +146,7 @@ namespace GeometryFriends.WithGS
             });
             m_gaThread.Start();
             /**/
-            GA.Start();
+            //GA.Start();
 
         }
 
@@ -145,7 +154,7 @@ namespace GeometryFriends.WithGS
         public bool ShowNPopulation(int n)
         {
             var chromosomes = GA.Population.CurrentGeneration.Chromosomes;
-            if (n > 0 || n < chromosomes.Count)
+            if (n >= 0 && n < chromosomes.Count)
             {
                 var levelC = chromosomes[n] as LevelChromosome;
                 _viewer.ViewBest( levelC);
@@ -155,10 +164,11 @@ namespace GeometryFriends.WithGS
             return false;
         }
 
-        public void NextGen()
+        public void NextGen(int genNum = 1)
         {
-            GA.Termination = new OrTermination(new GenerationNumberTermination(GA.GenerationsNumber + 1), 
-                fs);
+            //GA.Termination = new OrTermination(new GenerationNumberTermination(GA.GenerationsNumber + 1),fs);
+            numberGenerations = genNum;
+            currentGenerations = 0;
             GA.Resume();
         }
 

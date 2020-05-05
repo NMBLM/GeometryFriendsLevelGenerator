@@ -170,7 +170,7 @@ namespace GeometryFriends.WithGS
                 Debug.Log("Best fitness: " + best.Fitness);
             }
             /** /
-            if (GA.IsRunning && (previousbestfitness < GA.BestChromosome.Fitness))
+            if (GA.GenerationsNumber > 2 && GA.IsRunning && (previousbestfitness < GA.BestChromosome.Fitness))
             {
                 previousbestfitness = GA.BestChromosome.Fitness;
                 if (_viewer != null)
@@ -181,6 +181,19 @@ namespace GeometryFriends.WithGS
             /**/
         }
     
+        public bool ShowNPopulation(int n)
+        {
+            var chromosomes = GA.Population.CurrentGeneration.Chromosomes;
+            if (n >= 0 && n < chromosomes.Count)
+            {
+                var levelC = chromosomes[n] as LevelChromosome;
+                _viewer.ViewBest( levelC);
+                return true;
+            }
+
+            return false;
+        }
+        
         private void OnDestroy()
         {
             GA.Stop();

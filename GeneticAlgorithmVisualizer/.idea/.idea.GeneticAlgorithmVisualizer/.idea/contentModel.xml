@@ -8,34 +8,24 @@
       <e p="Assets" t="Include">
         <e p="GeneticAlgorithmTest.xml" t="Include" />
         <e p="OutputLog.txt" t="Include" />
+        <e p="OutputLog2.txt" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="BitStringChromosome.cs" t="Include" />
           <e p="GeometryFriends" t="Include">
-            <e p="Coordinate.cs" t="Include" />
             <e p="GATestWorld.cs" t="Include" />
-            <e p="Generator.cs" t="Include" />
-            <e p="Level.cs" t="Include" />
             <e p="LevelGenerator" t="Include">
-              <e p="CollectibleGene.cs" t="Include" />
-              <e p="FitnessCalculator.cs" t="Include" />
-              <e p="Gene.cs" t="Include" />
-              <e p="GeneticAlgorithm.cs" t="Include" />
+              <e p="CollectibleGeneT.cs" t="Include" />
+              <e p="GeneT.cs" t="Include" />
               <e p="LevelDNA.cs" t="Include" />
               <e p="OldReachHeuristic.cs" t="Include" />
-              <e p="PlatformGene.cs" t="Include" />
-              <e p="ReachabilityFitness.cs" t="Include" />
-              <e p="ReachHeuristic.cs" t="Include" />
-              <e p="SpawnGene.cs" t="Include" />
+              <e p="PlatformGeneT.cs" t="Include" />
+              <e p="SpawnGeneT.cs" t="Include" />
             </e>
-            <e p="Platform.cs" t="Include" />
             <e p="WithGS" t="Include">
               <e p="AreaHeuristic.cs" t="Include" />
               <e p="GAController.cs" t="Include" />
               <e p="LevelChromosome.cs" t="Include" />
-              <e p="LevelPopulation.cs" t="Include" />
               <e p="LevelSampleController.cs" t="Include" />
               <e p="LevelSpecifications.cs" t="Include" />
-              <e p="ObjectPhenotypeEntity.cs" t="Include" />
               <e p="TestSpecifications.cs" t="Include" />
             </e>
           </e>

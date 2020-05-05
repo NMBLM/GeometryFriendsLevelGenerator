@@ -36,13 +36,16 @@ namespace GeometryFriends.WithGS
             this.areas.Add(area);
         }
 
-        public void AddArea(int width, int height, Point position, AreaType type)
+        public void AddArea(int height, int width, Point position, AreaType type)
         {
-            var area = new SpecificArea();
-            area.width = width;
-            area.height = height;
-            area.position = area.position;
-            area.type = type;
+            var area = new SpecificArea()
+            {
+                width = width,
+                height = height,
+                position = position,
+                type = type,
+            };
+            
             this.areas.Add(area);
         }
         public List<SpecificArea> areas;

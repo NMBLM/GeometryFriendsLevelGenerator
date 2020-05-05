@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using GeometryFriends;
 using GeometryFriends.LevelGenerator;
@@ -19,6 +20,8 @@ public class ReachabilityViewer : MonoBehaviour
     [SerializeField] private GameObject gridBlockPrefab;
     [SerializeField] private float granularity = 16f;
 
+    private String lvlString =
+        "10101011110100011110110000100010001010101101000010010101011001001100110001111110110010101010000010010110000100001110001100100100000010001110111110110101001011111110110110111110110011110101100010000011010001111001101000111001000001110111111100001101000111001010010011100111010100111010111010100011111101111000011001001100111100001000010101101101101111100110110001101101001011011000010011011000001011011011000100111100000001011111101111011000100001110111100101000100000101111001000000100010110101110001101001111011010011000111101000001010100110101100001111011100010110110011001110110100000101001101101011000010001010111110011011110001011110011111110111011001011100111010111110111110000011100011110100011111110100111110000111110100110110110011110101000";
     
     public LevelDNA level;
     
@@ -28,8 +31,11 @@ public class ReachabilityViewer : MonoBehaviour
     public Random random;
 
     public GAController GC;
+
+    public LevelSampleController GS;
     // Start is called before the first frame update
     [SerializeField] private int currentN = 0;
+    [SerializeField] private int toGen = 1;
     void Start()
     {
         /** /
@@ -47,27 +53,40 @@ public class ReachabilityViewer : MonoBehaviour
         CreateGrid();
         
         //Debug.Log(level.Description());
+        
         /** /
         level = GATestWorld.LevelOne();
         //level = GATestWorld.LevelTwo();
         
+        //level = GATestWorld.LevelSpecificationOneTest();
         level = GATestWorld.LevelTest();
-        
+
+        //level = (new LevelChromosome(lvlString)).GetLevelDNA();
+        Debug.Log(level.Description());
         //h = new OldReachHeuristic(blockSize:granularity);
         h = new AreaHeuristic(TestSpecifications.LevelOne());
-        h.CalculateFitness(level);
-        h.CellGridToBlockGrid();
+        Debug.Log(h.CalculateFitness(level));
+        //h.CellGridToBlockGrid();
         CreateGrid();
-        /**/
         
-        GC = new GAController();
+        /**/
+        /** /
+        Debug.Log(GATestWorld.LevelOne().DNAToChromosome());
+        Debug.Log(GATestWorld.LevelOne().DNAToChromosome().GetLevelDNA().Description());
+        Debug.Log(GATestWorld.LevelOne().Description());
+        Debug.Log("-------------------------------------");
+        Debug.Log(GATestWorld.LevelTwo().DNAToChromosome());
+        Debug.Log(GATestWorld.LevelTwo().DNAToChromosome().GetLevelDNA().Description());
+        Debug.Log(GATestWorld.LevelTwo().Description());
+        /**/
+        //GC = new GAController();
     }
 
     // Update is called once per frame
     void Update()
     {
         /** /
-        if ( false && Input.GetKeyUp(KeyCode.R))
+        if (Input.GetKeyUp(KeyCode.R))
         {
             foreach (Transform child in transform)
             {
@@ -93,7 +112,7 @@ public class ReachabilityViewer : MonoBehaviour
         }
         /**/
 
-        /**/
+        /** /
         if (Input.GetKeyUp(KeyCode.O))
         {
             currentN -= 1;
@@ -110,7 +129,40 @@ public class ReachabilityViewer : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.N))
         {
-            GC.NextGen();
+            GC.NextGen(toGen+1);
+        }
+        /**/
+        /**/
+        if (Input.GetKeyUp(KeyCode.O))
+        {
+            if (GS == null)
+            {
+                var o = GameObject.Find("SampleController");
+                GS = o.GetComponent<LevelSampleController>();
+            }
+            else
+            {
+                currentN -= 1;
+                if (currentN < 0) currentN = 0;
+                GS.ShowNPopulation(currentN);
+                Debug.Log("Viewing: " + currentN);  
+            }
+            
+        }
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            if (GS == null)
+            {
+                var o = GameObject.Find("SampleController");
+                GS = o.GetComponent<LevelSampleController>();
+            }
+            else
+            {
+                currentN += 1;
+                if (!GS.ShowNPopulation(currentN)) currentN -= 1;
+                Debug.Log("Viewing: " + currentN);   
+            }
+            
         }
         /**/
     }
@@ -129,8 +181,7 @@ public class ReachabilityViewer : MonoBehaviour
         Debug.Log("Level: " + level.Description() + "\n" + best.ToString());
         h = new AreaHeuristic(TestSpecifications.LevelOne());
         //h = new OldReachHeuristic(blockSize:granularity);
-        h.CalculateFitness(level);
-        h.CellGridToBlockGrid();
+        Debug.Log("recalculated fitness: " + h.CalculateFitness(level));
         CreateGrid();
     }
     public float TmpFit(int index)

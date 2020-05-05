@@ -2,16 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using UnityEngine;
+using GeneticSharp.Domain.Chromosomes;
+using GeometryFriends.WithGS;
 using Random = System.Random;
 
 namespace GeometryFriends.LevelGenerator
 {
     public class LevelDNA
     {
-        public List<PlatformGene> platforms; 
-        public List<CollectibleGene> collectibles; 
-        public SpawnGene rectangleSpawn, circleSpawn; //These are necessary for every level but can still be randomized
+        public List<PlatformGeneT> platforms; 
+        public List<CollectibleGeneT> collectibles; 
+        public SpawnGeneT rectangleSpawn, circleSpawn; //These are necessary for every level but can still be randomized
         public float fitness;
         
         private Random random;
@@ -20,8 +21,8 @@ namespace GeometryFriends.LevelGenerator
 
         public LevelDNA(Random random, Func<int, float> fitnessFunction, bool init = true)
         {
-            this.platforms = new List<PlatformGene>();
-            this.collectibles = new List<CollectibleGene>();
+            this.platforms = new List<PlatformGeneT>();
+            this.collectibles = new List<CollectibleGeneT>();
             this.fitness = -1;
             this.random = random;
             this.fitnessFunction = fitnessFunction;
@@ -31,9 +32,9 @@ namespace GeometryFriends.LevelGenerator
             }
             else
             {
-                rectangleSpawn = new SpawnGene(random);
-                circleSpawn = new SpawnGene(random);
-                this.collectibles.Add(new CollectibleGene(random));
+                rectangleSpawn = new SpawnGeneT(random);
+                circleSpawn = new SpawnGeneT(random);
+                this.collectibles.Add(new CollectibleGeneT(random));
             }
             
         }
@@ -45,18 +46,18 @@ namespace GeometryFriends.LevelGenerator
             this.fitnessFunction = other.fitnessFunction;
             this.platforms = other.platforms.ToList();
             this.collectibles = other.collectibles.ToList();
-            this.rectangleSpawn = new SpawnGene(other.rectangleSpawn);
-            this.circleSpawn = new SpawnGene(other.circleSpawn);
+            this.rectangleSpawn = new SpawnGeneT(other.rectangleSpawn);
+            this.circleSpawn = new SpawnGeneT(other.circleSpawn);
         }
-        public LevelDNA(List<PlatformGene> plats,List<CollectibleGene> coll, Point recSpawn, Point circSpawn)
+        public LevelDNA(List<PlatformGeneT> plats,List<CollectibleGeneT> coll, Point recSpawn, Point circSpawn)
         {
             this.fitness = 0;
             this.random = null;
             this.fitnessFunction = null;
             this.platforms = plats;
             this.collectibles = coll;
-            this.rectangleSpawn = new SpawnGene(recSpawn);
-            this.circleSpawn = new SpawnGene(circSpawn);
+            this.rectangleSpawn = new SpawnGeneT(recSpawn);
+            this.circleSpawn = new SpawnGeneT(circSpawn);
         }
         
         private void InitGenes()
@@ -67,15 +68,15 @@ namespace GeometryFriends.LevelGenerator
             
             for (int i = 0; i < num_plat; i++)
             {
-                platforms.Add(new PlatformGene(random));
+                platforms.Add(new PlatformGeneT(random));
             }
             for (int i = 0; i < num_collectible; i++)
             {
-                collectibles.Add(new CollectibleGene(random));
+                collectibles.Add(new CollectibleGeneT(random));
             }
 
-            rectangleSpawn = new SpawnGene(random);
-            circleSpawn = new SpawnGene(random);
+            rectangleSpawn = new SpawnGeneT(random);
+            circleSpawn = new SpawnGeneT(random);
         }
 
         public float CalculateFitness(int index)
@@ -90,10 +91,10 @@ namespace GeometryFriends.LevelGenerator
             LevelDNA child = new LevelDNA(random,fitnessFunction,false);
 
             int minPlatNum = (platforms.Count < otherParent.platforms.Count) ? platforms.Count : otherParent.platforms.Count;
-            List<PlatformGene> largestPlatNum = (platforms.Count > otherParent.platforms.Count) ? platforms : otherParent.platforms;
+            List<PlatformGeneT> largestPlatNum = (platforms.Count > otherParent.platforms.Count) ? platforms : otherParent.platforms;
             
             int minCollNum = (collectibles.Count < otherParent.collectibles.Count) ? collectibles.Count : otherParent.collectibles.Count;
-            List<CollectibleGene> largestCollNum = (collectibles.Count > otherParent.collectibles.Count) ? collectibles : otherParent.collectibles;
+            List<CollectibleGeneT> largestCollNum = (collectibles.Count > otherParent.collectibles.Count) ? collectibles : otherParent.collectibles;
             
             for (int i = 0; i < minPlatNum; i++)
             {
@@ -160,20 +161,110 @@ namespace GeometryFriends.LevelGenerator
         public string Description()
         {
             string text = "";
-
+            text += "rectangle spawn " + rectangleSpawn.Description();
+            text += "circle spawn " + circleSpawn.Description();
             
-            foreach (var g in platforms)
-            {
-                text += g.Description();
-            }
             foreach (var g in collectibles)
             {
                 text += g.Description();
             }
-            text += "circle spawn " + circleSpawn.Description();
-            text += "rectangle spawn " + rectangleSpawn.Description();
+            foreach (var g in platforms)
+            {
+                text += g.Description();
+            }
+            
+            
 
             return text;
+        }
+
+        public LevelChromosome DNAToChromosome()
+        {
+            void InsertPosition(Gene[] genes, int index, Point position)
+            {
+                var x = 0;
+                var y = 0;
+                var xBinary = Convert.ToString(x, 2);
+                var yBinary = Convert.ToString(y, 2);
+                //Rectangle Spawn
+                x = position.X;
+                y = position.Y;
+                xBinary = Convert.ToString(x, 2);
+                yBinary = Convert.ToString(y, 2);
+                for (int i = 0; i < 16 - xBinary.Length ; i++)
+                {
+                    genes[index] = new Gene(0);
+                    index++;
+                }
+                for (int i = 0; i < xBinary.Length; i++)
+                {
+                    genes[index] = new Gene( xBinary[i]);
+                    index++;
+                }
+                for (int i = 0; i < 16 - yBinary.Length ; i++)
+                {
+                    genes[index] = new Gene(0);
+                    index++;
+                }
+                for (int i = 0; i < yBinary.Length; i++)
+                {
+                    genes[index] = new Gene(yBinary[i]);
+                    index++;
+                }
+            }
+            Gene[] genesToReplace = new Gene[749];
+            LevelChromosome lvl = new LevelChromosome();
+            var currentGene = 0;
+            //Rectangle Spawn
+            InsertPosition(genesToReplace, currentGene, rectangleSpawn.position);
+            currentGene += 16*2;
+            //Circle Spawn
+            InsertPosition(genesToReplace, currentGene, circleSpawn.position);
+            currentGene += 16*2;
+            //Collectibles
+            var colNum = 0;
+            foreach (var col in collectibles)
+            {
+                if (colNum >= 5) break; //max 5 collectibles
+                genesToReplace[currentGene] = new Gene(1);
+                currentGene++;
+                InsertPosition(genesToReplace, currentGene, col.position);
+                currentGene += 16*2;
+                colNum++;
+            }
+
+            for (; colNum < 5; colNum++)
+            {
+                genesToReplace[currentGene] = new Gene(0);
+                currentGene++;
+                InsertPosition(genesToReplace, currentGene, Point.Empty);
+                currentGene += 16*2;
+            }
+            //Platforms
+            var platNum = 0;
+            foreach (var plat in platforms)
+            {
+                if (platNum >= 8) break; //max 8 collectibles
+                genesToReplace[currentGene] = new Gene(1);
+                currentGene++;
+                InsertPosition(genesToReplace, currentGene, plat.position);
+                currentGene += 16*2;
+                InsertPosition(genesToReplace, currentGene, new Point(plat.height,plat.width));
+                currentGene += 16*2;
+                platNum++;
+            }
+
+            for (; platNum < 8; platNum++)
+            {
+                genesToReplace[currentGene] = new Gene(0);
+                currentGene++;
+                InsertPosition(genesToReplace, currentGene, Point.Empty);
+                currentGene += 16*2;
+                InsertPosition(genesToReplace, currentGene, Point.Empty);
+                currentGene += 16*2;
+            }
+            lvl.ReplaceGenes(0, genesToReplace);
+            return lvl;
         }
     }
 }

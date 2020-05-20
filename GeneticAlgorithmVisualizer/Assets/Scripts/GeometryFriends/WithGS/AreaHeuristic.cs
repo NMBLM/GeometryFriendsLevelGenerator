@@ -681,7 +681,9 @@ namespace GeometryFriends.WithGS
             }
 
             var level = c.GetLevelDNA();
-            return CalculateFitness(level);
+            var fit = CalculateFitness(level);
+            //chromosome.Fitness = fit;
+            return fit;
         }
     }
 }

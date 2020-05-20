@@ -91,6 +91,7 @@ namespace GeometryFriends.WithGS
             ga.MutationProbability = .3f;
             
             
+            
             return ga;
         }
         
@@ -117,6 +118,8 @@ namespace GeometryFriends.WithGS
                     }
                 }
             };
+            
+            
             /**/
             GA.TerminationReached += delegate
             {

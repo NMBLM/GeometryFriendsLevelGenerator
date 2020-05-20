@@ -41,7 +41,7 @@ namespace GeometryFriends.WithGS
         public LevelChromosome() : base(NUMBEROFBITS)
         {
             CreateGenes();
-            
+            this.Fitness = null;
         }
 
         public LevelChromosome(String s) : base(NUMBEROFBITS)
@@ -64,6 +64,7 @@ namespace GeometryFriends.WithGS
                     genesToReplace[i] = new Gene(1);
                 }
             }
+            this.Fitness = null;
         }
         public override IChromosome CreateNew()
         {

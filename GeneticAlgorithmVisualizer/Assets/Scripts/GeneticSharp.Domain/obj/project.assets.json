@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.2": {
+      "GeneticSharp.Infrastructure.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.2",
+        "compile": {
+          "bin/placeholder/GeneticSharp.Infrastructure.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneticSharp.Infrastructure.Framework.dll": {}
+        }
+      }
+    },
+    ".NETStandard,Version=v2.0": {
+      "GeneticSharp.Infrastructure.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/GeneticSharp.Infrastructure.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeneticSharp.Infrastructure.Framework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GeneticSharp.Infrastructure.Framework/1.0.0": {
+      "type": "project",
+      "path": "../GeneticSharp.Infrastructure.Framework/GeneticSharp.Infrastructure.Framework.csproj",
+      "msbuildProject": "../GeneticSharp.Infrastructure.Framework/GeneticSharp.Infrastructure.Framework.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.2": [
+      "GeneticSharp.Infrastructure.Framework >= 1.0.0"
+    ],
+    ".NETStandard,Version=v2.0": [
+      "GeneticSharp.Infrastructure.Framework >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\nunom\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\GeneticSharp.Domain\\GeneticSharp.Domain.csproj",
+      "projectName": "GeneticSharp",
+      "projectPath": "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\GeneticSharp.Domain\\GeneticSharp.Domain.csproj",
+      "packagesPath": "C:\\Users\\nunom\\.nuget\\packages\\",
+      "outputPath": "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\GeneticSharp.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "crossTargeting": true,
+      "configFilePaths": [
+        "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\.nuget\\NuGet.Config",
+        "C:\\Users\\nunom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net462",
+        "netstandard2.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net462": {
+          "projectReferences": {
+            "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\GeneticSharp.Infrastructure.Framework\\GeneticSharp.Infrastructure.Framework.csproj": {
+              "projectPath": "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\GeneticSharp.Infrastructure.Framework\\GeneticSharp.Infrastructure.Framework.csproj",
+              "privateAssets": "all"
+            }
+          }
+        },
+        "netstandard2.0": {
+          "projectReferences": {
+            "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\GeneticSharp.Infrastructure.Framework\\GeneticSharp.Infrastructure.Framework.csproj": {
+              "projectPath": "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\GeneticSharp.Infrastructure.Framework\\GeneticSharp.Infrastructure.Framework.csproj",
+              "privateAssets": "all"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net462": {},
+      "netstandard2.0": {}
+    }
+  }
+}

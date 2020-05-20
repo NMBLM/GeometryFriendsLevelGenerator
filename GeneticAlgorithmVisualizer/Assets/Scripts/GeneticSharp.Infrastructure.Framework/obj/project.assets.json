@@ -1,0 +1,52 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.2": {},
+    ".NETStandard,Version=v2.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.2": [],
+    ".NETStandard,Version=v2.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\nunom\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\GeneticSharp.Infrastructure.Framework\\GeneticSharp.Infrastructure.Framework.csproj",
+      "projectName": "GeneticSharp.Infrastructure.Framework",
+      "projectPath": "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\GeneticSharp.Infrastructure.Framework\\GeneticSharp.Infrastructure.Framework.csproj",
+      "packagesPath": "C:\\Users\\nunom\\.nuget\\packages\\",
+      "outputPath": "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\GeneticSharp.Infrastructure.Framework\\obj\\",
+      "projectStyle": "PackageReference",
+      "crossTargeting": true,
+      "configFilePaths": [
+        "F:\\Files\\School\\GeneticSharp-2.6.0\\src\\.nuget\\NuGet.Config",
+        "C:\\Users\\nunom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net462",
+        "netstandard2.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net462": {
+          "projectReferences": {}
+        },
+        "netstandard2.0": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net462": {},
+      "netstandard2.0": {}
+    }
+  }
+}

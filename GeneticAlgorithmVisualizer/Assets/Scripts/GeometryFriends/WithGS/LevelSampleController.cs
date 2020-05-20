@@ -39,8 +39,8 @@ namespace GeometryFriends.WithGS
             var chromosome = new LevelChromosome();
 
             CrossoverBase crossover;
-            //crossover = new OnePointCrossover();
-            crossover = new TwoPointCrossover();
+            crossover = new OnePointCrossover();
+            //crossover = new TwoPointCrossover();
             //crossover = new UniformCrossover();
             //crossover = new ThreeParentCrossover();
 
@@ -57,7 +57,7 @@ namespace GeometryFriends.WithGS
 
 
             MutationBase mutation;
-            //mutation = new DisplacementMutation();
+            ////mutation = new DisplacementMutation();
             mutation = new FlipBitMutation();
             //mutation = new InsertionMutation();
             //mutation = new PartialShuffleMutation();
@@ -109,7 +109,7 @@ namespace GeometryFriends.WithGS
             GA.GenerationRan += delegate {
                 m_previousBestFitness = GA.BestChromosome.Fitness.Value;
                 m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
-                Debug.Log($"Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving}");
+                Debug.Log($"Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - PopSize: ${GA.Population.CurrentGeneration.Chromosomes.Count}");
                 if (true)
                 {
                     foreach (var c in GA.Population.CurrentGeneration.Chromosomes)
@@ -126,7 +126,7 @@ namespace GeometryFriends.WithGS
                 var best = GA.BestChromosome as LevelChromosome;
                 m_previousBestFitness = GA.BestChromosome.Fitness.Value;
                 m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
-                Debug.Log($"Last Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving}");
+                Debug.Log($"Last Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - PopSize: ${GA.Population.CurrentGeneration.Chromosomes.Count}");
 
             };
             /**/

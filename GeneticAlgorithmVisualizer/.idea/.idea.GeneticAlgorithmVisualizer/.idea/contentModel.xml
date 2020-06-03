@@ -133,6 +133,7 @@
           </e>
           <e p="GeometryFriends" t="Include">
             <e p="GATestWorld.cs" t="Include" />
+            <e p="InstrumentationManager.cs" t="Include" />
             <e p="LevelGenerator" t="Include">
               <e p="CollectibleGeneT.cs" t="Include" />
               <e p="GeneT.cs" t="Include" />
@@ -148,6 +149,8 @@
               <e p="LevelChromosome.cs" t="Include" />
               <e p="LevelSampleController.cs" t="Include" />
               <e p="LevelSpecifications.cs" t="Include" />
+              <e p="SmallerLevelChromosome.cs" t="Include" />
+              <e p="SmallerLevelSampleController.cs" t="Include" />
               <e p="TestSpecifications.cs" t="Include" />
             </e>
           </e>

@@ -50,11 +50,13 @@ namespace GeometryFriends.WithGS
         
         public double CalculateFitness(LevelDNA level)
         {
+            /** /
             if (!(level.collectibles.Count > 0))
             {
                 InitGrid(level);
                 return 0;
             }
+            /**/
             InitGrid(level);
             InitFits();
             RectangleReachability(level);
@@ -670,17 +672,25 @@ namespace GeometryFriends.WithGS
 
         public double Evaluate(IChromosome chromosome)
         {
-            LevelChromosome c;
+            LevelDNA level;
+            
             if (chromosome.GetType() == typeof(LevelChromosome))
             {
-                c = (LevelChromosome) chromosome;
+                var c = (LevelChromosome) chromosome;
+                level = c.GetLevelDNA();
+
+            }
+            else if (chromosome.GetType() == typeof(SmallerLevelChromosome))
+            {
+                var c = (SmallerLevelChromosome) chromosome;
+                level = c.GetLevelDNA();
+
             }
             else
             {
                 return 0;
             }
-
-            var level = c.GetLevelDNA();
+            
             var fit = CalculateFitness(level);
             //chromosome.Fitness = fit;
             return fit;

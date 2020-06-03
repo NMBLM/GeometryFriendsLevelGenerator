@@ -33,6 +33,7 @@ public class ReachabilityViewer : MonoBehaviour
     public GAController GC;
 
     public LevelSampleController GS;
+    public SmallerLevelSampleController SGS;
     // Start is called before the first frame update
     [SerializeField] private int currentN = 0;
     [SerializeField] private int toGen = 1;
@@ -78,6 +79,14 @@ public class ReachabilityViewer : MonoBehaviour
         Debug.Log("-------------------------------------");
         Debug.Log(GATestWorld.LevelTwo().DNAToChromosome());
         Debug.Log(GATestWorld.LevelTwo().DNAToChromosome().GetLevelDNA().Description());
+        Debug.Log(GATestWorld.LevelTwo().Description());
+        /** /
+        Debug.Log(GATestWorld.LevelOne().DNAToSmallChromosome());
+        Debug.Log(GATestWorld.LevelOne().DNAToSmallChromosome().GetLevelDNA().Description());
+        Debug.Log(GATestWorld.LevelOne().Description());
+        Debug.Log("-------------------------------------");
+        Debug.Log(GATestWorld.LevelTwo().DNAToSmallChromosome());
+        Debug.Log(GATestWorld.LevelTwo().DNAToSmallChromosome().GetLevelDNA().Description());
         Debug.Log(GATestWorld.LevelTwo().Description());
         /**/
         //GC = new GAController();
@@ -133,7 +142,7 @@ public class ReachabilityViewer : MonoBehaviour
             GC.NextGen(toGen+1);
         }
         /**/
-        /**/
+        /** /
         if (Input.GetKeyUp(KeyCode.O))
         {
             if (GS == null)
@@ -166,9 +175,60 @@ public class ReachabilityViewer : MonoBehaviour
             
         }
         /**/
+        /**/
+        if (Input.GetKeyUp(KeyCode.O))
+        {
+            if (SGS == null)
+            {
+                var o = GameObject.Find("SmallSampleController");
+                SGS = o.GetComponent<SmallerLevelSampleController>();
+            }
+            else
+            {
+                currentN -= 1;
+                if (currentN < 0) currentN = 0;
+                SGS.ShowNPopulation(currentN);
+                Debug.Log("Viewing: " + currentN);  
+            }
+            
+        }
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            if (SGS == null)
+            {
+                var o = GameObject.Find("SmallSampleController");
+                SGS = o.GetComponent<SmallerLevelSampleController>();
+            }
+            else
+            {
+                currentN += 1;
+                if (!SGS.ShowNPopulation(currentN)) currentN -= 1;
+                Debug.Log("Viewing: " + currentN);   
+            }
+            
+        }
+        /**/
     }
 
     public void ViewBest(LevelChromosome best)
+    {
+        foreach (Transform child in transform)
+        {
+            if (child != this.transform)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+        Debug.Log("Fitness : " + best.Fitness);
+        level = best.GetLevelDNA();
+        Debug.Log("Level: " + level.Description() + "\n" + best.ToString());
+        h = new AreaHeuristic(TestSpecifications.LevelOne());
+        //h = new OldReachHeuristic(blockSize:granularity);
+        Debug.Log("recalculated fitness: " + h.CalculateFitness(level));
+        CreateGrid();
+    }
+    
+    public void ViewBest(SmallerLevelChromosome best)
     {
         foreach (Transform child in transform)
         {

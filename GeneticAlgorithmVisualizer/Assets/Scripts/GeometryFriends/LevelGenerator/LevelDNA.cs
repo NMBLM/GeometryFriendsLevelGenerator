@@ -266,5 +266,74 @@ namespace GeometryFriends.LevelGenerator
             lvl.ReplaceGenes(0, genesToReplace);
             return lvl;
         }
+        public SmallerLevelChromosome DNAToSmallChromosome()
+        {
+            void InsertPosition(Gene[] genes, int index, Point position)
+            {
+                var x = 0;
+                var y = 0;
+                var xBinary = Convert.ToString(x, 2);
+                var yBinary = Convert.ToString(y, 2);
+                //Rectangle Spawn
+                x = position.X;
+                y = position.Y;
+                xBinary = Convert.ToString(x, 2);
+                yBinary = Convert.ToString(y, 2);
+                for (int i = 0; i < 16 - xBinary.Length ; i++)
+                {
+                    genes[index] = new Gene(0);
+                    index++;
+                }
+                for (int i = 0; i < xBinary.Length; i++)
+                {
+                    genes[index] = new Gene( xBinary[i]);
+                    index++;
+                }
+                for (int i = 0; i < 16 - yBinary.Length ; i++)
+                {
+                    genes[index] = new Gene(0);
+                    index++;
+                }
+                for (int i = 0; i < yBinary.Length; i++)
+                {
+                    genes[index] = new Gene(yBinary[i]);
+                    index++;
+                }
+            }
+            Gene[] genesToReplace = new Gene[584];
+            SmallerLevelChromosome lvl = new SmallerLevelChromosome();
+            var currentGene = 0;
+            //Rectangle Spawn
+            InsertPosition(genesToReplace, currentGene, rectangleSpawn.position);
+            currentGene += 16*2;
+            //Circle Spawn
+            InsertPosition(genesToReplace, currentGene, circleSpawn.position);
+            currentGene += 16*2;
+            //Platforms
+            var platNum = 0;
+            foreach (var plat in platforms)
+            {
+                if (platNum >= 8) break; //max 8 collectibles
+                genesToReplace[currentGene] = new Gene(1);
+                currentGene++;
+                InsertPosition(genesToReplace, currentGene, plat.position);
+                currentGene += 16*2;
+                InsertPosition(genesToReplace, currentGene, new Point(plat.height,plat.width));
+                currentGene += 16*2;
+                platNum++;
+            }
+
+            for (; platNum < 8; platNum++)
+            {
+                genesToReplace[currentGene] = new Gene(0);
+                currentGene++;
+                InsertPosition(genesToReplace, currentGene, Point.Empty);
+                currentGene += 16*2;
+                InsertPosition(genesToReplace, currentGene, Point.Empty);
+                currentGene += 16*2;
+            }
+            lvl.ReplaceGenes(0, genesToReplace);
+            return lvl;
+        }
     }
 }

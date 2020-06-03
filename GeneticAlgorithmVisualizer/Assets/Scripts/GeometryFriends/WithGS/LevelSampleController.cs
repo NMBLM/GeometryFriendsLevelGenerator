@@ -32,6 +32,8 @@ namespace GeometryFriends.WithGS
 
         private ReachabilityViewer _viewer;
         private System.Nullable<Double> previousbestfitness = 0;
+        private bool WriteToFile = true;
+        
         protected GeneticAlgorithm CreateGA()
         {
             //m_fitness = new OldReachHeuristic();
@@ -81,7 +83,7 @@ namespace GeometryFriends.WithGS
             var ga = new GeneticAlgorithm(population, m_fitness, selection, crossover, mutation);
             ga.Termination = new OrTermination(new GenerationNumberTermination(MaxGenerations), 
                 new FitnessStagnationTermination(50));
-            
+            //ga.Termination = new GenerationNumberTermination(MaxGenerations);
             ga.TaskExecutor = new ParallelTaskExecutor
             {
                 MinThreads = population.MinSize,
@@ -110,12 +112,19 @@ namespace GeometryFriends.WithGS
                 m_previousBestFitness = GA.BestChromosome.Fitness.Value;
                 m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
                 Debug.Log($"Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - PopSize: ${GA.Population.CurrentGeneration.Chromosomes.Count}");
-                if (true)
+                if (false)
                 {
                     foreach (var c in GA.Population.CurrentGeneration.Chromosomes)
                     {
                         c.Fitness = m_fitness.Evaluate(c);
                     }
+                    m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
+                    Debug.Log($"RecalculatedAverage: ${m_previousAverageFitness}");
+                }
+
+                if (WriteToFile)
+                {
+                    InstrumentationManager.instance.WriteGenData(GA.GenerationsNumber,GA.Population.CurrentGeneration.Chromosomes);
                 }
             };
             

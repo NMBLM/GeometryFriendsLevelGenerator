@@ -133,7 +133,34 @@ namespace GeometryFriends
 
             } 
         }
-        
+
+        public void WriteBestChromosome(IChromosome c)
+        {
+            using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\description.txt",true))
+            {
+                sw.WriteLine("Best Chromosome: " + c);
+                LevelDNA level;
+                if (chromosome.GetType() == typeof(LevelChromosome))
+                {
+                    var c = (LevelChromosome) chromosome;
+                    level = c.GetLevelDNA();
+                    sw.WriteLine("Fitness : " + c.Fitness);
+                    sw.WriteLine("Description: " + level.Description()+ "\n" + best.ToString();
+
+                }
+                else if (chromosome.GetType() == typeof(SmallerLevelChromosome))
+                {
+                    var c = (SmallerLevelChromosome) chromosome;
+                    level = c.GetLevelDNA();
+                    sw.WriteLine("Fitness : " + c.Fitness);
+                    sw.WriteLine("Description: " + level.Description()+ "\n" + best.ToString();
+                }
+                else
+                {
+                    return 0;
+                }
+            } 
+        }
         
     }
 }

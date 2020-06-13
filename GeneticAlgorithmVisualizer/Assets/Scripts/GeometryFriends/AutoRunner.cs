@@ -66,6 +66,7 @@ public class AutoRunner : MonoBehaviour
         
         if (ga != null && ga.State == GeneticAlgorithmState.TerminationReached)
         {
+            InstrumentationManager.instance.WriteBestChromosome(ga.BestChromosome)
             currentRun += 1;
             Destroy(currentGA);
             currentGA = null;

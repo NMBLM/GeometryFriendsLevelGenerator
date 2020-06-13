@@ -27,7 +27,7 @@ namespace GeometryFriends.WithGS
         private double m_previousBestFitness;
         private double m_previousAverageFitness;
         private bool previewed = false;
-        protected GeneticAlgorithm GA { get; private set; }
+        public GeneticAlgorithm GA { get; private set; }
         protected bool ChromosomesCleanupEnabled { get; set; }
 
         private ReachabilityViewer _viewer;

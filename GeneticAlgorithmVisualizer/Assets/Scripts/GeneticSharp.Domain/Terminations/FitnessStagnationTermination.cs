@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using GeneticSharp.Infrastructure.Framework.Texts;
 
 namespace GeneticSharp.Domain.Terminations
 {
@@ -68,5 +69,10 @@ namespace GeneticSharp.Domain.Terminations
             return m_stagnantGenerationsCount >= ExpectedStagnantGenerationsNumber;
         }
         #endregion
+        
+        public override string ToString()
+        {
+            return "{0} (Amount: {1})".With(GetType().Name, ExpectedStagnantGenerationsNumber);
+        }
     }
 }

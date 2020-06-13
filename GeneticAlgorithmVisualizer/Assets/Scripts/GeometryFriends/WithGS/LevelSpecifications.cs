@@ -49,6 +49,17 @@ namespace GeometryFriends.WithGS
             this.areas.Add(area);
         }
         public List<SpecificArea> areas;
-        
+
+        public override string ToString()
+        {
+            var s = "";
+            foreach (var a in areas)
+            {
+                s += "Area type: " + a.type + " width: " + a.width + " height: " + a.height +
+                     " position: " + a.position + "\n";
+            }
+
+            return s;
+        }
     }
 }

@@ -132,6 +132,7 @@
             <e p="TplOperatorsStrategy.cs" t="Include" />
           </e>
           <e p="GeometryFriends" t="Include">
+            <e p="AutoRunner.cs" t="Include" />
             <e p="GATestWorld.cs" t="Include" />
             <e p="InstrumentationManager.cs" t="Include" />
             <e p="LevelGenerator" t="Include">

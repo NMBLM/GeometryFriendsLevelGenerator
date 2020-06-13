@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using GeneticSharp.Domain.Chromosomes;
+using GeneticSharp.Domain.Crossovers;
+using GeneticSharp.Domain.Fitnesses;
+using GeneticSharp.Domain.Mutations;
+using GeneticSharp.Domain.Selections;
+using GeneticSharp.Domain.Terminations;
+using GeometryFriends.WithGS;
 using UnityEngine;
 
 
@@ -111,6 +117,21 @@ namespace GeometryFriends
             }
 
             
+        }
+
+        public void WriteDescription(int popSize, IChromosome g, ICrossover c, IMutation m, ISelection s, ITermination t, IFitness h)
+        {
+            using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\description.txt",true))
+            {
+                sw.WriteLine("Population Size: " + popSize);
+                sw.WriteLine("Chromosome: " + g);
+                sw.WriteLine("Crossover: " + c);
+                sw.WriteLine("Mutation: " + m);
+                sw.WriteLine("Selection: " + s);
+                sw.WriteLine("Termination: " + t);
+                sw.WriteLine("Heuristic: " + h);
+
+            } 
         }
         
         

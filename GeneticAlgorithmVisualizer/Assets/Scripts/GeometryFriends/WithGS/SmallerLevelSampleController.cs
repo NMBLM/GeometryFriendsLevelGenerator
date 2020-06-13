@@ -21,13 +21,13 @@ namespace GeometryFriends.WithGS
         private IFitness m_fitness;
         private const int MaxGenerations = 500;
         private const int MinPopulation = 100;
-        private const int MaxPopulation = 100;
+        private const int MaxPopulation = MinPopulation;
         
         private Thread m_gaThread;
         private double m_previousBestFitness;
         private double m_previousAverageFitness;
         private bool previewed = false;
-        protected GeneticAlgorithm GA { get; private set; }
+        public GeneticAlgorithm GA { get; private set; }
         protected bool ChromosomesCleanupEnabled { get; set; }
 
         private ReachabilityViewer _viewer;
@@ -92,7 +92,10 @@ namespace GeometryFriends.WithGS
 
             ga.MutationProbability = .3f;
             
-            
+            if (WriteToFile)
+            {
+                InstrumentationManager.instance.WriteDescription(MaxPopulation,chromosome, crossover, mutation, selection, ga.Termination, m_fitness);
+            }
             
             return ga;
         }

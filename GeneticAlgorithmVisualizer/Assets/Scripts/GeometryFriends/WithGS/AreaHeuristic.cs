@@ -695,5 +695,14 @@ namespace GeometryFriends.WithGS
             //chromosome.Fitness = fit;
             return fit;
         }
+
+        public override string ToString()
+        {
+            var s = "Area Heurisitc\n";
+
+            s += specs;
+
+            return s;
+        }
     }
 }

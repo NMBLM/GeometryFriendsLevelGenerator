@@ -10,6 +10,7 @@ using GeneticSharp.Domain.Mutations;
 using GeneticSharp.Domain.Selections;
 using GeneticSharp.Domain.Terminations;
 using GeometryFriends.WithGS;
+using GeometryFriends.LevelGenerator;
 using UnityEngine;
 
 
@@ -53,7 +54,7 @@ namespace GeometryFriends
             Debug.Log(_filepath);
 
         }
-
+        public IFitness h;
         #endregion
 
         public void WriteGenData(int GenNumber, IList<IChromosome> chromosomes)
@@ -119,7 +120,7 @@ namespace GeometryFriends
             
         }
 
-        public void WriteDescription(int popSize, IChromosome g, ICrossover c, IMutation m, ISelection s, ITermination t, IFitness h)
+        public void WriteDescription(int popSize, IChromosome g, ICrossover c, IMutation m, ISelection s, ITermination t, IFitness he)
         {
             using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\description.txt",true))
             {
@@ -129,23 +130,25 @@ namespace GeometryFriends
                 sw.WriteLine("Mutation: " + m);
                 sw.WriteLine("Selection: " + s);
                 sw.WriteLine("Termination: " + t);
-                sw.WriteLine("Heuristic: " + h);
+                sw.WriteLine("Heuristic: " + he);
+                this.h = he;
 
             } 
         }
 
-        public void WriteBestChromosome(IChromosome c)
+        public void WriteBestChromosome(IChromosome chromosome)
         {
             using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\description.txt",true))
             {
-                sw.WriteLine("Best Chromosome: " + c);
+                sw.WriteLine("Best Chromosome: " + chromosome);
                 LevelDNA level;
                 if (chromosome.GetType() == typeof(LevelChromosome))
                 {
                     var c = (LevelChromosome) chromosome;
                     level = c.GetLevelDNA();
                     sw.WriteLine("Fitness : " + c.Fitness);
-                    sw.WriteLine("Description: " + level.Description()+ "\n" + best.ToString();
+                    sw.WriteLine("RecalcFitness : " + h.Evaluate(c));
+                    sw.WriteLine("Description: " + level.Description()+ "\n" + c.ToString());
 
                 }
                 else if (chromosome.GetType() == typeof(SmallerLevelChromosome))
@@ -153,11 +156,8 @@ namespace GeometryFriends
                     var c = (SmallerLevelChromosome) chromosome;
                     level = c.GetLevelDNA();
                     sw.WriteLine("Fitness : " + c.Fitness);
-                    sw.WriteLine("Description: " + level.Description()+ "\n" + best.ToString();
-                }
-                else
-                {
-                    return 0;
+                    sw.WriteLine("RecalcFitness : " + h.Evaluate(c));
+                    sw.WriteLine("Description: " + level.Description()+ "\n" + c.ToString());
                 }
             } 
         }

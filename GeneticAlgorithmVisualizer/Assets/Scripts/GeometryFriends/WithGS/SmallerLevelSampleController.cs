@@ -18,8 +18,8 @@ namespace GeometryFriends.WithGS
     public class SmallerLevelSampleController : MonoBehaviour
     {
 
-        private IFitness m_fitness;
-        private const int MaxGenerations = 500;
+        public IFitness m_fitness;
+        private const int MaxGenerations = 2000;
         private const int MinPopulation = 100;
         private const int MaxPopulation = MinPopulation;
         
@@ -70,8 +70,8 @@ namespace GeometryFriends.WithGS
             
             SelectionBase selection;
             //selection = new EliteSelection();
-            //selection = new StochasticUniversalSamplingSelection();
-            selection = new TournamentSelection(6);
+            selection = new StochasticUniversalSamplingSelection();
+            //selection = new TournamentSelection(6);
             //selection = new RouletteWheelSelection();
             
             

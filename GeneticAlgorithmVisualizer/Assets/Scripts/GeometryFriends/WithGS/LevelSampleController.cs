@@ -18,7 +18,7 @@ namespace GeometryFriends.WithGS
     public class LevelSampleController : MonoBehaviour
     {
 
-        private IFitness m_fitness;
+        public IFitness m_fitness;
         private const int MaxGenerations = 500;
         private const int MinPopulation = 100;
         private const int MaxPopulation = 100;

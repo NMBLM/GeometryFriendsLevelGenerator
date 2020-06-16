@@ -40,13 +40,14 @@ def runAnalysis(dirName):
 
     #X = np.arange(GenNumber)
 
-    print(bestFitness)
-    print(average)
-    print(fqaverage)
-    print(sqaverage)
-    print(tqaverage)
-    print(lqaverage)
+    #print(bestFitness)
+    #print(average)
+    #print(fqaverage)
+    #print(sqaverage)
+    #print(tqaverage)
+    #print(lqaverage)
 
+    print(dirName)
     dpii = 500.0
     plt.plot(bestFitness  ,color ="blue")
     plt.ylabel('BestFitness')
@@ -116,7 +117,7 @@ def runAnalysis(dirName):
     plt.savefig(dirName+'\\Quartiles.png',dpi = dpii)
     plt.clf()
 
-currentR = 1
+currentR =40
 dn = "Run_" + str(currentR)
 while(os.path.isdir(dn)):
     runAnalysis(dn)

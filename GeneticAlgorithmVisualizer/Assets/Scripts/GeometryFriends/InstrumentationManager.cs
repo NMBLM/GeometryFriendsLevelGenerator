@@ -23,6 +23,7 @@ namespace GeometryFriends
         public static InstrumentationManager instance;
         private String _filepath;
         private DirectoryInfo _dir;
+        private int _runNumber;
         private void Awake() {
             instance = this;
 
@@ -51,6 +52,7 @@ namespace GeometryFriends
 
             _dir = Directory.CreateDirectory(Directory.GetCurrentDirectory()+"\\GenData\\Run_" + RunNumber);
             _filepath =_dir.FullName + "\\data.txt";
+            _runNumber = RunNumber;
             Debug.Log(_filepath);
 
         }
@@ -135,10 +137,19 @@ namespace GeometryFriends
 
             } 
         }
+        
+        public void AddToDescription(string extra)
+        {
+            using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\description.txt",true))
+            {
+                sw.WriteLine(extra);
+
+            } 
+        }
 
         public void WriteBestChromosome(IChromosome chromosome)
         {
-            using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\description.txt",true))
+            using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\top.txt",true))
             {
                 sw.WriteLine("Best Chromosome: " + chromosome);
                 LevelDNA level;
@@ -160,6 +171,23 @@ namespace GeometryFriends
                     sw.WriteLine("Description: " + level.Description()+ "\n" + c.ToString());
                 }
             } 
+        }
+
+        public void Screenshot(string name)
+        {
+            var i = 0;
+            while (_dir.FullName[_dir.FullName.Length - 1 - i] != '_')
+            {
+                i++;
+            }
+
+            var r = _runNumber;
+            if (r != 1)
+            {
+                r = r - 1;
+            }
+            var nDirName = _dir.FullName.Substring(0,_dir.FullName.Length - i) + r;
+            ScreenCapture.CaptureScreenshot(nDirName + "\\" + name + ".png");
         }
         
     }

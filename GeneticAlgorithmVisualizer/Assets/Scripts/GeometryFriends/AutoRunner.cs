@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using GeneticSharp.Domain;
 using GeneticSharp.Domain.Chromosomes;
 using GeometryFriends.WithGS;
@@ -17,6 +18,14 @@ namespace GeometryFriends
         private GameObject currentGA = null;
     
         private GeneticAlgorithm ga = null;
+
+        private bool takeScreenShot = false;
+
+        private List<IChromosome> previousChromosomes;
+
+        private bool showingTopTen = false;
+
+        private int currentTopTen = 0;
         // Start is called before the first frame update
         void Start()
         {
@@ -66,26 +75,52 @@ namespace GeometryFriends
                 }  
             }
             
+            if (takeScreenShot)
+            {
+                InstrumentationManager.instance.Screenshot("Run" + currentRun + "_" + currentTopTen);
+                takeScreenShot = false;
+            }
+            
             if (ga != null && ga.State == GeneticAlgorithmState.TerminationReached)
             {
-                InstrumentationManager.instance.WriteBestChromosome(ga.BestChromosome);
-                if (ga.BestChromosome.GetType() == typeof(LevelChromosome))
+                previousChromosomes = ga.Population.CurrentGeneration.Chromosomes.OrderByDescending(c => c.Fitness.Value).ToList();
+                for (int i = 0; i < 10; i++)
                 {
-                    var c = (LevelChromosome) ga.BestChromosome;
-                    va.ViewBest(c);
+                    InstrumentationManager.instance.WriteBestChromosome(previousChromosomes[i]); 
                 }
-                else if (ga.BestChromosome.GetType() == typeof(SmallerLevelChromosome))
-                {
-                    var c = (SmallerLevelChromosome) ga.BestChromosome;
-                    va.ViewBest(c);
-                }
+                InstrumentationManager.instance.AddToDescription("Total Time: " + ga.TimeEvolving);
                 currentRun += 1;
-                Destroy(currentGA);
+                if (currentRun < runAmount)
+                {
+                    Destroy(currentGA); 
+                }
                 currentGA = null;
                 ga = null;
+                showingTopTen = true;
+                currentTopTen = 0;
             }
-    
-            
+
+            if (showingTopTen)
+            {
+                var tmp = previousChromosomes[currentTopTen];
+                if (tmp.GetType() == typeof(LevelChromosome))
+                {
+                    var c = (LevelChromosome) tmp;
+                    va.ViewBest(c);
+                }
+                else if (tmp.GetType() == typeof(SmallerLevelChromosome))
+                {
+                    var c = (SmallerLevelChromosome) tmp;
+                    va.ViewBest(c);
+                }
+                currentTopTen++;
+                takeScreenShot = true;
+                if (currentTopTen >= 10)
+                {
+                    showingTopTen = false;
+                }
+            }
+
         }
     }
 }

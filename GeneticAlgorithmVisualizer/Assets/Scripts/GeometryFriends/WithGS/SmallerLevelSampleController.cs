@@ -19,7 +19,7 @@ namespace GeometryFriends.WithGS
     {
 
         public IFitness m_fitness;
-        private const int MaxGenerations = 25;
+        private const int MaxGenerations = 2000;
         private const int MinPopulation = 100;
         private const int MaxPopulation = MinPopulation;
         
@@ -82,7 +82,7 @@ namespace GeometryFriends.WithGS
 
             var ga = new GeneticAlgorithm(population, m_fitness, selection, crossover, mutation);
             ga.Termination = new OrTermination(new GenerationNumberTermination(MaxGenerations), 
-                new FitnessStagnationTermination(50));
+                new FitnessStagnationTermination(100));
             //ga.Termination = new GenerationNumberTermination(MaxGenerations);
             ga.TaskExecutor = new ParallelTaskExecutor
             {

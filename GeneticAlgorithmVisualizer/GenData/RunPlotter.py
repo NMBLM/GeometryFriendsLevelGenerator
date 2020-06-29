@@ -117,7 +117,7 @@ def runAnalysis(dirName):
     plt.savefig(dirName+'\\Quartiles.png',dpi = dpii)
     plt.clf()
 
-currentR =40
+currentR =1
 dn = "Run_" + str(currentR)
 while(os.path.isdir(dn)):
     runAnalysis(dn)

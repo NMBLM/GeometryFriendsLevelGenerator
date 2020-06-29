@@ -145,7 +145,7 @@ namespace GeometryFriends.WithGS
 
                 AreaPercent = AreaPercent / (areaWidth * areaHeight);
                 fullAreaPercent += AreaPercent;
-                minArea = Math.Min(AreaPercent, minArea);
+                minArea = Math.Min(AreaPercent, minArea) + 0.0000000001;
             }
 
             return minArea;

@@ -19,7 +19,7 @@ namespace GeometryFriends.WithGS
     {
 
         public IFitness m_fitness;
-        private const int MaxGenerations = 25;
+        private const int MaxGenerations = 200;
         private const int MinPopulation = 100;
         private const int MaxPopulation = MinPopulation;
         

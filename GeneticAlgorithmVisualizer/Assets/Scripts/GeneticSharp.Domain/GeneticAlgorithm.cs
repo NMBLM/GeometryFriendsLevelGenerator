@@ -406,6 +406,7 @@ namespace GeneticSharp.Domain
         {
             try
             {
+                //var chromosomesWithoutFitness = Population.CurrentGeneration.Chromosomes.Where(c => !c.Fitness.HasValue).ToList();
                 var chromosomesWithoutFitness = Population.CurrentGeneration.Chromosomes.ToList();
 
                 for (int i = 0; i < chromosomesWithoutFitness.Count; i++)

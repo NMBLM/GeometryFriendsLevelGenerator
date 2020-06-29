@@ -11,7 +11,7 @@ namespace GeometryFriends
     {
         [SerializeField] GameObject GAprefab;
         [SerializeField] ReachabilityViewer va;
-        private int runAmount = 10;
+        private int runAmount = 1;
     
         private int currentRun = 0;
     
@@ -35,71 +35,70 @@ namespace GeometryFriends
         // Update is called once per frame
         void Update()
         {
-            if (currentRun >= runAmount)
-            {
-                return;
-            }
-    
-            if (currentGA == null)
-            {
-                currentGA = Instantiate(GAprefab, this.transform);
-                ga = currentGA.GetComponent<SmallerLevelSampleController>().GA;
-                if (ga == null)
-                {
-                    ga = currentGA.GetComponent<LevelSampleController>().GA;
-                }
-    
-                if (ga == null)
-                {
-                    Debug.Log("No proper Genetic Algorithm found");
-                    currentRun = runAmount;
-                }
-            }
-    
-            if (ga == null)
+            if (!(currentRun >= runAmount))
             {
                 if (currentGA == null)
                 {
-                    return;
+                    currentGA = Instantiate(GAprefab, this.transform);
+                    ga = currentGA.GetComponent<SmallerLevelSampleController>().GA;
+                    if (ga == null)
+                    {
+                        ga = currentGA.GetComponent<LevelSampleController>().GA;
+                    }
+        
+                    if (ga == null)
+                    {
+                        Debug.Log("No proper Genetic Algorithm found");
+                        currentRun = runAmount;
+                    }
                 }
-                ga = currentGA.GetComponent<SmallerLevelSampleController>().GA;
+        
                 if (ga == null)
                 {
-                    ga = currentGA.GetComponent<LevelSampleController>().GA;
+                    if (currentGA == null)
+                    {
+                        return;
+                    }
+                    ga = currentGA.GetComponent<SmallerLevelSampleController>().GA;
+                    if (ga == null)
+                    {
+                        ga = currentGA.GetComponent<LevelSampleController>().GA;
+                    }
+        
+                    if (ga == null)
+                    {
+                        Debug.Log("No proper Genetic Algorithm found");
+                        currentRun = runAmount;
+                    }  
                 }
-    
-                if (ga == null)
+                
+                
+                
+                if (ga != null && ga.State == GeneticAlgorithmState.TerminationReached)
                 {
-                    Debug.Log("No proper Genetic Algorithm found");
-                    currentRun = runAmount;
-                }  
+                    previousChromosomes = ga.Population.CurrentGeneration.Chromosomes.OrderByDescending(c => c.Fitness.Value).ToList();
+                    for (int i = 0; i < 10; i++)
+                    {
+                        InstrumentationManager.instance.WriteBestChromosome(previousChromosomes[i]); 
+                    }
+                    InstrumentationManager.instance.AddToDescription("Total Time: " + ga.TimeEvolving);
+                    currentRun += 1;
+                    if (currentRun < runAmount)
+                    {
+                        Destroy(currentGA); 
+                    }
+                    currentGA = null;
+                    ga = null;
+                    showingTopTen = true;
+                    currentTopTen = 0;
+                }
             }
-            
             if (takeScreenShot)
             {
                 InstrumentationManager.instance.Screenshot("Run" + currentRun + "_" + currentTopTen);
                 takeScreenShot = false;
             }
             
-            if (ga != null && ga.State == GeneticAlgorithmState.TerminationReached)
-            {
-                previousChromosomes = ga.Population.CurrentGeneration.Chromosomes.OrderByDescending(c => c.Fitness.Value).ToList();
-                for (int i = 0; i < 10; i++)
-                {
-                    InstrumentationManager.instance.WriteBestChromosome(previousChromosomes[i]); 
-                }
-                InstrumentationManager.instance.AddToDescription("Total Time: " + ga.TimeEvolving);
-                currentRun += 1;
-                if (currentRun < runAmount)
-                {
-                    Destroy(currentGA); 
-                }
-                currentGA = null;
-                ga = null;
-                showingTopTen = true;
-                currentTopTen = 0;
-            }
-
             if (showingTopTen)
             {
                 var tmp = previousChromosomes[currentTopTen];

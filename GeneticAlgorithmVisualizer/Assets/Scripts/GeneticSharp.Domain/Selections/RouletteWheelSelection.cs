@@ -5,6 +5,7 @@ using System.Linq;
 using GeneticSharp.Domain.Chromosomes;
 using GeneticSharp.Domain.Populations;
 using GeneticSharp.Domain.Randomizations;
+using GeometryFriends;
 
 namespace GeneticSharp.Domain.Selections
 {
@@ -50,6 +51,7 @@ namespace GeneticSharp.Domain.Selections
         protected static IList<IChromosome> SelectFromWheel(int number, IList<IChromosome> chromosomes, IList<double> rouletteWheel, Func<double> getPointer)
         {
             var selected = new List<IChromosome>();
+            var indexes = new List<int>();
 
             for (int i = 0; i < number; i++)
             {
@@ -60,9 +62,13 @@ namespace GeneticSharp.Domain.Selections
                                         .FirstOrDefault(r => r.Value >= pointer);
 
                 if (chromosome != null)
+                {
                     selected.Add(chromosomes[chromosome.Index]);
+                    indexes.Add(chromosome.Index);
+                }
             }
 
+            InstrumentationManager.instance.WriteToRandom(indexes);
             return selected;
         }
 

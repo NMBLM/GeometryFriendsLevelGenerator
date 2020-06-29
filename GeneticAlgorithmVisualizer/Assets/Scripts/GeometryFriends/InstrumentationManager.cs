@@ -24,6 +24,8 @@ namespace GeometryFriends
         private String _filepath;
         private DirectoryInfo _dir;
         private int _runNumber;
+
+        private int _genN = 0;
         private void Awake() {
             instance = this;
 
@@ -110,14 +112,18 @@ namespace GeometryFriends
                 sw.Write(text);
             }
 
-            using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\chromosomes.txt",true))
+            if (true)
             {
-                sw.Write("Gen " + GenNumber + "\n");
-                foreach (var c in orderedChromosomes)
+                using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\chromosomes.txt",true))
                 {
-                    sw.Write(c.Fitness.Value + "\n");
-                }
+                    sw.Write("Gen " + GenNumber + "\n");
+                    foreach (var c in orderedChromosomes)
+                    {
+                        sw.Write(c.Fitness.Value + "\n");
+                    }
+                } 
             }
+            
 
             
         }
@@ -126,8 +132,8 @@ namespace GeometryFriends
         {
             using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\description.txt",true))
             {
-                sw.WriteLine("Population Size: " + popSize);
                 sw.WriteLine("Chromosome: " + g);
+                sw.WriteLine("Population Size: " + popSize);
                 sw.WriteLine("Crossover: " + c);
                 sw.WriteLine("Mutation: " + m);
                 sw.WriteLine("Selection: " + s);
@@ -188,6 +194,20 @@ namespace GeometryFriends
             }
             var nDirName = _dir.FullName.Substring(0,_dir.FullName.Length - i) + r;
             ScreenCapture.CaptureScreenshot(nDirName + "\\" + name + ".png");
+        }
+
+        public void WriteToRandom(List<int> s)
+        {
+            return;
+            _genN++;
+            using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\random.txt",true))
+            {
+                sw.WriteLine("Gen " + _genN);
+                for (int i = 0; i < s.Count; i++)
+                {
+                    sw.WriteLine("I: " + i + " index: " + s[i]);
+                }
+            }
         }
         
     }

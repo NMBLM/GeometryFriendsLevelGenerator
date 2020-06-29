@@ -222,7 +222,7 @@ public class ReachabilityViewer : MonoBehaviour
         Debug.Log("Fitness : " + best.Fitness);
         level = best.GetLevelDNA();
         Debug.Log("Level: " + level.Description() + "\n" + best.ToString());
-        h = new AreaHeuristic(TestSpecifications.LevelOne());
+        h = new AreaHeuristic(TestSpecifications.LevelTwo());
         //h = new OldReachHeuristic(blockSize:granularity);
         Debug.Log("recalculated fitness: " + h.CalculateFitness(level));
         CreateGrid();
@@ -240,7 +240,7 @@ public class ReachabilityViewer : MonoBehaviour
         Debug.Log("Fitness : " + best.Fitness);
         level = best.GetLevelDNA();
         Debug.Log("Level: " + level.Description() + "\n" + best.ToString());
-        h = new AreaHeuristic(TestSpecifications.LevelOne());
+        h = new AreaHeuristic(TestSpecifications.LevelTwo());
         //h = new OldReachHeuristic(blockSize:granularity);
         Debug.Log("recalculated fitness: " + h.CalculateFitness(level));
         CreateGrid();

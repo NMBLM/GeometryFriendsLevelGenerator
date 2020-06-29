@@ -82,7 +82,7 @@ namespace GeometryFriends.WithGS
 
             var ga = new GeneticAlgorithm(population, m_fitness, selection, crossover, mutation);
             ga.Termination = new OrTermination(new GenerationNumberTermination(MaxGenerations), 
-                new FitnessStagnationTermination(50));
+                new FitnessStagnationTermination(100));
             //ga.Termination = new GenerationNumberTermination(MaxGenerations);
             ga.TaskExecutor = new ParallelTaskExecutor
             {

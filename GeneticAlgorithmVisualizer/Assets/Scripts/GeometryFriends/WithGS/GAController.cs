@@ -70,8 +70,10 @@ namespace GeometryFriends.WithGS
 
             
             SelectionBase selection;
-            selection = new EliteSelection();
+            //selection = new EliteSelection();
+            //selection = new ElitistSelection(MinPopulation / 5 );
             //selection = new StochasticUniversalSamplingSelection();
+            selection = new UniqueStochasticSelection();
             //selection = new TournamentSelection(4);
             //selection = new RouletteWheelSelection();
             
@@ -93,7 +95,7 @@ namespace GeometryFriends.WithGS
 
             ga.MutationProbability = .3f;
             
-            
+
             return ga;
         }
 

@@ -198,7 +198,7 @@ namespace GeometryFriends
 
         public void WriteToRandom(List<int> s)
         {
-            return;
+            //return;
             _genN++;
             using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\random.txt",true))
             {

@@ -26,6 +26,7 @@ namespace GeneticSharp.Domain.Mutations
             ExceptionHelper.ThrowIfNull("chromosome", chromosome);
 
             PerformMutate(chromosome, probability);
+            chromosome.Fitness = null;
         }
 
         /// <summary>

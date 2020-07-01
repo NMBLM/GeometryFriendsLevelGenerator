@@ -146,6 +146,7 @@
             <e p="ReachabilityViewer.cs" t="Include" />
             <e p="WithGS" t="Include">
               <e p="AreaHeuristic.cs" t="Include" />
+              <e p="ElitistSelection.cs" t="Include" />
               <e p="GAController.cs" t="Include" />
               <e p="LevelChromosome.cs" t="Include" />
               <e p="LevelSampleController.cs" t="Include" />
@@ -153,6 +154,7 @@
               <e p="SmallerLevelChromosome.cs" t="Include" />
               <e p="SmallerLevelSampleController.cs" t="Include" />
               <e p="TestSpecifications.cs" t="Include" />
+              <e p="UniqueStochasticSelection.cs" t="Include" />
             </e>
           </e>
           <e p="Samples" t="Include">

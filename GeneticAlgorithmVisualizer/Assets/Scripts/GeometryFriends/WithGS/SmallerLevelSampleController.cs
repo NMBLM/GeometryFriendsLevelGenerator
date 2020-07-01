@@ -70,7 +70,8 @@ namespace GeometryFriends.WithGS
             
             SelectionBase selection;
             //selection = new EliteSelection();
-            selection = new StochasticUniversalSamplingSelection();
+            //selection = new StochasticUniversalSamplingSelection();
+            selection = new UniqueStochasticSelection();
             //selection = new TournamentSelection(6);
             //selection = new RouletteWheelSelection();
             
@@ -91,7 +92,9 @@ namespace GeometryFriends.WithGS
             };
 
             ga.MutationProbability = .3f;
+            //ga.CrossoverProbability = 1;
             
+            ga.OperatorsStrategy = new TplOperatorsStrategy();
             if (WriteToFile)
             {
                 InstrumentationManager.instance.WriteDescription(MaxPopulation,chromosome, crossover, mutation, selection, ga.Termination, m_fitness);
@@ -115,7 +118,7 @@ namespace GeometryFriends.WithGS
                 m_previousBestFitness = GA.BestChromosome.Fitness.Value;
                 m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
                 Debug.Log($"Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - PopSize: ${GA.Population.CurrentGeneration.Chromosomes.Count}");
-                if (true)
+                if (false)
                 {
                     foreach (var c in GA.Population.CurrentGeneration.Chromosomes)
                     {

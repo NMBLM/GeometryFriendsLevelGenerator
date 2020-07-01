@@ -19,7 +19,7 @@ namespace GeometryFriends.WithGS
     {
 
         public IFitness m_fitness;
-        private const int MaxGenerations = 200;
+        private const int MaxGenerations = 1000;
         private const int MinPopulation = 100;
         private const int MaxPopulation = MinPopulation;
         
@@ -83,7 +83,7 @@ namespace GeometryFriends.WithGS
 
             var ga = new GeneticAlgorithm(population, m_fitness, selection, crossover, mutation);
             ga.Termination = new OrTermination(new GenerationNumberTermination(MaxGenerations), 
-                new FitnessStagnationTermination(100));
+                new FitnessStagnationTermination(200));
             //ga.Termination = new GenerationNumberTermination(MaxGenerations);
             ga.TaskExecutor = new ParallelTaskExecutor
             {
@@ -118,7 +118,7 @@ namespace GeometryFriends.WithGS
                 m_previousBestFitness = GA.BestChromosome.Fitness.Value;
                 m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
                 Debug.Log($"Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - PopSize: ${GA.Population.CurrentGeneration.Chromosomes.Count}");
-                if (false)
+                if (true)
                 {
                     foreach (var c in GA.Population.CurrentGeneration.Chromosomes)
                     {

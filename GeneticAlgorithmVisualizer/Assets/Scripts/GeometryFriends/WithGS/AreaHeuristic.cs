@@ -404,11 +404,19 @@ namespace GeometryFriends.WithGS
                         if (cellGrid[x - 1, y].jumpStrength < 24)
                         {
                             list.Add(new Tuple<Point, int>(new Point(x - 1, y), -1));
+                            for (int i = 0; i < 3; i++)
+                            {
+                                list.Add(new Tuple<Point,int>(new Point(x-1, y-i),-1));
+                            }   
                         }
 
                         if (cellGrid[x + 1, y].jumpStrength < 24)
                         {
                             list.Add(new Tuple<Point, int>(new Point(x + 1, y), 1));
+                            for (int i = 0; i < 3; i++)
+                            {
+                                list.Add(new Tuple<Point,int>(new Point(x+1, y-i),1));
+                            }   
                         }
 
                         for (int i = -1; i < 1; i++)

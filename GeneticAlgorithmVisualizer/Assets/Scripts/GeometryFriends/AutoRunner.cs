@@ -11,7 +11,7 @@ namespace GeometryFriends
     {
         [SerializeField] GameObject GAprefab;
         [SerializeField] ReachabilityViewer va;
-        private int runAmount = 2;
+        private int runAmount = 5;
     
         private int currentRun = 0;
     

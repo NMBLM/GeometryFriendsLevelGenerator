@@ -61,6 +61,7 @@ namespace GeometryFriends.WithGS
                     genesToReplace[i] = new Gene(1);
                 }
             }
+            ReplaceGenes(0,genesToReplace);
             this.Fitness = null;
         }
         public override IChromosome CreateNew()

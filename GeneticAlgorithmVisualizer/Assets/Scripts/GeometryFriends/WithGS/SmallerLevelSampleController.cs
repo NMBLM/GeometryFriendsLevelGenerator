@@ -20,7 +20,7 @@ namespace GeometryFriends.WithGS
 
         public IFitness m_fitness;
         private const int MaxGenerations = 1000;
-        private const int MinPopulation = 20;
+        private const int MinPopulation = 50;
         private const int MaxPopulation = MinPopulation;
         
         private Thread m_gaThread;
@@ -118,7 +118,7 @@ namespace GeometryFriends.WithGS
                 m_previousBestFitness = GA.BestChromosome.Fitness.Value;
                 m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
                 Debug.Log($"Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - Mutation: ${GA.MutationProbability}");
-                if (false)
+                if (true)
                 {
                     foreach (var c in GA.Population.CurrentGeneration.Chromosomes)
                     {

@@ -20,7 +20,7 @@ namespace GeometryFriends.WithGS
 
         public IFitness m_fitness;
         private const int MaxGenerations = 1000;
-        private const int MinPopulation = 100;
+        private const int MinPopulation = 20;
         private const int MaxPopulation = MinPopulation;
         
         private Thread m_gaThread;
@@ -117,7 +117,7 @@ namespace GeometryFriends.WithGS
             GA.GenerationRan += delegate {
                 m_previousBestFitness = GA.BestChromosome.Fitness.Value;
                 m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
-                Debug.Log($"Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - PopSize: ${GA.Population.CurrentGeneration.Chromosomes.Count}");
+                Debug.Log($"Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - Mutation: ${GA.MutationProbability}");
                 if (true)
                 {
                     foreach (var c in GA.Population.CurrentGeneration.Chromosomes)
@@ -141,7 +141,7 @@ namespace GeometryFriends.WithGS
                 var best = GA.BestChromosome as SmallerLevelChromosome;
                 m_previousBestFitness = GA.BestChromosome.Fitness.Value;
                 m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
-                Debug.Log($"Last Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - PopSize: ${GA.Population.CurrentGeneration.Chromosomes.Count}");
+                Debug.Log($"Last Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - Mutation: ${GA.MutationProbability}");
 
             };
             /**/
@@ -194,6 +194,9 @@ namespace GeometryFriends.WithGS
                 }
             }
             /**/
+			
+			if(GA.BestChromosome != null && GA.BestChromosome.Fitness.HasValue)
+				GA.MutationProbability = 1 - (float) GA.BestChromosome.Fitness;
         }
     
         public bool ShowNPopulation(int n)

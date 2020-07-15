@@ -118,7 +118,7 @@ namespace GeometryFriends.WithGS
                 m_previousBestFitness = GA.BestChromosome.Fitness.Value;
                 m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c => c.Fitness.Value);
                 Debug.Log($"Generation: {GA.GenerationsNumber} - Best: ${m_previousBestFitness} - Average: ${m_previousAverageFitness} - Time: ${GA.TimeEvolving} - Mutation: ${GA.MutationProbability}");
-                if (true)
+                if (false)
                 {
                     foreach (var c in GA.Population.CurrentGeneration.Chromosomes)
                     {

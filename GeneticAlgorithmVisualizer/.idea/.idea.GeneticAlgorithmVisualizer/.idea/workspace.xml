@@ -3,66 +3,852 @@
   <component name="ChangeListManager">
     <list default="true" id="1421462f-8ec2-4e56-9176-296b882ee5d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeneticAlgorithmVisualizer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Backup/GeneticSharp.sln.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/GeneticSharp.Domain.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/bin/Debug/netstandard2.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/obj/Debug/netstandard2.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Infrastructure.Framework/GeneticSharp.Infrastructure.Framework.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Infrastructure.Framework/bin/Debug/netstandard2.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Infrastructure.Framework/obj/Debug/netstandard2.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneticSharp.sln.DotSettings.user.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneticSharp.sln.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/AutoRunner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/AutoRunner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/ReachabilityViewer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/ReachabilityViewer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/AreaHeuristic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/AreaHeuristic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/LevelChromosome.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/LevelChromosome.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelChromosome.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelChromosome.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelSampleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelSampleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue1Sample/Issue1Sample.sln.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue1Sample/Issue1Sample/Issue1Sample.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue1Sample/Issue1Sample/Properties.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue1Sample/Issue1Sample/bin/Debug/netcoreapp2.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue1Sample/Issue1Sample/bin/Release/netcoreapp2.0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue1Sample/Issue1Sample/obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue40Sample/Issue40Sample.sln.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue40Sample/Issue40Sample/Issue40Sample.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue40Sample/Issue40Sample/bin/Debug/netcoreapp2.1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue40Sample/Issue40Sample/bin/Release/netcoreapp2.1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Samples/Issue40Sample/Issue40Sample/obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/RunNumber.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/RunNumber.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_11/All.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_11/All.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_11/Average.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_11/Average.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_11/AverageFirstQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_11/AverageFirstQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_11/AverageFourthQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_11/AverageFourthQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_11/AverageSecondQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_11/AverageSecondQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_11/AverageThirdQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_11/AverageThirdQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_11/BestFitness.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_11/BestFitness.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_11/BestVsAverage.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_11/BestVsAverage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_11/Quartiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_11/Quartiles.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_12/All.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_12/All.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Average.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_12/Average.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_12/AverageFirstQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_12/AverageFirstQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_12/AverageFourthQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_12/AverageFourthQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_12/AverageSecondQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_12/AverageSecondQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_12/AverageThirdQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_12/AverageThirdQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_12/BestFitness.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_12/BestFitness.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_12/BestVsAverage.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_12/BestVsAverage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Quartiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_12/Quartiles.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_13/All.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_13/All.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Average.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_13/Average.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_13/AverageFirstQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_13/AverageFirstQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_13/AverageFourthQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_13/AverageFourthQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_13/AverageSecondQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_13/AverageSecondQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_13/AverageThirdQuartile.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_13/AverageThirdQuartile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_13/BestFitness.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_13/BestFitness.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_13/BestVsAverage.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_13/BestVsAverage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Quartiles.png" beforeDir="false" afterPath="$PROJECT_DIR$/GenData/Run_13/Quartiles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_1/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_10/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_11/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_12/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_13/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_14/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_15/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Run2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Run2_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Run2_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Run2_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Run2_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Run2_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Run2_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Run2_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Run2_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/Run2_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_16/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Run3_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Run3_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Run3_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Run3_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Run3_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Run3_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Run3_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Run3_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Run3_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/Run3_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_17/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run4_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run4_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run4_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run4_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run4_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run4_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run4_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run4_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run4_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run4_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run5_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run5_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run5_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run5_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run5_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run5_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run5_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run5_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run5_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/Run5_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_18/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_19/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Run2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Run2_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Run2_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Run2_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Run2_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Run2_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Run2_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Run2_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Run2_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/Run2_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_2/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_20/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Run2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Run2_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Run2_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Run2_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Run2_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Run2_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Run2_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Run2_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Run2_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/Run2_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_21/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Run3_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Run3_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Run3_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Run3_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Run3_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Run3_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Run3_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Run3_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Run3_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/Run3_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_22/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_23/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_24/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Run2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Run2_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Run2_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Run2_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Run2_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Run2_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Run2_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Run2_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Run2_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/Run2_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_25/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Run3_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Run3_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Run3_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Run3_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Run3_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Run3_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Run3_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Run3_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Run3_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/Run3_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_26/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run4_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run4_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run4_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run4_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run4_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run4_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run4_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run4_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run4_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run4_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run5_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run5_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run5_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run5_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run5_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run5_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run5_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run5_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run5_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/Run5_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_27/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_28/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_29/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Run3_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Run3_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Run3_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Run3_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Run3_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Run3_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Run3_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Run3_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Run3_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/Run3_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_3/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/Run2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/Run2_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/Run2_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/Run2_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/Run2_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/Run2_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/Run2_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/Run2_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/Run2_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/Run2_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_30/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/Run3_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/Run3_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/Run3_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/Run3_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/Run3_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/Run3_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/Run3_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/Run3_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/Run3_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/Run3_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_31/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run4_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run4_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run4_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run4_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run4_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run4_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run4_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run4_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run4_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run4_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run5_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run5_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run5_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run5_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run5_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run5_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run5_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run5_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run5_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/Run5_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_32/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_33/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_33/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_33/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_33/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_33/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_34/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/Run2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/Run2_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/Run2_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/Run2_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/Run2_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/Run2_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/Run2_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/Run2_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/Run2_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/Run2_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_35/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/Run3_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/Run3_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/Run3_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/Run3_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/Run3_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/Run3_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/Run3_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/Run3_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/Run3_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/Run3_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_36/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_37/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_37/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_37/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_37/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_38/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_38/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_38/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_38/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_39/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Run4_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Run4_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Run4_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Run4_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Run4_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Run4_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Run4_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Run4_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Run4_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/Run4_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_4/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/Run2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/Run2_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/Run2_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/Run2_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/Run2_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/Run2_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/Run2_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/Run2_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/Run2_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/Run2_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_40/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/Run3_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/Run3_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/Run3_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/Run3_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/Run3_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/Run3_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/Run3_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/Run3_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/Run3_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/Run3_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_41/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/Run4_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/Run4_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/Run4_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/Run4_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/Run4_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/Run4_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/Run4_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/Run4_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/Run4_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/Run4_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_42/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/Run5_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/Run5_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/Run5_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/Run5_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/Run5_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/Run5_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/Run5_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/Run5_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/Run5_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/Run5_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/random.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_43/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Run5_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Run5_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Run5_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Run5_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Run5_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Run5_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Run5_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Run5_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Run5_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/Run5_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_5/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Run6_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Run6_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Run6_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Run6_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Run6_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Run6_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Run6_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Run6_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Run6_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/Run6_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_6/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Run7_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Run7_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Run7_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Run7_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Run7_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Run7_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Run7_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Run7_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Run7_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/Run7_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_7/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Run8_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Run8_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Run8_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Run8_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Run8_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Run8_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Run8_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Run8_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Run8_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/Run8_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/description.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_8/top.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Average.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/AverageFirstQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/AverageFourthQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/AverageSecondQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/AverageThirdQuartile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/BestFitness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/BestVsAverage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Quartiles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Run1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Run1_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Run1_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Run1_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Run1_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Run1_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Run1_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Run1_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Run1_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/Run1_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/chromosomes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenData/Run_9/description.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" beforeDir="false" afterPath="$PROJECT_DIR$/Library/APIUpdater/project-dependencies.graph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
@@ -77,15 +863,100 @@
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/255b83-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/255b83-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/ReachabilityViewer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+              <folding>
+                <marker date="1594799665452" expanded="false" signature="6:235" ph="..." />
+                <marker date="1594799665452" expanded="true" signature="283:12274" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="1844:4094" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="1859:3044" ph="/* random = new Random(); ... */" />
+                <marker date="1594799665452" expanded="true" signature="3053:4053" ph="/* Debug.Log(GATestWorld.LevelOne().DNAToChromosome()); ... */" />
+                <marker date="1594799665452" expanded="true" signature="4152:7482" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="4167:5004" ph="/* if (Input.GetKeyUp(KeyCode.R)) ... */" />
+                <marker date="1594799665452" expanded="true" signature="5014:5551" ph="/* if (Input.GetKeyUp(KeyCode.O)) ... */" />
+                <marker date="1594799665452" expanded="true" signature="5560:6499" ph="/* if (Input.GetKeyUp(KeyCode.O)) ... */" />
+                <marker date="1594799665452" expanded="true" signature="6551:7001" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="6590:6754" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="6771:6978" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="7040:7463" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="7079:7243" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="7260:7440" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="7530:8099" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="7583:7715" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="7634:7705" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="8158:8727" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="8211:8343" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="8262:8333" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="8762:8796" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="8826:12272" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="8877:10345" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="8936:10335" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="9225:10321" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="10554:11020" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="10604:11010" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="11228:11718" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="11291:11708" ph="{...}" />
+                <marker date="1594799665452" expanded="true" signature="11767:12266" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelSampleController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="120" column="26" lean-forward="true" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+              <folding>
+                <marker date="1594800420496" expanded="false" signature="6:487" ph="..." />
+                <marker date="1594800420496" expanded="true" signature="521:8396" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="585:8394" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="1284:4123" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="1578:1720" ph="/* crossover = new TwoPointCrossover(); ... */" />
+                <marker date="1594800420496" expanded="true" signature="1734:2247" ph="/* Crossover for ordered lists ... */" />
+                <marker date="1594800420496" expanded="true" signature="2398:2640" ph="/* mutation = new InsertionMutation(); ... */" />
+                <marker date="1594800420496" expanded="true" signature="2704:2809" ph="/* selection = new EliteSelection(); ... */" />
+                <marker date="1594800420496" expanded="true" signature="2879:2976" ph="/* selection = new TournamentSelection(6); ... */" />
+                <marker date="1594800420496" expanded="true" signature="3101:3189" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="3590:3706" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="3898:4077" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="4161:6616" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="4297:4405" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="4899:5331" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="5000:5103" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="5124:5313" ph="/* m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c =&gt; c.Fitness.Value); ... */" />
+                <marker date="1594800420496" expanded="true" signature="5365:5533" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="6214:6512" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="6248:6356" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="6392:6498" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="6559:6605" ph="/* GA.Start(); ... */" />
+                <marker date="1594800420496" expanded="true" signature="6643:7866" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="6754:7308" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="7063:7234" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="7338:7713" ph="/* if (GA.GenerationsNumber &gt; 2 &amp;&amp; GA.IsRunning &amp;&amp; (previousbestfitness &lt; GA.BestChromosome.Fitness)) ... */" />
+                <marker date="1594800420496" expanded="true" signature="7914:8256" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="8048:8219" ph="{...}" />
+                <marker date="1594800420496" expanded="true" signature="8298:8378" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -99,56 +970,56 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Populations/PopulationService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Populations/Population.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Populations/TplPopulation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Chromosomes/ChromosomeBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGeneT.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGeneT.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Chromosomes/ChromosomeExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/AutoRunner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/TournamentSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/GATestWorld.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/RouletteWheelSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/EliteSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/ISelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/StochasticUniversalSamplingSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/SelectionBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGeneT.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Crossovers/TwoPointCrossover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/ReachabilityViewer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneT.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Crossovers/CrossoverBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/LevelSampleController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Crossovers/ICrossover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Crossovers/OnePointCrossover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Mutations/MutationBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Mutations/FlipBitMutation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Mutations/IMutation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/LevelSpecifications.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/OldReachHeuristic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/IOperatorsStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/InstrumentationManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/TestSpecifications.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/DefaultOperatorsStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/TplOperatorsStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelSampleController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelChromosome.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Issue40Sample/Issue40Sample/GA.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/GeneticAlgorithm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/AreaHeuristic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/ElitistSelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/UniqueStochasticSelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Terminations/GenerationNumberTermination.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Terminations/TimeEvolvingTermination.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Terminations/ITermination.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Terminations/TerminationService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Crossovers/OnePointCrossover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Terminations/FitnessStagnationTermination.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/ReachabilityViewer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/GATestWorld.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Crossovers/TwoPointCrossover.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/InstrumentationManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/AutoRunner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelChromosome.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/LevelChromosome.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Crossovers/ICrossover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/GAController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelSampleController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Crossovers/CrossoverBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/TestSpecifications.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/LevelSampleController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/AreaHeuristic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/LevelSpecifications.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/GeneT.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/SpawnGeneT.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/EliteSelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/OldReachHeuristic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/StochasticUniversalSamplingSelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/LevelDNA.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/CollectibleGeneT.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/RouletteWheelSelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/LevelGenerator/PlatformGeneT.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Samples/Issue40Sample/Issue40Sample/GA.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/SelectionBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/ISelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/IOperatorsStrategy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Selections/TournamentSelection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/TplOperatorsStrategy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Chromosomes/ChromosomeExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Chromosomes/ChromosomeBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/GeneticAlgorithm.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Populations/TplPopulation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/DefaultOperatorsStrategy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Populations/Population.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Populations/PopulationService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Populations/IPopulation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Mutations/IMutation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Mutations/MutationBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Terminations/TerminationBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/UniqueStochasticSelection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Terminations/TerminationService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Terminations/GenerationNumberTermination.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/LevelChromosome.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Populations/IPopulation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -193,11 +1064,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Mutations/FlipBitMutation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GeneticSharp.Domain/Mutations/MutationBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/AutoRunner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelSampleController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/ReachabilityViewer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelChromosome.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/LevelChromosome.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/AreaHeuristic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/ReachabilityViewer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelSampleController.cs" />
       </list>
     </option>
   </component>
@@ -215,6 +1086,49 @@
   <component name="ProjectId" id="1dGaXt4xlijikMpUIIPCfW6aEbP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="GeometryFriends" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="GeometryFriends" type="1045f7f1:UnityExplorerNode" />
+              <item name="WithGS" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -235,6 +1149,18 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -291,8 +1217,12 @@
       <workItem from="1593549188747" duration="1943000" />
       <workItem from="1593589449178" duration="5300000" />
       <workItem from="1593596588871" duration="2802000" />
+      <workItem from="1594799644850" duration="693000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="693000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,6 +1232,38 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -320,5 +1282,85 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/ReachabilityViewer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+          <folding>
+            <marker date="1594799665452" expanded="false" signature="6:235" ph="..." />
+            <marker date="1594799665452" expanded="true" signature="283:12274" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="1844:4094" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="1859:3044" ph="/* random = new Random(); ... */" />
+            <marker date="1594799665452" expanded="true" signature="3053:4053" ph="/* Debug.Log(GATestWorld.LevelOne().DNAToChromosome()); ... */" />
+            <marker date="1594799665452" expanded="true" signature="4152:7482" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="4167:5004" ph="/* if (Input.GetKeyUp(KeyCode.R)) ... */" />
+            <marker date="1594799665452" expanded="true" signature="5014:5551" ph="/* if (Input.GetKeyUp(KeyCode.O)) ... */" />
+            <marker date="1594799665452" expanded="true" signature="5560:6499" ph="/* if (Input.GetKeyUp(KeyCode.O)) ... */" />
+            <marker date="1594799665452" expanded="true" signature="6551:7001" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="6590:6754" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="6771:6978" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="7040:7463" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="7079:7243" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="7260:7440" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="7530:8099" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="7583:7715" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="7634:7705" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="8158:8727" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="8211:8343" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="8262:8333" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="8762:8796" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="8826:12272" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="8877:10345" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="8936:10335" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="9225:10321" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="10554:11020" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="10604:11010" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="11228:11718" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="11291:11708" ph="{...}" />
+            <marker date="1594799665452" expanded="true" signature="11767:12266" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GeometryFriends/WithGS/SmallerLevelSampleController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="120" column="26" lean-forward="true" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+          <folding>
+            <marker date="1594800420496" expanded="false" signature="6:487" ph="..." />
+            <marker date="1594800420496" expanded="true" signature="521:8396" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="585:8394" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="1284:4123" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="1578:1720" ph="/* crossover = new TwoPointCrossover(); ... */" />
+            <marker date="1594800420496" expanded="true" signature="1734:2247" ph="/* Crossover for ordered lists ... */" />
+            <marker date="1594800420496" expanded="true" signature="2398:2640" ph="/* mutation = new InsertionMutation(); ... */" />
+            <marker date="1594800420496" expanded="true" signature="2704:2809" ph="/* selection = new EliteSelection(); ... */" />
+            <marker date="1594800420496" expanded="true" signature="2879:2976" ph="/* selection = new TournamentSelection(6); ... */" />
+            <marker date="1594800420496" expanded="true" signature="3101:3189" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="3590:3706" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="3898:4077" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="4161:6616" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="4297:4405" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="4899:5331" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="5000:5103" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="5124:5313" ph="/* m_previousAverageFitness = GA.Population.CurrentGeneration.Chromosomes.Average(c =&gt; c.Fitness.Value); ... */" />
+            <marker date="1594800420496" expanded="true" signature="5365:5533" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="6214:6512" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="6248:6356" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="6392:6498" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="6559:6605" ph="/* GA.Start(); ... */" />
+            <marker date="1594800420496" expanded="true" signature="6643:7866" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="6754:7308" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="7063:7234" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="7338:7713" ph="/* if (GA.GenerationsNumber &gt; 2 &amp;&amp; GA.IsRunning &amp;&amp; (previousbestfitness &lt; GA.BestChromosome.Fitness)) ... */" />
+            <marker date="1594800420496" expanded="true" signature="7914:8256" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="8048:8219" ph="{...}" />
+            <marker date="1594800420496" expanded="true" signature="8298:8378" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

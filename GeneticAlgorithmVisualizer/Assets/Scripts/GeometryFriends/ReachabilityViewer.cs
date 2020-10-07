@@ -25,6 +25,17 @@ public class ReachabilityViewer : MonoBehaviour
         
     public LevelDNA level;
     
+    private int[] lvlAttr = new int[] {
+        //0, 1237, 113, 248, 124, 0, 10, 385, 1033, 561, 0, 545, 257, 1165, 561, 0, 58, 194, 235, 466, 0, 290, 32, 184, 298, 0, 1190, 750, 302, 631, 1, 583, 437, 68, 523, 1, 1268, 499, 312, 66, 0, 929, 360, 1203, 448
+        0,  248, 124, 1237, 113, 0, 10, 385, 1033, 561, 0, 545, 257, 1165, 561, 0, 58, 194, 235, 466, 0, 290, 32, 184, 298, 0, 1190, 750, 302, 631, 1, 583, 437, 68, 523, 1, 1268, 499, 312, 66, 0, 929, 360, 1203, 448
+        //0, 787, 2, 1043, 128, 1, 369, 498, 1087, 131, 0, 932, 87, 1105, 71, 0, 1189, 561, 93, 256, 0, 65, 380, 161, 25, 1, 422, 102, 294, 540, 1, 679, 525, 267, 55, 0, 754, 728, 441, 224, 0, 655, 524, 610, 754
+        //0, 293, 749, 435, 268, 0, 590, 65, 266, 204, 0, 514, 620, 60, 50, 1, 989, 329, 727, 506, 1, 267, 368, 1258, 630, 0, 419, 463, 689, 493, 0, 705, 631, 794, 435, 0, 724, 458, 640, 639, 0, 1046, 131, 142, 596
+        //754, 1258, 406, 944, 655, 0, 590, 669, 266, 204, 609, 514, 504, 60, 50, 1, 989, 223, 727, 506, 1, 1220, 368, 1258, 630, 0, 419, 970, 689, 493, 0, 705, 631, 794, 1179, 747, 609, 674, 1199, 342, 0, 142, 13, 870, 187
+        
+        
+    };
+    
+    
     //public OldReachHeuristic h;
     public AreaHeuristic h;
     
@@ -55,7 +66,7 @@ public class ReachabilityViewer : MonoBehaviour
         
         //Debug.Log(level.Description());
         
-        /** /
+        /**/
         //level = GATestWorld.LevelOne();
         //level = GATestWorld.LevelTwo();
         
@@ -63,10 +74,11 @@ public class ReachabilityViewer : MonoBehaviour
         //level = GATestWorld.LevelSpecificationTwoTest();
         //level = GATestWorld.LevelTest();
 
-        level = (new SmallerLevelChromosome(lvlString)).GetLevelDNA();
+        //level = (new SmallerLevelChromosome(lvlString)).GetLevelDNA();
+        level = new LevelDNA(lvlAttr);
         Debug.Log(level.Description());
         //h = new OldReachHeuristic(blockSize:granularity);
-        h = new AreaHeuristic(TestSpecifications.LevelTwo());
+        h = new AreaHeuristic(TestSpecifications.LevelOne());
         Debug.Log(h.CalculateFitness(level));
         //h.CellGridToBlockGrid();
         CreateGrid();

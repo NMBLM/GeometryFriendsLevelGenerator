@@ -147,6 +147,8 @@ namespace GeometryFriends.WithGS
                 fullAreaPercent += AreaPercent;
                 minArea = Math.Min(AreaPercent, minArea);
             }
+            return fullAreaPercent / spec.areas.Count;
+
             if (minArea > 0) return minArea;
             return 0.0000000001;
             //return fullAreaPercent / spec.areas.Count;

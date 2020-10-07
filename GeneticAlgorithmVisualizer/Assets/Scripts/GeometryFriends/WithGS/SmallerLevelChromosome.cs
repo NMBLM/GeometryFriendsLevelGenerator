@@ -64,6 +64,9 @@ namespace GeometryFriends.WithGS
             ReplaceGenes(0,genesToReplace);
             this.Fitness = null;
         }
+        
+        
+        
         public override IChromosome CreateNew()
         {
             return new SmallerLevelChromosome();

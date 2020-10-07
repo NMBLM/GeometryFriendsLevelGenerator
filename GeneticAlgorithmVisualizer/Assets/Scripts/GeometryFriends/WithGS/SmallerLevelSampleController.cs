@@ -20,7 +20,7 @@ namespace GeometryFriends.WithGS
 
         public IFitness m_fitness;
         private const int MaxGenerations = 1000;
-        private const int MinPopulation = 50;
+        private const int MinPopulation = 10;
         private const int MaxPopulation = MinPopulation;
         
         private Thread m_gaThread;

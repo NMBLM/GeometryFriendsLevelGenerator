@@ -197,6 +197,19 @@ namespace GeometryFriends
         }
 
         public void WriteToRandom(List<int> s)
+         {
+             //return;
+             _genN++;
+             using (StreamWriter sw = new StreamWriter(_dir.FullName + "\\random.txt",true))
+             {
+                 sw.WriteLine("Gen " + _genN);
+                 for (int i = 0; i < s.Count; i++)
+                 {
+                     sw.WriteLine("I: " + i + " index: " + s[i]);
+                 }
+             }
+         }
+        public void WriteToRandom(List<IChromosome> s)
         {
             //return;
             _genN++;

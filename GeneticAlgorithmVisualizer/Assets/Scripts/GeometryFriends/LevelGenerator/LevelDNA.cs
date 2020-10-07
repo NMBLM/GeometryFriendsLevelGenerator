@@ -59,6 +59,22 @@ namespace GeometryFriends.LevelGenerator
             this.rectangleSpawn = new SpawnGeneT(recSpawn);
             this.circleSpawn = new SpawnGeneT(circSpawn);
         }
+
+        public LevelDNA(int[] attrList)
+        {
+            this.rectangleSpawn = new SpawnGeneT(new Point(attrList[1],attrList[2]));
+            this.circleSpawn = new SpawnGeneT(new Point(attrList[3],attrList[4]));
+            this.platforms = new List<PlatformGeneT>();
+            for (int i = 5; i < 45; i+=5)
+            {
+                if (attrList[i] % 2 == 1)
+                {
+                    this.platforms.Add(new PlatformGeneT(attrList[i+4],attrList[i+3],new Point(attrList[i+1],(int) (attrList[i+2] * 720 / 1280))));
+                }
+            }
+            this.collectibles = new List<CollectibleGeneT>();
+            this.fitness = -1;
+        }
         
         private void InitGenes()
         {

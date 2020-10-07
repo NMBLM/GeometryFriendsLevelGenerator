@@ -49,11 +49,51 @@ def mutateLevel(ind):
                 else: #change plat x and y
                     ind[i+1] = random.randint(INT_MIN,XINT_MAX)
                     ind[i+2] = random.randint(INT_MIN,YINT_MAX)
-                    
-                    
-def levelCrossBothPlat(pOne, pTwo):
+
+def levelChangeOneValue(ind):
+    sIndex = [0]
     for i in range(5,45,5):
-        if(pOne[i] % 2 == 0) and (pTwo[i] % 2 == 0):
+        if ind[i] % 2 == 1:
+            sIndex += [i]
+    if len(sIndex) == 1: #if it has no platforms add one
+        index = random.choice([5,10,15,20,25,30,35,40])
+        ind[index] = 1
+        ind[index+1] = random.randint(INT_MIN,XINT_MAX)
+        ind[index+2] = random.randint(INT_MIN,YINT_MAX)
+        ind[index+3] = random.randint(INT_MIN,XINT_MAX)
+        ind[index+4] = random.randint(INT_MIN,YINT_MAX)
+    elif random.random() < 0.1: #just add a platform
+        aIndex = list({5,10,15,20,25,30,35,40}-set(sIndex)) #return the indexes that don't have platforms
+        if len(aIndex) == 0: #if already has max platforms change a random value
+            index = random.choice(sIndex)
+            i = random.randint(1,4)
+            intMax = XINT_MAX
+            if i % 2 == 0:
+                intMax = YINT_MAX
+            ind[index + i] = random.randint(INT_MIN,intMax)
+        else:
+            index = random.choice(aIndex)
+            ind[index] = 1
+            ind[index+1] = random.randint(INT_MIN,XINT_MAX)
+            ind[index+2] = random.randint(INT_MIN,YINT_MAX)
+            ind[index+3] = random.randint(INT_MIN,XINT_MAX)
+            ind[index+4] = random.randint(INT_MIN,YINT_MAX)
+    elif random.random() < 0.2: #just remove a platform
+        index = random.choice(sIndex[1:])
+        ind[index] = 0
+    else: #change a random value
+        index = random.choice(sIndex)
+        i = random.randint(1,4)
+        intMax = XINT_MAX
+        if i % 2 == 0:
+            intMax = YINT_MAX
+        ind[index + i] = random.randint(INT_MIN,intMax)
+
+
+              
+def levelCrossBothPlat(pOne, pTwo):
+    for i in range(0,45,5):
+        if(pOne[i] % 2 == 0) and (pTwo[i] % 2 == 0): #no platform in that place
             continue
         if(pOne[i] % 2 == 1) and (pTwo[i] % 2 == 1): #both have platform
             for j in range(i+1,i+4):
@@ -62,10 +102,21 @@ def levelCrossBothPlat(pOne, pTwo):
                 pTwo[j] = aux
 
 def levelCrossOnePlat(pOne, pTwo):
-    for i in range(5,45,5):
+    for i in range(0,45,5):
         if(pOne[i] % 2 == 0) and (pTwo[i] % 2 == 0): #no platform in that place
             continue
         if (pOne[i] % 2 == 0 and pTwo[i] % 2 == 1) or (pOne[i] % 2 == 1 and pTwo[i] % 2 == 0): #one has platform other doesn't
+            for j in range(i,i+5):
+                aux = pOne[j]
+                pOne[j] = pTwo[j]
+                pTwo[j] = aux
+
+def levelCrossPlat(pOne, pTwo):
+    for i in range(0,45,5):
+        if(pOne[i] % 2 == 0) and (pTwo[i] % 2 == 0): #no platform in that place
+            continue
+        if (pOne[i] % 2 == 0 and pTwo[i] % 2 == 1) or (pOne[i] % 2 == 1 and pTwo[i] % 2 == 0) or ((pOne[i] % 2 == 1) and (pTwo[i] % 2 == 1)):
+            #one has platform other doesn't or both have
             for j in range(i,i+5):
                 aux = pOne[j]
                 pOne[j] = pTwo[j]
@@ -97,11 +148,13 @@ toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 toolbox.register("evaluate", hUsed.CalculateFitness)
 
 #toolbox.register("mate", tools.cxTwoPoint)
-toolbox.register("mate", levelCrossOnePlat)
+#toolbox.register("mate", levelCrossOnePlat)
+toolbox.register("mate", levelCrossPlat)
 #toolbox.register("mate", levelCrossBothPlat)
 
 #toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = XINT_MAX, indpb=0.2)
-toolbox.register("mutate", mutateLevel)
+#toolbox.register("mutate", mutateLevel)
+toolbox.register("mutate", levelChangeOneValue)
 #toolbox.register("mutate", tools.mutFlipBit, indpb=0.2)
 
 
@@ -116,17 +169,17 @@ def main():
     viewer.drawLevel(lvl,"Test.png")
     
 #main()
+
+
+
 popSize = 50
-
-
-
 def GA():
     bestPop = []
     bestFit = 0
     bestFits =[]
 
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.5, 0.2, 50
+    CXPB, MUTPB, NGEN = 0.5, 0.2, 100
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -139,15 +192,16 @@ def GA():
         startTime = tim.time()
 
         pop.sort(reverse = True, key = getFit)
-        IM.writePop(g,pop)
-
+        IM.WritePop(g,pop)
+        IM.WriteGenData(g,pop)
         if(pop[0].fitness.values[0] > bestFit):
             bestFit = pop[0].fitness.values[0]
             bestPop = [pop[0]] + bestPop
             bestFits = [bestFit] + bestFits
 
+        
         # Select the next generation individuals
-        offspring = toolbox.select(pop, len(pop))
+        offspring = toolbox.select(pop, len(pop)-10)
         # Clone the selected individuals
         offspring = list(map(toolbox.clone, offspring))
         
@@ -162,7 +216,8 @@ def GA():
             if random.random() < MUTPB:
                 toolbox.mutate(mutant)
                 del mutant.fitness.values
-
+                
+        offspring += pop[0:10]
         # Evaluate the individuals with an invalid fitness
         invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
         fitnesses = map(toolbox.evaluate, invalid_ind)

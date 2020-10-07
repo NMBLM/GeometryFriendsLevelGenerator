@@ -66,6 +66,7 @@ class Cell:
         self.reachesCircle = False
         self.reachesCoop = False
         self.jumpStrength = -1
+        self.notCoopJump = False
 
 class SpecialArea:
     def __init__(self, x, y, width, height, type):
@@ -346,7 +347,7 @@ def CircleReachability(lvl):
                             lst += [((x + direction, y + 1), direction)]     
                         else:
                             lst += [((x - direction, y + 1), -direction)]
-    #print( len(lst) + " | " + cellsChecked + " | " + freefalling)
+    #print("Circle ", str(len(lst)) , " | " , str(cellsChecked) , " | " , str(freefalling)," \n")
 
 
 def CoopReachability(lvl):
@@ -356,7 +357,7 @@ def CoopReachability(lvl):
     freefalling = 0
     lst = []
     lst += [((x, y), 0)]
-    while len(lst) > 0 and cellsChecked < 10000:
+    while len(lst) > 0 and cellsChecked < 10000 :
         cellsChecked += 1
         startPos = lst[0]
         x = startPos[0][0]
@@ -366,7 +367,7 @@ def CoopReachability(lvl):
         if x >= xGridLen or y >= yGridLen or x < 0 or y < 0:
             continue
         #already jumped from this one
-        if lvl.cellGrid[x][y].jumpStrength == 30:
+        if lvl.cellGrid[x][y].jumpStrength == 30 or  lvl.cellGrid[x][y].notCoopJump:
             continue
         if lvl.cellGrid[x][y].fitsCircle:
             if not lvl.cellGrid[x][ y].reachesCircle:
@@ -374,34 +375,35 @@ def CoopReachability(lvl):
             
             #check if on ground
             if not lvl.cellGrid[x][ y + 1].fitsCircle:
-                #Check if can doo coop jump
+                #Check if can do coop jump
                 if lvl.cellGrid[x][y].reachesRectangle:
                     lvl.cellGrid[x][ y].jumpStrength = 30
                     if lvl.cellGrid[x - 1][ y].jumpStrength < 30:
                         lst += [((x - 1, y), -1)]
-                        for i in range(0,3):
-                            lst += [((x-1, y-i), -1)]
+                        for i in range(0,3): #can go up small things
+                            lst += [((x-1, y-i), -2)]
                     if lvl.cellGrid[x + 1][ y].jumpStrength < 30:
                         lst += [((x + 1, y), 1)]
-                        for i in range(0,3):
-                            lst += [((x + 1, y-i), 1)]
+                        for i in range(0,3): #can go up small things
+                            lst += [((x + 1, y-i), 2)]
                     
-                    for i in range(-1,2):
+                    for i in range(-1,2): #actual jump
                         if lvl.cellGrid[x + i][ y - 1].jumpStrength < 29:
                             lvl.cellGrid[x + i][ y - 1].jumpStrength = 29
                             lst += [((x + i, y-1), i)]
                 else: #no coop jump
                     lvl.cellGrid[x][ y].jumpStrength = 24
+                    lvl.cellGrid[x][y].notCoopJump = True
                     if lvl.cellGrid[x - 1][ y].jumpStrength < 24:
                         lst += [((x - 1, y), -1)]
-                        for i in range(0,3):
+                        for i in range(0,3):#can go up small things
                             lst += [((x-1, y-i), -1)]
                     if lvl.cellGrid[x + 1][ y].jumpStrength < 24:
                         lst += [((x + 1, y), 1)]
-                        for i in range(0,3):
+                        for i in range(0,3):#can go up small things
                             lst += [((x + 1, y-i), 1)]
                     
-                    for i in range(-1,2):
+                    for i in range(-1,2):#actual jump
                         if lvl.cellGrid[x + i][ y - 1].jumpStrength < 23:
                             lvl.cellGrid[x + i][ y - 1].jumpStrength = 23
                             lst += [((x + i, y-1), i)]
@@ -422,7 +424,7 @@ def CoopReachability(lvl):
                             lst += [((x + direction, y + 1), direction)]     
                         else:
                             lst += [((x - direction, y + 1), -direction)]
-    #print( len(lst) + " | " + cellsChecked + " | " + freefalling)
+    #print("Coop ", str(len(lst)) , " | " , str(cellsChecked) , " | " , str(freefalling)," \n")
 
 
 def CellGridToBlockGrid(lvl):

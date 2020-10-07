@@ -41,8 +41,8 @@ def mutateLevel(ind):
                 if random.random() < 0.8: #add platform
                     ind[i] = 1
     else:
-        for i in range(5,45,5):
-            if(ind[i] % 2 == 1):
+        for i in range(0,45,5):
+            if(ind[i] % 2 == 1 or i == 0):
                 if random.random() < 0.5: #change plat width height
                     ind[i+3] = random.randint(INT_MIN,XINT_MAX)
                     ind[i+4] = random.randint(INT_MIN,YINT_MAX)
@@ -153,8 +153,8 @@ toolbox.register("mate", levelCrossPlat)
 #toolbox.register("mate", levelCrossBothPlat)
 
 #toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = XINT_MAX, indpb=0.2)
-#toolbox.register("mutate", mutateLevel)
-toolbox.register("mutate", levelChangeOneValue)
+toolbox.register("mutate", mutateLevel)
+#toolbox.register("mutate", levelChangeOneValue)
 #toolbox.register("mutate", tools.mutFlipBit, indpb=0.2)
 
 
@@ -162,15 +162,6 @@ toolbox.register("select", tools.selBest)
 #toolbox.register("select", tools.selTournament, tournsize=3)
 INT_MIN, XINT_MAX
  
-def main():
-    pop = toolbox.population(n=10)
-    print(pop[0])
-    lvl = hUsed.TestLevel(pop[0])
-    viewer.drawLevel(lvl,"Test.png")
-    
-#main()
-
-
 
 popSize = 50
 def GA():
@@ -179,7 +170,7 @@ def GA():
     bestFits =[]
 
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.5, 0.2, 100
+    CXPB, MUTPB, NGEN = 0.9, 0.8, 1000
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -201,7 +192,7 @@ def GA():
 
         
         # Select the next generation individuals
-        offspring = toolbox.select(pop, len(pop)-10)
+        offspring = toolbox.select(pop, len(pop))
         # Clone the selected individuals
         offspring = list(map(toolbox.clone, offspring))
         
@@ -217,7 +208,6 @@ def GA():
                 toolbox.mutate(mutant)
                 del mutant.fitness.values
                 
-        offspring += pop[0:10]
         # Evaluate the individuals with an invalid fitness
         invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
         fitnesses = map(toolbox.evaluate, invalid_ind)
@@ -231,12 +221,16 @@ def GA():
     return (pop, bestPop,bestFit,bestFits)
 
 
-ppl,bestPop,bestFit,bestFits  = GA()
-ppl.sort(reverse = True, key = getFit)
-
-IM.DrawPop(ppl,hUsed)
-
-IM.DrawBestPop(bestPop,hUsed)
+def main():
+    ppl,bestPop,bestFit,bestFits  = GA()
+    ppl.sort(reverse = True, key = getFit)
 
 
+    IM.DrawPop(ppl,hUsed)
 
+    IM.DrawBestPop(bestPop,hUsed)
+def Test():
+    TestLvl = [0, 183, 556, 1107, 305, 0, 383, 310, 453, 145, 0, 580, 316, 431, 362, 0, 208, 560, 30, 256, 0, 413, 116, 961, 158, 0, 161, 39, 215, 218, 0, 1090, 95, 18, 345, 1, 892, 538, 225, 712, 0, 995, 711, 721, 550]
+    IM.DrawLevel(TestLvl,hUsed)
+
+main()

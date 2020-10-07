@@ -122,4 +122,4 @@ dn = "GenData/Run_" + str(currentR)
 while(os.path.isdir(dn)):
     runAnalysis(dn)
     currentR += 1
-    dn = "Run_" + str(currentR)
+    dn = "GenData/Run_" + str(currentR)

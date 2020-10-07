@@ -46,6 +46,11 @@ class InstrumentationManager:
             print(".\\GenData\\Run_"+ str(self.runNumber)+"\\Bestlevel"+ str(auxI) + ".png :", lvl.fit )
             auxI += 1
 
+    def DrawLevel(self,lvl,h):
+        eLvl = h.TestLevel(lvl)
+        viewer.drawLevel(eLvl,"indLevel.png")
+        print("indLevel.png", eLvl.fit )
+
 
     def WriteGenData(self, genNumber, pop):
         if(not self.on):

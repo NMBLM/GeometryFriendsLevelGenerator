@@ -61,3 +61,4 @@ crashlytics-build.properties
 GeneticAlgorithmVisualizer/Library/Artifacts/*
 GeneticAlgorithmVisualizer/Library/ArtifactDB
 GeneticAlgorithmVisualizer/Library/ArtifactDB
+PythonImplementation/GenData/*

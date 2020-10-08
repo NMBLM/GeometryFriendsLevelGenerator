@@ -132,7 +132,8 @@ def fitness(lvl, h):
         areaPosX = (int) ((area.x - 40) / blockSize) + 2 
         areaPosY = (int) ((area.y - 40) / blockSize) + 2 
         areaWidth = (int) ((area.width - 40) / blockSize) + 2 
-        areaHeight = (int) ((area.height - 40) / blockSize) + 2 
+        areaHeight = (int) ((area.height - 40) / blockSize) + 2
+        
         areaType = area.type
         for i in range(areaPosX, areaPosX + areaWidth):
             for j in range(areaPosY, areaPosY + areaHeight):

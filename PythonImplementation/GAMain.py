@@ -22,13 +22,17 @@ lvlThreeSpecs = [ef.SpecialArea(90,600,140,140, ef.AreaType.RectangleOnly),
 ef.SpecialArea(1100,600,140,140, ef.AreaType.RectangleOnly), 
 ef.SpecialArea(1100,80,140,140, ef.AreaType.Cooperative)]
 
+lvlFourSpecs = [ef.SpecialArea(440,700,200,60, ef.AreaType.RectangleOnly), 
+ef.SpecialArea(90,440,300,300, ef.AreaType.CircleOnly), 
+ef.SpecialArea(900,80,300,140, ef.AreaType.Cooperative)]
+
 hOne = ef.AreaHeuristic(lvlOneSpecs)
 hTwo = ef.AreaHeuristic(lvlTwoSpecs)
 hThree = ef.AreaHeuristic(lvlThreeSpecs)
+hFour = ef.AreaHeuristic(lvlFourSpecs)
 
 
-
-hUsed = hThree
+hUsed = hTwo
 
 IM = instrumentation.InstrumentationManager(on = True)
 
@@ -141,7 +145,7 @@ creator.create("Individual", list, fitness=creator.FitnessMax)
 
 toolbox = base.Toolbox()
 
-INT_MIN, XINT_MAX, YINT_MAX = 0, 1280 , 760
+INT_MIN, XINT_MAX, YINT_MAX = 40, 1280 , 760
 N_CYCLES = 9
 
 toolbox.register("attr_bool", random.randint, 0, 1)
@@ -179,7 +183,7 @@ def GA():
     bestFit = 0
     bestFits =[]
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 1, 0.8, 500
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 100
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -197,12 +201,12 @@ def GA():
         IM.WriteGenData(g,pop)
         if(pop[0].fitness.values[0] > bestFit):
             bestFit = pop[0].fitness.values[0]
-            bestPop = [pop[0]] + bestPop
+            bestPop = [list(map(toolbox.clone,pop[0]))] + bestPop
             bestFits = [bestFit] + bestFits
-        MUTPB = 1 - bestFit * 2
+        #MUTPB = 1 - bestFit * 2
         
         # Select the next generation individuals
-        offspring = toolbox.select(pop, len(pop)-2)
+        offspring = toolbox.select(pop, len(pop))
         toAdd = pop[0:2]
         # Clone the selected individuals
         offspring = list(map(toolbox.clone, offspring))
@@ -214,7 +218,7 @@ def GA():
                 toolbox.mate(child1, child2)
                 del child1.fitness.values
                 del child2.fitness.values
-        offspring = offspring + toAdd
+        #offspring = offspring + list(map(toolbox.clone, toAdd))
         for mutant in offspring:
             if random.random() < MUTPB:
                 toolbox.mutate(mutant)
@@ -241,7 +245,8 @@ def main():
     IM.DrawBestPop(bestPop,hUsed)
 
 def Test():
-    TestLvl = [0, 183, 556, 1107, 305, 0, 383, 310, 453, 145, 0, 580, 316, 431, 362, 0, 208, 560, 30, 256, 0, 413, 116, 961, 158, 0, 161, 39, 215, 218, 0, 1090, 95, 18, 345, 1, 892, 538, 225, 712, 0, 995, 711, 721, 550]
+    TestLvl = [1, 96, 720, 522, 689, 1, 1160, 587, 764, 63, 0, 338, 512, 395, 239, 0, 575, 330, 585, 549, 0, 84, 230, 256, 427, 1, 79, 695, 277, 556, 0, 800, 462, 381, 40, 1, 483, 348, 1015, 759, 1, 292, 508, 104, 744]
     IM.DrawLevel(TestLvl,hUsed)
 
 main()
+#Test()

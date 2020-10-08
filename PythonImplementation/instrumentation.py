@@ -11,13 +11,13 @@ class InstrumentationManager:
         self.genN = 0
         f = open('GenData\RunNumber.txt','r')
         self.runNumber = int(f.readline())
-        f.close()
-        f = open('GenData\RunNumber.txt','w')
-        f.write(str(self.runNumber + 1))
-        f.close()
+        f.close() 
         os.mkdir('GenData\Run_' + str(self.runNumber))
         self.tmpauxi = 0
         self.fileName = 'GenData\Run_' + str(self.runNumber) + '\data.txt'
+        f = open('GenData\RunNumber.txt','w')
+        f.write(str(self.runNumber + 1))
+        f.close()
         print(self.fileName)
 
 
@@ -78,7 +78,7 @@ class InstrumentationManager:
                 lq += pop[i].fitness.values[0]
             average += pop[i].fitness.values[0]
         #Average
-        text += str(average/bp) + "\n"
+        text += str(average/len(pop)) + "\n"
         #Average First Quartil
         text += str(fq / bp) + "\n"
         

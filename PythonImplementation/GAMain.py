@@ -124,8 +124,8 @@ def levelCrossPlat(pOne, pTwo):
     for i in range(0,45,5):
         if(pOne[i] % 2 == 0) and (pTwo[i] % 2 == 0): #no platform in that place
             continue
-        if (pOne[i] % 2 == 0 and pTwo[i] % 2 == 1) or (pOne[i] % 2 == 1 and pTwo[i] % 2 == 0) or ((pOne[i] % 2 == 1) and (pTwo[i] % 2 == 1)):
-            #one has platform other doesn't or both have
+        if (pOne[i] % 2 == 0 and pTwo[i] % 2 == 1) or (pOne[i] % 2 == 1 and pTwo[i] % 2 == 0) or ((pOne[i] % 2 == 1) and (pTwo[i] % 2 == 1) and random.random() < 0.5):
+            #one has platform other doesn't or both have they switch with a 50% chance
             for j in range(i,i+5):
                 aux = pOne[j]
                 pOne[j] = pTwo[j]
@@ -162,8 +162,8 @@ toolbox.register("mate", levelCrossPlat)
 #toolbox.register("mate", levelCrossBothPlat)
 
 #toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = XINT_MAX, indpb=0.2)
-#toolbox.register("mutate", mutateLevel)
-toolbox.register("mutate", levelChangeOneValue)
+toolbox.register("mutate", mutateLevel)
+#toolbox.register("mutate", levelChangeOneValue)
 #toolbox.register("mutate", tools.mutFlipBit, indpb=0.2)
 
 

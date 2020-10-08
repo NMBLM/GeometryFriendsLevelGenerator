@@ -449,7 +449,7 @@ def CellGridToBlockGrid(lvl):
                 continue
             if lvl.cellGrid[x][ y].reachesRectangle:
                 lvl.grid[x][ y] = BlockType.RectangleCanReach
-                if lvl.cellGrid[x][y].reachesCircle:
+                if lvl.cellGrid[x][y].reachesCircle or lvl.cellGrid[x][ y].reachesCoop :
                     lvl.grid[x][ y] = BlockType.BothCanReach
                 continue
             lvl.grid[x][ y] = BlockType.Unreachable

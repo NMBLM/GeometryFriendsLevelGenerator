@@ -16,7 +16,7 @@ class InstrumentationManager:
         f.write(str(self.runNumber + 1))
         f.close()
         os.mkdir('GenData\Run_' + str(self.runNumber))
-        
+        self.tmpauxi = 0
         self.fileName = 'GenData\Run_' + str(self.runNumber) + '\data.txt'
         print(self.fileName)
 
@@ -50,7 +50,10 @@ class InstrumentationManager:
         eLvl = h.TestLevel(lvl)
         viewer.drawLevel(eLvl,"indLevel.png")
         print("indLevel.png", eLvl.fit )
-
+    def DrawSpecs(self,h):
+        self.tmpauxi += 1
+        viewer.drawSpecs(h,".\\GenData\\Run_"+ str(self.runNumber)+"\\HeuristicSpec"+str(self.tmpauxi) +".png")
+        print(".\\GenData\\Run_"+ str(self.runNumber)+"\\HeuristicSpec" + str(self.tmpauxi) + ".png : " , len(h.specifications))
 
     def WriteGenData(self, genNumber, pop):
         if(not self.on):

@@ -1,6 +1,7 @@
 # 1 | x | y | x | y |
 # 1 | x | y | x | y | 1 | x | y | x | y | 1 | x | y | x | y | 1 | x | y | x | y | 1 | x | y | x | y |
 # 1 | x | y | x | y | 1 | x | y | x | y | 1 | x | y | x | y 
+#INT_MIN, XINT_MAX, YINT_MAX = 0, 1280 , 760
 
 import random
 import evaluateFuncs as ef
@@ -13,16 +14,24 @@ from deap import tools
 from evaluateFuncs import Level
 import PILViewer as viewer
 
-lvlOneSpecs = [ef.SpecialArea(740,360,500,360, ef.AreaType.CircleOnly), ef.SpecialArea(80,540,500,180,ef.AreaType.RectangleOnly)]
+lvlOneSpecs = [ ef.SpecialArea(80,540,500,180,ef.AreaType.RectangleOnly),ef.SpecialArea(740,360,500,360, ef.AreaType.CircleOnly)]
 
-lvlTwoSepcs = [ef.SpecialArea(100,80,1100,240, ef.AreaType.Cooperative), ef.SpecialArea(430,560,340,180,ef.AreaType.RectangleOnly)]
+lvlTwoSpecs = [ef.SpecialArea(100,80,1100,240, ef.AreaType.Cooperative), ef.SpecialArea(430,560,340,180,ef.AreaType.RectangleOnly)]
+
+lvlThreeSpecs = [ef.SpecialArea(90,600,140,140, ef.AreaType.RectangleOnly), 
+ef.SpecialArea(1100,600,140,140, ef.AreaType.RectangleOnly), 
+ef.SpecialArea(1100,80,140,140, ef.AreaType.Cooperative)]
 
 hOne = ef.AreaHeuristic(lvlOneSpecs)
-hTwo = ef.AreaHeuristic(lvlTwoSepcs)
+hTwo = ef.AreaHeuristic(lvlTwoSpecs)
+hThree = ef.AreaHeuristic(lvlThreeSpecs)
 
-hUsed = hTwo
+
+
+hUsed = hThree
 
 IM = instrumentation.InstrumentationManager(on = True)
+
 
 def getFit(ind):
     return ind.fitness.values[0]
@@ -153,8 +162,8 @@ toolbox.register("mate", levelCrossPlat)
 #toolbox.register("mate", levelCrossBothPlat)
 
 #toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = XINT_MAX, indpb=0.2)
-toolbox.register("mutate", mutateLevel)
-#toolbox.register("mutate", levelChangeOneValue)
+#toolbox.register("mutate", mutateLevel)
+toolbox.register("mutate", levelChangeOneValue)
 #toolbox.register("mutate", tools.mutFlipBit, indpb=0.2)
 
 
@@ -165,12 +174,12 @@ INT_MIN, XINT_MAX
 
 popSize = 50
 def GA():
+    IM.DrawSpecs(hUsed)
     bestPop = []
     bestFit = 0
     bestFits =[]
-
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9, 0.8, 1000
+    CXPB, MUTPB, NGEN = 1, 0.8, 500
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -183,26 +192,29 @@ def GA():
         startTime = tim.time()
 
         pop.sort(reverse = True, key = getFit)
+       
         IM.WritePop(g,pop)
         IM.WriteGenData(g,pop)
         if(pop[0].fitness.values[0] > bestFit):
             bestFit = pop[0].fitness.values[0]
             bestPop = [pop[0]] + bestPop
             bestFits = [bestFit] + bestFits
-
+        MUTPB = 1 - bestFit * 2
         
         # Select the next generation individuals
-        offspring = toolbox.select(pop, len(pop))
+        offspring = toolbox.select(pop, len(pop)-2)
+        toAdd = pop[0:2]
         # Clone the selected individuals
         offspring = list(map(toolbox.clone, offspring))
         
         # Apply crossover and mutation on the offspring
+        random.shuffle(offspring)
         for child1, child2 in zip(offspring[::2], offspring[1::2]):
             if random.random() < CXPB:
                 toolbox.mate(child1, child2)
                 del child1.fitness.values
                 del child2.fitness.values
-
+        offspring = offspring + toAdd
         for mutant in offspring:
             if random.random() < MUTPB:
                 toolbox.mutate(mutant)
@@ -225,10 +237,9 @@ def main():
     ppl,bestPop,bestFit,bestFits  = GA()
     ppl.sort(reverse = True, key = getFit)
 
-
     IM.DrawPop(ppl,hUsed)
-
     IM.DrawBestPop(bestPop,hUsed)
+
 def Test():
     TestLvl = [0, 183, 556, 1107, 305, 0, 383, 310, 453, 145, 0, 580, 316, 431, 362, 0, 208, 560, 30, 256, 0, 413, 116, 961, 158, 0, 161, 39, 215, 218, 0, 1090, 95, 18, 345, 1, 892, 538, 225, 712, 0, 995, 711, 721, 550]
     IM.DrawLevel(TestLvl,hUsed)

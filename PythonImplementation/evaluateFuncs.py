@@ -27,6 +27,8 @@ class Level:
             text += "Platform: " + str(plat) + "\n"
         return text
 
+
+
 class PlatformType(Enum):
     Common = 0
     CirclePlatform = 1    #Is a platform that only blocks the Circle
@@ -437,7 +439,7 @@ def CellGridToBlockGrid(lvl):
             if lvl.cellGrid[x][ y].Platform != PlatformType.NotPlatform:
                 lvl.grid[x][ y] = BlockType.Platform
                 continue
-            if lvl.cellGrid[x][ y].reachesCoop:
+            if lvl.cellGrid[x][ y].reachesCoop and not lvl.cellGrid[x][ y].reachesRectangle:
                 lvl.grid[x][ y] = BlockType.CooperativeCanReach
                 continue
             if lvl.cellGrid[x][ y].reachesCircle:
@@ -452,3 +454,6 @@ def CellGridToBlockGrid(lvl):
                 continue
             lvl.grid[x][ y] = BlockType.Unreachable
 
+blankLevel = Level(9*[0,0,0,0,0])
+initCellGrid(blankLevel)
+CellGridToBlockGrid(blankLevel)

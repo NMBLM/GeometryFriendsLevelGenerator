@@ -92,7 +92,4 @@ def drawSpecs (h,name):
 
         #draw.rectangle([(level.rectSpawn[0]-16 ,level.rectSpawn[1] - 16), (level.rectSpawn[0]+16 ,level.rectSpawn[1] + 16)],fill = squareColor,outline= 0 )
         #draw.arc([level.circleSpawn, (level.circleSpawn[0]+36 ,level.circleSpawn[1] + 36)],start = 0, end = 360,fill = circleColor ,width= 3 )
-        
-
-
         im.save(name, "PNG")

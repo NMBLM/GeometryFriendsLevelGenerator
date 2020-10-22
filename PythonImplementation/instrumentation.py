@@ -34,22 +34,46 @@ class InstrumentationManager:
         auxI = 1
         for person in pop:
             lvl = h.TestLevel(person)
-            viewer.drawLevel(lvl,".\\GenData\\Run_"+ str(self.runNumber)+"\\level"+ str(auxI)+ ".png")
-            print(".\\GenData\\Run_"+ str(self.runNumber)+"\\level"+ str(auxI) + ".png :", lvl.fit )
+            if isinstance(lvl, list):
+                aux = 1
+                for l in lvl:
+                    viewer.drawLevel(l,".\\GenData\\Run_"+ str(self.runNumber)+"\\S"+ str(aux) + "level"+ str(auxI)+ ".png")
+                    aux+=1
+                print(".\\GenData\\Run_"+ str(self.runNumber)+"\\level"+ str(auxI) + ".png")
+            else:
+                viewer.drawLevel(lvl,".\\GenData\\Run_"+ str(self.runNumber)+"\\level"+ str(auxI)+ ".png")
+                print(".\\GenData\\Run_"+ str(self.runNumber)+"\\level"+ str(auxI) + ".png :", lvl.fit )
             auxI += 1
 
     def DrawBestPop(self,pop,h):
         auxI = 1
         for person in pop:
             lvl = h.TestLevel(person)
-            viewer.drawLevel(lvl,".\\GenData\\Run_"+ str(self.runNumber)+"\\Bestlevel"+ str(auxI)+ ".png")
-            print(".\\GenData\\Run_"+ str(self.runNumber)+"\\Bestlevel"+ str(auxI) + ".png :", lvl.fit )
+            if isinstance(lvl, list):
+                aux = 1
+                for l in lvl:
+                    viewer.drawLevel(l,".\\GenData\\Run_"+ str(self.runNumber)+"\\S"+ str(aux) + "Bestlevel"+ str(auxI)+ ".png")
+                    aux+=1
+                print(".\\GenData\\Run_"+ str(self.runNumber)+"\\Bestlevel"+ str(auxI) + ".png" )
+
+            else:
+                viewer.drawLevel(lvl,".\\GenData\\Run_"+ str(self.runNumber)+"\\Bestlevel"+ str(auxI)+ ".png")
+                print(".\\GenData\\Run_"+ str(self.runNumber)+"\\Bestlevel"+ str(auxI) + ".png :", lvl.fit )
             auxI += 1
 
     def DrawLevel(self,lvl,h):
         eLvl = h.TestLevel(lvl)
-        viewer.drawLevel(eLvl,"indLevel.png")
+        if isinstance(eLvl, list):
+            aux = 1
+            for l in lvl:
+                viewer.drawLevel(l,"S"+ str(aux) + "indlevel.png")
+                aux+=1
+
+        else:
+            viewer.drawLevel(eLvl,"indLevel.png")
         print("indLevel.png", eLvl.fit )
+
+
     def DrawSpecs(self,h):
         self.tmpauxi += 1
         viewer.drawSpecs(h,".\\GenData\\Run_"+ str(self.runNumber)+"\\HeuristicSpec"+str(self.tmpauxi) +".png")
@@ -94,3 +118,14 @@ class InstrumentationManager:
         f = open('GenData\Run_' + str(self.runNumber) + '\data.txt','a')
         f.write(text)
         f.close()
+
+
+    def DrawGenericPop(self,pop,h,beforeLevel,afterlevel):
+        if not os.path.isdir(".\\GenData\\Run_"+ str(self.runNumber)+ beforeLevel):
+            os.mkdir(".\\GenData\\Run_"+ str(self.runNumber)+ beforeLevel)
+        auxI = 1
+        for person in pop:
+            lvl = h.TestLevel(person)
+            viewer.drawLevel(lvl,".\\GenData\\Run_"+ str(self.runNumber) + beforeLevel +"\\level"+ str(auxI) + afterlevel +".png")
+            print(".\\GenData\\Run_"+ str(self.runNumber) + beforeLevel +"\\level"+ str(auxI) + afterlevel +".png :", lvl.fit )
+            auxI += 1

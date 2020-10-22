@@ -1,13 +1,18 @@
 from enum import Enum
 
 class Level:
-    def __init__(self, attrList):
+    def __init__(self, attrList, rectSpawn = [], circlespawn= []):
         if(len(attrList) < 45):
             print("Incorrect attr Len")
         self.rectSpawn = (attrList[1],attrList[2])
         self.circleSpawn = (attrList[3],attrList[4])
         self.platforms = []
-        for i in range(5,45,5):
+        startRange = 5
+        if(len(rectSpawn) > 1):
+            startRange = 0
+            self.rectSpawn = rectSpawn
+            self.circleSpawn = circlespawn
+        for i in range(startRange,45,5):
             if(attrList[i] % 2 == 1):
                 posx = attrList[i+1]
                 posy = (int) (attrList[i+2] * 720 / 1280)
@@ -117,11 +122,123 @@ class AreaHeuristic:
         fit = fitness(lvl,self)
         lvl.fit = fit
         return lvl
+def getV(v):
+    return v[0]
+
+class FixedSpawnAreaHeuristic:
+    def __init__(self,specs, spawns = []):
+        self.specifications = specs
+        if len(spawns) >0:
+            self.spawns = spawns
+        else:
+            self.spawns = [((980,690),(88,640)),((232,328),(104,328)),((104,136),(1192,152)),((1080,344),(1192,344))]
+
+    def CalculateFitness(self, level):
+        fit = []
+        for s in self.spawns:
+            lvl = Level(level,s[0],s[1])
+            initCellGrid(lvl)
+            InitFits(lvl)
+            RectangleReachability(lvl)
+            CircleReachability(lvl)
+            ResetJumpStrength(lvl)
+            CoopReachability(lvl)
+            CellGridToBlockGrid(lvl)
+            fit += [fitness(lvl,self)]
+            del lvl
+        fit = max(fit,key=getV)
+        return fit
+    
+    def TestLevel(self,level):
+        levels = []
+        for s in self.spawns:
+            lvl = Level(level,s[0],s[1])
+            initCellGrid(lvl)
+            InitFits(lvl)
+            RectangleReachability(lvl)
+            CircleReachability(lvl)
+            ResetJumpStrength(lvl)
+            CoopReachability(lvl)
+            CellGridToBlockGrid(lvl)
+            fit = fitness(lvl,self)
+            lvl.fit = fit
+            levels += [lvl]
+        return levels
+
+
+class AreaPercentangeHeuristic:
+    def __init__(self,recPer = 0,circlePer = 0,coopPer = 0,commonPer = 0):
+        self.rectanglePercentage = recPer
+        self.circlePercentage = circlePer
+        self.coopPercentage = coopPer
+        self.commonPercentage = commonPer
+        
+    def CalculateFitness(self, level):
+        fit = []            
+        lvl = Level(level)
+        initCellGrid(lvl)
+        InitFits(lvl)
+        RectangleReachability(lvl)
+        CircleReachability(lvl)
+        ResetJumpStrength(lvl)
+        CoopReachability(lvl)
+        CellGridToBlockGrid(lvl)
+        fit = percentageFitness(lvl,self)
+        del lvl
+        return fit
+    
+    def TestLevel(self,level):
+        lvl = Level(level)
+        initCellGrid(lvl)
+        InitFits(lvl)
+        RectangleReachability(lvl)
+        CircleReachability(lvl)
+        ResetJumpStrength(lvl)
+        CoopReachability(lvl)
+        CellGridToBlockGrid(lvl)
+        fit = percentageFitness(lvl,self)
+        lvl.fit = fit
+        return lvl
+
+class AreaPercentangeTwoHeuristic:
+    def __init__(self,recPer = 0,circlePer = 0,coopPer = 0,commonPer = 0):
+        self.rectanglePercentage = recPer
+        self.circlePercentage = circlePer
+        self.coopPercentage = coopPer
+        self.commonPercentage = commonPer
+        
+    def CalculateFitness(self, level):
+        fit = []            
+        lvl = Level(level)
+        initCellGrid(lvl)
+        InitFits(lvl)
+        RectangleReachability(lvl)
+        CircleReachability(lvl)
+        ResetJumpStrength(lvl)
+        CoopReachability(lvl)
+        CellGridToBlockGrid(lvl)
+        fit = percentageFitnessTwo(lvl,self)
+        del lvl
+        return fit
+    
+    def TestLevel(self,level):
+        lvl = Level(level)
+        initCellGrid(lvl)
+        InitFits(lvl)
+        RectangleReachability(lvl)
+        CircleReachability(lvl)
+        ResetJumpStrength(lvl)
+        CoopReachability(lvl)
+        CellGridToBlockGrid(lvl)
+        fit = percentageFitnessTwo(lvl,self)
+        lvl.fit = fit
+             
+        return lvl
 
 def fitness(lvl, h):
     specs = h.specifications
     if(not len(specs) > 0):
-        print("No Specified Area")
+        #print("No Specified Area")
         return 1
     
     grid = lvl.grid
@@ -167,6 +284,62 @@ def fitness(lvl, h):
     return (0.0000001,)
     #return (fullAreaPercent / len(specs),)
     #return (minArea * 0.8 + fullAreaPercent * 0.2,)
+
+# In this the sum of each percentage being 100% would mean the entire map is reachable which is impossible
+# Takes the entire map into consideration
+def percentageFitness(lvl, h):
+    gridNum = (xGridLen-4) * (yGridLen-4)
+    rectangleGridPer = 0
+    circleGridPer = 0
+    coopGridPer = 0
+    commonGridPer = 0
+    for x in range(0,xGridLen):
+        for y in range(0,yGridLen):
+            if lvl.grid[x][y] == BlockType.CooperativeCanReach or lvl.grid[x][y] == BlockType.CooperativeCanReachRectanglePlatform:
+                coopGridPer += 1
+            elif lvl.grid[x][y] == BlockType.RectangleCanReach or lvl.grid[x][y] == BlockType.RectangleCanReachCirclePlatform:
+                rectangleGridPer += 1
+            elif lvl.grid[x][y] == BlockType.CircleCanReach or lvl.grid[x][y] == BlockType.CircleCanReachRectanglePlatform:
+                circleGridPer += 1
+            elif lvl.grid[x][y] == BlockType.BothCanReach:
+                commonGridPer += 1
+    rectangleGridPer = rectangleGridPer / gridNum
+    circleGridPer = circleGridPer / gridNum
+    coopGridPer = coopGridPer / gridNum
+    commonGridPer = commonGridPer / gridNum
+    fit = 1 - abs(h.rectanglePercentage - rectangleGridPer) - abs(h.circlePercentage - circleGridPer) - abs(h.coopPercentage - coopGridPer) - abs(h.commonPercentage - commonGridPer)
+    return (fit,)
+
+# In this the sum of each percentange adds to 100%
+# Only takes into consideration reachable areas
+def percentageFitnessTwo(lvl, h):
+    gridNum = 0
+    rectangleGridPer = 0
+    circleGridPer = 0
+    coopGridPer = 0
+    commonGridPer = 0
+    for x in range(0,xGridLen):
+        for y in range(0,yGridLen):
+            if lvl.grid[x][y] == BlockType.CooperativeCanReach or lvl.grid[x][y] == BlockType.CooperativeCanReachRectanglePlatform:
+                coopGridPer += 1
+                gridNum += 1
+            elif lvl.grid[x][y] == BlockType.RectangleCanReach or lvl.grid[x][y] == BlockType.RectangleCanReachCirclePlatform:
+                rectangleGridPer += 1
+                gridNum += 1
+            elif lvl.grid[x][y] == BlockType.CircleCanReach or lvl.grid[x][y] == BlockType.CircleCanReachRectanglePlatform:
+                circleGridPer += 1
+                gridNum += 1
+            elif lvl.grid[x][y] == BlockType.BothCanReach:
+                commonGridPer += 1
+                gridNum += 1
+    if gridNum == 0:
+        return (0,)
+    rectangleGridPer = rectangleGridPer / gridNum
+    circleGridPer = circleGridPer / gridNum
+    coopGridPer = coopGridPer / gridNum
+    commonGridPer = commonGridPer / gridNum
+    fit = 1 - abs(h.rectanglePercentage - rectangleGridPer) - abs(h.circlePercentage - circleGridPer) - abs(h.coopPercentage - coopGridPer) - abs(h.commonPercentage - commonGridPer)
+    return (fit,)
 
 
 def initCellGrid(lvl):

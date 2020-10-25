@@ -32,25 +32,25 @@ lvlFiveSpecs = [ef.SpecialArea(1100,600,140,140, ef.AreaType.RectangleOnly),
 ef.SpecialArea(90,440,300,140, ef.AreaType.CircleOnly), 
 ef.SpecialArea(900,80,300,140, ef.AreaType.Cooperative)]
 
-hZero = ef.AreaHeuristic(lvlZeroSpecs)
-hOne = ef.AreaHeuristic(lvlOneSpecs)
-hTwo = ef.AreaHeuristic(lvlTwoSpecs)
-hThree = ef.AreaHeuristic(lvlThreeSpecs)
-hFour = ef.AreaHeuristic(lvlFourSpecs)
-hFive = ef.AreaHeuristic(lvlFiveSpecs)
+hZero = ef.AreaHeuristic(lvlZeroSpecs, smaller = True)
+hOne = ef.AreaHeuristic(lvlOneSpecs, smaller = True)
+hTwo = ef.AreaHeuristic(lvlTwoSpecs, smaller = True)
+hThree = ef.AreaHeuristic(lvlThreeSpecs, smaller = True)
+hFour = ef.AreaHeuristic(lvlFourSpecs, smaller = True)
+hFive = ef.AreaHeuristic(lvlFiveSpecs, smaller = True)
 
 
-hFixedtwo = ef.FixedSpawnAreaHeuristic(lvlTwoSpecs)
+hFixedtwo = ef.FixedSpawnAreaHeuristic(lvlTwoSpecs, smaller = True)
 
 #rec circle coop common
-hPerOne = ef.AreaPercentangeHeuristic(0.3,0.2,0.3,0)
-hPerTwo = ef.AreaPercentangeHeuristic(0,0.3,0.3,0.1)
-hPerThree = ef.AreaPercentangeHeuristic(0.5,0.1,0.1,0)
+hPerOne = ef.AreaPercentangeHeuristic(0.3,0.2,0.3,0, smaller = True)
+hPerTwo = ef.AreaPercentangeHeuristic(0,0.3,0.3,0.1, smaller = True)
+hPerThree = ef.AreaPercentangeHeuristic(0.5,0.1,0.1,0, smaller = True)
 
-hPer2One = ef.AreaPercentangeTwoHeuristic(0.3,0.2,0.3,0.2)
-hPer2Two = ef.AreaPercentangeTwoHeuristic(0.4,0.6,0,0)
+hPer2One = ef.AreaPercentangeTwoHeuristic(0.3,0.2,0.3,0.2, smaller = True)
+hPer2Two = ef.AreaPercentangeTwoHeuristic(0.4,0.6,0,0, smaller = True)
 
-hUsed = hFour
+hUsed = hFive
 
 IM = instrumentation.InstrumentationManager(on = True)
 
@@ -205,7 +205,7 @@ creator.create("Individual", list, fitness=creator.FitnessMax)
 
 toolbox = base.Toolbox()
 
-INT_MIN, XINT_MAX, YINT_MAX = 40, 1160, 680
+INT_MIN, XINT_MAX, YINT_MAX = 3, 76, 47
 N_CYCLES = 9
 
 toolbox.register("attr_bool", random.randint, 0, 1)
@@ -307,7 +307,7 @@ def GAD():
     bestFit = 0
     bestFits =[]
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 30
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)

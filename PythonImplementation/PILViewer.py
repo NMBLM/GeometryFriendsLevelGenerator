@@ -57,9 +57,18 @@ def drawLevel (level,name):
                 xy = (squareSide*i , squareSide*j)
                 wl = (squareSide*(i+1) , squareSide*(j+1))
                 draw.rectangle([xy, wl],fill = color)
-    
-        draw.rectangle([(level.rectSpawn[0]-16 ,level.rectSpawn[1] - 16), (level.rectSpawn[0]+16 ,level.rectSpawn[1] + 16)],fill = squareColor,outline= 0 )
-        draw.arc([level.circleSpawn, (level.circleSpawn[0]+36 ,level.circleSpawn[1] + 36)],start = 0, end = 360,fill = circleColor ,width= 3 )
+        if level.smallerNums:
+            recS = (level.rectSpawn[0] * squareSide - squareSide, level.rectSpawn[1] * squareSide - squareSide)
+            recST = (level.rectSpawn[0] * squareSide + squareSide, level.rectSpawn[1] * squareSide + squareSide)
+            cirS = (level.circleSpawn[0] * squareSide, level.circleSpawn[1] * squareSide)
+            cirsT = (level.circleSpawn[0] * squareSide + 2 * squareSide, level.circleSpawn[1] * squareSide + 2*squareSide)
+        else:
+            recS = (level.rectSpawn[0] - squareSide, level.rectSpawn[1] - squareSide)
+            recST = (level.rectSpawn[0] + squareSide, level.rectSpawn[1] + squareSide)
+            cirS = level.circleSpawn 
+            cirsT = (level.circleSpawn[0] + 2 * squareSide, level.circleSpawn[1] + 2 * squareSide)
+        draw.rectangle([recS,recST] ,fill = squareColor,outline= 0 )
+        draw.arc([cirS, cirsT],start = 0, end = 360,fill = circleColor ,width= 3 )
         
         im.save(name, "PNG")
 

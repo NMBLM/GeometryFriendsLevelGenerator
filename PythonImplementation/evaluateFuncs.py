@@ -1,9 +1,10 @@
 from enum import Enum
 
 class Level:
-    def __init__(self, attrList, rectSpawn = [], circlespawn= []):
+    def __init__(self, attrList, rectSpawn = [], circlespawn= [],smaller = False):
         if(len(attrList) < 45):
             print("Incorrect attr Len")
+        self.smallerNums = smaller
         self.rectSpawn = (attrList[1],attrList[2])
         self.circleSpawn = (attrList[3],attrList[4])
         self.platforms = []
@@ -15,10 +16,10 @@ class Level:
         for i in range(startRange,45,5):
             if(attrList[i] % 2 == 1):
                 posx = attrList[i+1]
-                posy = (int) (attrList[i+2] * 720 / 1280)
+                posy = attrList[i+2]
                 #posy = attrList[i+2]
                 width = attrList[i+3]
-                height = (int) (attrList[i+4] * 720 / 1240)
+                height = attrList[i+4]
                 #height = attrList[i+4]
                 self.platforms += [(posx,posy,width,height)]
         self.cellGrid = []
@@ -93,12 +94,13 @@ rectangleMaxLen = 13
 
 level = [1, 1038, 506, 895, 581, 0, 288, 398, 6, 326, 0, 290, 365, 865, 598, 1, 1244, 542, 753, 119, 1, 357, 39, 271, 442, 1, 803, 678, 683, 120, 0, 838, 544, 590, 398, 0, 819, 439, 833, 240, 1, 1074, 254, 221, 540]
 class AreaHeuristic:
-    def __init__(self, specs):
+    def __init__(self, specs,smaller = False):
         self.specifications = specs #tuple or matrix of SpecialAreas
+        self.smallerLevels = smaller
 
 
     def CalculateFitness(self, level):
-        lvl = Level(level)
+        lvl = Level(level,smaller = self.smallerLevels)
         initCellGrid(lvl)
         InitFits(lvl)
         RectangleReachability(lvl)
@@ -111,7 +113,7 @@ class AreaHeuristic:
         return fit
     
     def TestLevel(self,level):
-        lvl = Level(level)
+        lvl = Level(level,smaller = self.smallerLevels)
         initCellGrid(lvl)
         InitFits(lvl)
         RectangleReachability(lvl)
@@ -126,7 +128,8 @@ def getV(v):
     return v[0]
 
 class FixedSpawnAreaHeuristic:
-    def __init__(self,specs, spawns = []):
+    def __init__(self,specs, spawns = [],smaller = False):
+        self.smallerLevels = smaller
         self.specifications = specs
         if len(spawns) >0:
             self.spawns = spawns
@@ -136,7 +139,7 @@ class FixedSpawnAreaHeuristic:
     def CalculateFitness(self, level):
         fit = []
         for s in self.spawns:
-            lvl = Level(level,s[0],s[1])
+            lvl = Level(level,s[0],s[1],smaller = self.smallerLevels)
             initCellGrid(lvl)
             InitFits(lvl)
             RectangleReachability(lvl)
@@ -152,7 +155,7 @@ class FixedSpawnAreaHeuristic:
     def TestLevel(self,level):
         levels = []
         for s in self.spawns:
-            lvl = Level(level,s[0],s[1])
+            lvl = Level(level,s[0],s[1],smaller = self.smallerLevels)
             initCellGrid(lvl)
             InitFits(lvl)
             RectangleReachability(lvl)
@@ -167,15 +170,16 @@ class FixedSpawnAreaHeuristic:
 
 
 class AreaPercentangeHeuristic:
-    def __init__(self,recPer = 0,circlePer = 0,coopPer = 0,commonPer = 0):
+    def __init__(self,recPer = 0,circlePer = 0,coopPer = 0,commonPer = 0,smaller = False):
         self.rectanglePercentage = recPer
         self.circlePercentage = circlePer
         self.coopPercentage = coopPer
         self.commonPercentage = commonPer
+        self.smallerLevels = smaller
         
     def CalculateFitness(self, level):
         fit = []            
-        lvl = Level(level)
+        lvl = Level(level,smaller = self.smallerLevels)
         initCellGrid(lvl)
         InitFits(lvl)
         RectangleReachability(lvl)
@@ -188,7 +192,7 @@ class AreaPercentangeHeuristic:
         return fit
     
     def TestLevel(self,level):
-        lvl = Level(level)
+        lvl = Level(level,smaller = self.smallerLevels)
         initCellGrid(lvl)
         InitFits(lvl)
         RectangleReachability(lvl)
@@ -201,15 +205,14 @@ class AreaPercentangeHeuristic:
         return lvl
 
 class AreaPercentangeTwoHeuristic:
-    def __init__(self,recPer = 0,circlePer = 0,coopPer = 0,commonPer = 0):
+    def __init__(self,recPer = 0,circlePer = 0,coopPer = 0,commonPer = 0,smaller = False):
         self.rectanglePercentage = recPer
         self.circlePercentage = circlePer
         self.coopPercentage = coopPer
         self.commonPercentage = commonPer
         
     def CalculateFitness(self, level):
-        fit = []            
-        lvl = Level(level)
+        lvl = Level(level,smaller = self.smallerLevels)
         initCellGrid(lvl)
         InitFits(lvl)
         RectangleReachability(lvl)
@@ -222,7 +225,7 @@ class AreaPercentangeTwoHeuristic:
         return fit
     
     def TestLevel(self,level):
-        lvl = Level(level)
+        lvl = Level(level,smaller = self.smallerLevels)
         initCellGrid(lvl)
         InitFits(lvl)
         RectangleReachability(lvl)
@@ -352,10 +355,16 @@ def initCellGrid(lvl):
             if(j  == 0 or j == yGridLen - 1 or j == 1 or j == yGridLen - 2):
                 lvl.cellGrid[i][j].Platform = PlatformType.Common
     for plat in lvl.platforms:
-        platPosX = (int) ((plat[0] - 40) / blockSize) + 2
-        platPosY = (int) ((plat[1] - 40) / blockSize) + 2
-        platWidth = (int) ((plat[2] - 40) / blockSize) + 2
-        platHeight = (int) ((plat[3] - 40) / blockSize) + 2
+        if lvl.smallerNums:
+            platPosX = plat[0]
+            platPosY = plat[1]
+            platWidth = plat[2]
+            platHeight = plat[3]
+        else:
+            platPosX = (int) ((plat[0] - 40) / blockSize) + 2
+            platPosY = (int) ((plat[1] - 40) / blockSize) + 2
+            platWidth = (int) ((plat[2] - 40) / blockSize) + 2
+            platHeight = (int) ((plat[3] - 40) / blockSize) + 2
         if(platPosX > xGridLen or platPosY > yGridLen):
             print("Bad platform positioning (" +platPosX + " , " + platPosY + ")")
         for i in range(platPosX,platPosX + platWidth):
@@ -402,8 +411,12 @@ def ResetJumpStrength(lvl):
 
 
 def RectangleReachability(lvl):
-    x = (int) ((lvl.rectSpawn[0] - 40) / blockSize) + 3
-    y = (int) ((lvl.rectSpawn[1] - 40) / blockSize) + 3
+    if lvl.smallerNums:
+        x = lvl.rectSpawn[0]
+        y = lvl.rectSpawn[1]
+    else:
+        x = ((lvl.rectSpawn[0] - 40) / blockSize) + 3
+        y = ((lvl.rectSpawn[1] - 40) / blockSize) + 3
     lst = []
     lst += [((x, y), 0)]
     while len(lst) > 0:
@@ -469,8 +482,12 @@ def RectangleReachability(lvl):
 
 
 def CircleReachability(lvl):
-    x = (int) ((lvl.circleSpawn[0] - 40) / blockSize) + 4
-    y = (int) ((lvl.circleSpawn[1] - 40) / blockSize) + 4
+    if lvl.smallerNums:
+        x = lvl.circleSpawn[0]
+        y = lvl.circleSpawn[1]
+    else:
+        x = ((lvl.circleSpawn[0] - 40) / blockSize) + 4
+        y = ((lvl.circleSpawn[1] - 40) / blockSize) + 4
     cellsChecked = 0
     freefalling = 0
     lst = []
@@ -527,8 +544,12 @@ def CircleReachability(lvl):
 
 
 def CoopReachability(lvl):
-    x = (int) ((lvl.circleSpawn[0] - 40) / blockSize) + 4
-    y = (int) ((lvl.circleSpawn[1] - 40) / blockSize) + 4
+    if lvl.smallerNums:
+        x = lvl.circleSpawn[0]
+        y = lvl.circleSpawn[1]
+    else:
+        x = ((lvl.circleSpawn[0] - 40) / blockSize) + 4
+        y = ((lvl.circleSpawn[1] - 40) / blockSize) + 4
     cellsChecked = 0
     freefalling = 0
     lst = []

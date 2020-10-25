@@ -50,7 +50,7 @@ hPerThree = ef.AreaPercentangeHeuristic(0.5,0.1,0.1,0)
 hPer2One = ef.AreaPercentangeTwoHeuristic(0.3,0.2,0.3,0.2)
 hPer2Two = ef.AreaPercentangeTwoHeuristic(0.4,0.6,0,0)
 
-hUsed = hPer2One
+hUsed = hFour
 
 IM = instrumentation.InstrumentationManager(on = True)
 
@@ -161,6 +161,43 @@ def diversityExactEqual(population):
             diverse += [toolbox.clone(person)]
     return diverse
 
+def diversityEqual(population):
+    diverse = []
+    diverseHelp = []
+    for person in population:
+        personLevelRec = (person[1],person[2])
+        personLevelCircle = (person[3],person[4])
+        personPlat = []
+        startRange = 5
+        for i in range(startRange,45,5):
+            if(attrList[i] % 2 == 1):
+                posx = person[i+1]
+                posy = (int) (person[i+2] * 720 / 1280)
+                #posy = attrList[i+2]
+                width = person[i+3]
+                height = (int) (person[i+4] * 720 / 1240)
+                #height = attrList[i+4]
+                personPlat += [(posx,posy,width,height)]
+        personHelp = [personLevelRec,personLevelCircle,personPlat]
+        for dh in diverseHelp:
+            stillEqual = True
+            if not dh[0] == personHelp[0]:
+                stillEqual = False
+                continue
+            elif not dh[1] == personHelp[1]:
+                stillEqual = False
+                continue
+            else:
+                for plat in personHelp[3]:
+                    if not plat in dh[3]:
+                        stillEqual = False
+                        break
+            if stillEqual:
+                break
+        if not stillEqual:
+            diverse += [toolbox.clone(person)]
+            diverseHelp += [personHelp]
+    return diverse
 
 
 creator.create("FitnessMax", base.Fitness, weights=(1.0, 1.0))
@@ -196,8 +233,8 @@ toolbox.register("mutate", mutateLevel)
 #toolbox.register("mutate", tools.mutFlipBit, indpb=0.2)
 
 
-toolbox.register("select", tools.selBest)
-#toolbox.register("select", tools.selTournament, tournsize=3)
+#toolbox.register("select", tools.selBest)
+toolbox.register("select", tools.selTournament, tournsize=3)
 INT_MIN, XINT_MAX
  
 
@@ -270,7 +307,7 @@ def GAD():
     bestFit = 0
     bestFits =[]
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 100
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -299,7 +336,9 @@ def GAD():
         #offspring = list(map(toolbox.clone, offspring))
         
         # Guarantee diversity and min popsize
+
         offspring = diversityExactEqual(offspring)
+        #offspring = diversityEqual(offspring)
 
         offspringLen = len(offspring)
         newOffspring = []

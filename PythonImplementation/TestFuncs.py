@@ -1,4 +1,4 @@
-import GAMain as gm
+#import GAMain as gm
 import random
 
 '''

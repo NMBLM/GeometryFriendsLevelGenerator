@@ -7,12 +7,16 @@ import random
 import evaluateFuncs as ef
 import instrumentation
 import time as tim
+import Functions as fs
+
 
 from deap import base
 from deap import creator
 from deap import tools
 from evaluateFuncs import Level
 import PILViewer as viewer
+
+INT_MIN, XINT_MAX, YINT_MAX = 3, 76, 47
 
 lvlZeroSpecs = []
 
@@ -32,12 +36,48 @@ lvlFiveSpecs = [ef.SpecialArea(1100,600,140,140, ef.AreaType.RectangleOnly),
 ef.SpecialArea(90,440,300,140, ef.AreaType.CircleOnly), 
 ef.SpecialArea(900,80,300,140, ef.AreaType.Cooperative)]
 
+lvlSixSpecs = [ef.SpecialArea(1100,600,140,140, ef.AreaType.RectangleOnly), 
+ef.SpecialArea(90,440,300,140, ef.AreaType.CircleOnly), 
+ef.SpecialArea(500,80,300,140, ef.AreaType.Cooperative), 
+ef.SpecialArea(500,600,200,100, ef.AreaType.Common)]
+
 hZero = ef.AreaHeuristic(lvlZeroSpecs, smaller = True)
 hOne = ef.AreaHeuristic(lvlOneSpecs, smaller = True)
 hTwo = ef.AreaHeuristic(lvlTwoSpecs, smaller = True)
 hThree = ef.AreaHeuristic(lvlThreeSpecs, smaller = True)
 hFour = ef.AreaHeuristic(lvlFourSpecs, smaller = True)
 hFive = ef.AreaHeuristic(lvlFiveSpecs, smaller = True)
+hSix = ef.AreaHeuristic(lvlSixSpecs, smaller = True)
+
+multiplier = 15
+
+lvlRNDSpecs1Each = [ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.RectangleOnly), 
+ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.CircleOnly), 
+ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.Cooperative)]
+
+lvlRNDSpecsRec = [ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.RectangleOnly)]
+
+lvlRNDSpecsCircle = [ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.CircleOnly)]
+
+lvlRNDSpecsCoop = [ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.Cooperative)]
+
+lvlRNDSpecsCirRec = [ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.RectangleOnly), 
+ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.CircleOnly)]
+
+
+hRNDSpecs1Each  = ef.AreaHeuristic(lvlRNDSpecs1Each, smaller = True)
+hRNDSpecsRec  = ef.AreaHeuristic(lvlRNDSpecsRec, smaller = True)
+hRNDSpecsCircle  = ef.AreaHeuristic(lvlRNDSpecsCircle, smaller = True)
+hRNDSpecsCoop  = ef.AreaHeuristic(lvlRNDSpecsCoop, smaller = True)
+hRNDSpecsCirRec  = ef.AreaHeuristic(lvlRNDSpecsCirRec, smaller = True)
 
 
 hFixedtwo = ef.FixedSpawnAreaHeuristic(lvlTwoSpecs, smaller = True)
@@ -50,162 +90,19 @@ hPerThree = ef.AreaPercentangeHeuristic(0.5,0.1,0.1,0, smaller = True)
 hPer2One = ef.AreaPercentangeTwoHeuristic(0.3,0.2,0.3,0.2, smaller = True)
 hPer2Two = ef.AreaPercentangeTwoHeuristic(0.4,0.6,0,0, smaller = True)
 
-hUsed = hFive
+hUsed = hSix
 
-IM = instrumentation.InstrumentationManager(on = True)
+IM = []
 
 
 def getFit(ind):
     return ind.fitness.values[0]
-
-def getFirst(a):
-    return a[0]
-
-
-def mutateLevel(ind):
-    if random.random() < 0.2:
-        for i in range(5,45,5):
-            if(ind[i] % 2 == 1):
-                if random.random() < 0.8: #remove plat that exists
-                    ind[i] = 0
-            else:
-                if random.random() < 0.8: #add platform
-                    ind[i] = 1
-    else:
-        for i in range(0,45,5):
-            if(ind[i] % 2 == 1 or i == 0):
-                if random.random() < 0.5: #change plat width height
-                    ind[i+3] = random.randint(INT_MIN,XINT_MAX)
-                    ind[i+4] = random.randint(INT_MIN,YINT_MAX)
-                else: #change plat x and y
-                    ind[i+1] = random.randint(INT_MIN,XINT_MAX)
-                    ind[i+2] = random.randint(INT_MIN,YINT_MAX)
-
-def levelChangeOneValue(ind):
-    sIndex = [0]
-    for i in range(5,45,5):
-        if ind[i] % 2 == 1:
-            sIndex += [i]
-    if len(sIndex) == 1: #if it has no platforms add one
-        index = random.choice([5,10,15,20,25,30,35,40])
-        ind[index] = 1
-        ind[index+1] = random.randint(INT_MIN,XINT_MAX)
-        ind[index+2] = random.randint(INT_MIN,YINT_MAX)
-        ind[index+3] = random.randint(INT_MIN,XINT_MAX)
-        ind[index+4] = random.randint(INT_MIN,YINT_MAX)
-    elif random.random() < 0.1: #just add a platform
-        aIndex = list({5,10,15,20,25,30,35,40}-set(sIndex)) #return the indexes that don't have platforms
-        if len(aIndex) == 0: #if already has max platforms change a random value
-            index = random.choice(sIndex)
-            i = random.randint(1,4)
-            intMax = XINT_MAX
-            if i % 2 == 0:
-                intMax = YINT_MAX
-            ind[index + i] = random.randint(INT_MIN,intMax)
-        else:
-            index = random.choice(aIndex)
-            ind[index] = 1
-            ind[index+1] = random.randint(INT_MIN,XINT_MAX)
-            ind[index+2] = random.randint(INT_MIN,YINT_MAX)
-            ind[index+3] = random.randint(INT_MIN,XINT_MAX)
-            ind[index+4] = random.randint(INT_MIN,YINT_MAX)
-    elif random.random() < 0.2: #just remove a platform
-        index = random.choice(sIndex[1:])
-        ind[index] = 0
-    else: #change a random value
-        index = random.choice(sIndex)
-        i = random.randint(1,4)
-        intMax = XINT_MAX
-        if i % 2 == 0:
-            intMax = YINT_MAX
-        ind[index + i] = random.randint(INT_MIN,intMax)
-
-
-              
-def levelCrossBothPlat(pOne, pTwo):
-    for i in range(0,45,5):
-        if(pOne[i] % 2 == 0) and (pTwo[i] % 2 == 0): #no platform in that place
-            continue
-        if(pOne[i] % 2 == 1) and (pTwo[i] % 2 == 1): #both have platform
-            for j in range(i+1,i+4):
-                aux = pOne[j]
-                pOne[j] = pTwo[j]
-                pTwo[j] = aux
-
-def levelCrossOnePlat(pOne, pTwo):
-    for i in range(0,45,5):
-        if(pOne[i] % 2 == 0) and (pTwo[i] % 2 == 0): #no platform in that place
-            continue
-        if (pOne[i] % 2 == 0 and pTwo[i] % 2 == 1) or (pOne[i] % 2 == 1 and pTwo[i] % 2 == 0): #one has platform other doesn't
-            for j in range(i,i+5):
-                aux = pOne[j]
-                pOne[j] = pTwo[j]
-                pTwo[j] = aux
-
-def levelCrossPlat(pOne, pTwo):
-    for i in range(0,45,5):
-        if(pOne[i] % 2 == 0) and (pTwo[i] % 2 == 0): #no platform in that place
-            continue
-        if (pOne[i] % 2 == 0 and pTwo[i] % 2 == 1) or (pOne[i] % 2 == 1 and pTwo[i] % 2 == 0) or ((pOne[i] % 2 == 1) and (pTwo[i] % 2 == 1) and random.random() < 0.5):
-            #one has platform other doesn't or both have they switch with a 50% chance
-            for j in range(i,i+5):
-                aux = pOne[j]
-                pOne[j] = pTwo[j]
-                pTwo[j] = aux
-
-        
-def diversityExactEqual(population):
-    diverse = []
-    for person in population:
-        if not person in diverse:
-            diverse += [toolbox.clone(person)]
-    return diverse
-
-def diversityEqual(population):
-    diverse = []
-    diverseHelp = []
-    for person in population:
-        personLevelRec = (person[1],person[2])
-        personLevelCircle = (person[3],person[4])
-        personPlat = []
-        startRange = 5
-        for i in range(startRange,45,5):
-            if(attrList[i] % 2 == 1):
-                posx = person[i+1]
-                posy = (int) (person[i+2] * 720 / 1280)
-                #posy = attrList[i+2]
-                width = person[i+3]
-                height = (int) (person[i+4] * 720 / 1240)
-                #height = attrList[i+4]
-                personPlat += [(posx,posy,width,height)]
-        personHelp = [personLevelRec,personLevelCircle,personPlat]
-        for dh in diverseHelp:
-            stillEqual = True
-            if not dh[0] == personHelp[0]:
-                stillEqual = False
-                continue
-            elif not dh[1] == personHelp[1]:
-                stillEqual = False
-                continue
-            else:
-                for plat in personHelp[3]:
-                    if not plat in dh[3]:
-                        stillEqual = False
-                        break
-            if stillEqual:
-                break
-        if not stillEqual:
-            diverse += [toolbox.clone(person)]
-            diverseHelp += [personHelp]
-    return diverse
-
 
 creator.create("FitnessMax", base.Fitness, weights=(1.0, 1.0))
 creator.create("Individual", list, fitness=creator.FitnessMax)
 
 toolbox = base.Toolbox()
 
-INT_MIN, XINT_MAX, YINT_MAX = 3, 76, 47
 N_CYCLES = 9
 
 toolbox.register("attr_bool", random.randint, 0, 1)
@@ -223,13 +120,13 @@ toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 toolbox.register("evaluate", hUsed.CalculateFitness)
 
 #toolbox.register("mate", tools.cxTwoPoint)
-#toolbox.register("mate", levelCrossOnePlat)
-toolbox.register("mate", levelCrossPlat)
-#toolbox.register("mate", levelCrossBothPlat)
+#toolbox.register("mate", fs.levelCrossOnePlat)
+#toolbox.register("mate", fs.levelCrossPlat)
+toolbox.register("mate", fs.levelCrossBothPlat)
 
 #toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = XINT_MAX, indpb=0.2)
-toolbox.register("mutate", mutateLevel)
-#toolbox.register("mutate", levelChangeOneValue)
+toolbox.register("mutate", fs.mutateLevel)
+#toolbox.register("mutate", fs.levelChangeOneValue)
 #toolbox.register("mutate", tools.mutFlipBit, indpb=0.2)
 
 
@@ -240,6 +137,8 @@ INT_MIN, XINT_MAX
 
 popSize = 50
 def GA():
+    global IM
+    IM = instrumentation.InstrumentationManager(on = True)
     if not isinstance(hUsed,ef.AreaPercentangeHeuristic) or not isinstance(hUsed,ef.AreaPercentangeTwoHeuristic):
         IM.DrawSpecs(hUsed)
     bestPop = []
@@ -307,7 +206,7 @@ def GAD():
     bestFit = 0
     bestFits =[]
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 100
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -337,8 +236,9 @@ def GAD():
         
         # Guarantee diversity and min popsize
 
-        offspring = diversityExactEqual(offspring)
-        #offspring = diversityEqual(offspring)
+        #offspring = fs.diversityExactEqual(offspring)
+        #offspring = fs.diversityEqual(offspring)
+        offspring = fs.diversityEqualPlatform(offspring)
 
         offspringLen = len(offspring)
         newOffspring = []
@@ -387,6 +287,8 @@ def GAD():
 
 
 def main():
+    global IM
+    IM = instrumentation.InstrumentationManager(on = True)
     #ppl,bestPop,bestFit,bestFits  = GA()
     ppl,bestPop,bestFit,bestFits  = GAD()
     ppl.sort(reverse = True, key = getFit)
@@ -398,5 +300,31 @@ def Test():
     TestLvl = [1, 96, 720, 522, 689, 1, 1160, 587, 764, 63, 0, 338, 512, 395, 239, 0, 575, 330, 585, 549, 0, 84, 230, 256, 427, 1, 79, 695, 277, 556, 0, 800, 462, 381, 40, 1, 483, 348, 1015, 759, 1, 292, 508, 104, 744]
     IM.DrawLevel(TestLvl,hUsed)
 
+def MultipleRuns(runNumber = 1):
+    global IM
+    global hUsed
+    for i in range(0,runNumber):
+        #lvlRNDSpecs = [ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+#random.randint(INT_MIN,XINT_MAX) * multiplier /2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.RectangleOnly),
+#ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+#random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.CircleOnly), 
+#ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+#random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.Cooperative)]
+        lvlRNDSpecs = [ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.CircleOnly), 
+ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.Cooperative)]
+        hRNDSpecs  = ef.AreaHeuristic(lvlRNDSpecs, smaller = True)
+        hUsed = hRNDSpecs
+        print("Start Run ",i + 1)
+        IM = instrumentation.InstrumentationManager(on = True)
+        ppl,bestPop,bestFit,bestFits = GAD()
+        ppl.sort(reverse = True, key = getFit)
+
+        IM.DrawPop(ppl,hUsed)
+        IM.DrawBestPop(bestPop,hUsed)
+
+
+#MultipleRuns(2)
 main()
 #Test()

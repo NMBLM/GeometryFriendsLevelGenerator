@@ -7,12 +7,16 @@ import random
 import evaluateFuncs as ef
 import instrumentation
 import time as tim
+import Functions as fs
 
 from deap import base
 from deap import creator
 from deap import tools
 from evaluateFuncs import Level
 import PILViewer as viewer
+INT_MIN, XINT_MAX, YINT_MAX = 40, 1160, 680
+
+
 
 lvlZeroSpecs = []
 
@@ -57,9 +61,6 @@ IM = instrumentation.InstrumentationManager(on = True)
 
 def getFit(ind):
     return ind.fitness.values[0]
-
-def getFirst(a):
-    return a[0]
 
 
 def mutateLevel(ind):
@@ -120,8 +121,7 @@ def levelChangeOneValue(ind):
             intMax = YINT_MAX
         ind[index + i] = random.randint(INT_MIN,intMax)
 
-
-              
+            
 def levelCrossBothPlat(pOne, pTwo):
     for i in range(0,45,5):
         if(pOne[i] % 2 == 0) and (pTwo[i] % 2 == 0): #no platform in that place
@@ -205,7 +205,6 @@ creator.create("Individual", list, fitness=creator.FitnessMax)
 
 toolbox = base.Toolbox()
 
-INT_MIN, XINT_MAX, YINT_MAX = 40, 1160, 680
 N_CYCLES = 9
 
 toolbox.register("attr_bool", random.randint, 0, 1)
@@ -223,18 +222,18 @@ toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 toolbox.register("evaluate", hUsed.CalculateFitness)
 
 #toolbox.register("mate", tools.cxTwoPoint)
-#toolbox.register("mate", levelCrossOnePlat)
-toolbox.register("mate", levelCrossPlat)
-#toolbox.register("mate", levelCrossBothPlat)
+#toolbox.register("mate", fs.levelCrossOnePlat)
+toolbox.register("mate", fs.levelCrossPlat)
+#toolbox.register("mate", fs.levelCrossBothPlat)
 
 #toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = XINT_MAX, indpb=0.2)
-toolbox.register("mutate", mutateLevel)
-#toolbox.register("mutate", levelChangeOneValue)
+toolbox.register("mutate", fs.mutateLevel)
+#toolbox.register("mutate", fs.levelChangeOneValue)
 #toolbox.register("mutate", tools.mutFlipBit, indpb=0.2)
 
 
-#toolbox.register("select", tools.selBest)
-toolbox.register("select", tools.selTournament, tournsize=3)
+toolbox.register("select", tools.selBest)
+#toolbox.register("select", tools.selTournament, tournsize=3)
 INT_MIN, XINT_MAX
  
 
@@ -307,7 +306,7 @@ def GAD():
     bestFit = 0
     bestFits =[]
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 30
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -337,8 +336,8 @@ def GAD():
         
         # Guarantee diversity and min popsize
 
-        offspring = diversityExactEqual(offspring)
-        #offspring = diversityEqual(offspring)
+        offspring = fs.diversityExactEqual(offspring)
+        #offspring = fs.diversityEqual(offspring)
 
         offspringLen = len(offspring)
         newOffspring = []

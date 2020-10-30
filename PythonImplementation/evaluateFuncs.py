@@ -124,6 +124,8 @@ class AreaHeuristic:
         fit = fitness(lvl,self)
         lvl.fit = fit
         return lvl
+
+        
 def getV(v):
     return v[0]
 
@@ -253,13 +255,13 @@ def fitness(lvl, h):
         areaPosY = (int) ((area.y - 40) / blockSize) + 2 
         areaWidth = (int) ((area.width - 40) / blockSize) + 2 
         areaHeight = (int) ((area.height - 40) / blockSize) + 2
-        
+        areaAmount = 0
         areaType = area.type
         for i in range(areaPosX, areaPosX + areaWidth):
             for j in range(areaPosY, areaPosY + areaHeight):
-                if i > xGridLen or j > yGridLen or i < 0 or j < 0:
+                if i >= xGridLen or j >= yGridLen or i < 0 or j < 0:
                     continue
-                #Common
+                areaAmount += 1
                 if areaType == AreaType.Common:
                     if grid[i][j] == BlockType.BothCanReach:
                         areaPercent += 1
@@ -278,7 +280,9 @@ def fitness(lvl, h):
                         areaPercent += 1
                     elif grid[i][j] == BlockType.RectangleCanReachCirclePlatform:
                         areaPercent += 1
-        areaPercent = areaPercent / (areaWidth * areaHeight)
+        if areaAmount == 0:
+            return (0,)
+        areaPercent = areaPercent / areaAmount
         fullAreaPercent += areaPercent
         minArea = min(areaPercent, minArea)
     #return (fullAreaPercent / len(specs),)
@@ -415,8 +419,8 @@ def RectangleReachability(lvl):
         x = lvl.rectSpawn[0]
         y = lvl.rectSpawn[1]
     else:
-        x = ((lvl.rectSpawn[0] - 40) / blockSize) + 3
-        y = ((lvl.rectSpawn[1] - 40) / blockSize) + 3
+        x = (int) ((lvl.rectSpawn[0] - 40) / blockSize) + 3
+        y = (int) ((lvl.rectSpawn[1] - 40) / blockSize) + 3
     lst = []
     lst += [((x, y), 0)]
     while len(lst) > 0:
@@ -486,8 +490,8 @@ def CircleReachability(lvl):
         x = lvl.circleSpawn[0]
         y = lvl.circleSpawn[1]
     else:
-        x = ((lvl.circleSpawn[0] - 40) / blockSize) + 4
-        y = ((lvl.circleSpawn[1] - 40) / blockSize) + 4
+        x = (int) ((lvl.circleSpawn[0] - 40) / blockSize) + 4
+        y = (int) ((lvl.circleSpawn[1] - 40) / blockSize) + 4
     cellsChecked = 0
     freefalling = 0
     lst = []
@@ -548,8 +552,8 @@ def CoopReachability(lvl):
         x = lvl.circleSpawn[0]
         y = lvl.circleSpawn[1]
     else:
-        x = ((lvl.circleSpawn[0] - 40) / blockSize) + 4
-        y = ((lvl.circleSpawn[1] - 40) / blockSize) + 4
+        x = (int) ((lvl.circleSpawn[0] - 40) / blockSize) + 4
+        y = (int) ((lvl.circleSpawn[1] - 40) / blockSize) + 4
     cellsChecked = 0
     freefalling = 0
     lst = []

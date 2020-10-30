@@ -129,3 +129,9 @@ class InstrumentationManager:
             viewer.drawLevel(lvl,".\\GenData\\Run_"+ str(self.runNumber) + beforeLevel +"\\level"+ str(auxI) + afterlevel +".png")
             print(".\\GenData\\Run_"+ str(self.runNumber) + beforeLevel +"\\level"+ str(auxI) + afterlevel +".png :", lvl.fit )
             auxI += 1
+
+
+    def WriteToRND(self,txt):
+        f = open('GenData\Run_' + str(self.runNumber) + '\Info.txt','a')
+        f.write(txt)
+        f.close()

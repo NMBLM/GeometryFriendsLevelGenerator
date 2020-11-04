@@ -370,7 +370,7 @@ def initCellGrid(lvl):
             platWidth = (int) ((plat[2] - 40) / blockSize) + 2
             platHeight = (int) ((plat[3] - 40) / blockSize) + 2
         if(platPosX > xGridLen or platPosY > yGridLen):
-            print("Bad platform positioning (" +platPosX + " , " + platPosY + ")")
+            print("Bad platform positioning (" ,platPosX , " , " , platPosY , ")")
         for i in range(platPosX,platPosX + platWidth):
             for j in range(platPosY,platPosY + platHeight):
                 if(i < xGridLen and j < yGridLen):

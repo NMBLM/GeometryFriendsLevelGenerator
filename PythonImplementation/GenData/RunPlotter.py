@@ -117,7 +117,7 @@ def runAnalysis(dirName):
     plt.savefig(dirName+'\\Quartiles.png',dpi = dpii)
     plt.clf()
 
-currentR = 42
+currentR = 72
 dn = "GenData/Run_" + str(currentR)
 while(os.path.isdir(dn)):
     runAnalysis(dn)

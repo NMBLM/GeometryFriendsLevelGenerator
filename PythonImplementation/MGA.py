@@ -90,7 +90,7 @@ hPerThree = ef.AreaPercentangeHeuristic(0.5,0.1,0.1,0, smaller = True)
 hPer2One = ef.AreaPercentangeTwoHeuristic(0.3,0.2,0.3,0.2, smaller = True)
 hPer2Two = ef.AreaPercentangeTwoHeuristic(0.4,0.6,0,0, smaller = True)
 
-hUsed = hSix
+hUsed = hTwo
 
 IM = []
 
@@ -119,23 +119,25 @@ toolbox.register("individual", tools.initCycle, creator.Individual,
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 toolbox.register("evaluate", hUsed.CalculateFitness)
 
-#toolbox.register("mate", tools.cxTwoPoint)
-#toolbox.register("mate", fs.levelCrossOnePlat)
-#toolbox.register("mate", fs.levelCrossPlat)
-toolbox.register("mate", fs.levelCrossBothPlat)
 
-#toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = XINT_MAX, indpb=0.2)
+#toolbox.register("mate", tools.cxTwoPoint)
+toolbox.register("mate", fs.levelCrossPlat)
+
+
+#toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = YINT_MAX, indpb=0.2)
 toolbox.register("mutate", fs.mutateLevel)
 #toolbox.register("mutate", fs.levelChangeOneValue)
 #toolbox.register("mutate", tools.mutFlipBit, indpb=0.2)
 
 
-#toolbox.register("select", tools.selBest)
-toolbox.register("select", tools.selTournament, tournsize=3)
+toolbox.register("select", tools.selBest)
+#toolbox.register("select", tools.selTournament, tournsize=3)
+#toolbox.register("select", tools.selStochasticUniversalSampling)
+
 INT_MIN, XINT_MAX
  
 
-popSize = 50
+popSize = 20
 def GA():
     global IM
     IM = instrumentation.InstrumentationManager(on = True)
@@ -198,7 +200,7 @@ def GA():
 
     return (pop, bestPop,bestFit,bestFits)
 
-elitism = 2
+elitism = 1
 def GAD():
     if not isinstance(hUsed,ef.AreaPercentangeHeuristic) and not isinstance(hUsed,ef.AreaPercentangeTwoHeuristic):
         IM.DrawSpecs(hUsed)
@@ -215,6 +217,7 @@ def GAD():
         
 
     pop.sort(reverse = True, key = getFit)
+    bestfit = toolbox.clone(pop[0])
 
     for g in range(NGEN):
         startTime = tim.time()
@@ -238,7 +241,7 @@ def GAD():
 
         #offspring = fs.diversityExactEqual(offspring)
         #offspring = fs.diversityEqual(offspring)
-        offspring = fs.diversityEqualPlatform(offspring)
+        #offspring = fs.diversityEqualPlatform(offspring)
 
         offspringLen = len(offspring)
         newOffspring = []
@@ -257,14 +260,14 @@ def GAD():
         # Apply crossover and mutation on the offspring
         random.shuffle(offspring)
         for child1, child2 in zip(offspring[::2], offspring[1::2]):
-            if random.random() < CXPB:
+            if random.random() < 1:
                 toolbox.mate(child1, child2)
                 del child1.fitness.values
                 del child2.fitness.values
 
         offspring += newOffspring
         for mutant in offspring:
-            if random.random() < MUTPB:
+            if random.random() < 1-getFit(bestfit):
                 toolbox.mutate(mutant)
                 del mutant.fitness.values
         
@@ -275,11 +278,11 @@ def GAD():
         fitnesses = map(toolbox.evaluate, invalid_ind)
         for ind, fit in zip(invalid_ind, fitnesses):
             ind.fitness.values = fit
-        bestfit = max(offspring, key=getFit)
+        
         # The population is entirely replaced by the offspring
         pop = list(offspring)
         pop.sort(reverse = True, key = getFit)
-
+        bestfit = toolbox.clone(pop[0])
         print("generation: ", g,"  Time: ", tim.time() - startTime,"bestFit: ", getFit(pop[0]), " popsize: ", len(pop))
 
     return (pop, bestPop,bestFit,bestFits)
@@ -305,15 +308,15 @@ def MultipleRuns(runNumber = 1):
     global hUsed
     for i in range(0,runNumber):
         #lvlRNDSpecs = [ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
-#random.randint(INT_MIN,XINT_MAX) * multiplier /2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.RectangleOnly),
-#ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
-#random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.CircleOnly), 
-#ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
-#random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.Cooperative)]
+        #random.randint(INT_MIN,XINT_MAX) * multiplier /2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.RectangleOnly),
+        #ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+        #random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.CircleOnly), 
+        #ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+        #random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.Cooperative)]
         lvlRNDSpecs = [ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
-random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.CircleOnly), 
-ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
-random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.Cooperative)]
+        random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.CircleOnly), 
+        ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
+        random.randint(INT_MIN,XINT_MAX) * multiplier/2,random.randint(INT_MIN,YINT_MAX) * multiplier/2, ef.AreaType.Cooperative)]
         hRNDSpecs  = ef.AreaHeuristic(lvlRNDSpecs, smaller = True)
         hUsed = hRNDSpecs
         print("Start Run ",i + 1)

@@ -58,17 +58,45 @@ hFixedtwo = ef.FixedSpawnAreaHeuristic(lvlTwoSpecs, smaller = True)
 hPerOne = ef.AreaPercentangeHeuristic(0.3,0.2,0.3,0, smaller = True)
 hPerTwo = ef.AreaPercentangeHeuristic(0,0.3,0.3,0.1, smaller = True)
 hPerThree = ef.AreaPercentangeHeuristic(0.5,0.1,0.1,0, smaller = True)
+hPerFour = ef.AreaPercentangeHeuristic(0.15,0.20,0.2,0.3, smaller = True)
 
 hPer2One = ef.AreaPercentangeTwoHeuristic(0.3,0.2,0.3,0.2, smaller = True)
 hPer2Two = ef.AreaPercentangeTwoHeuristic(0.4,0.6,0,0, smaller = True)
+hPer2Three = ef.AreaPercentangeTwoHeuristic(0.1,0.1,0.4,0.4, smaller = True)
+hPer2Four = ef.AreaPercentangeTwoHeuristic(0.1,0.05,0.7,0.15, smaller = True)
 
 
 
 ConfigList = []
 
-cfgOne = cfg.Config(h = hOne, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest,toolbox= toolbox)
+elitism = 1
+popSize = 50
+CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
 
-ConfigList += [cfgOne]
+
+cfg01 = cfg.Config(h = hOne, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg02 = cfg.Config(h = hTwo, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg03 = cfg.Config(h = hThree, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg04 = cfg.Config(h = hFour, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg05= cfg.Config(h = hFive, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg06 = cfg.Config(h = hTwo, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000)
+cfg07 = cfg.Config(h = hThree, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000)
+cfg08 = cfg.Config(h = hFour, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000)
+cfg09 = cfg.Config(h = hFive, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000)
+cfg10 = cfg.Config(h = lvlRNDSpecs, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+
+cfg11 = cfg.Config(h = hPerOne, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg12 = cfg.Config(h = hPerTwo, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg13 = cfg.Config(h = hPerThree, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg14 = cfg.Config(h = hPerFour, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+
+cfg15 = cfg.Config(h = hPer2One, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg16 = cfg.Config(h = hPer2Two, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg17 = cfg.Config(h = hPer2Three, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg18 = cfg.Config(h = hPer2Four, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+
+
+ConfigList = [cfg01,cfg02,cfg03,cfg04,cfg05,cfg06,cfg07,cfg08,cfg09,cfg10,cfg11,cfg12,cfg13,cfg14,cfg15,cfg16,cfg17,cfg18]
 
 
 IM = ""
@@ -93,8 +121,8 @@ toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 def getFit(ind):
     return ind.fitness.values[0]
 
-elitism = 1
-popSize = 50
+
+
 def GALoop(hUsed):
     #global IM
     #IM = instrumentation.InstrumentationManager(on = True)
@@ -104,7 +132,6 @@ def GALoop(hUsed):
     bestFit = 0
     bestFits =[]
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)

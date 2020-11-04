@@ -123,7 +123,7 @@ def getFit(ind):
 
 
 
-def GALoop(hUsed):
+def GALoop(hUsed,popSize,NGEN):
     #global IM
     #IM = instrumentation.InstrumentationManager(on = True)
     if not isinstance(hUsed,ef.AreaPercentangeHeuristic) and not isinstance(hUsed,ef.AreaPercentangeTwoHeuristic):
@@ -218,7 +218,7 @@ def main():
         IM.WriteToRND(c.description())
 
         
-        ppl,bestPop,bestFit,bestFits  = GALoop(c.h)
+        ppl,bestPop,bestFit,bestFits  = GALoop(c.h,c.popSize, c.genNumber)
         ppl.sort(reverse = True, key = getFit)
 
         IM.DrawPop(ppl,c.h)

@@ -239,7 +239,7 @@ def GAD():
         
         # Guarantee diversity and min popsize
 
-        #offspring = fs.diversityExactEqual(offspring)
+        offspring = fs.diversityExactEqual(offspring)
         #offspring = fs.diversityEqual(offspring)
         #offspring = fs.diversityEqualPlatform(offspring)
 

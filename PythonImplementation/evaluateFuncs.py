@@ -92,7 +92,9 @@ yGridLen = 49
 #rectangleMaxLen = (int) (200 / blockSize + 0.5)
 rectangleMaxLen = 13
 
-level = [1, 1038, 506, 895, 581, 0, 288, 398, 6, 326, 0, 290, 365, 865, 598, 1, 1244, 542, 753, 119, 1, 357, 39, 271, 442, 1, 803, 678, 683, 120, 0, 838, 544, 590, 398, 0, 819, 439, 833, 240, 1, 1074, 254, 221, 540]
+level = [1, 1038, 506, 895, 581, 0, 288, 398, 6, 326, 0, 290, 365, 865, 598, 1, 1244, 542, 753, 119, 
+    1, 357, 39, 271, 442, 1, 803, 678, 683, 120, 0, 838, 544, 590, 398, 0, 819, 439, 833, 240, 1, 1074, 254, 221, 540]
+
 class AreaHeuristic:
     def __init__(self, specs,smaller = False):
         self.specifications = specs #tuple or matrix of SpecialAreas
@@ -385,10 +387,11 @@ def InitFits(lvl):
             stillFitCircle = True
             
             #Check in 3x3 around cell to see it rectangle fits in that particular cell
-            i = -1
-            while(i <= 1 and stillFitRectangle):
-                j = -1
-                while(j <= 1 and stillFitRectangle):
+            squareHalfSize = 1
+            i = -squareHalfSize
+            while(i <= squareHalfSize and stillFitRectangle):
+                j = -squareHalfSize
+                while(j <= squareHalfSize and stillFitRectangle):
                     if lvl.cellGrid[x + i][y + j].Platform != PlatformType.NotPlatform:
                         stillFitRectangle = False
                         stillFitCircle = False
@@ -396,10 +399,12 @@ def InitFits(lvl):
                 i = i + 1
 
             #Check in 5x5 around cell to see it circle fits in that particular cell
-            i = -2
-            while(i <= 2 and stillFitCircle):
-                j = -2
-                while(j <= 2 and stillFitCircle):
+            #circleHalfSize = 2 #old
+            circleHalfSize = 3
+            i = -circleHalfSize
+            while(i <= circleHalfSize and stillFitCircle):
+                j = -circleHalfSize
+                while(j <= circleHalfSize and stillFitCircle):
                     if lvl.cellGrid[x+i][y+j].Platform != PlatformType.NotPlatform:
                         stillFitCircle = False
                     j = j + 1
@@ -485,7 +490,7 @@ def RectangleReachability(lvl):
                 for i in range(0,3):
                     lst += [((x+1, y-i), 1)]
 
-
+maxJumpStrength = 22
 def CircleReachability(lvl):
     if lvl.smallerNums:
         x = lvl.circleSpawn[0]
@@ -507,30 +512,30 @@ def CircleReachability(lvl):
         if x >= xGridLen or y >= yGridLen or x < 0 or y < 0:
             continue
         #already jumped from this one
-        if lvl.cellGrid[x][y].jumpStrength == 24:
+        if lvl.cellGrid[x][y].jumpStrength == maxJumpStrength:
             continue
         if lvl.cellGrid[x][y].fitsCircle:
             lvl.cellGrid[x][ y].reachesCircle = True
             #check if on ground
             if not lvl.cellGrid[x][ y + 1].fitsCircle:
-                lvl.cellGrid[x][ y].jumpStrength = 24
+                lvl.cellGrid[x][ y].jumpStrength = maxJumpStrength
 
-                if lvl.cellGrid[x - 1][ y].jumpStrength < 24:
+                if lvl.cellGrid[x - 1][ y].jumpStrength < maxJumpStrength:
                     lst += [((x - 1, y), -1)]
                     for i in range(0,3):
                         lst += [((x-1, y-i), -1)]
-                if lvl.cellGrid[x + 1][ y].jumpStrength < 24:
+                if lvl.cellGrid[x + 1][ y].jumpStrength < maxJumpStrength:
                     lst += [((x + 1, y), 1)]
                     for i in range(0,3):
                         lst += [((x + 1, y-i), 1)]
                 
                 for i in range(-1,2):
-                    if lvl.cellGrid[x + i][ y - 1].jumpStrength < 23:
-                        lvl.cellGrid[x + i][ y - 1].jumpStrength = 23
+                    if lvl.cellGrid[x + i][ y - 1].jumpStrength < maxJumpStrength - 1:
+                        lvl.cellGrid[x + i][ y - 1].jumpStrength = maxJumpStrength - 1
                         lst += [((x + i, y-1), i)]
             else: # mid air
                 #if mid jump
-                if lvl.cellGrid[x][ y].jumpStrength > 0 and lvl.cellGrid[x][ y].jumpStrength < 24:
+                if lvl.cellGrid[x][ y].jumpStrength > 0 and lvl.cellGrid[x][ y].jumpStrength < maxJumpStrength:
                     for j in range(-1,2):
                         if lvl.cellGrid[x + j][ y - 1].jumpStrength < lvl.cellGrid[x][ y].jumpStrength - 1:
                             lvl.cellGrid[x + j][ y - 1].jumpStrength = lvl.cellGrid[x][ y].jumpStrength - 1
@@ -547,7 +552,7 @@ def CircleReachability(lvl):
                             lst += [((x - direction, y + 1), -direction)]
     #print("Circle ", str(len(lst)) , " | " , str(cellsChecked) , " | " , str(freefalling)," \n")
 
-
+maxCoopJumpStrength = 30
 def CoopReachability(lvl):
     if lvl.smallerNums:
         x = lvl.circleSpawn[0]
@@ -569,7 +574,7 @@ def CoopReachability(lvl):
         if x >= xGridLen or y >= yGridLen or x < 0 or y < 0:
             continue
         #already jumped from this one
-        if lvl.cellGrid[x][y].jumpStrength == 30 or  lvl.cellGrid[x][y].notCoopJump:
+        if lvl.cellGrid[x][y].jumpStrength == maxCoopJumpStrength or  lvl.cellGrid[x][y].notCoopJump:
             continue
         if lvl.cellGrid[x][y].fitsCircle:
             if not lvl.cellGrid[x][ y].reachesCircle:
@@ -579,39 +584,39 @@ def CoopReachability(lvl):
             if not lvl.cellGrid[x][ y + 1].fitsCircle:
                 #Check if can do coop jump
                 if lvl.cellGrid[x][y].reachesRectangle:
-                    lvl.cellGrid[x][ y].jumpStrength = 30
-                    if lvl.cellGrid[x - 1][ y].jumpStrength < 30:
+                    lvl.cellGrid[x][ y].jumpStrength = maxCoopJumpStrength
+                    if lvl.cellGrid[x - 1][ y].jumpStrength < maxCoopJumpStrength:
                         lst += [((x - 1, y), -1)]
                         for i in range(0,3): #can go up small things
                             lst += [((x-1, y-i), -2)]
-                    if lvl.cellGrid[x + 1][ y].jumpStrength < 30:
+                    if lvl.cellGrid[x + 1][ y].jumpStrength < maxCoopJumpStrength:
                         lst += [((x + 1, y), 1)]
                         for i in range(0,3): #can go up small things
                             lst += [((x + 1, y-i), 2)]
                     
                     for i in range(-1,2): #actual jump
-                        if lvl.cellGrid[x + i][ y - 1].jumpStrength < 29:
-                            lvl.cellGrid[x + i][ y - 1].jumpStrength = 29
+                        if lvl.cellGrid[x + i][ y - 1].jumpStrength < maxCoopJumpStrength - 1:
+                            lvl.cellGrid[x + i][ y - 1].jumpStrength = maxCoopJumpStrength - 1
                             lst += [((x + i, y-1), i)]
                 else: #no coop jump
-                    lvl.cellGrid[x][ y].jumpStrength = 24
+                    lvl.cellGrid[x][y].jumpStrength = maxJumpStrength
                     lvl.cellGrid[x][y].notCoopJump = True
-                    if lvl.cellGrid[x - 1][ y].jumpStrength < 24:
+                    if lvl.cellGrid[x - 1][ y].jumpStrength < maxJumpStrength:
                         lst += [((x - 1, y), -1)]
                         for i in range(0,3):#can go up small things
                             lst += [((x-1, y-i), -1)]
-                    if lvl.cellGrid[x + 1][ y].jumpStrength < 24:
+                    if lvl.cellGrid[x + 1][ y].jumpStrength < maxJumpStrength:
                         lst += [((x + 1, y), 1)]
                         for i in range(0,3):#can go up small things
                             lst += [((x + 1, y-i), 1)]
                     
                     for i in range(-1,2):#actual jump
-                        if lvl.cellGrid[x + i][ y - 1].jumpStrength < 23:
-                            lvl.cellGrid[x + i][ y - 1].jumpStrength = 23
+                        if lvl.cellGrid[x + i][ y - 1].jumpStrength < maxJumpStrength - 1:
+                            lvl.cellGrid[x + i][ y - 1].jumpStrength = maxJumpStrength - 1
                             lst += [((x + i, y-1), i)]
             else: # mid air
                 #if mid jump
-                if lvl.cellGrid[x][ y].jumpStrength > 0 and lvl.cellGrid[x][ y].jumpStrength < 30:
+                if lvl.cellGrid[x][ y].jumpStrength > 0 and lvl.cellGrid[x][ y].jumpStrength < maxCoopJumpStrength:
                     for j in range(-1,2):
                         if lvl.cellGrid[x + j][ y - 1].jumpStrength < lvl.cellGrid[x][ y].jumpStrength - 1:
                             lvl.cellGrid[x + j][ y - 1].jumpStrength = lvl.cellGrid[x][ y].jumpStrength - 1

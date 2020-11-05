@@ -208,7 +208,7 @@ def GAD():
     bestFit = 0
     bestFits =[]
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 2000
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 100
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -300,7 +300,9 @@ def main():
     IM.DrawBestPop(bestPop,hUsed)
 
 def Test():
-    TestLvl = [1, 96, 720, 522, 689, 1, 1160, 587, 764, 63, 0, 338, 512, 395, 239, 0, 575, 330, 585, 549, 0, 84, 230, 256, 427, 1, 79, 695, 277, 556, 0, 800, 462, 381, 40, 1, 483, 348, 1015, 759, 1, 292, 508, 104, 744]
+    TestLvl = [1, 320, 678, 120, 678, 1, 460, 400, 75, 300, 1, 735, 400, 75, 300, 1, 535, 400, 250, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    IM = instrumentation.InstrumentationManager(on = True)
+    hUsed.smallerLevels = False
     IM.DrawLevel(TestLvl,hUsed)
 
 def MultipleRuns(runNumber = 1):

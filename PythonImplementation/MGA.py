@@ -137,7 +137,7 @@ toolbox.register("select", tools.selBest)
 INT_MIN, XINT_MAX
  
 
-popSize = 20
+popSize = 50
 def GA():
     global IM
     IM = instrumentation.InstrumentationManager(on = True)
@@ -208,7 +208,7 @@ def GAD():
     bestFit = 0
     bestFits =[]
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 100
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 2000
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)

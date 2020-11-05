@@ -212,7 +212,8 @@ class AreaPercentangeTwoHeuristic:
         self.circlePercentage = circlePer
         self.coopPercentage = coopPer
         self.commonPercentage = commonPer
-        
+        self.smallerLevels = smaller
+
     def CalculateFitness(self, level):
         lvl = Level(level,smaller = self.smallerLevels)
         initCellGrid(lvl)

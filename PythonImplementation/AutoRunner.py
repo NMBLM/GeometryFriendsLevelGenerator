@@ -34,13 +34,6 @@ lvlFiveSpecs = [ef.SpecialArea(1100,600,140,140, ef.AreaType.RectangleOnly),
 ef.SpecialArea(90,440,300,140, ef.AreaType.CircleOnly), 
 ef.SpecialArea(900,80,300,140, ef.AreaType.Cooperative)]
 
-multiplier = 15
-lvlRNDSpecs = [ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
-random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.RectangleOnly), 
-ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
-random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.CircleOnly), 
-ef.SpecialArea(random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier,
-random.randint(INT_MIN,XINT_MAX) * multiplier,random.randint(INT_MIN,YINT_MAX) * multiplier, ef.AreaType.Cooperative)]
 
 
 hZero = ef.AreaHeuristic(lvlZeroSpecs, smaller = True)
@@ -83,17 +76,16 @@ cfg06 = cfg.Config(h = hTwo, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, s
 cfg07 = cfg.Config(h = hThree, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000)
 cfg08 = cfg.Config(h = hFour, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000)
 cfg09 = cfg.Config(h = hFive, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000)
-cfg10 = cfg.Config(h = lvlRNDSpecs, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
 
-cfg11 = cfg.Config(h = hPerOne, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
-cfg12 = cfg.Config(h = hPerTwo, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
-cfg13 = cfg.Config(h = hPerThree, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
-cfg14 = cfg.Config(h = hPerFour, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg10 = cfg.Config(h = hPerOne, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg11 = cfg.Config(h = hPerTwo, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg12 = cfg.Config(h = hPerThree, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg13 = cfg.Config(h = hPerFour, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
 
-cfg15 = cfg.Config(h = hPer2One, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
-cfg16 = cfg.Config(h = hPer2Two, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
-cfg17 = cfg.Config(h = hPer2Three, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
-cfg18 = cfg.Config(h = hPer2Four, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg14 = cfg.Config(h = hPer2One, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg15 = cfg.Config(h = hPer2Two, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg16 = cfg.Config(h = hPer2Three, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfg17 = cfg.Config(h = hPer2Four, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
 
 
 ConfigList = [cfg01,cfg02,cfg03,cfg04,cfg05,cfg06,cfg07,cfg08,cfg09,cfg10,cfg11,cfg12,cfg13,cfg14,cfg15,cfg16,cfg17,cfg18]

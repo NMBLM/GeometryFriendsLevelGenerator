@@ -90,7 +90,7 @@ hPerThree = ef.AreaPercentangeHeuristic(0.5,0.1,0.1,0, smaller = True)
 hPer2One = ef.AreaPercentangeTwoHeuristic(0.3,0.2,0.3,0.2, smaller = True)
 hPer2Two = ef.AreaPercentangeTwoHeuristic(0.4,0.6,0,0, smaller = True)
 
-hUsed = hTwo
+hUsed = hThree
 
 IM = []
 

@@ -75,6 +75,9 @@ class Cell:
         self.reachesCoop = False
         self.jumpStrength = -1
         self.notCoopJump = False
+        self.extendedRectangle = False
+        self.extendedCircle = False
+        self.extendedCoop = False
 
 class SpecialArea:
     def __init__(self, x, y, width, height, type):
@@ -109,6 +112,7 @@ class AreaHeuristic:
         CircleReachability(lvl)
         ResetJumpStrength(lvl)
         CoopReachability(lvl)
+        ExtendReach(lvl)
         CellGridToBlockGrid(lvl)
         fit = fitness(lvl,self)
         del lvl
@@ -122,6 +126,7 @@ class AreaHeuristic:
         CircleReachability(lvl)
         ResetJumpStrength(lvl)
         CoopReachability(lvl)
+        ExtendReach(lvl)
         CellGridToBlockGrid(lvl)
         fit = fitness(lvl,self)
         lvl.fit = fit
@@ -150,6 +155,7 @@ class FixedSpawnAreaHeuristic:
             CircleReachability(lvl)
             ResetJumpStrength(lvl)
             CoopReachability(lvl)
+            ExtendReach(lvl)
             CellGridToBlockGrid(lvl)
             fit += [fitness(lvl,self)]
             del lvl
@@ -166,6 +172,7 @@ class FixedSpawnAreaHeuristic:
             CircleReachability(lvl)
             ResetJumpStrength(lvl)
             CoopReachability(lvl)
+            ExtendReach(lvl)
             CellGridToBlockGrid(lvl)
             fit = fitness(lvl,self)
             lvl.fit = fit
@@ -190,6 +197,7 @@ class AreaPercentangeHeuristic:
         CircleReachability(lvl)
         ResetJumpStrength(lvl)
         CoopReachability(lvl)
+        ExtendReach(lvl)
         CellGridToBlockGrid(lvl)
         fit = percentageFitness(lvl,self)
         del lvl
@@ -203,6 +211,7 @@ class AreaPercentangeHeuristic:
         CircleReachability(lvl)
         ResetJumpStrength(lvl)
         CoopReachability(lvl)
+        ExtendReach(lvl)
         CellGridToBlockGrid(lvl)
         fit = percentageFitness(lvl,self)
         lvl.fit = fit
@@ -224,6 +233,7 @@ class AreaPercentangeTwoHeuristic:
         CircleReachability(lvl)
         ResetJumpStrength(lvl)
         CoopReachability(lvl)
+        ExtendReach(lvl)
         CellGridToBlockGrid(lvl)
         fit = percentageFitnessTwo(lvl,self)
         del lvl
@@ -237,6 +247,7 @@ class AreaPercentangeTwoHeuristic:
         CircleReachability(lvl)
         ResetJumpStrength(lvl)
         CoopReachability(lvl)
+        ExtendReach(lvl)
         CellGridToBlockGrid(lvl)
         fit = percentageFitnessTwo(lvl,self)
         lvl.fit = fit
@@ -291,7 +302,7 @@ def fitness(lvl, h):
     #return (fullAreaPercent / len(specs),)
     if minArea > 0:
         return (minArea,)
-    return (0.0000001,)
+    return (0,)
     #return (fullAreaPercent / len(specs),)
     #return (minArea * 0.8 + fullAreaPercent * 0.2,)
 
@@ -412,6 +423,30 @@ def InitFits(lvl):
 
             lvl.cellGrid[x][y].fitsRectangle = stillFitRectangle
             lvl.cellGrid[x][y].fitsCircle = stillFitCircle
+
+
+def ExtendReach(lvl):
+    for x in range(2,xGridLen-2):
+        for y in range(2,yGridLen-2):
+            if not lvl.cellGrid[x][y].extendedRectangle and lvl.cellGrid[x][y].reachesRectangle:
+                for i in range(-1,2):
+                    for j in range(-1,2):
+                        if not lvl.cellGrid[x + i][y + j].reachesRectangle and (x + i) <xGridLen and (x + i) >= 0 and (y + j) < yGridLen and (y + j) >= 0:
+                            lvl.cellGrid[x + i][y + j].reachesRectangle = True
+                            lvl.cellGrid[x + i][y + j].extendedRectangle = True
+            if not lvl.cellGrid[x][y].extendedCoop and  lvl.cellGrid[x][y].reachesCoop:
+                for i in range(-3,4):
+                    for j in range(-3,4):
+                        if not lvl.cellGrid[x + i][y + j].reachesCoop and not lvl.cellGrid[x + i][y + j].reachesCircle and (x + i) <xGridLen and (x + i) >= 0 and (y + j) < yGridLen and (y + j) >= 0:
+                            lvl.cellGrid[x+i][y+j].reachesCoop = True
+                            lvl.cellGrid[x+i][y+j].extendedCoop = True
+            if not lvl.cellGrid[x][y].extendedCircle and lvl.cellGrid[x][y].reachesCircle:
+                for i in range(-3,4):
+                    for j in range(-3,4):
+                        if not lvl.cellGrid[x + i][y + j].reachesCircle and (x + i) <xGridLen and (x + i) >= 0 and (y + j) < yGridLen and (y + j) >= 0:
+                            lvl.cellGrid[x+i][y+j].reachesCircle = True
+                            lvl.cellGrid[x+i][y+j].extendedCircle = True
+            
 
 
 def ResetJumpStrength(lvl):
@@ -641,7 +676,7 @@ def CellGridToBlockGrid(lvl):
             if lvl.cellGrid[x][y].Platform == PlatformType.Common:
                 lvl.grid[x][ y] = BlockType.Platform
                 continue
-            if lvl.cellGrid[x][ y].Platform != PlatformType.NotPlatform:
+            if lvl.cellGrid[x][y].Platform != PlatformType.NotPlatform:
                 lvl.grid[x][ y] = BlockType.Platform
                 continue
             if lvl.cellGrid[x][ y].reachesCoop and not lvl.cellGrid[x][ y].reachesRectangle:

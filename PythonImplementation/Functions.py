@@ -104,6 +104,34 @@ def levelCrossPlat(pOne, pTwo):
                 pOne[j] = pTwo[j]
                 pTwo[j] = aux
 
+
+def levelCrossOneChild(pOne, pTwo):
+    child = [0]
+    if (random.random() < 0.5): #parent One
+        for j in range(1,3): #rectangle
+            child += pOne[j]
+    else:
+        for j in range(1,3): #rectangle
+            child += pTwo[j]
+
+    if (random.random() < 0.5): #parent One
+        for j in range(3,5): #circle
+            child += pOne[j]
+    else:
+        for j in range(3,5): #circle
+            child += pTwo[j]
+            
+    for i in range(5,45,5):
+        if (random.random() < 0.5): #parent One
+            for j in range(i,i+5):
+                child += pOne[j]
+            else:
+                for j in range(i,i+5): 
+                    child += pTwo[j]
+
+
+
+
         
 def diversityExactEqual(population):
     diverse = []

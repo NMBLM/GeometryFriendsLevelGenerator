@@ -8,7 +8,7 @@ import evaluateFuncs as ef
 import instrumentation
 import time as tim
 import Functions as fs
-
+import numpy as np
 
 from deap import base
 from deap import creator
@@ -90,7 +90,7 @@ hPerThree = ef.AreaPercentangeHeuristic(0.5,0.1,0.1,0, smaller = True)
 hPer2One = ef.AreaPercentangeTwoHeuristic(0.3,0.2,0.3,0.2, smaller = True)
 hPer2Two = ef.AreaPercentangeTwoHeuristic(0.4,0.6,0,0, smaller = True)
 
-hUsed = hThree
+hUsed = hTwo
 
 IM = []
 
@@ -207,6 +207,7 @@ def GAD():
     bestPop = []
     bestFit = 0
     bestFits =[]
+
     pop = toolbox.population(n=popSize)
     CXPB, MUTPB, NGEN = 0.9 , 0.8, 100
 
@@ -219,12 +220,13 @@ def GAD():
     pop.sort(reverse = True, key = getFit)
     bestfit = toolbox.clone(pop[0])
 
-    for g in range(NGEN):
+    IM.WritePop(0,pop)
+    IM.WriteGenData(0,pop)
+    for g in range(1,NGEN):
         startTime = tim.time()
 
        
-        IM.WritePop(g,pop)
-        IM.WriteGenData(g,pop)
+        
         if(pop[0].fitness.values[0] > bestFit):
             bestFit = pop[0].fitness.values[0]
             bestPop = [toolbox.clone(pop[0])] + bestPop
@@ -239,13 +241,13 @@ def GAD():
         
         # Guarantee diversity and min popsize
 
-        offspring = fs.diversityExactEqual(offspring)
+        #offspring = fs.diversityExactEqual(offspring)
         #offspring = fs.diversityEqual(offspring)
-        #offspring = fs.diversityEqualPlatform(offspring)
+        offspring = fs.diversityEqualPlatform(offspring)
 
         offspringLen = len(offspring)
-        newOffspring = []
-        while (offspringLen + len(newOffspring) < (popSize - elitism)):
+        extraOffspring = []
+        while (offspringLen + len(extraOffspring) < (popSize - elitism)):
             parentOne = random.randint(0,offspringLen-1)
             parentTwo = random.randint(0,offspringLen-1)
             while parentOne == parentTwo:
@@ -255,17 +257,72 @@ def GAD():
             toolbox.mate(childOne, childTwo)
             del childOne.fitness.values
             del childTwo.fitness.values
-            newOffspring += [childOne,childTwo]
+            extraOffspring += [childOne,childTwo]
         
         # Apply crossover and mutation on the offspring
-        random.shuffle(offspring)
-        for child1, child2 in zip(offspring[::2], offspring[1::2]):
-            if random.random() < 1:
+        if False: #for testing porpuses
+            childOffSpring = []
+            parentSet = set()
+            parentIndex = list(np.arange(offspringLen))
+            while len(childOffSpring) < offspringLen:
+                parents = tuple(random.sample(parentIndex,2))
+                while parents in parentSet:
+                    parents = tuple(random.sample(parentIndex,2))
+                parentSet.add(parents)
+                child = fs.levelCrossOneChild(toolbox.clone(offspring[parents[0]]), toolbox.clone(offspring[parents[1]]))
+                del child.fitness.values
+                childOffSpring += [child]
+            offspring = childOffSpring
+
+        elif False: #elitism
+            offspring.sort(reverse = True, key = getFit)
+            childOffSpring = []
+            offspringLen = len(offspring)
+            
+            i = 0
+            j = i + 1
+            while len(childOffSpring) < offspringLen:
+                child = fs.levelCrossOneChild(toolbox.clone(offspring[i]), toolbox.clone(offspring[j]))
+                del child.fitness.values
+                childOffSpring += [child]
+                j += 1
+                if j > int(offspringLen * 0.3) :
+                    i += 1
+                    j = i + 1
+                    if i == offspringLen:
+                        print("PROBLEM")
+                        break
+            offspring = childOffSpring
+
+        elif True:
+            offspring.sort(reverse = True, key = getFit)
+            childOffSpring = []
+            offspringLen = len(offspring)
+            i = 0
+            j = i + 1
+            while len(childOffSpring) < offspringLen:
+                child1 = toolbox.clone(offspring[i])
+                child2 = toolbox.clone(offspring[j])
+                toolbox.mate(child1, child2)
+                del child1.fitness.values
+                del child2.fitness.values
+                childOffSpring += [child1,child2]
+                j += 1
+                if j > int(offspringLen * 0.3) :
+                    i += 1
+                    j = i + 1
+                    if i == offspringLen:
+                        print("PROBLEM")
+                        break
+            offspring = childOffSpring
+        else:
+            random.shuffle(offspring)
+            for child1, child2 in zip(offspring[::2], offspring[1::2]):
                 toolbox.mate(child1, child2)
                 del child1.fitness.values
                 del child2.fitness.values
 
-        offspring += newOffspring
+        offspring += extraOffspring
         for mutant in offspring:
             if random.random() < 1-getFit(bestfit):
                 toolbox.mutate(mutant)
@@ -284,7 +341,10 @@ def GAD():
         pop.sort(reverse = True, key = getFit)
         bestfit = toolbox.clone(pop[0])
         print("generation: ", g,"  Time: ", tim.time() - startTime,"bestFit: ", getFit(pop[0]), " popsize: ", len(pop))
-
+        IM.WritePop(g,pop)
+        IM.WriteGenData(g,pop)
+        if getFit(pop[0]) >= 1:
+            return (pop, bestPop,bestFit,bestFits)
     return (pop, bestPop,bestFit,bestFits)
 
 

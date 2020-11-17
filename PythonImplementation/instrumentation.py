@@ -61,17 +61,19 @@ class InstrumentationManager:
                 print(".\\GenData\\Run_"+ str(self.runNumber)+"\\Bestlevel"+ str(auxI) + ".png :", lvl.fit )
             auxI += 1
 
-    def DrawLevel(self,lvl,h):
+    def DrawLevel(self,lvl,h,name = "indLevel"):
         eLvl = h.TestLevel(lvl)
+        if name != "indLevel":
+            name = ".\\GenData\\Run_"+ str(self.runNumber) + name
         if isinstance(eLvl, list):
             aux = 1
             for l in lvl:
-                viewer.drawLevel(l,"S"+ str(aux) + "indlevel.png")
+                viewer.drawLevel(l,"S"+ str(aux) + name +".png")
                 aux+=1
 
         else:
-            viewer.drawLevel(eLvl,"indLevel.png")
-        print("indLevel.png", eLvl.fit )
+            viewer.drawLevel(eLvl,name +".png")
+        print(name +".png", eLvl.fit )
 
 
     def DrawSpecs(self,h):
@@ -86,17 +88,19 @@ class InstrumentationManager:
         #Best
         text += str(pop[0].fitness.values[0]) + "\n"
         average = 0
-        bp = len(pop) / 4
+        bp1 = int(len(pop) *0.25)
+        bp2 = int(len(pop) *0.5)
+        bp3 = int(len(pop) *0.75)
         fq = 0
         sq = 0
         tq = 0
         lq = 0
         for i in range(0,len(pop)):
-            if (i < bp):
+            if (i < bp1):
                 fq += pop[i].fitness.values[0]
-            elif (i < 2 * bp):
+            elif (i < bp2):
                 sq += pop[i].fitness.values[0]
-            elif (i < 3 * bp):
+            elif (i < bp3):
                 tq += pop[i].fitness.values[0]
             else:
                 lq += pop[i].fitness.values[0]
@@ -104,16 +108,16 @@ class InstrumentationManager:
         #Average
         text += str(average/len(pop)) + "\n"
         #Average First Quartil
-        text += str(fq / bp) + "\n"
+        text += str(fq / bp1) + "\n"
         
         #Average Second Quartil
-        text += str(sq / bp) + "\n"
+        text += str(sq / (bp2-bp1)) + "\n"
 
         #Average Third Quartil
-        text += str(tq / bp) + "\n"
+        text += str(tq / (bp3-bp2)) + "\n"
 
         #Average Fourth Quartil
-        text += str(lq / bp) + "\n"
+        text += str(lq / (len(pop)-bp3)) + "\n"
 
         f = open('GenData\Run_' + str(self.runNumber) + '\data.txt','a')
         f.write(text)

@@ -43,7 +43,6 @@ hThree = ef.AreaHeuristic(lvlThreeSpecs, smaller = True)
 hFour = ef.AreaHeuristic(lvlFourSpecs, smaller = True)
 hFive = ef.AreaHeuristic(lvlFiveSpecs, smaller = True)
 
-hRNDSpecs  = ef.AreaHeuristic(lvlRNDSpecs, smaller = True)
 
 hFixedtwo = ef.FixedSpawnAreaHeuristic(lvlTwoSpecs, smaller = True)
 
@@ -88,7 +87,7 @@ cfg16 = cfg.Config(h = hPer2Three, mate = fs.levelCrossPlat, mutate= fs.mutateLe
 cfg17 = cfg.Config(h = hPer2Four, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
 
 
-ConfigList = [cfg01,cfg02,cfg03,cfg04,cfg05,cfg06,cfg07,cfg08,cfg09,cfg10,cfg11,cfg12,cfg13,cfg14,cfg15,cfg16,cfg17,cfg18]
+ConfigList = [cfg01,cfg02,cfg03,cfg04,cfg05,cfg06,cfg07,cfg08,cfg09,cfg10,cfg11,cfg12,cfg13,cfg14,cfg15,cfg16,cfg17]
 
 
 IM = ""
@@ -172,12 +171,32 @@ def GALoop(hUsed,popSize,NGEN):
             newOffspring += [childOne,childTwo]
         
         # Apply crossover and mutation on the offspring
-        random.shuffle(offspring)
-        for child1, child2 in zip(offspring[::2], offspring[1::2]):
-            if random.random() < CXPB:
-                toolbox.mate(child1, child2)
-                del child1.fitness.values
-                del child2.fitness.values
+        if True:
+            offspring.sort(reverse = True, key = getFit)
+            childOffSpring = []
+            offspringLen = len(offspring)
+            
+            i = 0
+            j = i + 1
+            while len(childOffSpring) < offspringLen:
+                child = fs.levelCrossOneChild(toolbox.clone(offspring[i]), toolbox.clone(offspring[j]))
+                del child.fitness.values
+                childOffSpring += [child]
+                j += 1
+                if j > int(offspringLen * 0.3) :
+                    i += 1
+                    j = i + 1
+                    if i == offspringLen:
+                        i = 0
+                        j = i + 1
+            offspring = childOffSpring
+        else:
+            random.shuffle(offspring)
+            for child1, child2 in zip(offspring[::2], offspring[1::2]):
+                if random.random() < CXPB:
+                    toolbox.mate(child1, child2)
+                    del child1.fitness.values
+                    del child2.fitness.values
 
         offspring += newOffspring
         for mutant in offspring:

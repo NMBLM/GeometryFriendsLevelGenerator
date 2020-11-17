@@ -106,29 +106,29 @@ def levelCrossPlat(pOne, pTwo):
 
 
 def levelCrossOneChild(pOne, pTwo):
-    child = [0]
-    if (random.random() < 0.5): #parent One
-        for j in range(1,3): #rectangle
-            child += pOne[j]
+    child = pOne
+    if (random.random() < 0.5): 
+        for j in range(1,3): #parent One rectangle
+            child[j] = pOne[j]
     else:
-        for j in range(1,3): #rectangle
-            child += pTwo[j]
+        for j in range(1,3): #parent Two rectangle
+            child[j] = pTwo[j]
 
-    if (random.random() < 0.5): #parent One
-        for j in range(3,5): #circle
-            child += pOne[j]
+    if (random.random() < 0.5):
+        for j in range(3,5): #parent Two circle
+            child[j] = pOne[j]
     else:
-        for j in range(3,5): #circle
-            child += pTwo[j]
+        for j in range(3,5): #parent Two circle
+            child[j] = pTwo[j]
             
     for i in range(5,45,5):
-        if (random.random() < 0.5): #parent One
-            for j in range(i,i+5):
-                child += pOne[j]
+        if (random.random() < 0.5):
+            for j in range(i,i+5): #parent One platform
+                child[j] = pOne[j]
             else:
-                for j in range(i,i+5): 
-                    child += pTwo[j]
-
+                for j in range(i,i+5): #parent Two platform
+                    child[j] = pTwo[j]
+    return child
 
 
 

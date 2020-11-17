@@ -536,7 +536,17 @@ def CircleReachability(lvl):
     cellsChecked = 0
     freefalling = 0
     lst = []
-    lst += [((x, y), 0)]
+    if lvl.cellGrid[x][y].fitsCircle:
+        lvl.cellGrid[x][ y].reachesCircle = True
+        lst += [((x, y), 0)]
+    else:
+        foundFitsCircle = False
+        for i in range(-1,2):
+            for j in range(-1,2):
+                if not foundFitsCircle and lvl.cellGrid[x + i][y + j].fitsCircle:
+                    lst += [((x + i, y + j), 0)]
+                    foundFitsCircle = True
+
     while len(lst) > 0 and cellsChecked < 10000:
         cellsChecked += 1
         startPos = lst[0]
@@ -598,7 +608,16 @@ def CoopReachability(lvl):
     cellsChecked = 0
     freefalling = 0
     lst = []
-    lst += [((x, y), 0)]
+    if lvl.cellGrid[x][y].fitsCircle:
+        lvl.cellGrid[x][ y].reachesCircle = True
+        lst += [((x, y), 0)]
+    else:
+        foundFitsCircle = False
+        for i in range(-1,2):
+            for j in range(-1,2):
+                if not foundFitsCircle and lvl.cellGrid[x + i][y + j].fitsCircle:
+                    lst += [((x + i, y + j), 0)]
+                    foundFitsCircle = True
     while len(lst) > 0 and cellsChecked < 10000 :
         cellsChecked += 1
         startPos = lst[0]

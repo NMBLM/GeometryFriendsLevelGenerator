@@ -80,12 +80,15 @@ class Cell:
         self.extendedCoop = False
 
 class SpecialArea:
-    def __init__(self, x, y, width, height, type):
+    def __init__(self, x, y, width, height, t):
         self.x = x
         self.y = y
         self.width = width
         self.height = height
-        self.type = type
+        self.type = t
+
+    def description(self):
+        return f"{self.x}:{self.y}:{self.width}:{self.height}:{self.type }"
 
 blockSize = 16
 #xGridLen = (int) ((1240 - 40) / blockSize + 0.5) + 4
@@ -100,7 +103,7 @@ level = [1, 1038, 506, 895, 581, 0, 288, 398, 6, 326, 0, 290, 365, 865, 598, 1, 
 
 class AreaHeuristic:
     def __init__(self, specs,smaller = False):
-        self.specifications = specs #tuple or matrix of SpecialAreas
+        self.specifications = specs #tuple or array of SpecialAreas
         self.smallerLevels = smaller
 
 
@@ -132,6 +135,12 @@ class AreaHeuristic:
         lvl.fit = fit
         return lvl
 
+    def description(self):
+        txt = ""
+        for spec in self.specifications:
+            txt += spec.description() + "\n"
+        return txt
+        
         
 def getV(v):
     return v[0]

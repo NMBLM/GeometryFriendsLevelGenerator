@@ -43,7 +43,7 @@ def saveSpecsToFile():
 
 def getEntryValue(entry):
     try:
-        val = int(entry.get())
+        val = int(entry.get()) * 16
         return val
     except:
         printError("Entry Value not integer\n")
@@ -193,6 +193,12 @@ hInfoLabel = Label(root, text= "Height")
 hInfoLabel.grid(row=0,column = 3)
 tInfoLabel = Label(root, text= "Area Type")
 tInfoLabel.grid(row=0,column = 4)
+
+INT_MIN, XINT_MAX, YINT_MAX = 1, 76, 47
+
+notesLabel = Label(root, text= f"X and Width should be between {INT_MIN} and {XINT_MAX}\n Y and Height should be between {INT_MIN} and {YINT_MAX}\n")
+notesLabel.grid(row=105,column = 1)
+
 
 #error
 errorMessage = StringVar()

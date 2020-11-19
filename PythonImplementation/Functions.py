@@ -66,6 +66,42 @@ def levelChangeOneValue(ind):
         ind[index + i] = random.randint(INT_MIN,intMax)
 
 
+def levelUniformChangeValue(ind):
+    sIndex = [0]
+    rand = random.random()
+    for i in range(5,45,5): #find index of active platforms
+        if ind[i] % 2 == 1:
+            sIndex += [i]
+    if len(sIndex) == 1: #if it has no platforms add one
+        index = random.choice([5,10,15,20,25,30,35,40])
+        ind[index] = 1
+        ind[index+1] = random.randint(INT_MIN,XINT_MAX)
+        ind[index+2] = random.randint(INT_MIN,YINT_MAX)
+        ind[index+3] = random.randint(INT_MIN,XINT_MAX)
+        ind[index+4] = random.randint(INT_MIN,YINT_MAX)
+    elif rand < 0.1: #just add a platform
+        aIndex = list({5,10,15,20,25,30,35,40}-set(sIndex)) #return the indexes that don't have platforms
+        if len(aIndex) == 0: #if already has max platforms change a random value
+            for i in range(5,45,5):
+                for j in range(1,5):
+                    if random.random() < 0.4:
+                        ind[i+j] = random.randint(INT_MIN,XINT_MAX) if j%2 ==1 else random.randint(INT_MIN,YINT_MAX)
+        else: #create a new platform
+            index = random.choice(aIndex)
+            ind[index] = 1
+            ind[index+1] = random.randint(INT_MIN,XINT_MAX)
+            ind[index+2] = random.randint(INT_MIN,YINT_MAX)
+            ind[index+3] = random.randint(INT_MIN,XINT_MAX)
+            ind[index+4] = random.randint(INT_MIN,YINT_MAX)
+    elif rand < 0.2: #just remove a platform
+        index = random.choice(sIndex[1:])
+        ind[index] = 0
+    else: #change a random value
+        for i in sIndex:
+            for j in range(1,5):
+                if random.random() < 0.4:
+                    ind[i+j] = random.randint(INT_MIN,XINT_MAX) if j%2 ==1 else random.randint(INT_MIN,YINT_MAX)
+
               
 def levelCrossBothPlat(pOne, pTwo):
     for i in range(0,45,5):

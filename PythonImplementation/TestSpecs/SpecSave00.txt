@@ -1,2 +1,2 @@
-420:424:350:350:AreaType.RectangleOnly
-120:200:500:200:AreaType.CircleOnly
+32:32:240:80:AreaType.RectangleOnly
+1008:480:240:304:AreaType.CircleOnly

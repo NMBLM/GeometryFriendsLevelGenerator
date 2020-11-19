@@ -267,7 +267,7 @@ def fitness(lvl, h):
     specs = h.specifications
     if(not len(specs) > 0):
         #print("No Specified Area")
-        return 1
+        return (1,)
     
     grid = lvl.grid
     fullAreaPercent = 0

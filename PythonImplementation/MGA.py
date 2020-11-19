@@ -14,7 +14,6 @@ from deap import base
 from deap import creator
 from deap import tools
 from evaluateFuncs import Level
-import PILViewer as viewer
 
 INT_MIN, XINT_MAX, YINT_MAX = 3, 76, 47
 
@@ -125,8 +124,9 @@ toolbox.register("mate", fs.levelCrossPlat)
 
 
 #toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = YINT_MAX, indpb=0.2)
-toolbox.register("mutate", fs.mutateLevel)
+#toolbox.register("mutate", fs.mutateLevel)
 #toolbox.register("mutate", fs.levelChangeOneValue)
+toolbox.register("mutate", fs.levelUniformChangeValue)
 #toolbox.register("mutate", tools.mutFlipBit, indpb=0.2)
 
 
@@ -209,7 +209,7 @@ def GAD():
     bestFits =[]
 
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 100
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -274,7 +274,7 @@ def GAD():
                 childOffSpring += [child]
             offspring = childOffSpring
 
-        elif False: #elitism
+        elif True: #elitism
             offspring.sort(reverse = True, key = getFit)
             childOffSpring = []
             offspringLen = len(offspring)
@@ -294,7 +294,7 @@ def GAD():
                         break
             offspring = childOffSpring
 
-        elif True:
+        elif False: #elitism with previous mating
             offspring.sort(reverse = True, key = getFit)
             childOffSpring = []
             offspringLen = len(offspring)
@@ -324,7 +324,7 @@ def GAD():
 
         offspring += extraOffspring
         for mutant in offspring:
-            if random.random() < 1-getFit(bestfit):
+            if random.random() < 0.7:
                 toolbox.mutate(mutant)
                 del mutant.fitness.values
         

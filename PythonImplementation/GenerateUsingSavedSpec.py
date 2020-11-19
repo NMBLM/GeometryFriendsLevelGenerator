@@ -75,7 +75,7 @@ def GAD():
     bestFits =[]
 
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 20
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)

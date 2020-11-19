@@ -68,45 +68,55 @@ toolbox.register("evaluate", hZero.CalculateFitness)
 
 testPopSize = 10
 #See The effects of the different mutations used
+pop = toolbox.population(n=testPopSize)
 def TestMutations():
+    global pop
     
-    pop = toolbox.population(n=testPopSize)
     h = hZero
     IM.DrawGenericPop(pop,h,"\\BeforeMutation", "")
 
     mutsOne = list(map(toolbox.clone, pop))
     mutsTwo = list(map(toolbox.clone, pop))
     mutsThree = list(map(toolbox.clone, pop))
+    mutsFour = list(map(toolbox.clone, pop))
 
     #Generic Mutation
-    toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = XINT_MAX, indpb=0.2)
+    toolbox.register("mutate", tools.mutUniformInt,low = INT_MIN, up = YINT_MAX, indpb=0.2)
     for mutant in mutsOne:
         toolbox.mutate(mutant)
         del mutant.fitness.values
     IM.DrawGenericPop(mutsOne,h,"\\AfterMutation","GC")
 
     #One Significant Change
-    toolbox.register("mutate", levelChangeOneValue)
+    toolbox.register("mutate", fs.levelChangeOneValue)
     for mutant in mutsTwo:
         toolbox.mutate(mutant)
         del mutant.fitness.values
     IM.DrawGenericPop(mutsTwo,h,"\\AfterMutation","OC")
 
     #Several Random Significant Changes
-    toolbox.register("mutate", mutateLevel)
+    toolbox.register("mutate", fs.mutateLevel)
     for mutant in mutsThree:
         toolbox.mutate(mutant)
         del mutant.fitness.values
-    
+
     IM.DrawGenericPop(mutsThree,h,"\\AfterMutation","SC")
 
+    #Relevant Uniform Changes
+    toolbox.register("mutate", fs.levelUniformChangeValue)
+    for mutant in mutsFour:
+        toolbox.mutate(mutant)
+        del mutant.fitness.values
 
-#TestMutations()
+    IM.DrawGenericPop(mutsFour,h,"\\AfterMutation","UC")
+
+
+TestMutations()
 
 
 def TestCrossover():
-    
-    pop = toolbox.population(n=testPopSize)
+    global pop
+
     h = hZero
     IM.DrawGenericPop(pop,h,"\\BeforeCrossover", "")
 
@@ -134,7 +144,7 @@ def TestCrossover():
     newOffSpring = []
     parentSet = set()
     parentIndex = list(np.arange(testPopSize))
-    while len(newOffSpring) < testPopSize:
+    while len(newOffSpring) < testPopSize * 2:
         parents = tuple(random.sample(parentIndex,2))
         while parents in parentSet:
             parents = tuple(random.sample(parentIndex,2))
@@ -142,6 +152,21 @@ def TestCrossover():
         child = fs.levelCrossOneChild(toolbox.clone(crossThree[parents[0]]), toolbox.clone(crossThree[parents[1]]))
         newOffSpring += [child]
         IM.DrawLevel(child,h,"\\AfterCrossover\\" + str(parents[0]+1) + "_" + str(parents[1]+1)+ "level")
+    #IM.DrawGenericPop(newOffSpring,h,"\\AfterCrossover","SC")
+    print(parentSet)
+
+    #Crossover that generates one child
+    newOffSpring = []
+    parentSet = set()
+    parentIndex = list(np.arange(testPopSize))
+    while len(newOffSpring) < testPopSize * 2:
+        parents = tuple(random.sample(parentIndex,2))
+        while parents in parentSet:
+            parents = tuple(random.sample(parentIndex,2))
+        parentSet.add(parents)
+        child = fs.levelCrossOneChildEveryValue(toolbox.clone(crossThree[parents[0]]), toolbox.clone(crossThree[parents[1]]))
+        newOffSpring += [child]
+        IM.DrawLevel(child,h,"\\AfterCrossover\\E" + str(parents[0]+1) + "_" + str(parents[1]+1)+ "level")
     #IM.DrawGenericPop(newOffSpring,h,"\\AfterCrossover","SC")
     print(parentSet)
 

@@ -25,6 +25,7 @@ class Level:
         self.cellGrid = []
         self.grid = []
         self.fit = -1
+        self.platAmount = 1
 
     def description(self):
         text = "RectangleSpawn " + str(self.rectSpawn) + "\n"
@@ -306,11 +307,12 @@ def fitness(lvl, h):
         if areaAmount == 0:
             return (0,)
         areaPercent = areaPercent / areaAmount
-        fullAreaPercent += areaPercent
+        fullAreaPercent += areaAmount
         minArea = min(areaPercent, minArea)
     #return (fullAreaPercent / len(specs),)
+    ratioAreaToPlatform = fullAreaPercent / max(lvl.platAmount,fullAreaPercent*0.8)
     if minArea > 0:
-        return (minArea,)
+        return (minArea * ratioAreaToPlatform,)
     return (0,)
     #return (fullAreaPercent / len(specs),)
     #return (minArea * 0.8 + fullAreaPercent * 0.2,)
@@ -398,6 +400,7 @@ def initCellGrid(lvl):
             for j in range(platPosY,platPosY + platHeight):
                 if(i < xGridLen and j < yGridLen):
                     lvl.cellGrid[i][j].Platform = PlatformType.Common
+                    lvl.platAmount += 1
 
 
 def InitFits(lvl):

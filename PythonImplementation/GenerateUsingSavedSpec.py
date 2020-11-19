@@ -65,7 +65,7 @@ def addSpec(x,y,width,height,t):
 def replaceHSpecs(h,specs):
     h.specifications = specs
 
-popSize = 50
+popSize = 30
 elitism = 1
 def GAD():
     if not isinstance(hUsed,ef.AreaPercentangeHeuristic) and not isinstance(hUsed,ef.AreaPercentangeTwoHeuristic):
@@ -75,7 +75,7 @@ def GAD():
     bestFits =[]
 
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 100
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -166,12 +166,7 @@ def GAD():
         print("generation: ", g,"  Time: ", tim.time() - startTime,"bestFit: ", getFit(pop[0]), " popsize: ", len(pop))
         IM.WritePop(g,pop)
         IM.WriteGenData(g,pop)
-        if getFit(pop[0]) >= 0.95:
-            if(pop[0].fitness.values[0] > bestFit):
-                bestFit = pop[0].fitness.values[0]
-                bestPop = [toolbox.clone(pop[0])] + bestPop
-                bestFits = [bestFit] + bestFits
-            return (pop, bestPop,bestFit,bestFits)
+
     return (pop, bestPop,bestFit,bestFits)
 
 

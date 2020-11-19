@@ -89,7 +89,7 @@ hPerThree = ef.AreaPercentangeHeuristic(0.5,0.1,0.1,0, smaller = True)
 hPer2One = ef.AreaPercentangeTwoHeuristic(0.3,0.2,0.3,0.2, smaller = True)
 hPer2Two = ef.AreaPercentangeTwoHeuristic(0.4,0.6,0,0, smaller = True)
 
-hUsed = hTwo
+hUsed = hThree
 
 IM = []
 
@@ -137,7 +137,7 @@ toolbox.register("select", tools.selBest)
 INT_MIN, XINT_MAX
  
 
-popSize = 50
+popSize = 30
 def GA():
     global IM
     IM = instrumentation.InstrumentationManager(on = True)
@@ -209,7 +209,7 @@ def GAD():
     bestFits =[]
 
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 100
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -283,6 +283,7 @@ def GAD():
             j = i + 1
             while len(childOffSpring) < offspringLen:
                 child = fs.levelCrossOneChild(toolbox.clone(offspring[i]), toolbox.clone(offspring[j]))
+                #child = fs.levelCrossOneChildEveryValue(toolbox.clone(offspring[i]), toolbox.clone(offspring[j]))
                 del child.fitness.values
                 childOffSpring += [child]
                 j += 1
@@ -343,8 +344,8 @@ def GAD():
         print("generation: ", g,"  Time: ", tim.time() - startTime,"bestFit: ", getFit(pop[0]), " popsize: ", len(pop))
         IM.WritePop(g,pop)
         IM.WriteGenData(g,pop)
-        if getFit(pop[0]) >= 1:
-            return (pop, bestPop,bestFit,bestFits)
+        #if getFit(pop[0]) >= 1:
+            #return (pop, bestPop,bestFit,bestFits)
     return (pop, bestPop,bestFit,bestFits)
 
 

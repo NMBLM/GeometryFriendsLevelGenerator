@@ -111,7 +111,7 @@ def TestMutations():
     IM.DrawGenericPop(mutsFour,h,"\\AfterMutation","UC")
 
 
-TestMutations()
+#TestMutations()
 
 
 def TestCrossover():
@@ -170,4 +170,70 @@ def TestCrossover():
     #IM.DrawGenericPop(newOffSpring,h,"\\AfterCrossover","SC")
     print(parentSet)
 
-TestCrossover()
+#TestCrossover()
+
+def Showcrossover():
+    TestLvlOne = [1, 320, 678, 120, 678, 1, 460, 400, 75, 300, 1, 735, 400, 75, 300, 1, 535, 400, 250, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    TestLvlTwo =  [0, 37, 40, 6, 25, 0, 31, 24, 4, 18, 1, 11, 17, 19, 26, 0, 67, 34, 67, 19, 1, 33, 45, 48, 14, 1, 43, 47, 33, 44, 1, 69, 9, 38, 16, 0, 43, 17, 42, 10, 1, 22, 18, 49, 16]
+    TestLvlThree = [1, 51, 35, 8, 14, 0, 26, 31, 45, 45, 1, 66, 42, 23, 20, 1, 8, 39, 75, 5, 0, 16, 33, 54, 10, 1, 18, 16, 48, 17, 1, 28, 42, 38, 18, 0, 57, 23, 29, 30, 0, 4, 20, 54, 25]
+    TestLvlFour =  [0, 4, 43, 21, 31, 1, 26, 19, 12, 22, 0, 33, 29, 60, 27, 0, 15, 21, 37, 13, 1, 62, 14, 62, 47, 1, 44, 15, 55, 19, 1, 60, 25, 7, 22, 0, 76, 7, 17, 17, 0, 30, 4, 24, 6]
+    TestLvlFive = [1, 29, 42, 6, 12, 0, 76, 7, 15, 3, 1, 31, 34, 8, 7, 0, 34, 45, 76, 19, 1, 15, 44, 71, 19, 1, 54, 41, 76, 29, 1, 28, 17, 61, 16, 0, 46, 46, 32, 12, 0, 37, 43, 41, 24]
+    h = hZero
+    hZero.smallerLevels = False
+    testPop = [TestLvlOne,TestLvlTwo,TestLvlThree,TestLvlFour,TestLvlFive]
+    for l in testPop[1:]:
+        for i in range(len(l)):
+            if l[i] == 1:
+                continue
+            l[i] = l[i] * 16
+    IM.DrawGenericPop(testPop,h,"\\BeforeCrossover", "")
+    crossOne = list(map(toolbox.clone, testPop))
+    crossTwo = list(map(toolbox.clone, testPop))
+    crossThree = list(map(toolbox.clone, testPop))
+
+    #Generic crossover
+    toolbox.register("mate", tools.cxTwoPoint)
+    for child1, child2 in zip(crossOne[::2], crossOne[1::2]):
+        toolbox.mate(child1, child2)
+        
+    IM.DrawGenericPop(crossOne,h,"\\AfterCrossover","Generic")
+
+    #CrossOver specific to chromosome
+    toolbox.register("mate", fs.levelCrossPlat)
+    for child1, child2 in zip(crossTwo[::2], crossTwo[1::2]):
+        toolbox.mate(child1, child2)
+        
+    IM.DrawGenericPop(crossTwo,h,"\\AfterCrossover","Spec")
+
+    #Crossover that generates one child
+    newOffSpring = []
+    parentSet = set()
+    testPopSize = len(testPop)
+    parentIndex = list(np.arange(testPopSize))
+    while len(newOffSpring) < testPopSize * 2:
+        parents = tuple(random.sample(parentIndex,2))
+        while parents in parentSet:
+            parents = tuple(random.sample(parentIndex,2))
+        parentSet.add(parents)
+        child = fs.levelCrossOneChild(toolbox.clone(crossThree[parents[0]]), toolbox.clone(crossThree[parents[1]]))
+        newOffSpring += [child]
+        IM.DrawLevel(child,h,"\\AfterCrossover\\" + str(parents[0]+1) + "_" + str(parents[1]+1)+ "level")
+    #IM.DrawGenericPop(newOffSpring,h,"\\AfterCrossover","SC")
+    print(parentSet)
+
+    #Crossover that generates one child
+    newOffSpring = []
+    parentSet = set()
+    parentIndex = list(np.arange(testPopSize))
+    while len(newOffSpring) < testPopSize * 2:
+        parents = tuple(random.sample(parentIndex,2))
+        while parents in parentSet:
+            parents = tuple(random.sample(parentIndex,2))
+        parentSet.add(parents)
+        child = fs.levelCrossOneChildEveryValue(toolbox.clone(crossThree[parents[0]]), toolbox.clone(crossThree[parents[1]]))
+        newOffSpring += [child]
+        IM.DrawLevel(child,h,"\\AfterCrossover\\E" + str(parents[0]+1) + "_" + str(parents[1]+1)+ "level")
+    #IM.DrawGenericPop(newOffSpring,h,"\\AfterCrossover","SC")
+    print(parentSet)
+
+Showcrossover()

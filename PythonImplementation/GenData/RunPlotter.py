@@ -253,7 +253,7 @@ def SmoothPlot(dirName):
     plt.clf()
 
 
-currentR = 205
+currentR = 260
 dn = "Gendata/Run_" + str(currentR)
 while(os.path.isdir(dn)):
     DirectPlot(dn)

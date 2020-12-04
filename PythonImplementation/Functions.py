@@ -154,7 +154,6 @@ def levelCrossBothPlat(pOne, pTwo):
                 pOne[j] = pTwo[j]
                 pTwo[j] = aux
 
-
 def levelCrossOnePlat(pOne, pTwo):
     for i in range(0,45,5):
         if(pOne[i] % 2 == 0) and (pTwo[i] % 2 == 0): #no platform in that place
@@ -180,7 +179,6 @@ def levelCrossPlat(pOne, pTwo):
                 aux = pOne[j]
                 pOne[j] = pTwo[j]
                 pTwo[j] = aux
-
 
 def levelCrossOneChild(pOne, pTwo):
     child = pOne

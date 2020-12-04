@@ -61,7 +61,7 @@ hPer2Four = ef.AreaPercentangeTwoHeuristic(0.1,0.05,0.7,0.15, smaller = True)
 
 ConfigList = []
 
-elitism = 1
+elitism = 0
 popSize = 50
 CXPB, MUTPB, NGEN = 0.9 , 0.8, 500
 
@@ -89,6 +89,27 @@ cfg17 = cfg.Config(h = hPer2Four, mate = fs.levelCrossPlat, mutate= fs.mutateLev
 
 ConfigList = [cfg01,cfg02,cfg03,cfg04,cfg05,cfg06,cfg07,cfg08,cfg09,cfg10,cfg11,cfg12,cfg13,cfg14,cfg15,cfg16,cfg17]
 
+cfgCross1 = cfg.Config(h = hTwo, mate = fs.levelCrossBothPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfgCross2 = cfg.Config(h = hTwo, mate = fs.levelCrossOnePlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfgCross3 = cfg.Config(h = hTwo, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfgCross4 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+
+ConfigListCross = [cfgCross1,cfgCross2,cfgCross3,cfgCross4]
+
+
+cfgSel1 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
+cfgSel2 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selTournament, popSize= popSize, genNumber= NGEN)
+cfgSel3 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selStochasticUniversalSampling, popSize= popSize, genNumber= NGEN)
+cfgSel4 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+
+ConfigListSelection = [cfgSel1,cfgSel2,cfgSel3,cfgSel4]
+
+cfg18 = cfg.Config(h = hPer2One, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg19 = cfg.Config(h = hPer2Two, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg20 = cfg.Config(h = hPer2Three, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg21 = cfg.Config(h = hPer2Four, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+
+ConfigListTwo = [cfg18,cfg19,cfg20,cfg21]
 
 IM = ""
 
@@ -107,14 +128,12 @@ toolbox.register("individual", tools.initCycle, creator.Individual,
 
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
-
-
 def getFit(ind):
     return ind.fitness.values[0]
 
 
 
-def GALoop(hUsed,popSize,NGEN):
+def GALoop(hUsed,popSize,NGEN,config):
     #global IM
     #IM = instrumentation.InstrumentationManager(on = True)
     if not isinstance(hUsed,ef.AreaPercentangeHeuristic) and not isinstance(hUsed,ef.AreaPercentangeTwoHeuristic):
@@ -154,11 +173,13 @@ def GALoop(hUsed,popSize,NGEN):
 
         #offspring = list(map(toolbox.clone, fs.diversityExactEqual(offspring)))
         #offspring = list(map(toolbox.clone, fs.diversityEqual(offspring)))
-        offspring = list(map(toolbox.clone, fs.diversityEqualPlatform(offspring)))
+        #offspring = list(map(toolbox.clone, fs.diversityEqualPlatform(offspring)))
 
         offspringLen = len(offspring)
         newOffspring = []
-        while (offspringLen + len(newOffspring) < (popSize - elitism)):
+        while (offspringLen + len(newOffspring) < (popSize - elitism) ):
+            newOffspring = toolbox.population(n=(popSize - elitism) - (offspringLen)) #generate random offspring
+            '''
             parentOne = random.randint(0,offspringLen-1)
             parentTwo = random.randint(0,offspringLen-1)
             while parentOne == parentTwo:
@@ -169,26 +190,44 @@ def GALoop(hUsed,popSize,NGEN):
             del childOne.fitness.values
             del childTwo.fitness.values
             newOffspring += [childOne,childTwo]
+            '''
         
         # Apply crossover and mutation on the offspring
-        if True:
+        if config.specialMate:
             offspring.sort(reverse = True, key = getFit)
             childOffSpring = []
             offspringLen = len(offspring)
             
             i = 0
-            j = i + 1
-            while len(childOffSpring) < offspringLen:
+            j = 0  #so that it mates with itself and stays in the pool
+            while len(childOffSpring) < offspringLen - len(toAdd):
                 child = fs.levelCrossOneChild(toolbox.clone(offspring[i]), toolbox.clone(offspring[j]))
                 del child.fitness.values
-                childOffSpring += [child]
+                if i == j:
+                    #toAdd += [child]
+                    childOffSpring += [child]
+                else:
+                    childOffSpring += [child]
                 j += 1
                 if j > int(offspringLen * 0.3) :
                     i += 1
                     j = i + 1
+                    if i == 1: #so that it mates with itself and stays in the pool keeping the top two in the pool to then be mutated
+                        j = i
                     if i == offspringLen:
                         i = 0
                         j = i + 1
+                    
+            offspring = childOffSpring
+        elif True:
+            childOffSpring = []
+            offspringLen = len(offspring)
+            for parent1, parent2 in zip(offspring[::2], offspring[1::2]):
+                child1 = fs.levelCrossOneChild(toolbox.clone(parent1), toolbox.clone(parent2))
+                child2 = fs.levelCrossOneChild(toolbox.clone(parent2), toolbox.clone(parent1))
+                del child1.fitness.values
+                del child2.fitness.values
+                childOffSpring += [child1,child2]
             offspring = childOffSpring
         else:
             random.shuffle(offspring)
@@ -223,13 +262,19 @@ def GALoop(hUsed,popSize,NGEN):
 
 def main():
     global IM
-    for c in ConfigList:
+    #for c in ConfigListCross:
+    for c in ConfigListSelection:
+    #for c in ConfigListTwo:
+    #for c in ConfigList:
+        if c.select == tools.selTournament:
+            toolbox.register("select",c.select, tournsize = 10)
+            c.select = ""
         c.setup()
         IM = instrumentation.InstrumentationManager()
         IM.WriteToRND(c.description())
 
         
-        ppl,bestPop,bestFit,bestFits  = GALoop(c.h,c.popSize, c.genNumber)
+        ppl,bestPop,bestFit,bestFits  = GALoop(c.h,c.popSize, c.genNumber,c)
         ppl.sort(reverse = True, key = getFit)
 
         IM.DrawPop(ppl,c.h)

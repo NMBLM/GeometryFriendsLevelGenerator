@@ -2,7 +2,7 @@
 
 toolbox = ""
 class Config:
-    def __init__(self,h = "", mate = "", mutate = "", select = "",popSize = "", genNumber = ""):
+    def __init__(self,h = "", mate = "", mutate = "", select = "",popSize = "", genNumber = "",sm = False):
         print(h)
         self.h = h
         self.mate = mate
@@ -11,6 +11,7 @@ class Config:
         self.popSize = popSize
         self.genNumber = genNumber
         self.toolbox = toolbox
+        self.specialMate = sm
     
     def setup(self):
         if(self.h != ""):

@@ -1,7 +1,7 @@
 # 1 | x | y | x | y |
 # 1 | x | y | x | y | 1 | x | y | x | y | 1 | x | y | x | y | 1 | x | y | x | y | 1 | x | y | x | y |
 # 1 | x | y | x | y | 1 | x | y | x | y | 1 | x | y | x | y 
-#INT_MIN, XINT_MAX, YINT_MAX = 0, 1280 , 760
+#INT_MIN, XINT_MAX, YINT_MAX = 0, 1280 , 760 or 80, 47.5
 
 import random
 import evaluateFuncs as ef
@@ -89,7 +89,7 @@ hPerThree = ef.AreaPercentangeHeuristic(0.5,0.1,0.1,0, smaller = True)
 hPer2One = ef.AreaPercentangeTwoHeuristic(0.3,0.2,0.3,0.2, smaller = True)
 hPer2Two = ef.AreaPercentangeTwoHeuristic(0.4,0.6,0,0, smaller = True)
 
-hUsed = hThree
+hUsed = hTwo
 
 IM = []
 
@@ -209,7 +209,7 @@ def GAD():
     bestFits =[]
 
     pop = toolbox.population(n=popSize)
-    CXPB, MUTPB, NGEN = 0.9 , 0.8, 100
+    CXPB, MUTPB, NGEN = 0.9 , 0.8, 200
 
     # Evaluate the entire population
     fitnesses = map(toolbox.evaluate, pop)
@@ -243,7 +243,7 @@ def GAD():
 
         #offspring = fs.diversityExactEqual(offspring)
         #offspring = fs.diversityEqual(offspring)
-        offspring = fs.diversityEqualPlatform(offspring)
+        #offspring = fs.diversityEqualPlatform(offspring)
 
         offspringLen = len(offspring)
         extraOffspring = []
@@ -362,6 +362,9 @@ def main():
 
 def Test():
     TestLvl = [1, 320, 678, 120, 678, 1, 460, 400, 75, 300, 1, 735, 400, 75, 300, 1, 535, 400, 250, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    #TestLvl = [1, 22, 12, 6, 35, 1, 64, 19, 34, 35, 1, 27, 22, 44, 3, 1, 65, 46, 30, 16, 1, 71, 30, 27, 33, 1, 75, 45, 66, 8, 1, 60, 39, 74, 28, 1, 27, 46, 35, 38, 1, 12, 24, 12, 41]
+    #TestLvl = [1, 984, 696, 88, 650,  1, 200, 600, 288, 32, 1, 504, 376, 48, 384, 1, 552, 648, 256, 32, 0, 71, 30, 27, 33, 0, 75, 45, 66, 8, 0, 60, 39, 74, 28, 0, 27, 46, 35, 38, 0, 12, 24, 12, 41]
+    #TestLvl = [1, 232, 328, 104, 328,  1, 936, 568, 160, 128, 1, 232, 568, 160, 128, 1, 40, 456, 480, 112, 1, 728, 456, 512, 128, 1, 1080, 184, 160, 272, 0, 60, 39, 74, 28, 0, 27, 46, 35, 38, 0, 12, 24, 12, 41]
     IM = instrumentation.InstrumentationManager(on = True)
     hUsed.smallerLevels = False
     IM.DrawLevel(TestLvl,hUsed)
@@ -392,5 +395,5 @@ def MultipleRuns(runNumber = 1):
 
 
 #MultipleRuns(2)
-main()
-#Test()
+#main()
+Test()

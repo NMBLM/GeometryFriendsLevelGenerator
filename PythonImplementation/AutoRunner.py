@@ -98,11 +98,18 @@ ConfigListCross = [cfgCross1,cfgCross2,cfgCross3,cfgCross4]
 
 
 cfgSel1 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN)
-cfgSel2 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selTournament, popSize= popSize, genNumber= NGEN)
+cfgSel2 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selTournament, popSize= popSize, genNumber= NGEN, tournsize = 4)
+cfgSel22 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selTournament, popSize= popSize, genNumber= NGEN, tournsize = 6)
+cfgSel222 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selTournament, popSize= popSize, genNumber= NGEN, tournsize = 8)
+cfgSel2222 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selTournament, popSize= popSize, genNumber= NGEN, tournsize = 16)
 cfgSel3 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selStochasticUniversalSampling, popSize= popSize, genNumber= NGEN)
 cfgSel4 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
 
 ConfigListSelection = [cfgSel1,cfgSel2,cfgSel3,cfgSel4]
+ConfigListSelection = [cfgSel3]
+ConfigListSelection = [cfgSel2,cfgSel22,cfgSel222,cfgSel2222]
+#ConfigListSelection = [cfgSel22,cfgSel222]
+
 
 cfg18 = cfg.Config(h = hPer2One, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
 cfg19 = cfg.Config(h = hPer2Two, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
@@ -169,11 +176,10 @@ def GALoop(hUsed,popSize,NGEN,config):
         # Clone the selected individuals
         #offspring = list(map(toolbox.clone, offspring))
         
-        # Guarantee diversity and min popsize
-
+        # Guarantee no copies of levels and min popsize
         #offspring = list(map(toolbox.clone, fs.diversityExactEqual(offspring)))
         #offspring = list(map(toolbox.clone, fs.diversityEqual(offspring)))
-        #offspring = list(map(toolbox.clone, fs.diversityEqualPlatform(offspring)))
+        offspring = list(map(toolbox.clone, fs.diversityEqualPlatform(offspring)))
 
         offspringLen = len(offspring)
         newOffspring = []
@@ -266,12 +272,13 @@ def main():
     for c in ConfigListSelection:
     #for c in ConfigListTwo:
     #for c in ConfigList:
-        if c.select == tools.selTournament:
-            toolbox.register("select",c.select, tournsize = 10)
-            c.select = ""
-        c.setup()
         IM = instrumentation.InstrumentationManager()
         IM.WriteToRND(c.description())
+        if c.select == tools.selTournament:
+            toolbox.register("select",c.select, tournsize = c.tournsize)
+            c.select = ""
+        c.setup()
+        
 
         
         ppl,bestPop,bestFit,bestFits  = GALoop(c.h,c.popSize, c.genNumber,c)

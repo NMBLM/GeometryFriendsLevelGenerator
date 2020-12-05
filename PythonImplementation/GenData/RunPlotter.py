@@ -252,12 +252,36 @@ def SmoothPlot(dirName):
     plt.savefig(dirName+'\\SmoothQuartiles.png',dpi = dpii)
     plt.clf()
 
+def BestChangeGen(dirName):
+    f = open(dirName + "\\data.txt","r")
+    print(dirName)
+    previousBest = 0
+    GenNumber = 1
+    bestFitness = []
+    allBestFit = []
+    while(f.readline()):
+        GenNumber = GenNumber + 1
+        l = f.readline()
+        if(len(l)>1):
+            l = l.replace(",",".")
+            genBestFit = float(l[:-1])
+            allBestFit += [genBestFit]
+            if(genBestFit > previousBest):
+                previousBest = genBestFit
+                bestFitness += [(len(allBestFit)-1,genBestFit)]
+            l = f.readline()
+            l = f.readline()
+            l = f.readline()
+            l = f.readline()
+            l = f.readline()
+    print(bestFitness)
 
-currentR = 260
+currentR = 400
 dn = "Gendata/Run_" + str(currentR)
 while(os.path.isdir(dn)):
     DirectPlot(dn)
     SmoothPlot(dn)
+    #BestChangeGen(dn)
     currentR += 1
     dn = "Gendata/Run_" + str(currentR)
 

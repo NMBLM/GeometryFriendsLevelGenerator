@@ -519,20 +519,28 @@ def RectangleReachability(lvl):
                 lst += [((x-1, y), -1)]
                 #check extending
                 for i in range(0,rectangleMaxLen): 
+                    if not lvl.cellGrid[x - 1][ y - i].fitsRectangle: #check if there is no platform blocking above
+                        break
                     lst += [((x-1, y-i), 0)]
             else:
                 #check for climbing obstacle left
                 for i in range(0,3):
+                    if not lvl.cellGrid[x - 1][ y - i].fitsRectangle: #check if there is no platform blocking above
+                        break
                     lst += [((x-1, y-i), -1)]
             #Check for going right
             if lvl.cellGrid[x + 1][ y].fitsRectangle:
                 lst += [((x+1, y), +1)]
                 #check extending
                 for i in range(0,rectangleMaxLen): 
+                    if not lvl.cellGrid[x + 1][ y - i].fitsRectangle: #check if there is no platform blocking above
+                        break
                     lst += [((x+1, y-i), 0)]
             else:
                 #check for climbing obstacle right
                 for i in range(0,3):
+                    if not lvl.cellGrid[x + 1][ y - i].fitsRectangle: #check if there is no platform blocking above
+                        break
                     lst += [((x+1, y-i), 1)]
 
 maxJumpStrength = 22

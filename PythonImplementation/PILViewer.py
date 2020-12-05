@@ -18,15 +18,15 @@ def getColor (blockType):
     if blockType == ef.BlockType.CooperativeCanReach:
         return (0,0,255)
     if blockType == ef.BlockType.RectangleCanReachCirclePlatform:
-        return (255,0,0)
+        return (125,0,0)
     if blockType == ef.BlockType.CircleCanReachRectanglePlatform:
-        return (255,0,0)
+        return (125,125,0)
     if blockType == ef.BlockType.CooperativeCanReachRectanglePlatform:
-        return (255,0,0)
+        return (125,0,125)
     if blockType == ef.BlockType.CirclePlatform:
-        return (255,255,0)
+        return (200,200,0)
     if blockType == ef.BlockType.RectanglePlatform:
-        return (0,255,0)   
+        return (0,200,0)   
 
 def getColorSpec(specType):
     if specType == ef.AreaType.Common:
@@ -42,6 +42,19 @@ def getColorSpec(specType):
         #print("RectangleOnly")
         return (0,255,0)
 
+def getColorPer(specType):
+    if specType == 3:
+        #print("Common")
+        return (125,125,125)
+    if specType == 2:
+        #print("Cooperative")
+        return (0,0,255)
+    if specType == 1:
+        #print("CircleOnly")
+        return (255,255,0)
+    if specType == 0:
+        #print("RectangleOnly")
+        return (0,255,0)
 
 
 def drawLevel (level,name):
@@ -107,3 +120,45 @@ def drawSpecs (h,name,resize = False):
             im.save(name + "Thumbnail.png", "PNG")
         else:
             im.save(name, "PNG")
+
+def drawCoveragePercentage(name, recPer = 0,circlePer = 0,coopPer = 0,commonPer = 0,resize = False):
+    xGridLen = 79
+    yGridLen = 49
+    squareSide = 16
+    level = ef.blankLevel
+    totalBlockNumber = 79*49
+    recBlockNumber = int(totalBlockNumber * recPer)
+    circleBlockNumber = int(totalBlockNumber * circlePer)
+    cooperativeBlockNumber = int(totalBlockNumber * coopPer)
+    commonBlockNumber = int(totalBlockNumber * commonPer)
+    x = 0
+    y = 0
+    blockMax = [recBlockNumber,circleBlockNumber,cooperativeBlockNumber,commonBlockNumber]
+    with Image.new("RGB",(xGridLen * squareSide ,yGridLen * squareSide),(254,254,254)) as im:
+        draw = ImageDraw.Draw(im)
+        for i in range(len(blockMax)):
+            if x == xGridLen:
+                break
+            currentBlockNumber = 0
+            while(currentBlockNumber <blockMax[i]):
+                color = getColorPer(i)
+                currentBlockNumber += 1
+                xy = (squareSide*x , squareSide*y)
+                wl = (squareSide*(x+1) , squareSide*(y+1))
+                draw.rectangle([xy, wl],fill = color)
+                y+=1
+                if y == yGridLen:
+                    x+=1
+                    y = 0
+                    if x == xGridLen:
+                        break
+        if resize:
+            im.save(name + ".png", "PNG")
+            im = Image.open(name + ".png")
+            im.thumbnail((1120,630))
+            im.save(name + "Thumbnail.png", "PNG")
+        else:
+            im.save(name, "PNG")
+
+
+

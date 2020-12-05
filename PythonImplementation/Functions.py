@@ -267,31 +267,33 @@ def diversityEqualPlatform(population):
     diverse = []
     diverseHelp = []
     for person in population:
+        startRange = 5 #platforms only
         personHelp = []
-        startRange = 5
         for i in range(startRange,45,5):
-            if(person[i] % 2 == 1):
+            if(person[i] % 2 == 1): #platform is active
                 posx = person[i+1]
                 posy = person[i+2]
                 width = person[i+3]
                 height = person[i+4]
                 personHelp += [(posx,posy,width,height)]
         stillEqual = False
+        #When it exits this loop if stillEqual is False then no copies where found
         for dh in diverseHelp:
             stillEqual = True
-            if len(personHelp) == 0:
-                if len(dh) == 0:
+            if len(personHelp) == 0: #if it does not have any platforms
+                if len(dh) == 0: #if the other level also does not have platforms then they are equal
                     break
                 else:
                     stillEqual = False
-                    continue
+                    continue #continue because it already is not equal
             for plat in personHelp:
                 if len(dh) == 0:
                     stillEqual = False
-                    break
-                if not plat in dh:
+                    break #break because it already is not equal
+                #if platform in the current level is not in the one we are comparing to then it is different and can move to comparing next one
+                if not plat in dh: 
                     stillEqual = False
-                    break
+                    break #break because it already is not equal
             if stillEqual:
                 break
         if not stillEqual:

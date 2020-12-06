@@ -16,9 +16,12 @@ def mutateLevel(ind):
     else:
         for i in range(0,45,5):
             if(ind[i] % 2 == 1 or i == 0):
-                for j in range(i+1,i+5): # x, y, width, height
+                for j in range(i+1,i+5,2): # x, width
                     if random.random() < 0.5:
                         ind[j] = random.randint(INT_MIN,XINT_MAX)
+                for j in range(i+2,i+5,2):
+                    if random.random() < 0.5: # y, height
+                        ind[j] = random.randint(INT_MIN,YINT_MAX)
 
 
 

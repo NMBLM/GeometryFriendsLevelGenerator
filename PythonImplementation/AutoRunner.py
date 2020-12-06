@@ -118,6 +118,46 @@ cfg21 = cfg.Config(h = hPer2Four, mate = fs.levelCrossOneChild, mutate= fs.mutat
 
 ConfigListTwo = [cfg18,cfg19,cfg20,cfg21]
 
+
+#best only to get examples of levels generated
+hr1_100 = cfg.Config(h = hOne, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 100, sm = True)
+hr1_500 = cfg.Config(h = hOne, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 500, sm = True)
+hr1_2000 = cfg.Config(h = hOne, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000, sm = True)
+hr2_100 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 100, sm = True)
+hr2_500 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 500, sm = True)
+hr2_2000 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000, sm = True)
+hr3_100 = cfg.Config(h = hThree, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 100, sm = True)
+hr3_500 = cfg.Config(h = hThree, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 500, sm = True)
+hr3_2000 = cfg.Config(h = hThree, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000, sm = True)
+hr4_100 = cfg.Config(h = hFour, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 100, sm = True)
+hr4_500 = cfg.Config(h = hFour, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 500, sm = True)
+hr4_2000 = cfg.Config(h = hFour, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000, sm = True)
+hr5_100 = cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 100, sm = True)
+hr5_500 = cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 500, sm = True)
+hr5_2000 = cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= 2000, sm = True)
+
+hr1_100_10 = cfg.Config(h = hOne, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 100, sm = True)
+hr1_500_10= cfg.Config(h = hOne, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 500, sm = True)
+hr1_2000_10 = cfg.Config(h = hOne, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 2000, sm = True)
+hr2_100_10 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 100, sm = True)
+hr2_500_10 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 500, sm = True)
+hr2_2000_10 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 2000, sm = True)
+hr3_100_10 = cfg.Config(h = hThree, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 100, sm = True)
+hr3_500_10 = cfg.Config(h = hThree, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 500, sm = True)
+hr3_2000_10 = cfg.Config(h = hThree, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 2000, sm = True)
+hr4_100_10 = cfg.Config(h = hFour, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 100, sm = True)
+hr4_500_10 = cfg.Config(h = hFour, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 500, sm = True)
+hr4_2000_10 = cfg.Config(h = hFour, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 2000, sm = True)
+hr5_100_10 = cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 100, sm = True)
+hr5_500_10 = cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 500, sm = True)
+hr5_2000_10= cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 2000, sm = True)
+
+
+ConfigHResutls = [hr1_100,hr1_500,hr1_2000,hr2_100,hr2_500,hr2_2000,hr3_100,hr3_500,hr3_2000,hr4_100,hr4_500,hr4_2000,hr5_100,hr5_500,hr5_2000,
+hr1_100_10,hr1_500_10,hr1_2000_10,hr2_100_10,hr2_500_10,hr2_2000_10,hr3_100_10,hr3_500_10,hr3_2000_10,hr4_100_10,hr4_500_10,hr4_2000_10,hr5_100_10,hr5_500_10,hr5_2000_10]
+
+ConfigHResutls += ConfigListTwo
+
 IM = ""
 
 creator.create("FitnessMax", base.Fitness, weights=(1.0, 1.0))
@@ -268,19 +308,14 @@ def GALoop(hUsed,popSize,NGEN,config):
 
 def main():
     global IM
-    #for c in ConfigListCross:
-    for c in ConfigListSelection:
-    #for c in ConfigListTwo:
-    #for c in ConfigList:
+    for c in ConfigHResutls:
         IM = instrumentation.InstrumentationManager()
         IM.WriteToRND(c.description())
         if c.select == tools.selTournament:
             toolbox.register("select",c.select, tournsize = c.tournsize)
             c.select = ""
         c.setup()
-        
 
-        
         ppl,bestPop,bestFit,bestFits  = GALoop(c.h,c.popSize, c.genNumber,c)
         ppl.sort(reverse = True, key = getFit)
 

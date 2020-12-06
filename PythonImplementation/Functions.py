@@ -8,20 +8,17 @@ def mutateLevel(ind):
     if random.random() < 0.2:
         for i in range(5,45,5):
             if(ind[i] % 2 == 1):
-                if random.random() < 0.8: #remove plat that exists
+                if random.random() < 0.5: #remove plat that exists
                     ind[i] = 0
             else:
-                if random.random() < 0.8: #add platform
+                if random.random() < 0.5: #add platform
                     ind[i] = 1
     else:
         for i in range(0,45,5):
             if(ind[i] % 2 == 1 or i == 0):
-                if random.random() < 0.5: #change plat width height
-                    ind[i+3] = random.randint(INT_MIN,XINT_MAX)
-                    ind[i+4] = random.randint(INT_MIN,YINT_MAX)
-                else: #change plat x and y
-                    ind[i+1] = random.randint(INT_MIN,XINT_MAX)
-                    ind[i+2] = random.randint(INT_MIN,YINT_MAX)
+                for j in range(i+1,i+5): # x, y, width, height
+                    if random.random() < 0.5:
+                        ind[j] = random.randint(INT_MIN,XINT_MAX)
 
 
 

@@ -34,7 +34,10 @@ lvlFiveSpecs = [ef.SpecialArea(1100,600,140,140, ef.AreaType.RectangleOnly),
 ef.SpecialArea(90,440,300,140, ef.AreaType.CircleOnly), 
 ef.SpecialArea(900,80,300,140, ef.AreaType.Cooperative)]
 
-
+lvlSixSpecs = [ef.SpecialArea(480,608,224,176, ef.AreaType.RectangleOnly), 
+ef.SpecialArea(976,240,288,288, ef.AreaType.CircleOnly), 
+ef.SpecialArea(48,48,1216,128, ef.AreaType.Cooperative), 
+ef.SpecialArea(48,480,320,160, ef.AreaType.Common)]
 
 hZero = ef.AreaHeuristic(lvlZeroSpecs, smaller = True)
 hOne = ef.AreaHeuristic(lvlOneSpecs, smaller = True)
@@ -42,6 +45,7 @@ hTwo = ef.AreaHeuristic(lvlTwoSpecs, smaller = True)
 hThree = ef.AreaHeuristic(lvlThreeSpecs, smaller = True)
 hFour = ef.AreaHeuristic(lvlFourSpecs, smaller = True)
 hFive = ef.AreaHeuristic(lvlFiveSpecs, smaller = True)
+hSix = ef.AreaHeuristic(lvlSixSpecs, smaller = True)
 
 
 hFixedtwo = ef.FixedSpawnAreaHeuristic(lvlTwoSpecs, smaller = True)
@@ -115,7 +119,12 @@ cfg19 = cfg.Config(h = hPer2Two, mate = fs.levelCrossOneChild, mutate= fs.mutate
 cfg20 = cfg.Config(h = hPer2Three, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
 cfg21 = cfg.Config(h = hPer2Four, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
 
-ConfigListTwo = [cfg18,cfg19,cfg20,cfg21]
+cfg22 = cfg.Config(h = hPerOne, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg23 = cfg.Config(h = hPerTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg24 = cfg.Config(h = hPerThree, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg25 = cfg.Config(h = hPerFour, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+
+ConfigListTwo = [cfg18,cfg19,cfg20,cfg21,cfg22,cfg23,cfg24,cfg25]
 
 
 #best only to get examples of levels generated
@@ -134,6 +143,9 @@ hr4_2000 = cfg.Config(h = hFour, mate = fs.levelCrossOneChild, mutate= fs.mutate
 hr5_100 = cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 50, genNumber= 100, sm = True)
 hr5_500 = cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 50, genNumber= 500, sm = True)
 hr5_2000 = cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 50, genNumber= 2000, sm = True)
+hr6_100 = cfg.Config(h = hSix, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 50, genNumber= 100, sm = True)
+hr6_500 = cfg.Config(h = hSix, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 50, genNumber= 500, sm = True)
+hr6_2000 = cfg.Config(h = hSix, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 50, genNumber= 2000, sm = True)
 
 hr1_100_10 = cfg.Config(h = hOne, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 100, sm = True)
 hr1_500_10= cfg.Config(h = hOne, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 500, sm = True)
@@ -150,12 +162,25 @@ hr4_2000_10 = cfg.Config(h = hFour, mate = fs.levelCrossOneChild, mutate= fs.mut
 hr5_100_10 = cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 100, sm = True)
 hr5_500_10 = cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 500, sm = True)
 hr5_2000_10= cfg.Config(h = hFive, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 2000, sm = True)
+hr6_100_10 = cfg.Config(h = hSix, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 100, sm = True)
+hr6_500_10 = cfg.Config(h = hSix, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 500, sm = True)
+hr6_2000_10= cfg.Config(h = hSix, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 2000, sm = True)
 
-
-ConfigHResutls = [hr1_100,hr1_500,hr1_2000,hr2_100,hr2_500,hr2_2000,hr3_100,hr3_500,hr3_2000,hr4_100,hr4_500,hr4_2000,hr5_100,hr5_500,hr5_2000,
-hr1_100_10,hr1_500_10,hr1_2000_10,hr2_100_10,hr2_500_10,hr2_2000_10,hr3_100_10,hr3_500_10,hr3_2000_10,hr4_100_10,hr4_500_10,hr4_2000_10,hr5_100_10,hr5_500_10,hr5_2000_10]
+ConfigHResutls = [hr1_100,hr1_500,hr1_2000,hr2_100,hr2_500,hr2_2000,hr3_100,hr3_500,hr3_2000,hr4_100,
+    hr4_500,hr4_2000,hr5_100,hr5_500,hr5_2000,hr6_100,hr6_500,hr6_2000,
+    hr1_100_10,hr1_500_10,hr1_2000_10,hr2_100_10,hr2_500_10,hr2_2000_10,hr3_100_10,hr3_500_10,hr3_2000_10,
+    hr4_100_10,hr4_500_10,hr4_2000_10,hr5_100_10,hr5_500_10,hr5_2000_10,hr6_100_10,hr6_500_10,hr6_2000_10]
 
 ConfigHResutls += ConfigListTwo
+
+
+hDraw1 = cfg.Config(h = hOne, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 5, sm = True)
+hDraw2 = cfg.Config(h = hTwo, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 5, sm = True)
+hDraw3 = cfg.Config(h = hThree, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 5, sm = True)
+hDraw4 = cfg.Config(h = hFour, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 5, sm = True)
+hDraw5= cfg.Config(h = hFive, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 5, sm = True)
+
+specDraw = [hDraw1,hDraw2,hDraw3,hDraw4,hDraw5]
 
 IM = ""
 
@@ -250,21 +275,15 @@ def GALoop(hUsed,popSize,NGEN,config):
             offspringLen = len(offspring)
             
             i = 0
-            j = 0  #so that it mates with itself and stays in the pool
+            j = 1  #so that it mates with itself and stays in the pool
             while len(childOffSpring) < offspringLen - len(toAdd):
                 child = fs.levelCrossOneChild(toolbox.clone(offspring[i]), toolbox.clone(offspring[j]))
                 del child.fitness.values
-                if i == j:
-                    #toAdd += [child]
-                    childOffSpring += [child]
-                else:
-                    childOffSpring += [child]
+                childOffSpring += [child]
                 j += 1
                 if j > int(offspringLen * 0.3) :
                     i += 1
                     j = i + 1
-                    if i == 1: #so that it mates with itself and stays in the pool keeping the top two in the pool to then be mutated
-                        j = i
                     if i == offspringLen:
                         i = 0
                         j = i + 1

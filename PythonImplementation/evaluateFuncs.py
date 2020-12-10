@@ -272,6 +272,7 @@ def fitness(lvl, h):
     
     grid = lvl.grid
     fullAreaPercent = 1
+    multPercent = 1
     minArea = 2
     for area in specs:
         areaPercent = 0
@@ -307,11 +308,13 @@ def fitness(lvl, h):
         if areaAmount == 0:
             return (0,)
         areaPercent = areaPercent / areaAmount
+        multPercent *= areaPercent
         fullAreaPercent += areaPercent
         minArea = min(areaPercent, minArea)
     #return (fullAreaPercent / len(specs),)
     
-    return (minArea,)
+    return (multPercent,)
+    #return (minArea,)
     #return (fullAreaPercent / len(specs),)
     #return (minArea * 0.8 + fullAreaPercent * 0.2,)
 

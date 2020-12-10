@@ -1,0 +1,4 @@
+48:480:320:160:AreaType.Common
+48:48:1216:128:AreaType.Cooperative
+480:608:224:176:AreaType.RectangleOnly
+976:240:288:288:AreaType.CircleOnly

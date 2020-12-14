@@ -128,12 +128,27 @@ class InstrumentationManager:
         if not os.path.isdir(".\\GenData\\Run_"+ str(self.runNumber)+ beforeLevel):
             os.mkdir(".\\GenData\\Run_"+ str(self.runNumber)+ beforeLevel)
         auxI = 1
+        text = ""
         for person in pop:
             lvl = h.TestLevel(person)
             viewer.drawLevel(lvl,".\\GenData\\Run_"+ str(self.runNumber) + beforeLevel +"\\level"+ str(auxI) + afterlevel +".png")
             print(".\\GenData\\Run_"+ str(self.runNumber) + beforeLevel +"\\level"+ str(auxI) + afterlevel +".png :", lvl.fit )
+            text += "level"+ str(auxI) + afterlevel +".png :" + str(lvl.fit) + " , " + str(person) + "\n" 
             auxI += 1
 
+        f = open('GenData\Run_' + str(self.runNumber) + '\\' + afterlevel + '.txt','a')
+        f.write(text)
+        f.close()
+
+    def WriteGenericPop(self,pop,filename):
+        if not os.path.isdir(".\\GenData\\Run_"+ str(self.runNumber)):
+            os.mkdir(".\\GenData\\Run_"+ str(self.runNumber))
+        text = ""
+        for person in pop:
+            text += person[1] +".png : " + str(person[0]) + "\n" 
+        f = open('GenData\Run_' + str(self.runNumber) + '\\' + filename + '.txt','a')
+        f.write(text)
+        f.close()
 
     def WriteToRND(self,txt):
         f = open('GenData\Run_' + str(self.runNumber) + '\Info.txt','a')

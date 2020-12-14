@@ -108,10 +108,7 @@ cfgSel2222 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutat
 cfgSel3 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selStochasticUniversalSampling, popSize= popSize, genNumber= NGEN)
 cfgSel4 = cfg.Config(h = hTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
 
-ConfigListSelection = [cfgSel1,cfgSel2,cfgSel3,cfgSel4]
-ConfigListSelection = [cfgSel3]
-ConfigListSelection = [cfgSel2,cfgSel22,cfgSel222,cfgSel2222]
-#ConfigListSelection = [cfgSel22,cfgSel222]
+ConfigListSelection = [cfgSel1,cfgSel2,cfgSel22,cfgSel222,cfgSel2222,cfgSel3,cfgSel4]
 
 
 cfg18 = cfg.Config(h = hPer2One, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
@@ -203,7 +200,7 @@ def getFit(ind):
 
 
 elitism = 1
-treshold = 0.85
+treshold = 1
 tresholdMax = 150
 def GALoop(hUsed,popSize,NGEN,config):
     #global IM
@@ -330,7 +327,7 @@ def GALoop(hUsed,popSize,NGEN,config):
 
 def main():
     global IM
-    for c in ConfigHResutls:
+    for c in ConfigListSelection:
         IM = instrumentation.InstrumentationManager()
         IM.WriteToRND(c.description())
         if c.select == tools.selTournament:

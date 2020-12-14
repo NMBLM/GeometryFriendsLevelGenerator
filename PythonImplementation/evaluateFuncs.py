@@ -271,7 +271,7 @@ def fitness(lvl, h):
         return (1,)
     
     grid = lvl.grid
-    fullAreaPercent = 1
+    fullAreaPercent = 0
     multPercent = 1
     minArea = 2
     for area in specs:
@@ -313,9 +313,9 @@ def fitness(lvl, h):
         minArea = min(areaPercent, minArea)
     #return (fullAreaPercent / len(specs),)
     
-    return (multPercent,)
+    #return (multPercent,)
     #return (minArea,)
-    #return (fullAreaPercent / len(specs),)
+    return (fullAreaPercent / len(specs),)
     #return (minArea * 0.8 + fullAreaPercent * 0.2,)
 
 # In this the sum of each percentage being 100% would mean the entire map is reachable which is impossible
@@ -546,7 +546,7 @@ def RectangleReachability(lvl):
                         break
                     lst += [((x+1, y-i), 1)]
 
-maxJumpStrength = 22
+maxJumpStrength = 21
 def CircleReachability(lvl):
     if lvl.smallerNums:
         x = lvl.circleSpawn[0]

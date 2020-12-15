@@ -190,7 +190,7 @@ def levelCrossOneChild(pOne, pTwo):
             child[j] = pTwo[j]
 
     if (random.random() < 0.5):
-        for j in range(3,5): #parent Two circle
+        for j in range(3,5): #parent One circle
             child[j] = pOne[j]
     else:
         for j in range(3,5): #parent Two circle
@@ -204,6 +204,21 @@ def levelCrossOneChild(pOne, pTwo):
                 for j in range(i,i+5): #parent Two platform
                     child[j] = pTwo[j]
     return child
+
+def levelCrossOneChildSimplified(pOne, pTwo):
+    child = pOne #clone parent
+    if (random.random() < 0.5): 
+        for j in range(1,3): #parent Two rectangle
+            child[j] = pTwo[j]
+    if (random.random() < 0.5):
+        for j in range(3,5): #parent Two circle
+            child[j] = pTwo[j]
+    for i in range(5,45,5):
+        if (random.random() < 0.5):
+            for j in range(i,i+5): #parent Two platform
+                child[j] = pTwo[j]
+    return child
+
 
 def levelCrossOneChildEveryValue(pOne, pTwo):
     child = pOne

@@ -81,6 +81,14 @@ class InstrumentationManager:
         viewer.drawSpecs(h,".\\GenData\\Run_"+ str(self.runNumber)+"\\HeuristicSpec"+str(self.tmpauxi) +".png")
         print(".\\GenData\\Run_"+ str(self.runNumber)+"\\HeuristicSpec" + str(self.tmpauxi) + ".png : " , len(h.specifications))
 
+    def DrawPerSpec(self,h):
+        self.tmpauxi += 1
+        text = f'{h.rectanglePercentage:.2f}_{h.circlePercentage:.2f}_{h.coopPercentage:.2f}_{h.commonPercentage:.2f}'
+        viewer.drawCoveragePercentage(".\\GenData\\Run_"+ str(self.runNumber)+"\\"+ text +"T" + str(self.tmpauxi) +".png",
+        h.rectanglePercentage,h.circlePercentage,h.coopPercentage,h.commonPercentage)
+        print(".\\GenData\\Run_"+ str(self.runNumber)+"\\"+ text +"T" + str(self.tmpauxi) +".png")
+
+
     def WriteGenData(self, genNumber, pop):
         if(not self.on):
             return

@@ -198,16 +198,52 @@ toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 def getFit(ind):
     return ind.fitness.values[0]
 
+cfg18 = cfg.Config(h = hPer2One, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg19 = cfg.Config(h = hPer2Two, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg20 = cfg.Config(h = hPer2Three, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg21 = cfg.Config(h = hPer2Four, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+
+cfg22 = cfg.Config(h = hPerOne, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg23 = cfg.Config(h = hPerTwo, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg24 = cfg.Config(h = hPerThree, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+cfg25 = cfg.Config(h = hPerFour, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popSize, genNumber= NGEN, sm = True)
+
+def generateRandomPercentageHeuristicConfig(popsize,ngen,OneOrTwo = True):
+    recPer = random.random()
+    circlePer = random.random()
+    coopPer = random.random()
+    commonPer = random.random()
+    whitePer = random.random()
+    
+    if OneOrTwo:
+        totalPer = recPer + circlePer + coopPer + commonPer + whitePer
+        recPer = recPer / totalPer
+        circlePer = circlePer / totalPer
+        coopPer = coopPer / totalPer
+        commonPer = commonPer / totalPer
+        h = ef.AreaPercentangeHeuristic(recPer ,circlePer ,coopPer ,commonPer , smaller = True)
+    else:
+        totalPer = recPer + circlePer + coopPer + commonPer
+        recPer = recPer / totalPer
+        circlePer = circlePer / totalPer
+        coopPer = coopPer / totalPer
+        commonPer = commonPer / totalPer
+        h = ef.AreaPercentangeTwoHeuristic(recPer ,circlePer ,coopPer ,commonPer , smaller = True)
+    conf = cfg.Config(h = h, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= popsize, genNumber= NGEN, sm = True)
+    return conf
 
 elitism = 1
-treshold = 1
-tresholdMax = 150
+treshold = 0.85
+tresholdMax = 80
 def GALoop(hUsed,popSize,NGEN,config):
     #global IM
     #IM = instrumentation.InstrumentationManager(on = True)
     curTresh = 0
     if not isinstance(hUsed,ef.AreaPercentangeHeuristic) and not isinstance(hUsed,ef.AreaPercentangeTwoHeuristic):
         IM.DrawSpecs(hUsed)
+    else:
+        IM.DrawPerSpec(hUsed)
+
     bestPop = []
     bestFit = 0
     bestFits =[]
@@ -250,7 +286,7 @@ def GALoop(hUsed,popSize,NGEN,config):
 
         offspringLen = len(offspring)
         newOffspring = []
-        while (offspringLen + len(newOffspring) < (popSize - elitism) ):
+        while (offspringLen + len(newOffspring) < (len(pop) - elitism) ):
             newOffspring = toolbox.population(n=(popSize - elitism) - (offspringLen)) #generate random offspring
             '''
             parentOne = random.randint(0,offspringLen-1)
@@ -341,4 +377,32 @@ def main():
         IM.DrawPop(ppl,c.h)
         IM.DrawBestPop(bestPop,c.h)
 
-main()
+def mainPer():
+    global IM
+    configs = []
+    for i in range(10):
+        configs += [generateRandomPercentageHeuristicConfig(50,500)]
+    for i in range(10):
+        configs += [generateRandomPercentageHeuristicConfig(10,500)]
+    for i in range(10):
+        configs += [generateRandomPercentageHeuristicConfig(50,500,False)]
+    for i in range(10):
+        configs += [generateRandomPercentageHeuristicConfig(10,500,False)]
+           
+    for c in configs:
+        IM = instrumentation.InstrumentationManager()
+        IM.WriteToRND(c.description())
+        if c.select == tools.selTournament:
+            toolbox.register("select",c.select, tournsize = c.tournsize)
+            c.select = ""
+        c.setup()
+
+        ppl,bestPop,bestFit,bestFits  = GALoop(c.h,c.popSize, c.genNumber,c)
+        ppl.sort(reverse = True, key = getFit)
+
+        IM.DrawPop(ppl,c.h)
+        IM.DrawBestPop(bestPop,c.h)
+
+
+#main()
+mainPer()

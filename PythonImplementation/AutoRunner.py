@@ -286,7 +286,7 @@ def GALoop(hUsed,popSize,NGEN,config):
 
         offspringLen = len(offspring)
         newOffspring = []
-        while (offspringLen + len(newOffspring) < (len(pop) - elitism) ):
+        while (offspringLen + len(newOffspring) < (popSize - elitism) + 1 ):
             newOffspring = toolbox.population(n=(popSize - elitism) - (offspringLen)) #generate random offspring
             '''
             parentOne = random.randint(0,offspringLen-1)

@@ -61,7 +61,7 @@ class InstrumentationManager:
                 print(".\\GenData\\Run_"+ str(self.runNumber)+"\\Bestlevel"+ str(auxI) + ".png :", lvl.fit )
             auxI += 1
 
-    def DrawLevel(self,lvl,h,name = "indLevel"):
+    def DrawLevel(self,lvl,h,name = "indLevel",col = False):
         eLvl = h.TestLevel(lvl)
         if name != "indLevel":
             name = ".\\GenData\\Run_"+ str(self.runNumber) + name
@@ -72,9 +72,14 @@ class InstrumentationManager:
                 aux+=1
 
         else:
-            viewer.drawLevel(eLvl,name +".png")
+            viewer.drawLevel(eLvl,name +".png",collectibles = col)
         print(name +".png", eLvl.fit )
 
+    def DrawLevelLevel(self,lvl,name = "indLevel",col = False):    
+        if name != "indLevel":
+            name = ".\\GenData\\Run_"+ str(self.runNumber) + name
+        viewer.drawLevel(lvl,name +".png",collectibles = col)
+        print(name +".png", lvl.fit )
 
     def DrawSpecs(self,h):
         self.tmpauxi += 1

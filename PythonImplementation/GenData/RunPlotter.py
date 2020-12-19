@@ -276,7 +276,7 @@ def BestChangeGen(dirName):
             l = f.readline()
     print(bestFitness)
 
-currentR = 927
+currentR = 500
 dn = "Gendata/Run_" + str(currentR)
 while(os.path.isdir(dn)):
     DirectPlot(dn)

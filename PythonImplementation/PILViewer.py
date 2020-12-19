@@ -57,7 +57,7 @@ def getColorPer(specType):
         return (0,255,0)
 
 
-def drawLevel (level,name):
+def drawLevel (level,name,collectibles = False):
     xGridLen = 79
     yGridLen = 49
     squareSide = 16
@@ -83,6 +83,11 @@ def drawLevel (level,name):
         draw.rectangle([recS,recST] ,fill = squareColor,outline= 0 )
         draw.arc([cirS, cirsT],start = 0, end = 360,fill = circleColor ,width= 3 )
         
+        if collectibles:
+            for col in level.collectibles:
+                colS = (col[0] * squareSide - squareSide, col[1] * squareSide - squareSide)
+                colST= (col[0] * squareSide + squareSide, col[1] * squareSide + squareSide)
+                draw.rectangle([colS,colST], fill=(128,0,128), outline=0)
         im.save(name, "PNG")
 
 

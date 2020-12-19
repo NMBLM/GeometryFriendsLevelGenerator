@@ -4,6 +4,9 @@ import evaluateFuncs as ef
 import instrumentation
 import Functions as fs
 import numpy as np
+import ApplyCollectibles as ac
+import WorldXMLGenerator as wg
+
 
 from deap import base
 from deap import creator
@@ -413,5 +416,40 @@ def ShowcrossoverV2():
 #TestMutations()
 #TestCrossover()
 #Showcrossover()
-ShowMutations()
-ShowcrossoverV2()
+#ShowMutations()
+#ShowcrossoverV2()
+
+
+def TestPlaceCollectibles():
+    lvlTwoSpecs = [ef.SpecialArea(100,80,1100,240, ef.AreaType.Cooperative), ef.SpecialArea(430,560,340,180,ef.AreaType.RectangleOnly)]
+    hTwo = ef.AreaHeuristic(lvlTwoSpecs, smaller = True)
+    TestLvlOne = [1, 320, 678, 120, 678, 1, 460, 400, 75, 300, 1, 735, 400, 75, 300, 1, 535, 400, 250, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    TestLvlTwo =  [0, 984, 696, 88, 650, 1, 200, 600, 288, 32, 1, 504, 376, 48, 384, 1, 552, 648, 256, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    TestLvlOneOne = [1, 320, 678, 120, 678,  1, 535, 400, 250, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 460, 400, 75, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 735, 400, 75, 300]
+    TestLvlTwoTwo =  [0, 984, 696, 88, 650, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 200, 600, 288, 32, 1, 504, 376, 48, 384,  0, 0, 0, 0, 0, 1, 552, 648, 256, 32,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    TestLvlThree = [1, 51, 35, 8, 14, 0, 26, 31, 45, 45, 1, 66, 42, 23, 20, 1, 8, 39, 75, 5, 0, 16, 33, 54, 10, 1, 18, 16, 48, 17, 1, 28, 42, 38, 18, 0, 57, 23, 29, 30, 0, 4, 20, 54, 25]
+    TestLvlFour =  [0, 4, 43, 21, 31, 1, 26, 19, 12, 22, 0, 33, 29, 60, 27, 0, 15, 21, 37, 13, 1, 62, 14, 62, 47, 1, 44, 15, 55, 19, 1, 60, 25, 7, 22, 0, 76, 7, 17, 17, 0, 30, 4, 24, 6]
+    TestLvlFive = [1, 29, 42, 6, 12, 0, 76, 7, 15, 3, 1, 31, 34, 8, 7, 0, 34, 45, 76, 19, 1, 15, 44, 71, 19, 1, 54, 41, 76, 29, 1, 28, 17, 61, 16, 0, 46, 46, 32, 12, 0, 37, 43, 41, 24]
+    TestLvlSix =  [0, 37, 40, 6, 25, 0, 31, 24, 4, 18, 1, 11, 17, 19, 26, 0, 67, 34, 67, 19, 1, 33, 45, 48, 14, 1, 43, 47, 33, 44, 1, 69, 9, 38, 16, 0, 43, 17, 42, 10, 1, 22, 18, 49, 16]
+    h = hZero
+    testPop = [TestLvlOne,TestLvlTwo,TestLvlOneOne,TestLvlTwoTwo,TestLvlThree,TestLvlFour,TestLvlFive,TestLvlSix]
+    #testPop = [TestLvlOne,TestLvlOneOne,TestLvlThree,TestLvlFour,TestLvlFive,TestLvlSix]
+    #testPop = [TestLvlOne,TestLvlTwo,TestLvlOneOne,TestLvlTwoTwo]
+    counter = 1
+    world = []
+    for i in range(len(testPop)):
+        if(i < 4):
+            hTwo.smallerLevels = False
+            lvl = hTwo.TestLevel(testPop[i])
+        else:
+            hTwo.smallerLevels = True
+            lvl = hTwo.TestLevel(testPop[i])
+        lvl = ac.PlaceCollectibles(hTwo,lvl)
+        world += [lvl]
+        IM.DrawLevelLevel(lvl,name= "\\col" + str(counter),col= True)
+        counter+= 1
+
+    wg.WriteWorld(world,)
+
+
+TestPlaceCollectibles()

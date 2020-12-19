@@ -21,11 +21,12 @@ class Level:
                 width = attrList[i+3]
                 height = attrList[i+4]
                 #height = attrList[i+4]
-                self.platforms += [(posx,posy,width,height)]
+                self.platforms += [[posx,posy,width,height]]
         self.cellGrid = []
         self.grid = []
         self.fit = -1
         self.platAmount = 1
+        self.collectibles = []
 
     def description(self):
         text = "RectangleSpawn " + str(self.rectSpawn) + "\n"
@@ -34,7 +35,17 @@ class Level:
             text += "Platform: " + str(plat) + "\n"
         return text
 
-
+    def increaseSize(self):
+        mult = 16
+        if self.smallerNums:
+            self.rectSpawn = (self.rectSpawn[0]*mult,self.rectSpawn[1]*mult)
+            self.circleSpawn = ( self.circleSpawn[0]*mult, self.circleSpawn[1]*mult)
+            for i in range(len(self.platforms)):
+                for j in range(4):
+                    self.platforms[i][j] = self.platforms[i][j] * mult
+            for i in range(len(self.collectibles)):
+                for j in range(2):
+                    self.collectibles[i][j] = self.collectibles[i][j] * mult            
 
 class PlatformType(Enum):
     Common = 0

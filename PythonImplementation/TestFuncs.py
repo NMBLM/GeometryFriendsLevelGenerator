@@ -432,14 +432,16 @@ def TestPlaceCollectibles():
     TestLvlFive = [1, 29, 42, 6, 12, 0, 76, 7, 15, 3, 1, 31, 34, 8, 7, 0, 34, 45, 76, 19, 1, 15, 44, 71, 19, 1, 54, 41, 76, 29, 1, 28, 17, 61, 16, 0, 46, 46, 32, 12, 0, 37, 43, 41, 24]
     TestLvlSix =  [0, 37, 40, 6, 25, 0, 31, 24, 4, 18, 1, 11, 17, 19, 26, 0, 67, 34, 67, 19, 1, 33, 45, 48, 14, 1, 43, 47, 33, 44, 1, 69, 9, 38, 16, 0, 43, 17, 42, 10, 1, 22, 18, 49, 16]
     h = hZero
+    TestLvlSeven = [0, 16, 19, 14, 40, 0, 49, 45, 43, 28, 0, 53, 13, 69, 29, 1, 19, 22, 36, 12, 1, 24, 17, 3, 24, 1, 58, 27, 51, 20, 0, 18, 3, 21, 15, 0, 36, 45, 52, 6, 0, 65, 22, 11, 18]
     testPop = [TestLvlOne,TestLvlTwo,TestLvlOneOne,TestLvlTwoTwo,TestLvlThree,TestLvlFour,TestLvlFive,TestLvlSix]
     #testPop = [TestLvlOne,TestLvlOneOne,TestLvlThree,TestLvlFour,TestLvlFive,TestLvlSix]
     #testPop = [TestLvlOne,TestLvlTwo,TestLvlOneOne,TestLvlTwoTwo]
+    testPop = [TestLvlSeven]
     counter = 1
     world = []
     for i in range(len(testPop)):
         if(i < 4):
-            hTwo.smallerLevels = False
+            hTwo.smallerLevels = True
             lvl = hTwo.TestLevel(testPop[i])
         else:
             hTwo.smallerLevels = True
@@ -449,7 +451,7 @@ def TestPlaceCollectibles():
         IM.DrawLevelLevel(lvl,name= "\\col" + str(counter),col= True)
         counter+= 1
 
-    wg.WriteWorld(world,)
+    wg.WriteWorld(world,name= "OneLevel.xml")
 
 
 TestPlaceCollectibles()

@@ -170,6 +170,7 @@ ConfigHResutls = [hr1_100,hr1_500,hr1_2000,hr2_100,hr2_500,hr2_2000,hr3_100,hr3_
 
 ConfigHResutls += ConfigListTwo
 
+ConfigMetric = [hr3_100,hr3_500,hr3_2000,hr3_100_10,hr3_500_10,hr3_2000_10,cfg19,cfg20,cfg23,cfg24]
 
 hDraw1 = cfg.Config(h = hOne, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 5, sm = True)
 hDraw2 = cfg.Config(h = hTwo, mate = fs.levelCrossPlat, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10, genNumber= 5, sm = True)
@@ -233,7 +234,7 @@ def generateRandomPercentageHeuristicConfig(popsize,ngen,OneOrTwo = True):
     return conf
 
 elitism = 1
-treshold = 0.85
+treshold = 0.92
 tresholdMax = 80
 def GALoop(hUsed,popSize,NGEN,config):
     #global IM
@@ -259,8 +260,6 @@ def GALoop(hUsed,popSize,NGEN,config):
 
     for g in range(NGEN):
         startTime = tim.time()
-
-       
         IM.WritePop(g,pop)
         IM.WriteGenData(g,pop)
         if(pop[0].fitness.values[0] > bestFit):
@@ -286,7 +285,7 @@ def GALoop(hUsed,popSize,NGEN,config):
 
         offspringLen = len(offspring)
         newOffspring = []
-        while (offspringLen + len(newOffspring) < (popSize - elitism) + 1 ):
+        while (offspringLen + len(newOffspring) < (popSize - elitism) ):
             newOffspring = toolbox.population(n=(popSize - elitism) - (offspringLen)) #generate random offspring
             '''
             parentOne = random.randint(0,offspringLen-1)
@@ -300,7 +299,7 @@ def GALoop(hUsed,popSize,NGEN,config):
             del childTwo.fitness.values
             newOffspring += [childOne,childTwo]
             '''
-        
+        crossoverTime = tim.time()
         # Apply crossover and mutation on the offspring
         if config.specialMate:
             offspring.sort(reverse = True, key = getFit)
@@ -309,7 +308,7 @@ def GALoop(hUsed,popSize,NGEN,config):
             
             i = 0
             j = 1  #so that it mates with itself and stays in the pool
-            while len(childOffSpring) < offspringLen - len(toAdd):
+            while len(childOffSpring) < offspringLen - len(toAdd) + 1 :
                 child = fs.levelCrossOneChild(toolbox.clone(offspring[i]), toolbox.clone(offspring[j]))
                 del child.fitness.values
                 childOffSpring += [child]
@@ -339,24 +338,30 @@ def GALoop(hUsed,popSize,NGEN,config):
                     toolbox.mate(child1, child2)
                     del child1.fitness.values
                     del child2.fitness.values
+        crossoverEndTime = tim.time() - crossoverTime
 
         offspring += newOffspring
+        mutationTime = tim.time()
         for mutant in offspring:
             if random.random() < MUTPB:
                 toolbox.mutate(mutant)
                 del mutant.fitness.values
-        
+        mutationEndTime = tim.time() - mutationTime
         offspring = offspring + list(map(toolbox.clone, toAdd))
         
         # Evaluate the individuals with an invalid fitness
+        evalTime = tim.time()
         invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
         fitnesses = map(toolbox.evaluate, invalid_ind)
         for ind, fit in zip(invalid_ind, fitnesses):
             ind.fitness.values = fit
+        evalEndTime = tim.time() - evalTime
         # The population is entirely replaced by the offspring
         pop = list(offspring)
         pop.sort(reverse = True, key = getFit)
-        print("generation: ", g,"  Time: ", tim.time() - startTime,"bestFit: ", getFit(pop[0]), " popsize: ", len(pop))
+        timetaken = tim.time() - startTime
+        print("generation: ", g,"  Time: ", timetaken,"bestFit: ", getFit(pop[0]), " popsize: ", len(pop))
+        IM.WriteToRND(str(g) + ':' + str(timetaken)+':'+str(crossoverEndTime)+':'+str(mutationEndTime)+':'+str(evalEndTime) + '\n' ,name = "\\time")
 
     return (pop, bestPop,bestFit,bestFits)
 
@@ -405,4 +410,22 @@ def mainPer():
 
 
 #main()
-mainPer()
+#mainPer()
+
+
+def mainMetric():
+    global IM
+    for c in ConfigMetric:
+        IM = instrumentation.InstrumentationManager(on = False,popWrite = False)
+        IM.WriteToRND(c.description())
+        c.setup()
+        ppl,bestPop,bestFit,bestFits  = GALoop(c.h,c.popSize, c.genNumber,c)
+        ppl.sort(reverse = True, key = getFit)
+        IM.popWrite = True
+        IM.on = True
+        IM.WritePop(1,ppl)
+        IM.DrawPop(ppl,c.h)
+        IM.DrawBestPop(bestPop,c.h)
+
+
+mainMetric()

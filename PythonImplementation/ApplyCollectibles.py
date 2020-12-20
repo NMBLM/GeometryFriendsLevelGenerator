@@ -12,7 +12,7 @@ yGridLen = ef.yGridLen
 smallerAreaLimits = [0,300,750,1000,2000]
 areaLimits = [lim * 16 * 16 for lim in smallerAreaLimits]
 minRangeBetweenCollectibles = 3
-maxAttempts = 1000
+maxAttempts = 10000
 
 def PlaceCollectibles(h,level,maxCollectibles = -1):
     numberOfCollectiblesPlaced = 0
@@ -58,9 +58,10 @@ def PlaceCollectibles(h,level,maxCollectibles = -1):
                     colY = random.randint(areaPosY,areaPosY+areaHeight)
                     collectible = [colX,colY]
                     attempts += 1
-            #upon exiting add to collectibles placed
-            numberOfCollectiblesPlaced += 1
-            collectiblesPlaced += [collectible]
+            #upon exiting add to collectibles placed if it found one that worked otherwise do not place bad collectible
+            if attempts < maxAttempts):
+                numberOfCollectiblesPlaced += 1
+                collectiblesPlaced += [collectible]
         level.collectibles = collectiblesPlaced     
     return level
 

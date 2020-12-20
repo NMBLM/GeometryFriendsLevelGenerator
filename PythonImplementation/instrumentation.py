@@ -163,7 +163,7 @@ class InstrumentationManager:
         f.write(text)
         f.close()
 
-    def WriteToRND(self,txt):
-        f = open('GenData\Run_' + str(self.runNumber) + '\Info.txt','a')
+    def WriteToRND(self,txt,name = "\\Info"):
+        f = open('GenData\Run_' + str(self.runNumber) + name +'.txt','a')
         f.write(txt)
         f.close()

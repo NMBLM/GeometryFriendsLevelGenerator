@@ -226,7 +226,9 @@ def main():
     for i in range(10):
         lvl.collectibles = []
         lvl = ac.PlaceCollectibles(hUsed,lvl)
-        world += [lvl]
+        worldColl += [lvl.collectibles]
+    for i in range(10):
+        lvl.collectibles = worldColl[i]
         IM.DrawLevelLevel(lvl,name= "\\col" + str(i+1),col= True)
 
     IM.GenerateWorld(world,name = "LevelGen"+str(saveNumber)+".xml")

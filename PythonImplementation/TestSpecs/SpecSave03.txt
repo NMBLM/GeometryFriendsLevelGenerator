@@ -1,0 +1,4 @@
+32:240:624:544:AreaType.Cooperative
+32:32:1216:208:AreaType.CircleOnly
+656:240:608:256:AreaType.Common
+656:480:608:304:AreaType.RectangleOnly

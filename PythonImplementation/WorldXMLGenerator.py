@@ -1,7 +1,14 @@
 import evaluateFuncs as ef
 import xml.etree.ElementTree as ET
-
-
+import xml.dom.minidom as MD
+ 
+ 
+ 
+ 
+def prettify(elem):
+    rough_string = ET.tostring(elem, 'utf-8')
+    reparsed = MD.parseString(rough_string)
+    return reparsed.toprettyxml(indent="\t")
 
 def WriteWorld(population,name="test.xml"):
     world = ET.Element('Levels')
@@ -11,10 +18,10 @@ def WriteWorld(population,name="test.xml"):
         AddLevel(individual,world,num)
         num+=1
     # create a new XML file with the results
-    mydata = ET.tostring(world)
     #print(mydata)
+    mData = prettify(world)
     myfile = open(name, "w")
-    myfile.write(str(mydata)[2:-1]) #to remove b' at beginning and ' at the end
+    myfile.write(str(mData)) #to remove b' at beginning and ' at the end
     myfile.close()
 
 

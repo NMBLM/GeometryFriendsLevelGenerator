@@ -413,13 +413,6 @@ def ShowcrossoverV2():
     print(parentSet)
 
 
-#TestMutations()
-#TestCrossover()
-#Showcrossover()
-#ShowMutations()
-#ShowcrossoverV2()
-
-
 def TestPlaceCollectibles():
     lvlTwoSpecs = [ef.SpecialArea(100,80,1100,240, ef.AreaType.Cooperative), ef.SpecialArea(430,560,340,180,ef.AreaType.RectangleOnly)]
     hTwo = ef.AreaHeuristic(lvlTwoSpecs, smaller = True)
@@ -453,5 +446,55 @@ def TestPlaceCollectibles():
 
     wg.WriteWorld(world,name= "OneLevel.xml")
 
+def WriteWorldNoCollect():
+    TestLvlOne = [1, 320, 678, 120, 678, 1, 460, 400, 75, 300, 1, 735, 400, 75, 300, 1, 535, 400, 250, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    TestLvlTwo =  [0, 984, 696, 88, 650, 1, 200, 600, 288, 32, 1, 504, 376, 48, 384, 1, 552, 648, 256, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    #TestLvlOneOne = [1, 320, 678, 120, 678,  1, 535, 400, 250, 75, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 460, 400, 75, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 735, 400, 75, 300]
+    #TestLvlTwoTwo =  [0, 984, 696, 88, 650, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 200, 600, 288, 32, 1, 504, 376, 48, 384,  0, 0, 0, 0, 0, 1, 552, 648, 256, 32,  0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Mutated1 = [1,20, 10, 7, 42, 1, 28, 25, 4, 26, 1, 45, 25, 4, 18, 1, 33, 32, 15, 4, 0, 0, 0, 38, 0, 0, 0, 0, 42, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 11, 0, 0]
+    Mutated2 = [1,61, 35, 5, 40, 1, 12, 37, 18, 2, 1, 31, 23, 3, 35, 1, 32, 40, 16, 2, 1, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 1, 0, 0, 9, 0]
+    Mutated3 = [1,20, 42, 7, 42, 1, 28, 25, 4, 18, 1, 45, 25, 4, 18, 0, 33, 25, 15, 4, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Mutated4 = [1,61, 37, 5, 40, 1, 12, 37, 18, 2, 1, 12, 23, 3, 24, 1, 42, 21, 56, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Mutated5 = [1,20, 42, 7, 4, 1, 28, 25, 4, 18, 1, 45, 25, 4, 18, 1, 33, 25, 15, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Mutated6 = [1,61, 43, 5, 40, 1, 12, 37, 73, 2, 1, 31, 23, 3, 24, 1, 34, 40, 16, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Cross11 = [1,20, 42, 7, 42, 1, 28, 25, 4, 18, 1, 31, 23, 3, 24, 1, 33, 25, 15, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Cross21 = [1,61, 43, 5, 40, 1, 12, 37, 18, 2, 1, 45, 25, 4, 18, 1, 34, 40, 16, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Cross12 = [1,20, 42, 7, 42, 1, 28, 25, 4, 18, 1, 45, 25, 4, 18, 1, 33, 25, 15, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Cross22  = [1,61, 43, 5, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12, 37, 18, 4, 0, 31, 23, 3, 24, 0, 0, 0, 0, 0, 1, 34, 40, 16, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Cross13 = [1,20, 42, 7, 42, 1, 28, 25, 4, 18, 1, 45, 25, 4, 18, 1, 33, 40, 16, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Cross23 = [1,61, 43, 5, 40, 1, 12, 37, 18, 2, 1, 31, 23, 3, 24, 1, 34, 25, 15, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Cross14 = [1,20, 42, 7, 42, 1, 33, 25, 15, 4, 0, 0, 0, 0, 0, 1, 34, 40, 16, 2, 1, 28, 25, 4, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    Cross24 = [1,61, 43, 7, 42, 1, 12, 37, 18, 2, 1, 31, 23, 3, 24, 0, 0, 0, 0, 0, 1, 28, 25, 4, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 45, 25, 4, 18]
+    h = hZero
+    counter = 1
+    testPop = [TestLvlOne,TestLvlTwo,Mutated1,Mutated2,Mutated3,Mutated4,Mutated5,Mutated6,Cross11,Cross21,Cross12,Cross22,Cross13,Cross23,Cross14,Cross24]
+    testPop = [Mutated1,Mutated2,Mutated3,Mutated4,Mutated5,Mutated6]
+    testPop = [Cross11,Cross21,Cross12,Cross22,Cross13,Cross23,Cross14,Cross24]
+    testPop = [TestLvlOne,TestLvlTwo]
+    world = []
+    for i in range(len(testPop)):
+        if(i < 2):
+            h.smallerLevels = False
+            lvl = h.TestLevel(testPop[i])
+        else:
+            h.smallerLevels = True
+            lvl = h.TestLevel(testPop[i])
+        lvl = ac.PlaceCollectibles(hZero,lvl)
+        if(i < 2):
+            lvl.collectibles = [[1,1]]
+        else:
+            lvl.collectibles = [[1,1]]
+        world += [lvl]
+        IM.DrawLevelLevel(lvl,name= "\\col" + str(counter),col= True)
+        counter+= 1
 
-TestPlaceCollectibles()
+    wg.WriteWorld(world,name= "Cross2.xml")
+    #wg.WriteWorld(world,name= "Mut2.xml")
+
+#TestMutations()
+#TestCrossover()
+#Showcrossover()
+#ShowMutations()
+#ShowcrossoverV2()
+#TestPlaceCollectibles()
+WriteWorldNoCollect()

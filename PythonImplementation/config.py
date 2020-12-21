@@ -3,7 +3,6 @@
 toolbox = ""
 class Config:
     def __init__(self,h = "", mate = "", mutate = "", select = "",popSize = "", genNumber = "",sm = False,tournsize = 4):
-        print(h)
         self.h = h
         self.mate = mate
         self.mutate = mutate

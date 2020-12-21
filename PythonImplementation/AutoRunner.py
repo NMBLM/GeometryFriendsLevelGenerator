@@ -5,6 +5,7 @@ import instrumentation
 import time as tim
 import Functions as fs
 import config as cfg
+from guppy import hpy
 
 from deap import base
 from deap import creator
@@ -237,6 +238,8 @@ elitism = 1
 treshold = 0.92
 tresholdMax = 80
 def GALoop(hUsed,popSize,NGEN,config):
+
+    h = hpy()
     #global IM
     #IM = instrumentation.InstrumentationManager(on = True)
     curTresh = 0
@@ -308,7 +311,7 @@ def GALoop(hUsed,popSize,NGEN,config):
             
             i = 0
             j = 1  #so that it mates with itself and stays in the pool
-            while len(childOffSpring) < offspringLen - len(toAdd) + 1 :
+            while len(childOffSpring) < offspringLen - len(toAdd) :
                 child = fs.levelCrossOneChild(toolbox.clone(offspring[i]), toolbox.clone(offspring[j]))
                 del child.fitness.values
                 childOffSpring += [child]

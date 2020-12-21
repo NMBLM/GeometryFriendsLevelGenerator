@@ -276,13 +276,161 @@ def BestChangeGen(dirName):
             l = f.readline()
     print(bestFitness)
 
-currentR = 500
-dn = "Gendata/Run_" + str(currentR)
-while(os.path.isdir(dn)):
-    DirectPlot(dn)
-    SmoothPlot(dn)
-    #BestChangeGen(dn)
-    currentR += 1
+def TimePlot(dirName):
+
+    f = open(dirName + "\\time.txt","r")
+    print(dirName)
+
+    GenNumber = 1
+    totaltime = []
+    crossoverTime = []
+    mutationTime = []
+    evalTime = []
+    l = f.readline()
+    allValues = []
+    while(l):
+        GenNumber = GenNumber + 1
+        stringValues = l.split(':')
+        values = []
+        for v in stringValues:
+            values += [float(v)]
+        totaltime += [values[1]]
+        crossoverTime += [values[2]]
+        mutationTime += [values[3]]
+        evalTime += [values[4]]
+        allValues += (values,)
+        l = f.readline()
+
+    f.close()
+    totalTimeAverage = 0
+    crossoverTimeAverage = 0
+    mutationTimeAverage = 0
+    evalTimeAverage = 0
+    for val in allValues:
+        totalTimeAverage += val[1]
+        crossoverTimeAverage += val[2]
+        mutationTimeAverage += val[3]
+        evalTimeAverage += val[4]
+    
+    #better way
+    #totalTimeAverage = sum(totaltime) / len(totaltime)
+    #crossoverTimeAverage = sum(crossoverTime) / len(crossoverTime)
+    #mutationTimeAverage = sum(mutationTime) / len(mutationTime)
+    #evalTimeAverage = sum(evalTime) / len(evalTime)
+
+    totalTimeAverage = totalTimeAverage / len(allValues)
+    crossoverTimeAverage = crossoverTimeAverage / len(allValues)
+    mutationTimeAverage = mutationTimeAverage / len(allValues)
+    evalTimeAverage = evalTimeAverage / len(allValues)
+
+
+    print("TotalAverage: ", totalTimeAverage)
+    print("CrossoverAverage: ", crossoverTimeAverage)
+    print("MutationAverage: ", mutationTimeAverage)
+    print("EvaluationAverage: ", evalTimeAverage)
+
+    f = open(dirName + "\\info.txt","a")
+    f.write("TotalAverage: " + str(totalTimeAverage))
+    f.write(" CrossoverAverage: "+ str(crossoverTimeAverage))
+    f.write(" MutationAverage: "+ str(mutationTimeAverage))
+    f.write(" EvaluationAverage: "+ str(evalTimeAverage))
+    f.write("\n")
+    f.close()
+
+    dpii = 500.0
+    plt.plot(totaltime  ,color ="blue")
+    plt.ylabel('Total Time Taken')
+    plt.savefig(dirName+'\\TotalTime.png',dpi = dpii)
+    plt.clf()
+
+    plt.plot(crossoverTime  ,color ="orange")
+    plt.ylabel('Crossover Time')
+    plt.savefig(dirName+'\\CrossoverTime.png',dpi = dpii)
+    plt.clf()
+
+    plt.plot(mutationTime ,color ="green")
+    plt.ylabel('Mutation Time')
+    plt.savefig(dirName+'\\MutationTime.png',dpi = dpii)
+    plt.clf()
+
+    plt.plot(evalTime ,color ="red")
+    plt.ylabel('Evaluation Time')
+    plt.savefig(dirName+'\\EvaluationTime.png',dpi = dpii)
+    plt.clf()
+
+    plt.plot(totaltime ,label = 'Total Time Taken' ,color ="blue")
+
+    plt.plot(crossoverTime ,label = 'Crossover Time' ,color ="orange")
+
+    plt.plot(mutationTime,label = 'Mutation Time' ,color ="green")
+
+    plt.plot(evalTime,label = 'Evaluation Time' ,color ="red")
+
+    plt.ylabel('Time')
+    plt.legend()
+    plt.savefig(dirName+'\\TimePlotAll.png',dpi = dpii)
+    plt.clf()
+
+    plt.plot(totaltime ,label = 'Total Time Taken' ,color ="blue")
+    plt.plot(evalTime,label = 'Evaluation Time' ,color ="red")
+
+    plt.ylabel('Time')
+    plt.legend()
+    plt.savefig(dirName+'\\TimeEvalPlotAll.png',dpi = dpii)
+    plt.clf()
+
+def EvalOnceTimePlot(dirName):
+
+    f = open(dirName + "CalcFit.txt","r")
+    print(dirName)
+
+    GenNumber = 1
+    evalTime = []
+    l = f.readline()
+    while(l):
+        evalTime += [float(l)]
+        l = f.readline()
+
+    f.close()
+    evalTimeAverage = sum(evalTime) / len(evalTime)
+
+    print("EvalTimeAverage: ", evalTimeAverage)
+
+    X = np.arange(1,len(evalTime)+1)
+
+    xnew = np.linspace(X.min(), X.max(), int(len(X)/10)) 
+
+    spl = make_interp_spline(X, np.array(evalTime), k=3)
+    evalTimeS = spl(xnew)
+    
+    dpii = 500.0
+    plt.plot(evalTime  ,color ="blue")
+    plt.ylabel('Time Per Evaluation')
+    plt.savefig(dirName+'EvalTime.png',dpi = dpii)
+    plt.clf()
+
+    plt.plot(xnew,evalTimeS  ,color ="blue")
+    plt.ylabel('Time Per Evaluation')
+    plt.savefig(dirName+'EvalTimeS.png',dpi = dpii)
+    plt.clf()
+
+
+def main():
+    currentR = 9209
     dn = "Gendata/Run_" + str(currentR)
+    while(os.path.isdir(dn)):
+        #DirectPlot(dn)
+        #SmoothPlot(dn)
+        #BestChangeGen(dn)
+        TimePlot(dn)
+        currentR += 1
+        dn = "Gendata/Run_" + str(currentR)
 
 
+
+def time():
+    dn = ""
+    EvalOnceTimePlot(dn)
+
+main()
+#time()

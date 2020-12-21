@@ -1,6 +1,8 @@
 import os
 
 import PILViewer as viewer
+import WorldXMLGenerator as wg
+
 
 class InstrumentationManager:
 
@@ -167,3 +169,7 @@ class InstrumentationManager:
         f = open('GenData\Run_' + str(self.runNumber) + name +'.txt','a')
         f.write(txt)
         f.close()
+
+    def GenerateWorld(self,levels,name = "Default.xml"):
+        dn = 'GenData\Run_' + str(self.runNumber) + "\\" + name
+        wg.WriteWorld(levels, name= dn)

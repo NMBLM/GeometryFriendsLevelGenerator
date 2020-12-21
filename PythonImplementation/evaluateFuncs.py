@@ -1,5 +1,6 @@
 from enum import Enum
-
+from guppy import hpy
+import time
 class Level:
     def __init__(self, attrList, rectSpawn = [], circlespawn= [],smaller = False):
         if(len(attrList) < 45):
@@ -43,9 +44,15 @@ class Level:
             for i in range(len(self.platforms)):
                 for j in range(4):
                     self.platforms[i][j] = self.platforms[i][j] * mult
+                if self.platforms[i][0] + self.platforms[i][2] > 1280: #so it does not leave the level on x
+                    self.platforms[i][2] = 1280 - self.platforms[i][0]
+                if self.platforms[i][1] + self.platforms[i][3] > 800: #so it does not leave the level on y
+                    self.platforms[i][3] = 800 - self.platforms[i][1]
+                                    
             for i in range(len(self.collectibles)):
                 for j in range(2):
-                    self.collectibles[i][j] = self.collectibles[i][j] * mult            
+                    self.collectibles[i][j] = self.collectibles[i][j] * mult
+        self.smallerNums = False      
 
 class PlatformType(Enum):
     Common = 0
@@ -120,6 +127,7 @@ class AreaHeuristic:
 
 
     def CalculateFitness(self, level):
+        #startTime = time.time()
         lvl = Level(level,smaller = self.smallerLevels)
         initCellGrid(lvl)
         InitFits(lvl)
@@ -130,6 +138,10 @@ class AreaHeuristic:
         ExtendReach(lvl)
         CellGridToBlockGrid(lvl)
         fit = fitness(lvl,self)
+        #endTime = time.time() - startTime
+        #f = open("CalcFit.txt",'a')
+        #f.write(str(endTime) + '\n')
+        #f.close()
         del lvl
         return fit
     
@@ -144,6 +156,9 @@ class AreaHeuristic:
         ExtendReach(lvl)
         CellGridToBlockGrid(lvl)
         fit = fitness(lvl,self)
+        f = open("HeapTest.txt",'a')
+        f.write(str(hpy().heap()))
+        f.close()
         lvl.fit = fit
         return lvl
 

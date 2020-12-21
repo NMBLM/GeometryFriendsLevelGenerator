@@ -59,7 +59,8 @@ def PlaceCollectibles(h,level,maxCollectibles = -1):
                     collectible = [colX,colY]
                     attempts += 1
             #upon exiting add to collectibles placed if it found one that worked otherwise do not place bad collectible
-            if attempts < maxAttempts):
+            #if (attempts < maxAttempts):
+            if not level.grid[colX][colY] == ef.BlockType.Platform:
                 numberOfCollectiblesPlaced += 1
                 collectiblesPlaced += [collectible]
         level.collectibles = collectiblesPlaced     

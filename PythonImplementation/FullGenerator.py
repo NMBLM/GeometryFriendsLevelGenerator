@@ -220,17 +220,14 @@ def main():
         IM.DrawBestPop(bestPop,c.h)
 
 
-    world = []
-    lvl = hUsed.TestLevel(bestPop[0])
-    print(bestPop[0])
-    for i in range(10):
-        lvl.collectibles = []
-        lvl = ac.PlaceCollectibles(hUsed,lvl)
-        worldColl += [lvl.collectibles]
-    for i in range(10):
-        lvl.collectibles = worldColl[i]
-        IM.DrawLevelLevel(lvl,name= "\\col" + str(i+1),col= True)
+        world = []
+        print(bestPop[0])
+        for i in range(10):
+            lvl = hUsed.TestLevel(bestPop[0])
+            lvl = ac.PlaceCollectibles(hUsed,lvl)
+            world += [lvl]
+            IM.DrawLevelLevel(lvl,name= "\\col" + str(i+1),col= True)
 
-    IM.GenerateWorld(world,name = "LevelGen"+str(saveNumber)+".xml")
+        IM.GenerateWorld(world,name = "LevelGen"+str(saveNumber)+".xml")
 
 main()

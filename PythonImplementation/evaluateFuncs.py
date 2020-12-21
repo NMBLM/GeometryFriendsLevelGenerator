@@ -340,8 +340,8 @@ def fitness(lvl, h):
     #return (fullAreaPercent / len(specs),)
     
     #return (multPercent,)
-    #return (minArea,)
-    return (fullAreaPercent / len(specs),)
+    return (minArea,)
+    #return (fullAreaPercent / len(specs),)
     #return (minArea * 0.8 + fullAreaPercent * 0.2,)
 
 # In this the sum of each percentage being 100% would mean the entire map is reachable which is impossible

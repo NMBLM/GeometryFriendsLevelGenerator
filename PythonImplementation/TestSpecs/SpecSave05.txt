@@ -1,0 +1,4 @@
+960:16:320:480:AreaType.CircleOnly
+16:624:240:160:AreaType.RectangleOnly
+16:16:320:240:AreaType.Cooperative
+1120:624:160:320:AreaType.Common

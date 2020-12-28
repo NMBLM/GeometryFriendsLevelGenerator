@@ -62,3 +62,4 @@ GeneticAlgorithmVisualizer/Library/Artifacts/*
 GeneticAlgorithmVisualizer/Library/ArtifactDB
 GeneticAlgorithmVisualizer/Library/ArtifactDB
 PythonImplementation/GenData/*
+PythonImplementation/_pycache_/*

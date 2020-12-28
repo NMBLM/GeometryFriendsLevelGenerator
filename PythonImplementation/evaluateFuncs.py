@@ -156,9 +156,6 @@ class AreaHeuristic:
         ExtendReach(lvl)
         CellGridToBlockGrid(lvl)
         fit = fitness(lvl,self)
-        f = open("HeapTest.txt",'a')
-        f.write(str(hpy().heap()))
-        f.close()
         lvl.fit = fit
         return lvl
 

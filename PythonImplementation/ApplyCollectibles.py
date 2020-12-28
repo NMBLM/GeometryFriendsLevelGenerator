@@ -34,6 +34,11 @@ def PlaceCollectibles(h,level,maxCollectibles = -1):
             while(nearCollectible and attempts < maxAttempts):
                 nearCollectible = False
                 for col in collectiblesPlaced:
+                    while colX >= 79 or colY >= 49 :
+                        colX = random.randint(areaPosX,areaPosX+areaWidth)
+                        colY = random.randint(areaPosY,areaPosY+areaHeight)
+                        collectible = [colX,colY]
+                        nearCollectible = True
                     if isClose(collectible,col,minRangeBetweenCollectibles): #if it is close to another generate new collectible
                         colX = random.randint(areaPosX,areaPosX+areaWidth)
                         colY = random.randint(areaPosY,areaPosY+areaHeight)
@@ -49,6 +54,9 @@ def PlaceCollectibles(h,level,maxCollectibles = -1):
                     while(i <= collectibleSize and not nearCollectible):
                         j = -collectibleSize
                         while(j <= collectibleSize and not nearCollectible):
+                            if colX+i >=  79 or colY+j >= 49 :
+                                j = j + 1
+                                continue
                             if not areaTypeMatchCell(areaType, level.grid[colX+i][colY+j]): 
                                 nearCollectible = True 
                             j = j + 1
@@ -60,6 +68,8 @@ def PlaceCollectibles(h,level,maxCollectibles = -1):
                     attempts += 1
             #upon exiting add to collectibles placed if it found one that worked otherwise do not place bad collectible
             #if (attempts < maxAttempts):
+            if colX >=  79 or colY >= 49:
+                continue
             if not level.grid[colX][colY] == ef.BlockType.Platform:
                 numberOfCollectiblesPlaced += 1
                 collectiblesPlaced += [collectible]

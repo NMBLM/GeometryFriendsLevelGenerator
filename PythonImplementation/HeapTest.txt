@@ -1,2437 +1,277 @@
-Partition of a set of 128935 objects. Total size = 17268440 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  31467  24  4700916  27   4700916  27 str
-     1  30348  24  2306728  13   7007644  41 tuple
-     2   7742   6  1858080  11   8865724  51 dict of evaluateFuncs.Cell
-     3  15343  12  1167908   7  10033632  58 bytes
-     4   7693   6  1111784   6  11145416  65 types.CodeType
-     5   7218   6   981648   6  12127064  70 function
-     6   1042   1   906032   5  13033096  75 type
-     7    315   0   569808   3  13602904  79 dict of module
-     8   1042   1   562584   3  14165488  82 dict of type
-     9   1336   1   538480   3  14703968  85 dict (no owner)
-<286 more rows. Type e.g. '_.more' to view.>Partition of a set of 142752 objects. Total size = 19116341 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33004  23  4829371  25   4829371  25 str
-     1  11613   8  2787120  15   7616491  40 dict of evaluateFuncs.Cell
-     2  32435  23  2473864  13  10090355  53 tuple
-     3  16220  11  1245774   7  11336129  59 bytes
-     4   8071   6  1166344   6  12502473  65 types.CodeType
-     5   7606   5  1034416   5  13536889  71 function
-     6   1067   1   932968   5  14469857  76 type
-     7  11613   8   650328   3  15120185  79 evaluateFuncs.Cell
-     8    330   0   589224   3  15709409  82 dict of module
-     9   1067   1   576088   3  16285497  85 dict of type
-<286 more rows. Type e.g. '_.more' to view.>Partition of a set of 135189 objects. Total size = 17917373 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  24  4830306  27   4830306  27 str
-     1  32495  24  2473272  14   7303578  41 tuple
-     2   7742   6  1858080  10   9161658  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238395   7  10400053  58 bytes
-     4   8071   6  1166344   7  11566397  65 types.CodeType
-     5   7605   6  1034280   6  12600677  70 function
-     6   1068   1   934432   5  13535109  76 type
-     7    331   0   589592   3  14124701  79 dict of module
-     8   1068   1   576584   3  14701285  82 dict of type
-     9   1373   1   559656   3  15260941  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146629 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146629 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143052 objects. Total size = 19146657 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143052 objects. Total size = 19146689 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143055 objects. Total size = 19147009 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143047 objects. Total size = 19146245 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143048 objects. Total size = 19146341 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143050 objects. Total size = 19146465 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143050 objects. Total size = 19146465 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143052 objects. Total size = 19146657 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143055 objects. Total size = 19146977 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143055 objects. Total size = 19146977 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143052 objects. Total size = 19146689 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143054 objects. Total size = 19146913 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143053 objects. Total size = 19146785 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 135137 objects. Total size = 17914893 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  24  4830306  27   4830306  27 str
-     1  32495  24  2473272  14   7303578  41 tuple
-     2   7742   6  1858080  10   9161658  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238395   7  10400053  58 bytes
-     4   8071   6  1166344   7  11566397  65 types.CodeType
-     5   7605   6  1034280   6  12600677  70 function
-     6   1068   1   934432   5  13535109  76 type
-     7    331   0   589592   3  14124701  79 dict of module
-     8   1068   1   576584   3  14701285  82 dict of type
-     9   1373   1   559656   3  15260941  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143050 objects. Total size = 19146465 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143050 objects. Total size = 19146465 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143051 objects. Total size = 19146561 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143052 objects. Total size = 19146689 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143052 objects. Total size = 19146689 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830306  25   4830306  25 str
-     1  11613   8  2787120  15   7617426  40 dict of evaluateFuncs.Cell
-     2  32498  23  2473456  13  10090882  53 tuple
-     3  16221  11  1238395   6  11329277  59 bytes
-     4   8071   6  1166344   6  12495621  65 types.CodeType
-     5   7605   5  1034280   5  13529901  71 function
-     6   1068   1   934432   5  14464333  76 type
-     7  11613   8   650328   3  15114661  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704253  82 dict of module
-     9   1068   1   576584   3  16280837  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 135137 objects. Total size = 17914437 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  24  4830306  27   4830306  27 str
-     1  32495  24  2473272  14   7303578  41 tuple
-     2   7742   6  1858080  10   9161658  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238395   7  10400053  58 bytes
-     4   8071   6  1166344   7  11566397  65 types.CodeType
-     5   7605   6  1034280   6  12600677  70 function
-     6   1068   1   934432   5  13535109  76 type
-     7    331   0   589592   3  14124701  79 dict of module
-     8   1068   1   576584   3  14701285  82 dict of type
-     9   1373   1   559656   3  15260941  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 135216 objects. Total size = 17920608 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  24  4830117  27   4830117  27 str
-     1  32499  24  2473496  14   7303613  41 tuple
-     2   7742   6  1858080  10   9161693  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238387   7  10400080  58 bytes
-     4   8071   6  1166344   7  11566424  65 types.CodeType
-     5   7605   6  1034280   6  12600704  70 function
-     6   1068   1   934432   5  13535136  76 type
-     7    331   0   589592   3  14124728  79 dict of module
-     8   1068   1   576584   3  14701312  82 dict of type
-     9   1373   1   559656   3  15260968  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149796 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149668 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149572 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149700 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149764 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19149988 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143082 objects. Total size = 19150212 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150116 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150116 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150116 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149604 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149604 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149700 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149700 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149764 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19149988 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150116 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19150020 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150116 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150116 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19150020 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143082 objects. Total size = 19150212 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143083 objects. Total size = 19150308 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143083 objects. Total size = 19150308 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150084 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149796 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149796 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143074 objects. Total size = 19149448 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143074 objects. Total size = 19149448 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150116 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143082 objects. Total size = 19150212 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149796 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143075 objects. Total size = 19149476 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19149988 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 135164 objects. Total size = 17918128 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  24  4830117  27   4830117  27 str
-     1  32499  24  2473496  14   7303613  41 tuple
-     2   7742   6  1858080  10   9161693  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238387   7  10400080  58 bytes
-     4   8071   6  1166344   7  11566424  65 types.CodeType
-     5   7605   6  1034280   6  12600704  70 function
-     6   1068   1   934432   5  13535136  76 type
-     7    331   0   589592   3  14124728  79 dict of module
-     8   1068   1   576584   3  14701312  82 dict of type
-     9   1373   1   559656   3  15260968  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149668 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149796 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19150020 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19150020 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150116 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143082 objects. Total size = 19150212 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150116 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149672 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149768 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149892 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  23  4830117  25   4830117  25 str
-     1  11613   8  2787120  15   7617237  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473680  13  10090917  53 tuple
-     3  16221  11  1238387   6  11329304  59 bytes
-     4   8071   6  1166344   6  12495648  65 types.CodeType
-     5   7605   5  1034280   5  13529928  71 function
-     6   1068   1   934432   5  14464360  76 type
-     7  11613   8   650328   3  15114688  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704280  82 dict of module
-     9   1068   1   576584   3  16280864  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 135164 objects. Total size = 17917672 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33009  24  4830117  27   4830117  27 str
-     1  32499  24  2473496  14   7303613  41 tuple
-     2   7742   6  1858080  10   9161693  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238387   7  10400080  58 bytes
-     4   8071   6  1166344   7  11566424  65 types.CodeType
-     5   7605   6  1034280   6  12600704  70 function
-     6   1068   1   934432   5  13535136  76 type
-     7    331   0   589592   3  14124728  79 dict of module
-     8   1068   1   576584   3  14701312  82 dict of type
-     9   1373   1   559656   3  15260968  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 135215 objects. Total size = 17920511 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  24  4830308  27   4830308  27 str
-     1  32499  24  2473488  14   7303796  41 tuple
-     2   7742   6  1858080  10   9161876  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238387   7  10400263  58 bytes
-     4   8071   6  1166344   7  11566607  65 types.CodeType
-     5   7605   6  1034280   6  12600887  70 function
-     6   1068   1   934432   5  13535319  76 type
-     7    331   0   589592   3  14124911  79 dict of module
-     8   1068   1   576584   3  14701495  82 dict of type
-     9   1373   1   559656   3  15261151  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149671 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149767 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149891 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149827 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19150019 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149603 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149603 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149603 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149923 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143082 objects. Total size = 19150243 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149923 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149603 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149603 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149891 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19149987 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149891 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149603 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149603 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149891 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149891 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19149987 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149891 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143081 objects. Total size = 19150115 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143082 objects. Total size = 19150211 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149891 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149891 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143080 objects. Total size = 19149987 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149603 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143079 objects. Total size = 19149891 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 135164 objects. Total size = 17918127 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  24  4830308  27   4830308  27 str
-     1  32499  24  2473488  14   7303796  41 tuple
-     2   7742   6  1858080  10   9161876  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238387   7  10400263  58 bytes
-     4   8071   6  1166344   7  11566607  65 types.CodeType
-     5   7605   6  1034280   6  12600887  70 function
-     6   1068   1   934432   5  13535319  76 type
-     7    331   0   589592   3  14124911  79 dict of module
-     8   1068   1   576584   3  14701495  82 dict of type
-     9   1373   1   559656   3  15261151  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143075 objects. Total size = 19149575 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149671 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143078 objects. Total size = 19149795 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143077 objects. Total size = 19149699 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149603 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143076 objects. Total size = 19149603 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143075 objects. Total size = 19149507 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 143075 objects. Total size = 19149507 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  23  4830308  25   4830308  25 str
-     1  11613   8  2787120  15   7617428  40 dict of evaluateFuncs.Cell
-     2  32502  23  2473672  13  10091100  53 tuple
-     3  16221  11  1238387   6  11329487  59 bytes
-     4   8071   6  1166344   6  12495831  65 types.CodeType
-     5   7605   5  1034280   5  13530111  71 function
-     6   1068   1   934432   5  14464543  76 type
-     7  11613   8   650328   3  15114871  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15704463  82 dict of module
-     9   1068   1   576584   3  16281047  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 135164 objects. Total size = 17917671 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33011  24  4830308  27   4830308  27 str
-     1  32499  24  2473488  14   7303796  41 tuple
-     2   7742   6  1858080  10   9161876  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238387   7  10400263  58 bytes
-     4   8071   6  1166344   7  11566607  65 types.CodeType
-     5   7605   6  1034280   6  12600887  70 function
-     6   1068   1   934432   5  13535319  76 type
-     7    331   0   589592   3  14124911  79 dict of module
-     8   1068   1   576584   3  14701495  82 dict of type
-     9   1373   1   559656   3  15261151  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 134862 objects. Total size = 17873969 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33010  24  4830250  27   4830250  27 str
-     1  32442  24  2470288  14   7300538  41 tuple
-     2   7742   6  1858080  10   9158618  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238343   7  10396961  58 bytes
-     4   8071   6  1166344   7  11563305  65 types.CodeType
-     5   7605   6  1034280   6  12597585  70 function
-     6   1068   1   934432   5  13532017  76 type
-     7    331   0   589592   3  14121609  79 dict of module
-     8   1068   1   576584   3  14698193  82 dict of type
-     9   1373   1   559656   3  15257849  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 142724 objects. Total size = 19103157 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33010  23  4830250  25   4830250  25 str
-     1  11613   8  2787120  15   7617370  40 dict of evaluateFuncs.Cell
-     2  32445  23  2470472  13  10087842  53 tuple
-     3  16221  11  1238343   6  11326185  59 bytes
-     4   8071   6  1166344   6  12492529  65 types.CodeType
-     5   7605   5  1034280   5  13526809  71 function
-     6   1068   1   934432   5  14461241  76 type
-     7  11613   8   650328   3  15111569  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15701161  82 dict of module
-     9   1068   1   576584   3  16277745  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 142727 objects. Total size = 19103377 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33010  23  4830250  25   4830250  25 str
-     1  11613   8  2787120  15   7617370  40 dict of evaluateFuncs.Cell
-     2  32445  23  2470472  13  10087842  53 tuple
-     3  16221  11  1238343   6  11326185  59 bytes
-     4   8071   6  1166344   6  12492529  65 types.CodeType
-     5   7605   5  1034280   5  13526809  71 function
-     6   1068   1   934432   5  14461241  76 type
-     7  11613   8   650328   3  15111569  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15701161  82 dict of module
-     9   1068   1   576584   3  16277745  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 142728 objects. Total size = 19103473 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33010  23  4830250  25   4830250  25 str
-     1  11613   8  2787120  15   7617370  40 dict of evaluateFuncs.Cell
-     2  32445  23  2470472  13  10087842  53 tuple
-     3  16221  11  1238343   6  11326185  59 bytes
-     4   8071   6  1166344   6  12492529  65 types.CodeType
-     5   7605   5  1034280   5  13526809  71 function
-     6   1068   1   934432   5  14461241  76 type
-     7  11613   8   650328   3  15111569  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15701161  82 dict of module
-     9   1068   1   576584   3  16277745  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 142727 objects. Total size = 19103377 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33010  23  4830250  25   4830250  25 str
-     1  11613   8  2787120  15   7617370  40 dict of evaluateFuncs.Cell
-     2  32445  23  2470472  13  10087842  53 tuple
-     3  16221  11  1238343   6  11326185  59 bytes
-     4   8071   6  1166344   6  12492529  65 types.CodeType
-     5   7605   5  1034280   5  13526809  71 function
-     6   1068   1   934432   5  14461241  76 type
-     7  11613   8   650328   3  15111569  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15701161  82 dict of module
-     9   1068   1   576584   3  16277745  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 134810 objects. Total size = 17871489 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33010  24  4830250  27   4830250  27 str
-     1  32442  24  2470288  14   7300538  41 tuple
-     2   7742   6  1858080  10   9158618  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238343   7  10396961  58 bytes
-     4   8071   6  1166344   7  11563305  65 types.CodeType
-     5   7605   6  1034280   6  12597585  70 function
-     6   1068   1   934432   5  13532017  76 type
-     7    331   0   589592   3  14121609  79 dict of module
-     8   1068   1   576584   3  14698193  82 dict of type
-     9   1373   1   559656   3  15257849  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 134810 objects. Total size = 17871033 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33010  24  4830250  27   4830250  27 str
-     1  32442  24  2470288  14   7300538  41 tuple
-     2   7742   6  1858080  10   9158618  51 dict of evaluateFuncs.Cell
-     3  16221  12  1238343   7  10396961  58 bytes
-     4   8071   6  1166344   7  11563305  65 types.CodeType
-     5   7605   6  1034280   6  12597585  70 function
-     6   1068   1   934432   5  13532017  76 type
-     7    331   0   589592   3  14121609  79 dict of module
-     8   1068   1   576584   3  14698193  82 dict of type
-     9   1373   1   559656   3  15257849  85 dict (no owner)
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 142725 objects. Total size = 19102865 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33010  23  4830250  25   4830250  25 str
-     1  11613   8  2787120  15   7617370  40 dict of evaluateFuncs.Cell
-     2  32445  23  2470472  13  10087842  53 tuple
-     3  16221  11  1238343   6  11326185  59 bytes
-     4   8071   6  1166344   6  12492529  65 types.CodeType
-     5   7605   5  1034280   5  13526809  71 function
-     6   1068   1   934432   5  14461241  76 type
-     7  11613   8   650328   3  15111569  79 evaluateFuncs.Cell
-     8    331   0   589592   3  15701161  82 dict of module
-     9   1068   1   576584   3  16277745  85 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 150640 objects. Total size = 20334665 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33010  22  4830250  24   4830250  24 str
-     1  15484  10  3716160  18   8546410  42 dict of evaluateFuncs.Cell
-     2  32448  22  2470656  12  11017066  54 tuple
-     3  16221  11  1238343   6  12255409  60 bytes
-     4   8071   5  1166344   6  13421753  66 types.CodeType
-     5   7605   5  1034280   5  14456033  71 function
-     6   1068   1   934432   5  15390465  76 type
-     7  15484  10   867104   4  16257569  80 evaluateFuncs.Cell
-     8    331   0   589592   3  16847161  83 dict of module
-     9   1068   1   576584   3  17423745  86 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 158555 objects. Total size = 21566465 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  33010  21  4830250  22   4830250  22 str
-     1  19355  12  4645200  22   9475450  44 dict of evaluateFuncs.Cell
-     2  32451  20  2470840  11  11946290  55 tuple
-     3  16221  10  1238343   6  13184633  61 bytes
-     4   8071   5  1166344   5  14350977  67 types.CodeType
-     5  19355  12  1083880   5  15434857  72 evaluateFuncs.Cell
-     6   7605   5  1034280   5  16469137  76 function
-     7   1068   1   934432   4  17403569  81 type
-     8    331   0   589592   3  17993161  83 dict of module
-     9   1068   1   576584   3  18569745  86 dict of type
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 166470 objects. Total size = 22798265 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  23226  14  5574240  24   5574240  24 dict of evaluateFuncs.Cell
-     1  33010  20  4830250  21  10404490  46 str
-     2  32454  19  2471024  11  12875514  56 tuple
-     3  23226  14  1300656   6  14176170  62 evaluateFuncs.Cell
-     4  16221  10  1238343   5  15414513  68 bytes
-     5   8071   5  1166344   5  16580857  73 types.CodeType
-     6   7605   5  1034280   5  17615137  77 function
-     7   1068   1   934432   4  18549569  81 type
-     8   1691   1   619928   3  19169497  84 list
-     9    331   0   589592   3  19759089  87 dict of module
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 174385 objects. Total size = 24030097 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  27097  16  6503280  27   6503280  27 dict of evaluateFuncs.Cell
-     1  33010  19  4830250  20  11333530  47 str
-     2  32457  19  2471208  10  13804738  57 tuple
-     3  27097  16  1517432   6  15322170  64 evaluateFuncs.Cell
-     4  16221   9  1238343   5  16560513  69 bytes
-     5   8071   5  1166344   5  17726857  74 types.CodeType
-     6   7605   4  1034280   4  18761137  78 function
-     7   1068   1   934432   4  19695569  82 type
-     8   1858   1   705528   3  20401097  85 list
-     9    331   0   589592   2  20990689  87 dict of module
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 182300 objects. Total size = 25261897 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  30968  17  7432320  29   7432320  29 dict of evaluateFuncs.Cell
-     1  33010  18  4830250  19  12262570  49 str
-     2  32460  18  2471392  10  14733962  58 tuple
-     3  30968  17  1734208   7  16468170  65 evaluateFuncs.Cell
-     4  16221   9  1238343   5  17706513  70 bytes
-     5   8071   4  1166344   5  18872857  75 types.CodeType
-     6   7605   4  1034280   4  19907137  79 function
-     7   1068   1   934432   4  20841569  83 type
-     8   2025   1   791096   3  21632665  86 list
-     9    331   0   589592   2  22222257  88 dict of module
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 190215 objects. Total size = 26493697 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  34839  18  8361360  32   8361360  32 dict of evaluateFuncs.Cell
-     1  33010  17  4830250  18  13191610  50 str
-     2  32463  17  2471576   9  15663186  59 tuple
-     3  34839  18  1950984   7  17614170  66 evaluateFuncs.Cell
-     4  16221   9  1238343   5  18852513  71 bytes
-     5   8071   4  1166344   4  20018857  76 types.CodeType
-     6   7605   4  1034280   4  21053137  79 function
-     7   1068   1   934432   4  21987569  83 type
-     8   2192   1   876664   3  22864233  86 list
-     9    331   0   589592   2  23453825  89 dict of module
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 198130 objects. Total size = 27725497 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  38710  20  9290400  34   9290400  34 dict of evaluateFuncs.Cell
-     1  33010  17  4830250  17  14120650  51 str
-     2  32466  16  2471760   9  16592410  60 tuple
-     3  38710  20  2167760   8  18760170  68 evaluateFuncs.Cell
-     4  16221   8  1238343   4  19998513  72 bytes
-     5   8071   4  1166344   4  21164857  76 types.CodeType
-     6   7605   4  1034280   4  22199137  80 function
-     7   2359   1   962232   3  23161369  84 list
-     8   1068   1   934432   3  24095801  87 type
-     9    331   0   589592   2  24685393  89 dict of module
-<291 more rows. Type e.g. '_.more' to view.>Partition of a set of 206045 objects. Total size = 28957361 bytes.
- Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
-     0  42581  21 10219440  35  10219440  35 dict of evaluateFuncs.Cell
-     1  33010  16  4830250  17  15049690  52 str
-     2  32469  16  2471944   9  17521634  61 tuple
-     3  42581  21  2384536   8  19906170  69 evaluateFuncs.Cell
-     4  16221   8  1238343   4  21144513  73 bytes
-     5   8071   4  1166344   4  22310857  77 types.CodeType
-     6   2526   1  1047864   4  23358721  81 list
-     7   7605   4  1034280   4  24393001  84 function
-     8   1068   1   934432   3  25327433  87 type
-     9    331   0   589592   2  25917025  90 dict of module
-<291 more rows. Type e.g. '_.more' to view.>
+Partition of a set of 120298 objects. Total size = 16291459 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  26  4527491  28   4527491  28 str
+     1   7742   6  1796144  11   6323635  39 dict of evaluateFuncs.Cell
+     2  23479  20  1696504  10   8020139  49 tuple
+     3   7617   6  1348525   8   9368664  58 types.CodeType
+     4  15272  13  1171580   7  10540244  65 bytes
+     5   7014   6   953904   6  11494148  71 function
+     6   1044   1   917504   6  12411652  76 type
+     7    318   0   570368   4  12982020  80 dict of module
+     8   1044   1   555552   3  13537572  83 dict of type
+     9   1405   1   454040   3  13991612  86 dict (no owner)
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128160 objects. Total size = 17457839 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1348773   8  10267144  59 types.CodeType
+     4  15272  12  1171580   7  11438724  66 bytes
+     5   7014   5   953904   5  12392628  71 function
+     6   1044   1   917504   5  13310132  76 type
+     7    318   0   570368   3  13880500  80 dict of module
+     8  11613   9   557424   3  14437924  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14993476  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128160 objects. Total size = 17458177 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1349111   8  10267482  59 types.CodeType
+     4  15272  12  1171580   7  11439062  66 bytes
+     5   7014   5   953904   5  12392966  71 function
+     6   1044   1   917504   5  13310470  76 type
+     7    318   0   570368   3  13880838  80 dict of module
+     8  11613   9   557424   3  14438262  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14993814  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128158 objects. Total size = 17458598 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1349740   8  10268111  59 types.CodeType
+     4  15272  12  1171580   7  11439691  66 bytes
+     5   7014   5   953904   5  12393595  71 function
+     6   1044   1   917504   5  13311099  76 type
+     7    318   0   570368   3  13881467  80 dict of module
+     8  11613   9   557424   3  14438891  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14994443  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128158 objects. Total size = 17458635 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1349777   8  10268148  59 types.CodeType
+     4  15272  12  1171580   7  11439728  66 bytes
+     5   7014   5   953904   5  12393632  71 function
+     6   1044   1   917504   5  13311136  76 type
+     7    318   0   570368   3  13881504  80 dict of module
+     8  11613   9   557424   3  14438928  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14994480  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128157 objects. Total size = 17459538 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1350768   8  10269139  59 types.CodeType
+     4  15272  12  1171580   7  11440719  66 bytes
+     5   7014   5   953904   5  12394623  71 function
+     6   1044   1   917504   5  13312127  76 type
+     7    318   0   570368   3  13882495  80 dict of module
+     8  11613   9   557424   3  14439919  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14995471  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128156 objects. Total size = 17459526 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1350844   8  10269215  59 types.CodeType
+     4  15272  12  1171580   7  11440795  66 bytes
+     5   7014   5   953904   5  12394699  71 function
+     6   1044   1   917504   5  13312203  76 type
+     7    318   0   570368   3  13882571  80 dict of module
+     8  11613   9   557424   3  14439995  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14995547  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128156 objects. Total size = 17459629 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1350947   8  10269318  59 types.CodeType
+     4  15272  12  1171580   7  11440898  66 bytes
+     5   7014   5   953904   5  12394802  71 function
+     6   1044   1   917504   5  13312306  76 type
+     7    318   0   570368   3  13882674  80 dict of module
+     8  11613   9   557424   3  14440098  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14995650  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128159 objects. Total size = 17459925 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1350947   8  10269318  59 types.CodeType
+     4  15272  12  1171580   7  11440898  66 bytes
+     5   7014   5   953904   5  12394802  71 function
+     6   1044   1   917504   5  13312306  76 type
+     7    318   0   570368   3  13882674  80 dict of module
+     8  11613   9   557424   3  14440098  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14995650  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128159 objects. Total size = 17459925 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1350947   8  10269318  59 types.CodeType
+     4  15272  12  1171580   7  11440898  66 bytes
+     5   7014   5   953904   5  12394802  71 function
+     6   1044   1   917504   5  13312306  76 type
+     7    318   0   570368   3  13882674  80 dict of module
+     8  11613   9   557424   3  14440098  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14995650  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 120244 objects. Total size = 16291604 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  26  4527491  28   4527491  28 str
+     1   7742   6  1796144  11   6323635  39 dict of evaluateFuncs.Cell
+     2  23479  20  1696504  10   8020139  49 tuple
+     3   7617   6  1351118   8   9371257  58 types.CodeType
+     4  15272  13  1171580   7  10542837  65 bytes
+     5   7014   6   953904   6  11496741  71 function
+     6   1044   1   917504   6  12414245  76 type
+     7    318   0   570368   4  12984613  80 dict of module
+     8   1044   1   555552   3  13540165  83 dict of type
+     9   1405   1   454040   3  13994205  86 dict (no owner)
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128158 objects. Total size = 17459976 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1351118   8  10269489  59 types.CodeType
+     4  15272  12  1171580   7  11441069  66 bytes
+     5   7014   5   953904   5  12394973  71 function
+     6   1044   1   917504   5  13312477  76 type
+     7    318   0   570368   3  13882845  80 dict of module
+     8  11613   9   557424   3  14440269  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14995821  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128158 objects. Total size = 17459976 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1351118   8  10269489  59 types.CodeType
+     4  15272  12  1171580   7  11441069  66 bytes
+     5   7014   5   953904   5  12394973  71 function
+     6   1044   1   917504   5  13312477  76 type
+     7    318   0   570368   3  13882845  80 dict of module
+     8  11613   9   557424   3  14440269  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14995821  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 120244 objects. Total size = 16291156 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  26  4527491  28   4527491  28 str
+     1   7742   6  1796144  11   6323635  39 dict of evaluateFuncs.Cell
+     2  23479  20  1696504  10   8020139  49 tuple
+     3   7617   6  1351118   8   9371257  58 types.CodeType
+     4  15272  13  1171580   7  10542837  65 bytes
+     5   7014   6   953904   6  11496741  71 function
+     6   1044   1   917504   6  12414245  76 type
+     7    318   0   570368   4  12984613  80 dict of module
+     8   1044   1   555552   3  13540165  83 dict of type
+     9   1405   1   454040   3  13994205  86 dict (no owner)
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 128162 objects. Total size = 17459880 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  24  4527491  26   4527491  26 str
+     1  11613   9  2694216  15   7221707  41 dict of evaluateFuncs.Cell
+     2  23482  18  1696664  10   8918371  51 tuple
+     3   7617   6  1351118   8  10269489  59 types.CodeType
+     4  15272  12  1171580   7  11441069  66 bytes
+     5   7014   5   953904   5  12394973  71 function
+     6   1044   1   917504   5  13312477  76 type
+     7    318   0   570368   3  13882845  80 dict of module
+     8  11613   9   557424   3  14440269  83 evaluateFuncs.Cell
+     9   1044   1   555552   3  14995821  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 136079 objects. Total size = 18628937 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  23  4527491  24   4527491  24 str
+     1  15484  11  3592288  19   8119779  44 dict of evaluateFuncs.Cell
+     2  23485  17  1696824   9   9816603  53 tuple
+     3   7617   6  1351555   7  11168158  60 types.CodeType
+     4  15272  11  1171580   6  12339738  66 bytes
+     5   7014   5   953904   5  13293642  71 function
+     6   1044   1   917504   5  14211146  76 type
+     7  15484  11   743232   4  14954378  80 evaluateFuncs.Cell
+     8    318   0   570368   3  15524746  83 dict of module
+     9   1044   1   555552   3  16080298  86 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 143998 objects. Total size = 19797733 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30871  21  4527491  23   4527491  23 str
+     1  19355  13  4490360  23   9017851  46 dict of evaluateFuncs.Cell
+     2  23488  16  1696984   9  10714835  54 tuple
+     3   7617   5  1351555   7  12066390  61 types.CodeType
+     4  15272  11  1171580   6  13237970  67 bytes
+     5   7014   5   953904   5  14191874  72 function
+     6  19355  13   929040   5  15120914  76 evaluateFuncs.Cell
+     7   1044   1   917504   5  16038418  81 type
+     8    318   0   570368   3  16608786  84 dict of module
+     9   1044   1   555552   3  17164338  87 dict of type
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 151917 objects. Total size = 20966529 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  23226  15  5388432  26   5388432  26 dict of evaluateFuncs.Cell
+     1  30871  20  4527491  22   9915923  47 str
+     2  23491  15  1697144   8  11613067  55 tuple
+     3   7617   5  1351555   6  12964622  62 types.CodeType
+     4  15272  10  1171580   6  14136202  67 bytes
+     5  23226  15  1114848   5  15251050  73 evaluateFuncs.Cell
+     6   7014   5   953904   5  16204954  77 function
+     7   1044   1   917504   4  17122458  82 type
+     8   1437   1   591752   3  17714210  84 list
+     9    318   0   570368   3  18284578  87 dict of module
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 159835 objects. Total size = 22135253 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  27097  17  6286504  28   6286504  28 dict of evaluateFuncs.Cell
+     1  30871  19  4527491  20  10813995  49 str
+     2  23494  15  1697304   8  12511299  57 tuple
+     3   7617   5  1351555   6  13862854  63 types.CodeType
+     4  27097  17  1300656   6  15163510  69 evaluateFuncs.Cell
+     5  15272  10  1171580   5  16335090  74 bytes
+     6   7014   4   953904   4  17288994  78 function
+     7   1044   1   917504   4  18206498  82 type
+     8   1606   1   676192   3  18882690  85 list
+     9    318   0   570368   3  19453058  88 dict of module
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 167753 objects. Total size = 23303945 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  30968  18  7184576  31   7184576  31 dict of evaluateFuncs.Cell
+     1  30871  18  4527491  19  11712067  50 str
+     2  23497  14  1697464   7  13409531  58 tuple
+     3  30968  18  1486464   6  14895995  64 evaluateFuncs.Cell
+     4   7617   5  1351555   6  16247550  70 types.CodeType
+     5  15272   9  1171580   5  17419130  75 bytes
+     6   7014   4   953904   4  18373034  79 function
+     7   1044   1   917504   4  19290538  83 type
+     8   1775   1   760600   3  20051138  86 list
+     9    318   0   570368   2  20621506  88 dict of module
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 175671 objects. Total size = 24472637 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  34839  20  8082648  33   8082648  33 dict of evaluateFuncs.Cell
+     1  30871  18  4527491  19  12610139  52 str
+     2  23500  13  1697624   7  14307763  58 tuple
+     3  34839  20  1672272   7  15980035  65 evaluateFuncs.Cell
+     4   7617   4  1351555   6  17331590  71 types.CodeType
+     5  15272   9  1171580   5  18503170  76 bytes
+     6   7014   4   953904   4  19457074  80 function
+     7   1044   1   917504   4  20374578  83 type
+     8   1944   1   845008   3  21219586  87 list
+     9    318   0   570368   2  21789954  89 dict of module
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 183590 objects. Total size = 25641559 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  38710  21  8980720  35   8980720  35 dict of evaluateFuncs.Cell
+     1  30871  17  4527491  18  13508211  53 str
+     2  38710  21  1858080   7  15366291  60 evaluateFuncs.Cell
+     3  23503  13  1697784   7  17064075  67 tuple
+     4   7617   4  1351681   5  18415756  72 types.CodeType
+     5  15272   8  1171580   5  19587336  76 bytes
+     6   7014   4   953904   4  20541240  80 function
+     7   2114   1   929520   4  21470760  84 list
+     8   1044   1   917504   4  22388264  87 type
+     9    318   0   570368   2  22958632  90 dict of module
+<315 more rows. Type e.g. '_.more' to view.>Partition of a set of 191509 objects. Total size = 26810419 bytes.
+ Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)
+     0  42581  22  9878792  37   9878792  37 dict of evaluateFuncs.Cell
+     1  30871  16  4527491  17  14406283  54 str
+     2  42581  22  2043888   8  16450171  61 evaluateFuncs.Cell
+     3  23506  12  1697944   6  18148115  68 tuple
+     4   7617   4  1351681   5  19499796  73 types.CodeType
+     5  15272   8  1171580   4  20671376  77 bytes
+     6   2284   1  1014096   4  21685472  81 list
+     7   7014   4   953904   4  22639376  84 function
+     8   1044   1   917504   3  23556880  88 type
+     9    318   0   570368   2  24127248  90 dict of module
+<315 more rows. Type e.g. '_.more' to view.>

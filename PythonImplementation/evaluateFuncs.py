@@ -450,7 +450,7 @@ def InitFits(lvl):
 
             #Check in 5x5 around cell to see it circle fits in that particular cell
             #circleHalfSize = 2 #old
-            circleHalfSize = 3
+            circleHalfSize = 2
             i = -circleHalfSize
             while(i <= circleHalfSize and stillFitCircle):
                 j = -circleHalfSize
@@ -555,7 +555,7 @@ def RectangleReachability(lvl):
                 #check for climbing obstacle left
                 for i in range(0,3):
                     if not lvl.cellGrid[x - 1][ y - i].fitsRectangle: #check if there is no platform blocking above
-                        break
+                        continue
                     lst += [((x-1, y-i), -1)]
             #Check for going right
             if lvl.cellGrid[x + 1][ y].fitsRectangle:
@@ -569,7 +569,7 @@ def RectangleReachability(lvl):
                 #check for climbing obstacle right
                 for i in range(0,3):
                     if not lvl.cellGrid[x + 1][ y - i].fitsRectangle: #check if there is no platform blocking above
-                        break
+                        continue
                     lst += [((x+1, y-i), 1)]
 
 maxJumpStrength = 21

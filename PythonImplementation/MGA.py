@@ -204,10 +204,9 @@ elitism = 1
 def GAD():
     if not isinstance(hUsed,ef.AreaPercentangeHeuristic) and not isinstance(hUsed,ef.AreaPercentangeTwoHeuristic):
         IM.DrawSpecs(hUsed)
-    bestPop = []
     bestFit = 0
     bestFits =[]
-
+    bestPop = []
     pop = toolbox.population(n=popSize)
     CXPB, MUTPB, NGEN = 0.9 , 0.8, 200
 
@@ -218,8 +217,9 @@ def GAD():
         
 
     pop.sort(reverse = True, key = getFit)
-    bestfit = toolbox.clone(pop[0])
-
+    bestFit = pop[0].fitness.values[0]
+    bestPop = [toolbox.clone(pop[0])] + bestPop
+    bestFits = [bestFit] + bestFits
     IM.WritePop(0,pop)
     IM.WriteGenData(0,pop)
     for g in range(1,NGEN):

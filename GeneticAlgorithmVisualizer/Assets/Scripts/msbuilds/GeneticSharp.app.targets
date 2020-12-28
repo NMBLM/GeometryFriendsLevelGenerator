@@ -1,6 +1,0 @@
-<Project>
-  <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;net462</TargetFrameworks>
-    <IsPackable>false</IsPackable>
-  </PropertyGroup>
-</Project>

@@ -416,13 +416,13 @@ def EvalOnceTimePlot(dirName):
 
 
 def main():
-    currentR = 9209
+    currentR = 5312
     dn = "Gendata/Run_" + str(currentR)
     while(os.path.isdir(dn)):
-        #DirectPlot(dn)
-        #SmoothPlot(dn)
+        DirectPlot(dn)
+        SmoothPlot(dn)
         #BestChangeGen(dn)
-        TimePlot(dn)
+        #TimePlot(dn)
         currentR += 1
         dn = "Gendata/Run_" + str(currentR)
 

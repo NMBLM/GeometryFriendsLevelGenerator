@@ -63,7 +63,9 @@ def GALoop(hUsed,popSize,NGEN,config):
     for ind, fit in zip(pop, fitnesses):
         ind.fitness.values = fit
         
-
+    bestFit = pop[0].fitness.values[0]
+    bestPop = [toolbox.clone(pop[0])] + bestPop
+    bestFits = [bestFit] + bestFits
     pop.sort(reverse = True, key = getFit)
 
     for g in range(NGEN):
@@ -202,7 +204,7 @@ def main():
     if hUsed == "":
         print("Exit")
         return
-    cfg50 = cfg.Config(h = hUsed, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 50+1, genNumber= 500, sm = True)
+    cfg50 = cfg.Config(h = hUsed, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 10+1, genNumber= 100, sm = True)
     #cfg25 = cfg.Config(h = hUsed, mate = fs.levelCrossOneChild, mutate= fs.mutateLevel, select= tools.selBest, popSize= 25+1, genNumber= 500, sm = True)
     #ConfigListSelection = [cfg50,cfg25]
     ConfigListSelection = [cfg50]
